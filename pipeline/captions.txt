@@ -1,0 +1,155 @@
+# One caption phrase per line, in spoken order (edited voice track).
+# Token syntax:  word            displayed as-is, aligned on its lowercase letters
+#                Display=align   when spelling differs from pronunciation (underscores = spaces)
+#                *word           highlight colour
+# Lines starting with '## ' start a new section (used by the edit plan).
+
+## S01 hook
+Doktor, betul ke
+pesakit *skizofrenia ni
+dia ada ubat yang
+kena *cucuk *sekali,
+lepas tu tak payah
+makan ubat *tablet
+*setiap *hari?
+## S02 answer
+Ok,=okey jawapannya *ya,
+memang *ada.
+Kita panggil sebagai
+*depot=depo *injection=injeksyen
+ataupun *long-acting=long_acting
+*injectable=injektabel *antipsikotik.
+## S03 cta
+Kalau anda atau
+ahli keluarga yang ada
+masalah *skizofrenia
+ataupun *gangguan *psikosis,
+susah nak *konsisten
+makan ubat,
+boleh datang buat
+*saringan dan
+*konsultasi *kesihatan *mental
+bersama saya,
+*Dr=doktor *Azren,
+di klinik saya di=di Nilai.=nilai
+Kita tengok dulu
+rawatan mana yang *sesuai.
+## S04 why
+Ok,=okey balik kepada
+soalan tadi.
+Kenapa ada ubat
+yang kena *cucuk?
+Bukan sebab pesakit
+tu *teruk ke?
+Tapi untuk setengah pesakit,
+ada yang *susah *nak *ingat
+makan ubat tablet
+*hari-hari.
+## S05 mechanism
+Dengan ubat depot=depo injection=injeksyen ni,
+ubat ni akan *dilepas
+secara *perlahan-lahan
+dalam badan
+selama *beberapa *minggu.
+Jadi paras ubat
+lebih *konsisten.
+Dan kita tidak perlu
+bergantung kepada
+ubat pil setiap hari.
+## S06 list
+Antara ubat depot=depo
+*generasi *lama
+yang anda mungkin
+pernah dengar adalah
+## S07 clopixol
+yang *pertama adalah
+*Clopixol=klopiksol *Depot=depo
+ataupun *zuclopenthixol=zuklofentisol *decanoate.=dekanoit
+Ini adalah antipsikotik
+yang biasa digunakan
+dalam *maintenance=mentenens *treatment.=tritmen
+Terutamanya dalam kes
+*skizofrenia ataupun
+*psychotic=psikotik *disorder.=disoder
+Biasanya injection=injeksyen ni
+diberikan secara *berkala
+mengikut *dos dan
+*keadaan *pesakit.
+Tapi jangan *confused=konfius dengan
+*Clopixol=klopiksol *Acuphase.=akufes
+Ini adalah dua benda
+yang *berbezalah.
+## S08 fluanxol
+Yang *kedua adalah
+*Fluanxol=fluanksol *Depot=depo
+iaitu *flupentixol=flufentisol *decanoate.=dekanoit
+Ini pun adalah
+antipsikotik punya depot.=depo
+Fungsi dia *sama.
+Secara umum dia,=dia_dia
+kurangkan *halusinasi,
+*delusi,
+mengurangkan *paranoid
+dan boleh bantu *mencegah
+simptom psikotik
+daripada *relapse.=rilaps
+## S09 modecate
+Dan yang seterusnya adalah
+*Modecate=modiket
+*fluphenazine=flufenazin *decanoate.=dekanoit
+Ini juga adalah
+antipsikotik depot=depo
+*generasi *pertama
+yang digunakan untuk
+*maintenance=mentenens dalam kes
+skizofrenia.
+Konsep dia sama je.
+Satu *injection=injeksyen ni dia
+boleh bagi *kesan *ubat
+yang *berpanjangan
+bergantung kepada
+*rejim yang doktor
+dah set-kan=setkan lah.
+## S10 side effects
+Jadi apa
+*kesan-kesan *sampingan
+ubat-ubat ni?
+Sebab ketiga-tiga ni
+adalah antipsikotik
+*first=fes *generation.=jenereisyen
+Jadi kita kena *monitor,=monitor
+antaranya adalah
+badan ataupun *otot
+menjadi *kaku.
+Kadang-kadang ada kes
+*tangan jadi *menggeletar.
+Rasa *gelisah,
+tak boleh nak *duduk *diam,
+yang kita panggil sebagai
+*akatisia.
+Pergerakan jadi *abnormal
+kalau penggunaan *jangka *panjang.
+## S11 follow up
+Serta kesan-kesan sampingan lain
+juga bergantung kepada
+*ubat dan *pesakit.
+Sebab itulah
+depot=depo injection=injeksyen ni dia
+bukanlah kita bagi cucuk,
+pastu balik ke apa.
+Kita akan *tetap kena
+*follow=folo *up=ap
+patient-patient=pesyen_pesyen juga.
+## S12 takeaway
+*Tablet ke,
+*injection=injeksyen ke,
+soalan dia bukan
+mana yang lagi *power.=pawer
+Soalan dia adalah
+mana yang lagi *sesuai,
+*selamat dan *praktikal
+untuk pesakit tersebut.
+## S13 outro
+Kalau ada apa-apa soalan,
+boleh tanya di dalam *komen.
+*Take=teik *care.=ker
