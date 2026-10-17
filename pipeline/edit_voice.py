@@ -17,10 +17,19 @@ CUTS = [
     (127.00, 128.07), # filler "apa ni" between "boleh bagi" and "kesan ubat"
     (153.80, 160.60), # retake of "Serta kesan-kesan sampingan..." (second take kept)
     (184.40, 999.0),  # tail ("care" ends 184.16)
+    # filler / repeated words (boundaries from MMS alignment, snapped to energy dips)
+    (6.52, 6.64),     # "dia"  in "pesakit skizofrenia ni dia ada ubat"
+    (11.39, 11.57),   # "Ok,"  before "jawapannya ya"
+    (43.99, 44.22),   # "Ok,"  before "balik kepada soalan tadi"
+    (74.61, 75.11),   # repeated "adalah" in "pernah dengar adalah, yang pertama adalah"
+    (104.79, 105.18), # repeated "dia, dia" in "Secara umum dia, dia kurangkan"
+    (126.00, 126.12), # "dia"  in "satu injection ni dia boleh"
+    (133.06, 133.52), # particle "lah" after "doktor dah setkan"
+    (165.64, 165.79), # "dia"  in "depot injection ni dia bukanlah"
 ]
 MAX_GAP = 0.55    # pauses longer than this get shortened...
 KEEP_GAP = 0.32   # ...down to this (split around the quietest part)
-XFADE = 0.012
+XFADE = 0.016
 
 def main(wav, tjson, out):
     x, sr = sf.read(wav, dtype="float32")

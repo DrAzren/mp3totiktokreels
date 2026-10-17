@@ -7,13 +7,13 @@
 ## S01 hook
 Doktor, betul ke
 pesakit *skizofrenia ni
-dia ada ubat yang
+ada ubat yang
 kena *cucuk *sekali,
 lepas tu tak payah
 makan ubat *tablet
 *setiap *hari?
 ## S02 answer
-Ok,=okey jawapannya *ya,
+Jawapannya *ya,
 memang *ada.
 Kita panggil sebagai
 *depot=depo *injection=injeksyen
@@ -35,7 +35,7 @@ di klinik saya di=di Nilai.=nilai
 Kita tengok dulu
 rawatan mana yang *sesuai.
 ## S04 why
-Ok,=okey balik kepada
+Balik kepada
 soalan tadi.
 Kenapa ada ubat
 yang kena *cucuk?
@@ -60,7 +60,7 @@ ubat pil setiap hari.
 Antara ubat depot=depo
 *generasi *lama
 yang anda mungkin
-pernah dengar adalah
+pernah dengar
 ## S07 clopixol
 yang *pertama adalah
 *Clopixol=klopiksol *Depot=depo
@@ -86,7 +86,7 @@ iaitu *flupentixol=flufentisol *decanoate.=dekanoit
 Ini pun adalah
 antipsikotik punya depot.=depo
 Fungsi dia *sama.
-Secara umum dia,=dia_dia
+Secara umum,
 kurangkan *halusinasi,
 *delusi,
 mengurangkan *paranoid
@@ -104,12 +104,12 @@ yang digunakan untuk
 *maintenance=mentenens dalam kes
 skizofrenia.
 Konsep dia sama je.
-Satu *injection=injeksyen ni dia
+Satu *injection=injeksyen ni
 boleh bagi *kesan *ubat
 yang *berpanjangan
 bergantung kepada
 *rejim yang doktor
-dah set-kan=setkan lah.
+dah set-kan.=setkan
 ## S10 side effects
 Jadi apa
 *kesan-kesan *sampingan
@@ -134,7 +134,7 @@ Serta kesan-kesan sampingan lain
 juga bergantung kepada
 *ubat dan *pesakit.
 Sebab itulah
-depot=depo injection=injeksyen ni dia
+depot=depo injection=injeksyen ni
 bukanlah kita bagi cucuk,
 pastu balik ke apa.
 Kita akan *tetap kena

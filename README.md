@@ -2,7 +2,7 @@
 
 Turns a voice recording into a 1080×1920 documentary-style reel with photoreal AI B-roll, motion graphics, word-synced captions, sound design and an original score, without altering or replacing the narrator's voice.
 
-First production: **Depot Injection** (Dr Azren | Spread Positivity), Malay, 2:43.
+First production: **Depot Injection** (Dr Azren | Spread Positivity), Malay, 2:33.
 
 | Path | What |
 |---|---|
@@ -13,7 +13,7 @@ First production: **Depot Injection** (Dr Azren | Spread Positivity), Malay, 2:4
 | `deliverables/broll_jobs.json` | Higgsfield job IDs (keyframes + clips) |
 | `pipeline/` | Reproducible build: `edit_voice.py` → `align_captions.py` → `render/` (canvas engine, components, `timeline.js` = the editable project) → `audio_mix.py`; `build.sh` runs it end to end |
 
-The rendered MP4 (~230 MB) is not committed. Run `pipeline/build.sh` to reproduce it.
+The rendered MP4 (~220 MB) is not committed. Run `pipeline/build.sh` to reproduce it.
 
 ## Editing the reel
 

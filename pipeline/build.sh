@@ -12,12 +12,16 @@ ffmpeg -v error -y -i src/depot.mp3 -ac 1 -ar 48000 src/voice48.wav
 [ -f transcript_v3.json ] || { ffmpeg -v error -y -i src/depot.mp3 -ac 1 -ar 16000 -f f32le src/depot16k.f32
   python3 "$HERE/transcribe.py" src/depot16k.f32 large-v3 transcript_v3.json; }
 
-# 2. cut retakes / tighten pauses, then clean the voice -------------------------------------
+# 2. cut retakes + filler words, align, then shorten pauses and breaths ---------------------
 python3 "$HERE/edit_voice.py" src/voice48.wav transcript_v3.json build
-ffmpeg -v error -y -i build/voice_edit.wav -af "highpass=f=75,afftdn=nr=10:nf=-52:tn=1,equalizer=f=250:t=q:w=1.2:g=-2,equalizer=f=3500:t=q:w=1.5:g=1.5,deesser=i=0.3,acompressor=threshold=-18dB:ratio=2.5:attack=8:release=140:makeup=1.5,alimiter=limit=0.89" build/voice_clean.wav
+python3 "$HERE/align_captions.py" build/voice_edit.wav "$HERE/captions.txt" build && cp build/words.json build/words_pre.json
+python3 "$HERE/tighten_voice.py" build/voice_edit.wav build/words_pre.json build
+ffmpeg -v error -y -i build/voice_tight.wav -af "highpass=f=75,afftdn=nr=10:nf=-52:tn=1,equalizer=f=250:t=q:w=1.2:g=-2,equalizer=f=3500:t=q:w=1.5:g=1.5,deesser=i=0.3,acompressor=threshold=-18dB:ratio=2.5:attack=8:release=140:makeup=1.5,alimiter=limit=0.89" build/voice_clean.wav
 
-# 3. force-align the corrected caption script -> words.json + captions.srt ------------------
-python3 "$HERE/align_captions.py" build/voice_edit.wav "$HERE/captions.txt" build
+# 3. force-align the caption script to the final voice -> words.json + captions.srt ---------
+python3 "$HERE/align_captions.py" build/voice_tight.wav "$HERE/captions.txt" build
+# timeline.js literals were authored against render/words_v1.json; map them onto this edit
+python3 "$HERE/remap_timeline.py" "$HERE/render/words_v1.json" build/words.json 163.0 build/remap.json
 
 # 4. B-roll clips -> 30 fps cover-cropped JPEG frames -----------------------------------------
 for c in broll/clips/*.mp4; do n=$(basename "$c" .mp4); [ -d "broll/frames/$n" ] && continue; mkdir -p "broll/frames/$n"
@@ -26,11 +30,11 @@ for c in broll/clips/*.mp4; do n=$(basename "$c" .mp4); [ -d "broll/frames/$n" ]
 # 5. render picture (headless Chromium, 4 workers) -----------------------------------------
 mkdir -p build/site/data build/video
 for f in index.html engine.js components.js timeline.js fonts; do ln -sfn "$HERE/render/$f" "build/site/$f"; done
-ln -sfn "$WORK/broll/frames" build/site/frames; cp build/words.json build/site/data/
+ln -sfn "$WORK/broll/frames" build/site/frames; cp build/words.json build/remap.json build/site/data/
 python3 -c "import os,json;d='broll/frames';json.dump({k:len(os.listdir(os.path.join(d,k))) for k in sorted(os.listdir(d))},open('build/site/data/clips.json','w'))"
 node "$HERE/render/render.mjs" --site build/site --out build/video/video_noaudio.mp4 --sfx build/sfx.json --workers 4
 
-# 6. score + SFX + ducking, master to -14 LUFS / -1.5 dBTP, mux ------------------------------
+# 6. score + SFX + ambience (uses build/shots.json from the renderer), master -14 LUFS, mux ---
 DUR=$(ffprobe -v error -show_entries format=duration -of csv=p=0 build/video/video_noaudio.mp4)
 python3 "$HERE/audio_mix.py" build/voice_clean.wav build/sfx.json "$DUR" build/mix_raw.wav
 M=$(ffmpeg -hide_banner -i build/mix_raw.wav -af loudnorm=I=-14:TP=-1.5:LRA=11:print_format=json -f null - 2>&1 | sed -n '/^{/,/^}/p' |

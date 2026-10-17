@@ -1,7 +1,7 @@
 # Depot Injection — TikTok reel edit plan
 
 **Source:** `Depot Injection.MP3` (Google Drive, 3:05, 192 kbps)
-**Output:** 1080×1920 · 30 fps · H.264 · AAC 48 kHz · 2:43 (voice 2:39 + 3.5 s end card) · −14 LUFS / −1.5 dBTP
+**Output:** 1080×1920 · 30 fps · H.264 · AAC 48 kHz · 2:33 (voice 2:30 + 3.5 s end card) · −14 LUFS / −1.5 dBTP
 **Look:** Netflix-documentary × premium TikTok: photoreal Malaysian B-roll (Higgsfield: Kling O1 keyframes → Kling 3.0 Pro image-to-video), editorial paper-cut cards, kinetic Anton/DM Serif typography, word-synced Malay captions, navy / off-white / teal palette with amber for the side-effects chapter.
 
 ## 1. Audio edit (voice is untouched except for cuts and cleanup)
@@ -15,6 +15,16 @@
 | 127.00–128.07 | "apa ni" | filler between "boleh bagi" and "kesan ubat" |
 | 153.80–160.60 | "Serta ada kesan-kesan sampingan juga bergantung kepada ubat." | first take; second take (same words + "lain … dan pesakit") kept |
 | 184.40– | tail | |
+| 6.52–6.64 | "dia" | filler: "pesakit skizofrenia ni ~~dia~~ ada ubat" |
+| 11.39–11.57 | "Ok," | filler before "jawapannya ya" |
+| 43.99–44.22 | "Ok," | filler before "balik kepada soalan tadi" |
+| 74.61–75.11 | "adalah" | repeated: "pernah dengar ~~adalah~~, yang pertama adalah" |
+| 104.79–105.18 | "dia, dia" | repeated filler: "Secara umum ~~dia, dia~~ kurangkan" |
+| 126.00–126.12 | "dia" | filler: "satu injection ni ~~dia~~ boleh" |
+| 133.06–133.52 | "lah" | particle after "doktor dah setkan" |
+| 165.64–165.79 | "dia" | filler: "depot injection ni ~~dia~~ bukanlah" |
+
+**Pause tightening** (`pipeline/tighten_voice.py`, second pass): every silence, and every breath sitting between two silences (detected by spectral flatness, outside any aligned word), is shortened to a context target: 0.07 s inside a phrase, 0.12 s between phrases, 0.16 s after a comma, 0.24 s after a sentence, 0.32 s between sections. Only silent or breath samples are removed, never word audio; silences inside a word (stop consonants) are skipped. Short voiced sounds between words were kept, because they may be the first syllable of a word. Result: speech 2:37 → 2:30, longest remaining pause 0.39 s.
 
 Every cut edge is checked to sit in silence or an inter-word dip (`pipeline/edit_voice.py` prints the level at each edge). Chain: high-pass 75 Hz → light FFT denoise (source SNR ≈ 36 dB, so only 10 dB reduction) → gentle EQ → de-ess → 2.5:1 compression. No AI voice, no added words.
 
@@ -30,11 +40,11 @@ Every cut edge is checked to sit in silence or an inter-word dip (`pipeline/edit
 | "Zuclofentisol / Fluventisol / Flufenazine Dekanuid" | zuclopenthixol / flupentixol / fluphenazine decanoate | standard INN spelling |
 | "Clopixol Acufase", "Fluanzol", "Modicate" | Clopixol Acuphase, Fluanxol, Modecate | brand spelling |
 | "keselamatan mental" | kesihatan mental | |
-| "Secara umum dia, dia kurangkan" | "Secara umum dia, kurangkan" | repeated word not duplicated on screen |
+| "Secara umum dia, dia kurangkan" | "Secara umum, kurangkan" | repeated "dia, dia" cut from the audio too |
 
-## 3. Time-coded EDL (output timeline)
+## 3. Time-coded EDL
 
-Caption phrase timings are in `deliverables/captions.srt` (forced-aligned with MMS-FA; spot-checked against the waveform to ±10 ms).
+Times below are on the first cut (2:43). The renderer maps them onto the tightened edit through word anchors (`T()` in `timeline.js`), so every shot and graphic still lands on the same word, about 0–10 s earlier in the final 2:33 cut. Caption phrase timings are in `deliverables/captions.srt` (forced-aligned with MMS-FA; spot-checked against the waveform to ±10 ms).
 
 | Time | Narration (summary) | Picture | Graphics / motion | Transition · SFX |
 |---|---|---|---|---|
@@ -80,7 +90,8 @@ Caption phrase timings are in `deliverables/captions.srt` (forced-aligned with M
 
 - **Score** (original, synthesised in `pipeline/audio_mix.py`, 84 BPM, D minor → F major): heartbeat drone and riser for the hook; documentary pulse and arpeggio for the explanation and drug list; darker Dm–Gm–Dm–A pads with no kick for side effects; build-up for follow-up; suspended chord under "mana lagi power"; warm F–C–Dm–B♭ resolution for the takeaway; Fmaj7 ring-out on the end card.
 - **Ducking:** music follows the voice envelope (about −9 dB while he speaks) and sits about 15 dB under the voice overall.
-- **SFX:** 161 cues exported by the renderer itself, so every pop, paper slide, tear, pencil scribble, stamp, typewriter, whoosh, hit and swell lands on its visual frame.
+- **SFX** (`pipeline/sfx_synth.py`): 209 cues exported by the renderer, plus an automatic sound on each of the 38 cuts (whip → swipe, zoom → riser and thud, paper tear → rip, push → swish, dissolve → air, flash → camera shutter). There are 34 effect types, each generated as a new random variant per cue, so no two pops, whooshes or taps sound the same. They include woodblock and tap text reveals, marker squeaks on highlight swipes, sparkle shimmers on stickers, pill rattles, glass tinks on the ampoule shots, a heartbeat in the hook, a cinematic braam for KESAN SAMPINGAN, dings on checklist ticks, stamps with thuds, typewriter, risers and a logo hit. The SFX bus sits about 5 dB under the voice peaks, glued with a soft limiter.
+- **Scene ambience** matched to every B-roll clip: crickets for night and evening, birds for mornings, the park and breakfast, clinic air-con hum and murmur, MRT rumble with track clacks, mamak chatter with cutlery, printing-shop machine hum, street traffic, and a low drone for the macro shots. It is crossfaded at cuts, ducked under speech, and sits about 27 dB under the voice.
 - **Master:** two-pass loudnorm to −14 LUFS integrated, −1.5 dBTP.
 
 ## 5. Ethics / accuracy guardrails applied

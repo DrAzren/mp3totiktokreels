@@ -1,0 +1,3511 @@
+{
+"sections": [
+"S01 hook",
+"S02 answer",
+"S03 cta",
+"S04 why",
+"S05 mechanism",
+"S06 list",
+"S07 clopixol",
+"S08 fluanxol",
+"S09 modecate",
+"S10 side effects",
+"S11 follow up",
+"S12 takeaway",
+"S13 outro"
+],
+"tokens": [
+{
+"text": "Doktor,",
+"hl": false,
+"phrase": 0,
+"section": "S01 hook",
+"s": 0.54,
+"e": 0.88,
+"conf": 0.429
+},
+{
+"text": "betul",
+"hl": false,
+"phrase": 0,
+"section": "S01 hook",
+"s": 1.1,
+"e": 1.4,
+"conf": 0.608
+},
+{
+"text": "ke",
+"hl": false,
+"phrase": 0,
+"section": "S01 hook",
+"s": 1.5,
+"e": 1.58,
+"conf": 0.481
+},
+{
+"text": "pesakit",
+"hl": false,
+"phrase": 1,
+"section": "S01 hook",
+"s": 1.78,
+"e": 2.08,
+"conf": 0.868
+},
+{
+"text": "skizofrenia",
+"hl": true,
+"phrase": 1,
+"section": "S01 hook",
+"s": 2.12,
+"e": 2.72,
+"conf": 0.609
+},
+{
+"text": "ni",
+"hl": false,
+"phrase": 1,
+"section": "S01 hook",
+"s": 2.82,
+"e": 2.9,
+"conf": 0.512
+},
+{
+"text": "dia",
+"hl": false,
+"phrase": 2,
+"section": "S01 hook",
+"s": 3.0,
+"e": 3.1,
+"conf": 0.493
+},
+{
+"text": "ada",
+"hl": false,
+"phrase": 2,
+"section": "S01 hook",
+"s": 3.16,
+"e": 3.28,
+"conf": 0.653
+},
+{
+"text": "ubat",
+"hl": false,
+"phrase": 2,
+"section": "S01 hook",
+"s": 3.36,
+"e": 3.62,
+"conf": 0.68
+},
+{
+"text": "yang",
+"hl": false,
+"phrase": 2,
+"section": "S01 hook",
+"s": 3.72,
+"e": 3.84,
+"conf": 0.717
+},
+{
+"text": "kena",
+"hl": false,
+"phrase": 3,
+"section": "S01 hook",
+"s": 3.86,
+"e": 3.98,
+"conf": 0.728
+},
+{
+"text": "cucuk",
+"hl": true,
+"phrase": 3,
+"section": "S01 hook",
+"s": 4.02,
+"e": 4.34,
+"conf": 0.675
+},
+{
+"text": "sekali,",
+"hl": true,
+"phrase": 3,
+"section": "S01 hook",
+"s": 4.4,
+"e": 4.68,
+"conf": 0.75
+},
+{
+"text": "lepas",
+"hl": false,
+"phrase": 4,
+"section": "S01 hook",
+"s": 4.84,
+"e": 5.06,
+"conf": 0.505
+},
+{
+"text": "tu",
+"hl": false,
+"phrase": 4,
+"section": "S01 hook",
+"s": 5.1,
+"e": 5.14,
+"conf": 0.058
+},
+{
+"text": "tak",
+"hl": false,
+"phrase": 4,
+"section": "S01 hook",
+"s": 5.2,
+"e": 5.3,
+"conf": 0.373
+},
+{
+"text": "payah",
+"hl": false,
+"phrase": 4,
+"section": "S01 hook",
+"s": 5.3,
+"e": 5.52,
+"conf": 0.278
+},
+{
+"text": "makan",
+"hl": false,
+"phrase": 5,
+"section": "S01 hook",
+"s": 5.78,
+"e": 6.06,
+"conf": 0.579
+},
+{
+"text": "ubat",
+"hl": false,
+"phrase": 5,
+"section": "S01 hook",
+"s": 6.14,
+"e": 6.32,
+"conf": 0.636
+},
+{
+"text": "tablet",
+"hl": true,
+"phrase": 5,
+"section": "S01 hook",
+"s": 6.38,
+"e": 6.78,
+"conf": 0.614
+},
+{
+"text": "setiap",
+"hl": true,
+"phrase": 6,
+"section": "S01 hook",
+"s": 6.92,
+"e": 7.12,
+"conf": 0.608
+},
+{
+"text": "hari?",
+"hl": true,
+"phrase": 6,
+"section": "S01 hook",
+"s": 7.18,
+"e": 7.38,
+"conf": 0.686
+},
+{
+"text": "Ok,",
+"hl": false,
+"phrase": 7,
+"section": "S02 answer",
+"s": 7.92,
+"e": 8.041,
+"conf": 0.362
+},
+{
+"text": "jawapannya",
+"hl": false,
+"phrase": 7,
+"section": "S02 answer",
+"s": 8.081,
+"e": 8.501,
+"conf": 0.591
+},
+{
+"text": "ya,",
+"hl": true,
+"phrase": 7,
+"section": "S02 answer",
+"s": 8.681,
+"e": 8.781,
+"conf": 0.65
+},
+{
+"text": "memang",
+"hl": false,
+"phrase": 8,
+"section": "S02 answer",
+"s": 9.021,
+"e": 9.321,
+"conf": 0.877
+},
+{
+"text": "ada.",
+"hl": true,
+"phrase": 8,
+"section": "S02 answer",
+"s": 9.381,
+"e": 9.521,
+"conf": 0.797
+},
+{
+"text": "Kita",
+"hl": false,
+"phrase": 9,
+"section": "S02 answer",
+"s": 9.701,
+"e": 9.861,
+"conf": 0.901
+},
+{
+"text": "panggil",
+"hl": false,
+"phrase": 9,
+"section": "S02 answer",
+"s": 9.901,
+"e": 10.181,
+"conf": 0.713
+},
+{
+"text": "sebagai",
+"hl": false,
+"phrase": 9,
+"section": "S02 answer",
+"s": 10.201,
+"e": 10.621,
+"conf": 0.86
+},
+{
+"text": "depot",
+"hl": true,
+"phrase": 10,
+"section": "S02 answer",
+"s": 10.821,
+"e": 11.181,
+"conf": 0.492
+},
+{
+"text": "injection",
+"hl": true,
+"phrase": 10,
+"section": "S02 answer",
+"s": 11.341,
+"e": 11.861,
+"conf": 0.455
+},
+{
+"text": "ataupun",
+"hl": false,
+"phrase": 11,
+"section": "S02 answer",
+"s": 12.041,
+"e": 12.501,
+"conf": 0.594
+},
+{
+"text": "long-acting",
+"hl": true,
+"phrase": 11,
+"section": "S02 answer",
+"s": 13.101,
+"e": 13.701,
+"conf": 0.758
+},
+{
+"text": "injectable",
+"hl": true,
+"phrase": 12,
+"section": "S02 answer",
+"s": 13.821,
+"e": 14.421,
+"conf": 0.69
+},
+{
+"text": "antipsikotik.",
+"hl": true,
+"phrase": 12,
+"section": "S02 answer",
+"s": 14.521,
+"e": 15.181,
+"conf": 0.78
+},
+{
+"text": "Kalau",
+"hl": false,
+"phrase": 13,
+"section": "S03 cta",
+"s": 15.561,
+"e": 15.881,
+"conf": 0.972
+},
+{
+"text": "anda",
+"hl": false,
+"phrase": 13,
+"section": "S03 cta",
+"s": 16.001,
+"e": 16.261,
+"conf": 0.965
+},
+{
+"text": "atau",
+"hl": false,
+"phrase": 13,
+"section": "S03 cta",
+"s": 16.421,
+"e": 16.581,
+"conf": 0.879
+},
+{
+"text": "ahli",
+"hl": false,
+"phrase": 14,
+"section": "S03 cta",
+"s": 16.601,
+"e": 16.701,
+"conf": 0.671
+},
+{
+"text": "keluarga",
+"hl": false,
+"phrase": 14,
+"section": "S03 cta",
+"s": 16.741,
+"e": 16.981,
+"conf": 0.609
+},
+{
+"text": "yang",
+"hl": false,
+"phrase": 14,
+"section": "S03 cta",
+"s": 17.021,
+"e": 17.121,
+"conf": 0.963
+},
+{
+"text": "ada",
+"hl": false,
+"phrase": 14,
+"section": "S03 cta",
+"s": 17.141,
+"e": 17.221,
+"conf": 0.978
+},
+{
+"text": "masalah",
+"hl": false,
+"phrase": 15,
+"section": "S03 cta",
+"s": 17.261,
+"e": 17.481,
+"conf": 0.493
+},
+{
+"text": "skizofrenia",
+"hl": true,
+"phrase": 15,
+"section": "S03 cta",
+"s": 17.481,
+"e": 18.121,
+"conf": 0.818
+},
+{
+"text": "ataupun",
+"hl": false,
+"phrase": 16,
+"section": "S03 cta",
+"s": 18.561,
+"e": 18.901,
+"conf": 0.969
+},
+{
+"text": "gangguan",
+"hl": true,
+"phrase": 16,
+"section": "S03 cta",
+"s": 18.961,
+"e": 19.201,
+"conf": 0.562
+},
+{
+"text": "psikosis,",
+"hl": true,
+"phrase": 16,
+"section": "S03 cta",
+"s": 19.221,
+"e": 19.821,
+"conf": 0.589
+},
+{
+"text": "susah",
+"hl": false,
+"phrase": 17,
+"section": "S03 cta",
+"s": 20.181,
+"e": 20.441,
+"conf": 0.861
+},
+{
+"text": "nak",
+"hl": false,
+"phrase": 17,
+"section": "S03 cta",
+"s": 20.461,
+"e": 20.561,
+"conf": 0.43
+},
+{
+"text": "konsisten",
+"hl": true,
+"phrase": 17,
+"section": "S03 cta",
+"s": 20.581,
+"e": 20.901,
+"conf": 0.646
+},
+{
+"text": "makan",
+"hl": false,
+"phrase": 18,
+"section": "S03 cta",
+"s": 20.921,
+"e": 21.101,
+"conf": 0.636
+},
+{
+"text": "ubat,",
+"hl": false,
+"phrase": 18,
+"section": "S03 cta",
+"s": 21.141,
+"e": 21.381,
+"conf": 0.854
+},
+{
+"text": "boleh",
+"hl": false,
+"phrase": 19,
+"section": "S03 cta",
+"s": 21.501,
+"e": 21.681,
+"conf": 0.883
+},
+{
+"text": "datang",
+"hl": false,
+"phrase": 19,
+"section": "S03 cta",
+"s": 21.701,
+"e": 22.081,
+"conf": 0.91
+},
+{
+"text": "buat",
+"hl": false,
+"phrase": 19,
+"section": "S03 cta",
+"s": 22.141,
+"e": 22.341,
+"conf": 0.957
+},
+{
+"text": "saringan",
+"hl": true,
+"phrase": 20,
+"section": "S03 cta",
+"s": 22.441,
+"e": 22.841,
+"conf": 0.892
+},
+{
+"text": "dan",
+"hl": false,
+"phrase": 20,
+"section": "S03 cta",
+"s": 22.981,
+"e": 23.061,
+"conf": 0.484
+},
+{
+"text": "konsultasi",
+"hl": true,
+"phrase": 21,
+"section": "S03 cta",
+"s": 23.081,
+"e": 23.361,
+"conf": 0.387
+},
+{
+"text": "kesihatan",
+"hl": true,
+"phrase": 21,
+"section": "S03 cta",
+"s": 23.381,
+"e": 23.641,
+"conf": 0.443
+},
+{
+"text": "mental",
+"hl": true,
+"phrase": 21,
+"section": "S03 cta",
+"s": 23.681,
+"e": 23.942,
+"conf": 0.635
+},
+{
+"text": "bersama",
+"hl": false,
+"phrase": 22,
+"section": "S03 cta",
+"s": 23.962,
+"e": 24.142,
+"conf": 0.679
+},
+{
+"text": "saya,",
+"hl": false,
+"phrase": 22,
+"section": "S03 cta",
+"s": 24.202,
+"e": 24.442,
+"conf": 0.939
+},
+{
+"text": "Dr",
+"hl": true,
+"phrase": 23,
+"section": "S03 cta",
+"s": 24.982,
+"e": 25.222,
+"conf": 0.428
+},
+{
+"text": "Azren,",
+"hl": true,
+"phrase": 23,
+"section": "S03 cta",
+"s": 25.242,
+"e": 25.582,
+"conf": 0.53
+},
+{
+"text": "di",
+"hl": false,
+"phrase": 24,
+"section": "S03 cta",
+"s": 25.622,
+"e": 25.702,
+"conf": 0.733
+},
+{
+"text": "klinik",
+"hl": false,
+"phrase": 24,
+"section": "S03 cta",
+"s": 25.782,
+"e": 25.962,
+"conf": 0.257
+},
+{
+"text": "saya",
+"hl": false,
+"phrase": 24,
+"section": "S03 cta",
+"s": 26.002,
+"e": 26.162,
+"conf": 0.794
+},
+{
+"text": "di",
+"hl": false,
+"phrase": 24,
+"section": "S03 cta",
+"s": 26.202,
+"e": 26.242,
+"conf": 0.679
+},
+{
+"text": "Nilai.",
+"hl": false,
+"phrase": 24,
+"section": "S03 cta",
+"s": 26.282,
+"e": 26.522,
+"conf": 0.715
+},
+{
+"text": "Kita",
+"hl": false,
+"phrase": 25,
+"section": "S03 cta",
+"s": 26.602,
+"e": 26.722,
+"conf": 0.561
+},
+{
+"text": "tengok",
+"hl": false,
+"phrase": 25,
+"section": "S03 cta",
+"s": 26.782,
+"e": 27.102,
+"conf": 0.791
+},
+{
+"text": "dulu",
+"hl": false,
+"phrase": 25,
+"section": "S03 cta",
+"s": 27.142,
+"e": 27.382,
+"conf": 0.591
+},
+{
+"text": "rawatan",
+"hl": false,
+"phrase": 26,
+"section": "S03 cta",
+"s": 27.662,
+"e": 27.982,
+"conf": 0.771
+},
+{
+"text": "mana",
+"hl": false,
+"phrase": 26,
+"section": "S03 cta",
+"s": 28.002,
+"e": 28.202,
+"conf": 0.775
+},
+{
+"text": "yang",
+"hl": false,
+"phrase": 26,
+"section": "S03 cta",
+"s": 28.262,
+"e": 28.382,
+"conf": 0.819
+},
+{
+"text": "sesuai.",
+"hl": true,
+"phrase": 26,
+"section": "S03 cta",
+"s": 28.402,
+"e": 28.702,
+"conf": 0.828
+},
+{
+"text": "Ok,",
+"hl": false,
+"phrase": 27,
+"section": "S04 why",
+"s": 29.482,
+"e": 29.642,
+"conf": 0.654
+},
+{
+"text": "balik",
+"hl": false,
+"phrase": 27,
+"section": "S04 why",
+"s": 29.682,
+"e": 29.882,
+"conf": 0.885
+},
+{
+"text": "kepada",
+"hl": false,
+"phrase": 27,
+"section": "S04 why",
+"s": 29.902,
+"e": 30.082,
+"conf": 0.953
+},
+{
+"text": "soalan",
+"hl": false,
+"phrase": 28,
+"section": "S04 why",
+"s": 30.122,
+"e": 30.342,
+"conf": 0.783
+},
+{
+"text": "tadi.",
+"hl": false,
+"phrase": 28,
+"section": "S04 why",
+"s": 30.382,
+"e": 30.542,
+"conf": 0.689
+},
+{
+"text": "Kenapa",
+"hl": false,
+"phrase": 29,
+"section": "S04 why",
+"s": 30.862,
+"e": 31.242,
+"conf": 0.937
+},
+{
+"text": "ada",
+"hl": false,
+"phrase": 29,
+"section": "S04 why",
+"s": 31.362,
+"e": 31.562,
+"conf": 0.865
+},
+{
+"text": "ubat",
+"hl": false,
+"phrase": 29,
+"section": "S04 why",
+"s": 31.662,
+"e": 31.842,
+"conf": 0.887
+},
+{
+"text": "yang",
+"hl": false,
+"phrase": 30,
+"section": "S04 why",
+"s": 31.862,
+"e": 31.942,
+"conf": 0.927
+},
+{
+"text": "kena",
+"hl": false,
+"phrase": 30,
+"section": "S04 why",
+"s": 31.942,
+"e": 32.082,
+"conf": 0.838
+},
+{
+"text": "cucuk?",
+"hl": true,
+"phrase": 30,
+"section": "S04 why",
+"s": 32.122,
+"e": 32.502,
+"conf": 0.811
+},
+{
+"text": "Bukan",
+"hl": false,
+"phrase": 31,
+"section": "S04 why",
+"s": 33.322,
+"e": 33.562,
+"conf": 0.904
+},
+{
+"text": "sebab",
+"hl": false,
+"phrase": 31,
+"section": "S04 why",
+"s": 33.582,
+"e": 33.742,
+"conf": 0.731
+},
+{
+"text": "pesakit",
+"hl": false,
+"phrase": 31,
+"section": "S04 why",
+"s": 33.762,
+"e": 34.082,
+"conf": 0.921
+},
+{
+"text": "tu",
+"hl": false,
+"phrase": 32,
+"section": "S04 why",
+"s": 34.122,
+"e": 34.182,
+"conf": 0.819
+},
+{
+"text": "teruk",
+"hl": true,
+"phrase": 32,
+"section": "S04 why",
+"s": 34.242,
+"e": 34.502,
+"conf": 0.796
+},
+{
+"text": "ke?",
+"hl": false,
+"phrase": 32,
+"section": "S04 why",
+"s": 34.582,
+"e": 34.662,
+"conf": 0.765
+},
+{
+"text": "Tapi",
+"hl": false,
+"phrase": 33,
+"section": "S04 why",
+"s": 35.622,
+"e": 35.882,
+"conf": 0.973
+},
+{
+"text": "untuk",
+"hl": false,
+"phrase": 33,
+"section": "S04 why",
+"s": 36.042,
+"e": 36.262,
+"conf": 0.974
+},
+{
+"text": "setengah",
+"hl": false,
+"phrase": 33,
+"section": "S04 why",
+"s": 36.322,
+"e": 36.622,
+"conf": 0.963
+},
+{
+"text": "pesakit,",
+"hl": false,
+"phrase": 33,
+"section": "S04 why",
+"s": 36.662,
+"e": 37.182,
+"conf": 0.953
+},
+{
+"text": "ada",
+"hl": false,
+"phrase": 34,
+"section": "S04 why",
+"s": 37.522,
+"e": 37.702,
+"conf": 0.968
+},
+{
+"text": "yang",
+"hl": false,
+"phrase": 34,
+"section": "S04 why",
+"s": 37.782,
+"e": 37.962,
+"conf": 0.979
+},
+{
+"text": "susah",
+"hl": true,
+"phrase": 34,
+"section": "S04 why",
+"s": 38.042,
+"e": 38.542,
+"conf": 0.984
+},
+{
+"text": "nak",
+"hl": true,
+"phrase": 34,
+"section": "S04 why",
+"s": 38.622,
+"e": 38.742,
+"conf": 0.636
+},
+{
+"text": "ingat",
+"hl": true,
+"phrase": 34,
+"section": "S04 why",
+"s": 38.782,
+"e": 39.062,
+"conf": 0.962
+},
+{
+"text": "makan",
+"hl": false,
+"phrase": 35,
+"section": "S04 why",
+"s": 39.202,
+"e": 39.502,
+"conf": 0.98
+},
+{
+"text": "ubat",
+"hl": false,
+"phrase": 35,
+"section": "S04 why",
+"s": 39.602,
+"e": 39.842,
+"conf": 0.973
+},
+{
+"text": "tablet",
+"hl": false,
+"phrase": 35,
+"section": "S04 why",
+"s": 39.943,
+"e": 40.323,
+"conf": 0.774
+},
+{
+"text": "hari-hari.",
+"hl": true,
+"phrase": 36,
+"section": "S04 why",
+"s": 40.363,
+"e": 40.763,
+"conf": 0.97
+},
+{
+"text": "Dengan",
+"hl": false,
+"phrase": 37,
+"section": "S05 mechanism",
+"s": 41.423,
+"e": 41.643,
+"conf": 0.971
+},
+{
+"text": "ubat",
+"hl": false,
+"phrase": 37,
+"section": "S05 mechanism",
+"s": 41.723,
+"e": 41.943,
+"conf": 0.985
+},
+{
+"text": "depot",
+"hl": false,
+"phrase": 37,
+"section": "S05 mechanism",
+"s": 41.983,
+"e": 42.243,
+"conf": 0.826
+},
+{
+"text": "injection",
+"hl": false,
+"phrase": 37,
+"section": "S05 mechanism",
+"s": 42.303,
+"e": 42.783,
+"conf": 0.666
+},
+{
+"text": "ni,",
+"hl": false,
+"phrase": 37,
+"section": "S05 mechanism",
+"s": 42.823,
+"e": 42.903,
+"conf": 0.353
+},
+{
+"text": "ubat",
+"hl": false,
+"phrase": 38,
+"section": "S05 mechanism",
+"s": 43.803,
+"e": 44.063,
+"conf": 0.928
+},
+{
+"text": "ni",
+"hl": false,
+"phrase": 38,
+"section": "S05 mechanism",
+"s": 44.123,
+"e": 44.183,
+"conf": 0.834
+},
+{
+"text": "akan",
+"hl": false,
+"phrase": 38,
+"section": "S05 mechanism",
+"s": 44.303,
+"e": 44.543,
+"conf": 0.917
+},
+{
+"text": "dilepas",
+"hl": true,
+"phrase": 38,
+"section": "S05 mechanism",
+"s": 44.563,
+"e": 45.063,
+"conf": 0.976
+},
+{
+"text": "secara",
+"hl": false,
+"phrase": 39,
+"section": "S05 mechanism",
+"s": 45.123,
+"e": 45.483,
+"conf": 0.989
+},
+{
+"text": "perlahan-lahan",
+"hl": true,
+"phrase": 39,
+"section": "S05 mechanism",
+"s": 45.563,
+"e": 46.263,
+"conf": 0.869
+},
+{
+"text": "dalam",
+"hl": false,
+"phrase": 40,
+"section": "S05 mechanism",
+"s": 46.343,
+"e": 46.563,
+"conf": 0.987
+},
+{
+"text": "badan",
+"hl": false,
+"phrase": 40,
+"section": "S05 mechanism",
+"s": 46.603,
+"e": 46.943,
+"conf": 0.974
+},
+{
+"text": "selama",
+"hl": false,
+"phrase": 41,
+"section": "S05 mechanism",
+"s": 47.003,
+"e": 47.303,
+"conf": 0.985
+},
+{
+"text": "beberapa",
+"hl": true,
+"phrase": 41,
+"section": "S05 mechanism",
+"s": 47.363,
+"e": 47.643,
+"conf": 0.967
+},
+{
+"text": "minggu.",
+"hl": true,
+"phrase": 41,
+"section": "S05 mechanism",
+"s": 47.683,
+"e": 47.943,
+"conf": 0.985
+},
+{
+"text": "Jadi",
+"hl": false,
+"phrase": 42,
+"section": "S05 mechanism",
+"s": 48.103,
+"e": 48.343,
+"conf": 0.962
+},
+{
+"text": "paras",
+"hl": false,
+"phrase": 42,
+"section": "S05 mechanism",
+"s": 48.463,
+"e": 48.763,
+"conf": 0.974
+},
+{
+"text": "ubat",
+"hl": false,
+"phrase": 42,
+"section": "S05 mechanism",
+"s": 48.943,
+"e": 49.243,
+"conf": 0.946
+},
+{
+"text": "lebih",
+"hl": false,
+"phrase": 43,
+"section": "S05 mechanism",
+"s": 49.703,
+"e": 50.003,
+"conf": 0.976
+},
+{
+"text": "konsisten.",
+"hl": true,
+"phrase": 43,
+"section": "S05 mechanism",
+"s": 50.083,
+"e": 50.703,
+"conf": 0.912
+},
+{
+"text": "Dan",
+"hl": false,
+"phrase": 44,
+"section": "S05 mechanism",
+"s": 50.943,
+"e": 51.043,
+"conf": 0.977
+},
+{
+"text": "kita",
+"hl": false,
+"phrase": 44,
+"section": "S05 mechanism",
+"s": 51.123,
+"e": 51.263,
+"conf": 0.987
+},
+{
+"text": "tidak",
+"hl": false,
+"phrase": 44,
+"section": "S05 mechanism",
+"s": 51.303,
+"e": 51.483,
+"conf": 0.986
+},
+{
+"text": "perlu",
+"hl": false,
+"phrase": 44,
+"section": "S05 mechanism",
+"s": 51.663,
+"e": 51.903,
+"conf": 0.957
+},
+{
+"text": "bergantung",
+"hl": false,
+"phrase": 45,
+"section": "S05 mechanism",
+"s": 51.943,
+"e": 52.443,
+"conf": 0.911
+},
+{
+"text": "kepada",
+"hl": false,
+"phrase": 45,
+"section": "S05 mechanism",
+"s": 52.483,
+"e": 52.863,
+"conf": 0.967
+},
+{
+"text": "ubat",
+"hl": false,
+"phrase": 46,
+"section": "S05 mechanism",
+"s": 52.963,
+"e": 53.143,
+"conf": 0.988
+},
+{
+"text": "pil",
+"hl": false,
+"phrase": 46,
+"section": "S05 mechanism",
+"s": 53.323,
+"e": 53.503,
+"conf": 0.868
+},
+{
+"text": "setiap",
+"hl": false,
+"phrase": 46,
+"section": "S05 mechanism",
+"s": 53.583,
+"e": 53.783,
+"conf": 0.788
+},
+{
+"text": "hari.",
+"hl": false,
+"phrase": 46,
+"section": "S05 mechanism",
+"s": 53.823,
+"e": 54.003,
+"conf": 0.976
+},
+{
+"text": "Antara",
+"hl": false,
+"phrase": 47,
+"section": "S06 list",
+"s": 54.963,
+"e": 55.263,
+"conf": 0.97
+},
+{
+"text": "ubat",
+"hl": false,
+"phrase": 47,
+"section": "S06 list",
+"s": 55.343,
+"e": 55.643,
+"conf": 0.892
+},
+{
+"text": "depot",
+"hl": false,
+"phrase": 47,
+"section": "S06 list",
+"s": 56.004,
+"e": 56.404,
+"conf": 0.756
+},
+{
+"text": "generasi",
+"hl": true,
+"phrase": 48,
+"section": "S06 list",
+"s": 56.764,
+"e": 57.164,
+"conf": 0.859
+},
+{
+"text": "lama",
+"hl": true,
+"phrase": 48,
+"section": "S06 list",
+"s": 57.224,
+"e": 57.464,
+"conf": 0.972
+},
+{
+"text": "yang",
+"hl": false,
+"phrase": 49,
+"section": "S06 list",
+"s": 57.584,
+"e": 57.764,
+"conf": 0.84
+},
+{
+"text": "anda",
+"hl": false,
+"phrase": 49,
+"section": "S06 list",
+"s": 58.024,
+"e": 58.284,
+"conf": 0.974
+},
+{
+"text": "mungkin",
+"hl": false,
+"phrase": 49,
+"section": "S06 list",
+"s": 58.744,
+"e": 59.044,
+"conf": 0.968
+},
+{
+"text": "pernah",
+"hl": false,
+"phrase": 50,
+"section": "S06 list",
+"s": 59.084,
+"e": 59.244,
+"conf": 0.744
+},
+{
+"text": "dengar",
+"hl": false,
+"phrase": 50,
+"section": "S06 list",
+"s": 59.264,
+"e": 59.504,
+"conf": 0.755
+},
+{
+"text": "adalah",
+"hl": false,
+"phrase": 50,
+"section": "S06 list",
+"s": 59.564,
+"e": 59.924,
+"conf": 0.935
+},
+{
+"text": "yang",
+"hl": false,
+"phrase": 51,
+"section": "S07 clopixol",
+"s": 60.064,
+"e": 60.164,
+"conf": 0.968
+},
+{
+"text": "pertama",
+"hl": true,
+"phrase": 51,
+"section": "S07 clopixol",
+"s": 60.164,
+"e": 60.464,
+"conf": 0.878
+},
+{
+"text": "adalah",
+"hl": false,
+"phrase": 51,
+"section": "S07 clopixol",
+"s": 60.524,
+"e": 60.744,
+"conf": 0.97
+},
+{
+"text": "Clopixol",
+"hl": true,
+"phrase": 52,
+"section": "S07 clopixol",
+"s": 60.804,
+"e": 61.404,
+"conf": 0.864
+},
+{
+"text": "Depot",
+"hl": true,
+"phrase": 52,
+"section": "S07 clopixol",
+"s": 61.424,
+"e": 61.684,
+"conf": 0.805
+},
+{
+"text": "ataupun",
+"hl": false,
+"phrase": 53,
+"section": "S07 clopixol",
+"s": 61.804,
+"e": 62.144,
+"conf": 0.931
+},
+{
+"text": "zuclopenthixol",
+"hl": true,
+"phrase": 53,
+"section": "S07 clopixol",
+"s": 62.184,
+"e": 63.124,
+"conf": 0.801
+},
+{
+"text": "decanoate.",
+"hl": true,
+"phrase": 53,
+"section": "S07 clopixol",
+"s": 63.164,
+"e": 63.644,
+"conf": 0.61
+},
+{
+"text": "Ini",
+"hl": false,
+"phrase": 54,
+"section": "S07 clopixol",
+"s": 64.324,
+"e": 64.444,
+"conf": 0.721
+},
+{
+"text": "adalah",
+"hl": false,
+"phrase": 54,
+"section": "S07 clopixol",
+"s": 64.504,
+"e": 64.704,
+"conf": 0.893
+},
+{
+"text": "antipsikotik",
+"hl": false,
+"phrase": 54,
+"section": "S07 clopixol",
+"s": 64.724,
+"e": 65.324,
+"conf": 0.803
+},
+{
+"text": "yang",
+"hl": false,
+"phrase": 55,
+"section": "S07 clopixol",
+"s": 65.364,
+"e": 65.464,
+"conf": 0.903
+},
+{
+"text": "biasa",
+"hl": false,
+"phrase": 55,
+"section": "S07 clopixol",
+"s": 65.464,
+"e": 65.684,
+"conf": 0.947
+},
+{
+"text": "digunakan",
+"hl": false,
+"phrase": 55,
+"section": "S07 clopixol",
+"s": 65.744,
+"e": 66.284,
+"conf": 0.95
+},
+{
+"text": "dalam",
+"hl": false,
+"phrase": 56,
+"section": "S07 clopixol",
+"s": 66.344,
+"e": 66.644,
+"conf": 0.984
+},
+{
+"text": "maintenance",
+"hl": true,
+"phrase": 56,
+"section": "S07 clopixol",
+"s": 66.764,
+"e": 67.224,
+"conf": 0.744
+},
+{
+"text": "treatment.",
+"hl": true,
+"phrase": 56,
+"section": "S07 clopixol",
+"s": 67.264,
+"e": 67.644,
+"conf": 0.793
+},
+{
+"text": "Terutamanya",
+"hl": false,
+"phrase": 57,
+"section": "S07 clopixol",
+"s": 67.724,
+"e": 68.304,
+"conf": 0.688
+},
+{
+"text": "dalam",
+"hl": false,
+"phrase": 57,
+"section": "S07 clopixol",
+"s": 68.384,
+"e": 68.584,
+"conf": 0.85
+},
+{
+"text": "kes",
+"hl": false,
+"phrase": 57,
+"section": "S07 clopixol",
+"s": 68.704,
+"e": 68.924,
+"conf": 0.258
+},
+{
+"text": "skizofrenia",
+"hl": true,
+"phrase": 58,
+"section": "S07 clopixol",
+"s": 69.384,
+"e": 69.984,
+"conf": 0.857
+},
+{
+"text": "ataupun",
+"hl": false,
+"phrase": 58,
+"section": "S07 clopixol",
+"s": 70.224,
+"e": 70.624,
+"conf": 0.963
+},
+{
+"text": "psychotic",
+"hl": true,
+"phrase": 59,
+"section": "S07 clopixol",
+"s": 70.844,
+"e": 71.324,
+"conf": 0.783
+},
+{
+"text": "disorder.",
+"hl": true,
+"phrase": 59,
+"section": "S07 clopixol",
+"s": 71.344,
+"e": 71.764,
+"conf": 0.661
+},
+{
+"text": "Biasanya",
+"hl": false,
+"phrase": 60,
+"section": "S07 clopixol",
+"s": 72.325,
+"e": 72.705,
+"conf": 0.975
+},
+{
+"text": "injection",
+"hl": false,
+"phrase": 60,
+"section": "S07 clopixol",
+"s": 72.765,
+"e": 73.125,
+"conf": 0.628
+},
+{
+"text": "ni",
+"hl": false,
+"phrase": 60,
+"section": "S07 clopixol",
+"s": 73.145,
+"e": 73.185,
+"conf": 0.521
+},
+{
+"text": "diberikan",
+"hl": false,
+"phrase": 61,
+"section": "S07 clopixol",
+"s": 73.245,
+"e": 73.805,
+"conf": 0.975
+},
+{
+"text": "secara",
+"hl": false,
+"phrase": 61,
+"section": "S07 clopixol",
+"s": 73.865,
+"e": 74.225,
+"conf": 0.985
+},
+{
+"text": "berkala",
+"hl": true,
+"phrase": 61,
+"section": "S07 clopixol",
+"s": 74.285,
+"e": 74.765,
+"conf": 0.984
+},
+{
+"text": "mengikut",
+"hl": false,
+"phrase": 62,
+"section": "S07 clopixol",
+"s": 75.105,
+"e": 75.465,
+"conf": 0.752
+},
+{
+"text": "dos",
+"hl": true,
+"phrase": 62,
+"section": "S07 clopixol",
+"s": 75.545,
+"e": 75.765,
+"conf": 0.695
+},
+{
+"text": "dan",
+"hl": false,
+"phrase": 62,
+"section": "S07 clopixol",
+"s": 75.965,
+"e": 76.085,
+"conf": 0.9
+},
+{
+"text": "keadaan",
+"hl": true,
+"phrase": 63,
+"section": "S07 clopixol",
+"s": 76.125,
+"e": 76.385,
+"conf": 0.687
+},
+{
+"text": "pesakit.",
+"hl": true,
+"phrase": 63,
+"section": "S07 clopixol",
+"s": 76.385,
+"e": 76.765,
+"conf": 0.947
+},
+{
+"text": "Tapi",
+"hl": false,
+"phrase": 64,
+"section": "S07 clopixol",
+"s": 77.045,
+"e": 77.245,
+"conf": 0.988
+},
+{
+"text": "jangan",
+"hl": false,
+"phrase": 64,
+"section": "S07 clopixol",
+"s": 77.305,
+"e": 77.565,
+"conf": 0.981
+},
+{
+"text": "confused",
+"hl": true,
+"phrase": 64,
+"section": "S07 clopixol",
+"s": 77.625,
+"e": 78.025,
+"conf": 0.897
+},
+{
+"text": "dengan",
+"hl": false,
+"phrase": 64,
+"section": "S07 clopixol",
+"s": 78.085,
+"e": 78.245,
+"conf": 0.979
+},
+{
+"text": "Clopixol",
+"hl": true,
+"phrase": 65,
+"section": "S07 clopixol",
+"s": 78.305,
+"e": 78.845,
+"conf": 0.8
+},
+{
+"text": "Acuphase.",
+"hl": true,
+"phrase": 65,
+"section": "S07 clopixol",
+"s": 78.885,
+"e": 79.345,
+"conf": 0.669
+},
+{
+"text": "Ini",
+"hl": false,
+"phrase": 66,
+"section": "S07 clopixol",
+"s": 79.525,
+"e": 79.625,
+"conf": 0.599
+},
+{
+"text": "adalah",
+"hl": false,
+"phrase": 66,
+"section": "S07 clopixol",
+"s": 79.685,
+"e": 79.905,
+"conf": 0.924
+},
+{
+"text": "dua",
+"hl": false,
+"phrase": 66,
+"section": "S07 clopixol",
+"s": 79.925,
+"e": 80.025,
+"conf": 0.954
+},
+{
+"text": "benda",
+"hl": false,
+"phrase": 66,
+"section": "S07 clopixol",
+"s": 80.065,
+"e": 80.225,
+"conf": 0.444
+},
+{
+"text": "yang",
+"hl": false,
+"phrase": 67,
+"section": "S07 clopixol",
+"s": 80.225,
+"e": 80.305,
+"conf": 0.019
+},
+{
+"text": "berbezalah.",
+"hl": true,
+"phrase": 67,
+"section": "S07 clopixol",
+"s": 80.305,
+"e": 80.805,
+"conf": 0.875
+},
+{
+"text": "Yang",
+"hl": false,
+"phrase": 68,
+"section": "S08 fluanxol",
+"s": 81.325,
+"e": 81.405,
+"conf": 0.956
+},
+{
+"text": "kedua",
+"hl": true,
+"phrase": 68,
+"section": "S08 fluanxol",
+"s": 81.425,
+"e": 81.625,
+"conf": 0.977
+},
+{
+"text": "adalah",
+"hl": false,
+"phrase": 68,
+"section": "S08 fluanxol",
+"s": 81.705,
+"e": 81.945,
+"conf": 0.985
+},
+{
+"text": "Fluanxol",
+"hl": true,
+"phrase": 69,
+"section": "S08 fluanxol",
+"s": 81.985,
+"e": 82.605,
+"conf": 0.665
+},
+{
+"text": "Depot",
+"hl": true,
+"phrase": 69,
+"section": "S08 fluanxol",
+"s": 82.645,
+"e": 82.945,
+"conf": 0.871
+},
+{
+"text": "iaitu",
+"hl": false,
+"phrase": 70,
+"section": "S08 fluanxol",
+"s": 83.065,
+"e": 83.345,
+"conf": 0.775
+},
+{
+"text": "flupentixol",
+"hl": true,
+"phrase": 70,
+"section": "S08 fluanxol",
+"s": 83.465,
+"e": 84.645,
+"conf": 0.821
+},
+{
+"text": "decanoate.",
+"hl": true,
+"phrase": 70,
+"section": "S08 fluanxol",
+"s": 84.985,
+"e": 85.565,
+"conf": 0.543
+},
+{
+"text": "Ini",
+"hl": false,
+"phrase": 71,
+"section": "S08 fluanxol",
+"s": 86.085,
+"e": 86.245,
+"conf": 0.817
+},
+{
+"text": "pun",
+"hl": false,
+"phrase": 71,
+"section": "S08 fluanxol",
+"s": 86.325,
+"e": 86.465,
+"conf": 0.912
+},
+{
+"text": "adalah",
+"hl": false,
+"phrase": 71,
+"section": "S08 fluanxol",
+"s": 86.525,
+"e": 86.825,
+"conf": 0.885
+},
+{
+"text": "antipsikotik",
+"hl": false,
+"phrase": 72,
+"section": "S08 fluanxol",
+"s": 86.925,
+"e": 87.665,
+"conf": 0.752
+},
+{
+"text": "punya",
+"hl": false,
+"phrase": 72,
+"section": "S08 fluanxol",
+"s": 87.705,
+"e": 87.866,
+"conf": 0.401
+},
+{
+"text": "depot.",
+"hl": false,
+"phrase": 72,
+"section": "S08 fluanxol",
+"s": 87.886,
+"e": 88.146,
+"conf": 0.576
+},
+{
+"text": "Fungsi",
+"hl": false,
+"phrase": 73,
+"section": "S08 fluanxol",
+"s": 88.306,
+"e": 88.546,
+"conf": 0.869
+},
+{
+"text": "dia",
+"hl": false,
+"phrase": 73,
+"section": "S08 fluanxol",
+"s": 88.586,
+"e": 88.646,
+"conf": 0.523
+},
+{
+"text": "sama.",
+"hl": true,
+"phrase": 73,
+"section": "S08 fluanxol",
+"s": 88.706,
+"e": 88.966,
+"conf": 0.818
+},
+{
+"text": "Secara",
+"hl": false,
+"phrase": 74,
+"section": "S08 fluanxol",
+"s": 89.126,
+"e": 89.326,
+"conf": 0.928
+},
+{
+"text": "umum",
+"hl": false,
+"phrase": 74,
+"section": "S08 fluanxol",
+"s": 89.426,
+"e": 89.646,
+"conf": 0.864
+},
+{
+"text": "dia,",
+"hl": false,
+"phrase": 74,
+"section": "S08 fluanxol",
+"s": 89.706,
+"e": 90.066,
+"conf": 0.675
+},
+{
+"text": "kurangkan",
+"hl": false,
+"phrase": 75,
+"section": "S08 fluanxol",
+"s": 90.126,
+"e": 90.506,
+"conf": 0.824
+},
+{
+"text": "halusinasi,",
+"hl": true,
+"phrase": 75,
+"section": "S08 fluanxol",
+"s": 90.546,
+"e": 91.166,
+"conf": 0.95
+},
+{
+"text": "delusi,",
+"hl": true,
+"phrase": 76,
+"section": "S08 fluanxol",
+"s": 91.806,
+"e": 92.266,
+"conf": 0.807
+},
+{
+"text": "mengurangkan",
+"hl": false,
+"phrase": 77,
+"section": "S08 fluanxol",
+"s": 93.006,
+"e": 93.446,
+"conf": 0.9
+},
+{
+"text": "paranoid",
+"hl": true,
+"phrase": 77,
+"section": "S08 fluanxol",
+"s": 93.486,
+"e": 93.966,
+"conf": 0.622
+},
+{
+"text": "dan",
+"hl": false,
+"phrase": 78,
+"section": "S08 fluanxol",
+"s": 94.346,
+"e": 94.486,
+"conf": 0.979
+},
+{
+"text": "boleh",
+"hl": false,
+"phrase": 78,
+"section": "S08 fluanxol",
+"s": 94.666,
+"e": 94.886,
+"conf": 0.93
+},
+{
+"text": "bantu",
+"hl": false,
+"phrase": 78,
+"section": "S08 fluanxol",
+"s": 95.026,
+"e": 95.306,
+"conf": 0.992
+},
+{
+"text": "mencegah",
+"hl": true,
+"phrase": 78,
+"section": "S08 fluanxol",
+"s": 95.366,
+"e": 95.826,
+"conf": 0.954
+},
+{
+"text": "simptom",
+"hl": false,
+"phrase": 79,
+"section": "S08 fluanxol",
+"s": 96.086,
+"e": 96.546,
+"conf": 0.865
+},
+{
+"text": "psikotik",
+"hl": false,
+"phrase": 79,
+"section": "S08 fluanxol",
+"s": 96.566,
+"e": 97.126,
+"conf": 0.79
+},
+{
+"text": "daripada",
+"hl": false,
+"phrase": 80,
+"section": "S08 fluanxol",
+"s": 97.986,
+"e": 98.286,
+"conf": 0.634
+},
+{
+"text": "relapse.",
+"hl": true,
+"phrase": 80,
+"section": "S08 fluanxol",
+"s": 98.346,
+"e": 98.786,
+"conf": 0.894
+},
+{
+"text": "Dan",
+"hl": false,
+"phrase": 81,
+"section": "S09 modecate",
+"s": 99.226,
+"e": 99.346,
+"conf": 0.459
+},
+{
+"text": "yang",
+"hl": false,
+"phrase": 81,
+"section": "S09 modecate",
+"s": 99.426,
+"e": 99.546,
+"conf": 0.816
+},
+{
+"text": "seterusnya",
+"hl": false,
+"phrase": 81,
+"section": "S09 modecate",
+"s": 99.546,
+"e": 99.926,
+"conf": 0.95
+},
+{
+"text": "adalah",
+"hl": false,
+"phrase": 81,
+"section": "S09 modecate",
+"s": 99.986,
+"e": 100.226,
+"conf": 0.973
+},
+{
+"text": "Modecate",
+"hl": true,
+"phrase": 82,
+"section": "S09 modecate",
+"s": 100.286,
+"e": 100.806,
+"conf": 0.887
+},
+{
+"text": "fluphenazine",
+"hl": true,
+"phrase": 83,
+"section": "S09 modecate",
+"s": 101.226,
+"e": 101.906,
+"conf": 0.752
+},
+{
+"text": "decanoate.",
+"hl": true,
+"phrase": 83,
+"section": "S09 modecate",
+"s": 101.966,
+"e": 102.506,
+"conf": 0.616
+},
+{
+"text": "Ini",
+"hl": false,
+"phrase": 84,
+"section": "S09 modecate",
+"s": 102.806,
+"e": 102.966,
+"conf": 0.969
+},
+{
+"text": "juga",
+"hl": false,
+"phrase": 84,
+"section": "S09 modecate",
+"s": 103.006,
+"e": 103.206,
+"conf": 0.991
+},
+{
+"text": "adalah",
+"hl": false,
+"phrase": 84,
+"section": "S09 modecate",
+"s": 103.266,
+"e": 103.586,
+"conf": 0.968
+},
+{
+"text": "antipsikotik",
+"hl": false,
+"phrase": 85,
+"section": "S09 modecate",
+"s": 103.807,
+"e": 104.547,
+"conf": 0.805
+},
+{
+"text": "depot",
+"hl": false,
+"phrase": 85,
+"section": "S09 modecate",
+"s": 104.587,
+"e": 104.947,
+"conf": 0.896
+},
+{
+"text": "generasi",
+"hl": true,
+"phrase": 86,
+"section": "S09 modecate",
+"s": 105.267,
+"e": 105.707,
+"conf": 0.899
+},
+{
+"text": "pertama",
+"hl": true,
+"phrase": 86,
+"section": "S09 modecate",
+"s": 105.747,
+"e": 106.087,
+"conf": 0.949
+},
+{
+"text": "yang",
+"hl": false,
+"phrase": 87,
+"section": "S09 modecate",
+"s": 106.247,
+"e": 106.347,
+"conf": 0.982
+},
+{
+"text": "digunakan",
+"hl": false,
+"phrase": 87,
+"section": "S09 modecate",
+"s": 106.367,
+"e": 106.807,
+"conf": 0.945
+},
+{
+"text": "untuk",
+"hl": false,
+"phrase": 87,
+"section": "S09 modecate",
+"s": 106.907,
+"e": 107.247,
+"conf": 0.968
+},
+{
+"text": "maintenance",
+"hl": true,
+"phrase": 88,
+"section": "S09 modecate",
+"s": 107.287,
+"e": 107.847,
+"conf": 0.736
+},
+{
+"text": "dalam",
+"hl": false,
+"phrase": 88,
+"section": "S09 modecate",
+"s": 107.867,
+"e": 108.067,
+"conf": 0.942
+},
+{
+"text": "kes",
+"hl": false,
+"phrase": 88,
+"section": "S09 modecate",
+"s": 108.147,
+"e": 108.227,
+"conf": 0.458
+},
+{
+"text": "skizofrenia.",
+"hl": false,
+"phrase": 89,
+"section": "S09 modecate",
+"s": 108.267,
+"e": 108.867,
+"conf": 0.856
+},
+{
+"text": "Konsep",
+"hl": false,
+"phrase": 90,
+"section": "S09 modecate",
+"s": 108.987,
+"e": 109.247,
+"conf": 0.978
+},
+{
+"text": "dia",
+"hl": false,
+"phrase": 90,
+"section": "S09 modecate",
+"s": 109.267,
+"e": 109.327,
+"conf": 0.294
+},
+{
+"text": "sama",
+"hl": false,
+"phrase": 90,
+"section": "S09 modecate",
+"s": 109.347,
+"e": 109.547,
+"conf": 0.983
+},
+{
+"text": "je.",
+"hl": false,
+"phrase": 90,
+"section": "S09 modecate",
+"s": 109.627,
+"e": 109.707,
+"conf": 0.473
+},
+{
+"text": "Satu",
+"hl": false,
+"phrase": 91,
+"section": "S09 modecate",
+"s": 110.147,
+"e": 110.347,
+"conf": 0.932
+},
+{
+"text": "injection",
+"hl": true,
+"phrase": 91,
+"section": "S09 modecate",
+"s": 110.407,
+"e": 110.807,
+"conf": 0.671
+},
+{
+"text": "ni",
+"hl": false,
+"phrase": 91,
+"section": "S09 modecate",
+"s": 110.827,
+"e": 110.867,
+"conf": 0.536
+},
+{
+"text": "dia",
+"hl": false,
+"phrase": 91,
+"section": "S09 modecate",
+"s": 110.907,
+"e": 111.007,
+"conf": 0.949
+},
+{
+"text": "boleh",
+"hl": false,
+"phrase": 92,
+"section": "S09 modecate",
+"s": 111.027,
+"e": 111.207,
+"conf": 0.974
+},
+{
+"text": "bagi",
+"hl": false,
+"phrase": 92,
+"section": "S09 modecate",
+"s": 111.227,
+"e": 111.567,
+"conf": 0.982
+},
+{
+"text": "kesan",
+"hl": true,
+"phrase": 92,
+"section": "S09 modecate",
+"s": 111.927,
+"e": 112.227,
+"conf": 0.973
+},
+{
+"text": "ubat",
+"hl": true,
+"phrase": 92,
+"section": "S09 modecate",
+"s": 112.327,
+"e": 112.567,
+"conf": 0.93
+},
+{
+"text": "yang",
+"hl": false,
+"phrase": 93,
+"section": "S09 modecate",
+"s": 113.047,
+"e": 113.187,
+"conf": 0.988
+},
+{
+"text": "berpanjangan",
+"hl": true,
+"phrase": 93,
+"section": "S09 modecate",
+"s": 113.207,
+"e": 113.827,
+"conf": 0.965
+},
+{
+"text": "bergantung",
+"hl": false,
+"phrase": 94,
+"section": "S09 modecate",
+"s": 114.087,
+"e": 114.547,
+"conf": 0.974
+},
+{
+"text": "kepada",
+"hl": false,
+"phrase": 94,
+"section": "S09 modecate",
+"s": 114.587,
+"e": 114.947,
+"conf": 0.992
+},
+{
+"text": "rejim",
+"hl": true,
+"phrase": 95,
+"section": "S09 modecate",
+"s": 115.127,
+"e": 115.447,
+"conf": 0.867
+},
+{
+"text": "yang",
+"hl": false,
+"phrase": 95,
+"section": "S09 modecate",
+"s": 115.507,
+"e": 115.647,
+"conf": 0.984
+},
+{
+"text": "doktor",
+"hl": false,
+"phrase": 95,
+"section": "S09 modecate",
+"s": 115.687,
+"e": 115.947,
+"conf": 0.578
+},
+{
+"text": "dah",
+"hl": false,
+"phrase": 96,
+"section": "S09 modecate",
+"s": 115.967,
+"e": 116.107,
+"conf": 0.684
+},
+{
+"text": "set-kan",
+"hl": false,
+"phrase": 96,
+"section": "S09 modecate",
+"s": 116.587,
+"e": 116.907,
+"conf": 0.882
+},
+{
+"text": "lah.",
+"hl": false,
+"phrase": 96,
+"section": "S09 modecate",
+"s": 116.967,
+"e": 117.067,
+"conf": 0.958
+},
+{
+"text": "Jadi",
+"hl": false,
+"phrase": 97,
+"section": "S10 side effects",
+"s": 117.607,
+"e": 117.747,
+"conf": 0.962
+},
+{
+"text": "apa",
+"hl": false,
+"phrase": 97,
+"section": "S10 side effects",
+"s": 117.787,
+"e": 117.947,
+"conf": 0.943
+},
+{
+"text": "kesan-kesan",
+"hl": true,
+"phrase": 98,
+"section": "S10 side effects",
+"s": 118.007,
+"e": 118.247,
+"conf": 0.193
+},
+{
+"text": "sampingan",
+"hl": true,
+"phrase": 98,
+"section": "S10 side effects",
+"s": 118.247,
+"e": 118.587,
+"conf": 0.44
+},
+{
+"text": "ubat-ubat",
+"hl": false,
+"phrase": 99,
+"section": "S10 side effects",
+"s": 118.627,
+"e": 119.007,
+"conf": 0.756
+},
+{
+"text": "ni?",
+"hl": false,
+"phrase": 99,
+"section": "S10 side effects",
+"s": 119.047,
+"e": 119.127,
+"conf": 0.693
+},
+{
+"text": "Sebab",
+"hl": false,
+"phrase": 100,
+"section": "S10 side effects",
+"s": 119.267,
+"e": 119.447,
+"conf": 0.841
+},
+{
+"text": "ketiga-tiga",
+"hl": false,
+"phrase": 100,
+"section": "S10 side effects",
+"s": 119.467,
+"e": 119.908,
+"conf": 0.461
+},
+{
+"text": "ni",
+"hl": false,
+"phrase": 100,
+"section": "S10 side effects",
+"s": 119.988,
+"e": 120.048,
+"conf": 0.764
+},
+{
+"text": "adalah",
+"hl": false,
+"phrase": 101,
+"section": "S10 side effects",
+"s": 120.148,
+"e": 120.408,
+"conf": 0.931
+},
+{
+"text": "antipsikotik",
+"hl": false,
+"phrase": 101,
+"section": "S10 side effects",
+"s": 120.468,
+"e": 121.108,
+"conf": 0.778
+},
+{
+"text": "first",
+"hl": true,
+"phrase": 102,
+"section": "S10 side effects",
+"s": 121.548,
+"e": 121.708,
+"conf": 0.555
+},
+{
+"text": "generation.",
+"hl": true,
+"phrase": 102,
+"section": "S10 side effects",
+"s": 121.748,
+"e": 122.208,
+"conf": 0.479
+},
+{
+"text": "Jadi",
+"hl": false,
+"phrase": 103,
+"section": "S10 side effects",
+"s": 122.268,
+"e": 122.388,
+"conf": 0.975
+},
+{
+"text": "kita",
+"hl": false,
+"phrase": 103,
+"section": "S10 side effects",
+"s": 122.448,
+"e": 122.588,
+"conf": 0.976
+},
+{
+"text": "kena",
+"hl": false,
+"phrase": 103,
+"section": "S10 side effects",
+"s": 122.628,
+"e": 122.788,
+"conf": 0.959
+},
+{
+"text": "monitor,",
+"hl": true,
+"phrase": 103,
+"section": "S10 side effects",
+"s": 122.868,
+"e": 123.448,
+"conf": 0.695
+},
+{
+"text": "antaranya",
+"hl": false,
+"phrase": 104,
+"section": "S10 side effects",
+"s": 124.228,
+"e": 124.608,
+"conf": 0.956
+},
+{
+"text": "adalah",
+"hl": false,
+"phrase": 104,
+"section": "S10 side effects",
+"s": 124.688,
+"e": 125.008,
+"conf": 0.918
+},
+{
+"text": "badan",
+"hl": false,
+"phrase": 105,
+"section": "S10 side effects",
+"s": 125.368,
+"e": 125.708,
+"conf": 0.938
+},
+{
+"text": "ataupun",
+"hl": false,
+"phrase": 105,
+"section": "S10 side effects",
+"s": 125.768,
+"e": 126.108,
+"conf": 0.965
+},
+{
+"text": "otot",
+"hl": true,
+"phrase": 105,
+"section": "S10 side effects",
+"s": 126.208,
+"e": 126.488,
+"conf": 0.516
+},
+{
+"text": "menjadi",
+"hl": false,
+"phrase": 106,
+"section": "S10 side effects",
+"s": 126.508,
+"e": 126.708,
+"conf": 0.714
+},
+{
+"text": "kaku.",
+"hl": true,
+"phrase": 106,
+"section": "S10 side effects",
+"s": 126.768,
+"e": 127.088,
+"conf": 0.912
+},
+{
+"text": "Kadang-kadang",
+"hl": false,
+"phrase": 107,
+"section": "S10 side effects",
+"s": 127.228,
+"e": 127.888,
+"conf": 0.004
+},
+{
+"text": "ada",
+"hl": false,
+"phrase": 107,
+"section": "S10 side effects",
+"s": 127.908,
+"e": 128.028,
+"conf": 0.953
+},
+{
+"text": "kes",
+"hl": false,
+"phrase": 107,
+"section": "S10 side effects",
+"s": 128.148,
+"e": 128.328,
+"conf": 0.747
+},
+{
+"text": "tangan",
+"hl": true,
+"phrase": 108,
+"section": "S10 side effects",
+"s": 128.508,
+"e": 128.768,
+"conf": 0.958
+},
+{
+"text": "jadi",
+"hl": false,
+"phrase": 108,
+"section": "S10 side effects",
+"s": 128.828,
+"e": 128.948,
+"conf": 0.959
+},
+{
+"text": "menggeletar.",
+"hl": true,
+"phrase": 108,
+"section": "S10 side effects",
+"s": 128.988,
+"e": 129.608,
+"conf": 0.611
+},
+{
+"text": "Rasa",
+"hl": false,
+"phrase": 109,
+"section": "S10 side effects",
+"s": 130.168,
+"e": 130.388,
+"conf": 0.822
+},
+{
+"text": "gelisah,",
+"hl": true,
+"phrase": 109,
+"section": "S10 side effects",
+"s": 130.448,
+"e": 130.908,
+"conf": 0.702
+},
+{
+"text": "tak",
+"hl": false,
+"phrase": 110,
+"section": "S10 side effects",
+"s": 130.988,
+"e": 131.068,
+"conf": 0.517
+},
+{
+"text": "boleh",
+"hl": false,
+"phrase": 110,
+"section": "S10 side effects",
+"s": 131.088,
+"e": 131.228,
+"conf": 0.489
+},
+{
+"text": "nak",
+"hl": false,
+"phrase": 110,
+"section": "S10 side effects",
+"s": 131.228,
+"e": 131.328,
+"conf": 0.438
+},
+{
+"text": "duduk",
+"hl": true,
+"phrase": 110,
+"section": "S10 side effects",
+"s": 131.328,
+"e": 131.428,
+"conf": 0.146
+},
+{
+"text": "diam,",
+"hl": true,
+"phrase": 110,
+"section": "S10 side effects",
+"s": 131.448,
+"e": 131.768,
+"conf": 0.745
+},
+{
+"text": "yang",
+"hl": false,
+"phrase": 111,
+"section": "S10 side effects",
+"s": 131.808,
+"e": 131.908,
+"conf": 0.82
+},
+{
+"text": "kita",
+"hl": false,
+"phrase": 111,
+"section": "S10 side effects",
+"s": 131.928,
+"e": 132.028,
+"conf": 0.889
+},
+{
+"text": "panggil",
+"hl": false,
+"phrase": 111,
+"section": "S10 side effects",
+"s": 132.048,
+"e": 132.208,
+"conf": 0.709
+},
+{
+"text": "sebagai",
+"hl": false,
+"phrase": 111,
+"section": "S10 side effects",
+"s": 132.228,
+"e": 132.488,
+"conf": 0.917
+},
+{
+"text": "akatisia.",
+"hl": true,
+"phrase": 112,
+"section": "S10 side effects",
+"s": 132.588,
+"e": 133.268,
+"conf": 0.568
+},
+{
+"text": "Pergerakan",
+"hl": false,
+"phrase": 113,
+"section": "S10 side effects",
+"s": 134.028,
+"e": 134.508,
+"conf": 0.616
+},
+{
+"text": "jadi",
+"hl": false,
+"phrase": 113,
+"section": "S10 side effects",
+"s": 134.548,
+"e": 134.688,
+"conf": 0.733
+},
+{
+"text": "abnormal",
+"hl": true,
+"phrase": 113,
+"section": "S10 side effects",
+"s": 134.728,
+"e": 135.328,
+"conf": 0.546
+},
+{
+"text": "kalau",
+"hl": false,
+"phrase": 114,
+"section": "S10 side effects",
+"s": 135.969,
+"e": 136.369,
+"conf": 0.76
+},
+{
+"text": "penggunaan",
+"hl": false,
+"phrase": 114,
+"section": "S10 side effects",
+"s": 136.549,
+"e": 136.849,
+"conf": 0.567
+},
+{
+"text": "jangka",
+"hl": true,
+"phrase": 114,
+"section": "S10 side effects",
+"s": 136.849,
+"e": 137.029,
+"conf": 0.314
+},
+{
+"text": "panjang.",
+"hl": true,
+"phrase": 114,
+"section": "S10 side effects",
+"s": 137.069,
+"e": 137.509,
+"conf": 0.626
+},
+{
+"text": "Serta",
+"hl": false,
+"phrase": 115,
+"section": "S11 follow up",
+"s": 137.949,
+"e": 138.129,
+"conf": 0.177
+},
+{
+"text": "kesan-kesan",
+"hl": false,
+"phrase": 115,
+"section": "S11 follow up",
+"s": 138.169,
+"e": 138.689,
+"conf": 0.039
+},
+{
+"text": "sampingan",
+"hl": false,
+"phrase": 115,
+"section": "S11 follow up",
+"s": 138.709,
+"e": 139.009,
+"conf": 0.629
+},
+{
+"text": "lain",
+"hl": false,
+"phrase": 115,
+"section": "S11 follow up",
+"s": 139.029,
+"e": 139.209,
+"conf": 0.767
+},
+{
+"text": "juga",
+"hl": false,
+"phrase": 116,
+"section": "S11 follow up",
+"s": 139.229,
+"e": 139.369,
+"conf": 0.901
+},
+{
+"text": "bergantung",
+"hl": false,
+"phrase": 116,
+"section": "S11 follow up",
+"s": 139.449,
+"e": 139.789,
+"conf": 0.847
+},
+{
+"text": "kepada",
+"hl": false,
+"phrase": 116,
+"section": "S11 follow up",
+"s": 139.809,
+"e": 140.049,
+"conf": 0.935
+},
+{
+"text": "ubat",
+"hl": true,
+"phrase": 117,
+"section": "S11 follow up",
+"s": 140.129,
+"e": 140.309,
+"conf": 0.882
+},
+{
+"text": "dan",
+"hl": false,
+"phrase": 117,
+"section": "S11 follow up",
+"s": 140.349,
+"e": 140.449,
+"conf": 0.938
+},
+{
+"text": "pesakit.",
+"hl": true,
+"phrase": 117,
+"section": "S11 follow up",
+"s": 140.469,
+"e": 140.889,
+"conf": 0.837
+},
+{
+"text": "Sebab",
+"hl": false,
+"phrase": 118,
+"section": "S11 follow up",
+"s": 141.289,
+"e": 141.429,
+"conf": 0.609
+},
+{
+"text": "itulah",
+"hl": false,
+"phrase": 118,
+"section": "S11 follow up",
+"s": 141.449,
+"e": 141.689,
+"conf": 0.559
+},
+{
+"text": "depot",
+"hl": false,
+"phrase": 119,
+"section": "S11 follow up",
+"s": 141.909,
+"e": 142.109,
+"conf": 0.288
+},
+{
+"text": "injection",
+"hl": false,
+"phrase": 119,
+"section": "S11 follow up",
+"s": 142.149,
+"e": 142.509,
+"conf": 0.304
+},
+{
+"text": "ni",
+"hl": false,
+"phrase": 119,
+"section": "S11 follow up",
+"s": 142.529,
+"e": 142.589,
+"conf": 0.317
+},
+{
+"text": "dia",
+"hl": false,
+"phrase": 119,
+"section": "S11 follow up",
+"s": 142.669,
+"e": 142.809,
+"conf": 0.541
+},
+{
+"text": "bukanlah",
+"hl": false,
+"phrase": 120,
+"section": "S11 follow up",
+"s": 142.889,
+"e": 143.229,
+"conf": 0.776
+},
+{
+"text": "kita",
+"hl": false,
+"phrase": 120,
+"section": "S11 follow up",
+"s": 143.269,
+"e": 143.369,
+"conf": 0.876
+},
+{
+"text": "bagi",
+"hl": false,
+"phrase": 120,
+"section": "S11 follow up",
+"s": 143.409,
+"e": 143.569,
+"conf": 0.869
+},
+{
+"text": "cucuk,",
+"hl": false,
+"phrase": 120,
+"section": "S11 follow up",
+"s": 143.629,
+"e": 143.989,
+"conf": 0.786
+},
+{
+"text": "pastu",
+"hl": false,
+"phrase": 121,
+"section": "S11 follow up",
+"s": 144.029,
+"e": 144.189,
+"conf": 0.725
+},
+{
+"text": "balik",
+"hl": false,
+"phrase": 121,
+"section": "S11 follow up",
+"s": 144.229,
+"e": 144.489,
+"conf": 0.905
+},
+{
+"text": "ke",
+"hl": false,
+"phrase": 121,
+"section": "S11 follow up",
+"s": 144.529,
+"e": 144.569,
+"conf": 0.39
+},
+{
+"text": "apa.",
+"hl": false,
+"phrase": 121,
+"section": "S11 follow up",
+"s": 144.569,
+"e": 144.709,
+"conf": 0.426
+},
+{
+"text": "Kita",
+"hl": false,
+"phrase": 122,
+"section": "S11 follow up",
+"s": 145.089,
+"e": 145.349,
+"conf": 0.903
+},
+{
+"text": "akan",
+"hl": false,
+"phrase": 122,
+"section": "S11 follow up",
+"s": 145.409,
+"e": 145.649,
+"conf": 0.809
+},
+{
+"text": "tetap",
+"hl": true,
+"phrase": 122,
+"section": "S11 follow up",
+"s": 145.689,
+"e": 146.029,
+"conf": 0.92
+},
+{
+"text": "kena",
+"hl": false,
+"phrase": 122,
+"section": "S11 follow up",
+"s": 146.329,
+"e": 146.509,
+"conf": 0.899
+},
+{
+"text": "follow",
+"hl": true,
+"phrase": 123,
+"section": "S11 follow up",
+"s": 146.569,
+"e": 146.729,
+"conf": 0.768
+},
+{
+"text": "up",
+"hl": true,
+"phrase": 123,
+"section": "S11 follow up",
+"s": 146.809,
+"e": 146.889,
+"conf": 0.426
+},
+{
+"text": "patient-patient",
+"hl": false,
+"phrase": 124,
+"section": "S11 follow up",
+"s": 146.909,
+"e": 147.409,
+"conf": 0.438
+},
+{
+"text": "juga.",
+"hl": false,
+"phrase": 124,
+"section": "S11 follow up",
+"s": 147.469,
+"e": 147.629,
+"conf": 0.855
+},
+{
+"text": "Tablet",
+"hl": true,
+"phrase": 125,
+"section": "S12 takeaway",
+"s": 148.049,
+"e": 148.529,
+"conf": 0.544
+},
+{
+"text": "ke,",
+"hl": false,
+"phrase": 125,
+"section": "S12 takeaway",
+"s": 148.629,
+"e": 148.709,
+"conf": 0.565
+},
+{
+"text": "injection",
+"hl": true,
+"phrase": 126,
+"section": "S12 takeaway",
+"s": 148.869,
+"e": 149.349,
+"conf": 0.418
+},
+{
+"text": "ke,",
+"hl": false,
+"phrase": 126,
+"section": "S12 takeaway",
+"s": 149.449,
+"e": 150.289,
+"conf": 0.744
+},
+{
+"text": "soalan",
+"hl": false,
+"phrase": 127,
+"section": "S12 takeaway",
+"s": 150.329,
+"e": 150.729,
+"conf": 0.753
+},
+{
+"text": "dia",
+"hl": false,
+"phrase": 127,
+"section": "S12 takeaway",
+"s": 150.769,
+"e": 150.869,
+"conf": 0.771
+},
+{
+"text": "bukan",
+"hl": false,
+"phrase": 127,
+"section": "S12 takeaway",
+"s": 150.929,
+"e": 151.269,
+"conf": 0.836
+},
+{
+"text": "mana",
+"hl": false,
+"phrase": 128,
+"section": "S12 takeaway",
+"s": 151.349,
+"e": 151.57,
+"conf": 0.891
+},
+{
+"text": "yang",
+"hl": false,
+"phrase": 128,
+"section": "S12 takeaway",
+"s": 151.61,
+"e": 151.71,
+"conf": 0.858
+},
+{
+"text": "lagi",
+"hl": false,
+"phrase": 128,
+"section": "S12 takeaway",
+"s": 151.71,
+"e": 151.85,
+"conf": 0.952
+},
+{
+"text": "power.",
+"hl": true,
+"phrase": 128,
+"section": "S12 takeaway",
+"s": 151.91,
+"e": 152.33,
+"conf": 0.768
+},
+{
+"text": "Soalan",
+"hl": false,
+"phrase": 129,
+"section": "S12 takeaway",
+"s": 152.33,
+"e": 152.61,
+"conf": 0.616
+},
+{
+"text": "dia",
+"hl": false,
+"phrase": 129,
+"section": "S12 takeaway",
+"s": 152.63,
+"e": 152.71,
+"conf": 0.609
+},
+{
+"text": "adalah",
+"hl": false,
+"phrase": 129,
+"section": "S12 takeaway",
+"s": 152.79,
+"e": 153.13,
+"conf": 0.75
+},
+{
+"text": "mana",
+"hl": false,
+"phrase": 130,
+"section": "S12 takeaway",
+"s": 153.35,
+"e": 153.61,
+"conf": 0.754
+},
+{
+"text": "yang",
+"hl": false,
+"phrase": 130,
+"section": "S12 takeaway",
+"s": 153.67,
+"e": 153.77,
+"conf": 0.822
+},
+{
+"text": "lagi",
+"hl": false,
+"phrase": 130,
+"section": "S12 takeaway",
+"s": 153.77,
+"e": 153.91,
+"conf": 0.917
+},
+{
+"text": "sesuai,",
+"hl": true,
+"phrase": 130,
+"section": "S12 takeaway",
+"s": 153.95,
+"e": 154.37,
+"conf": 0.789
+},
+{
+"text": "selamat",
+"hl": true,
+"phrase": 131,
+"section": "S12 takeaway",
+"s": 154.45,
+"e": 154.83,
+"conf": 0.801
+},
+{
+"text": "dan",
+"hl": false,
+"phrase": 131,
+"section": "S12 takeaway",
+"s": 154.89,
+"e": 154.99,
+"conf": 0.896
+},
+{
+"text": "praktikal",
+"hl": true,
+"phrase": 131,
+"section": "S12 takeaway",
+"s": 155.11,
+"e": 155.65,
+"conf": 0.842
+},
+{
+"text": "untuk",
+"hl": false,
+"phrase": 132,
+"section": "S12 takeaway",
+"s": 155.71,
+"e": 155.89,
+"conf": 0.867
+},
+{
+"text": "pesakit",
+"hl": false,
+"phrase": 132,
+"section": "S12 takeaway",
+"s": 155.91,
+"e": 156.23,
+"conf": 0.801
+},
+{
+"text": "tersebut.",
+"hl": false,
+"phrase": 132,
+"section": "S12 takeaway",
+"s": 156.25,
+"e": 156.61,
+"conf": 0.85
+},
+{
+"text": "Kalau",
+"hl": false,
+"phrase": 133,
+"section": "S13 outro",
+"s": 156.99,
+"e": 157.15,
+"conf": 0.773
+},
+{
+"text": "ada",
+"hl": false,
+"phrase": 133,
+"section": "S13 outro",
+"s": 157.15,
+"e": 157.21,
+"conf": 0.369
+},
+{
+"text": "apa-apa",
+"hl": false,
+"phrase": 133,
+"section": "S13 outro",
+"s": 157.23,
+"e": 157.39,
+"conf": 0.243
+},
+{
+"text": "soalan,",
+"hl": false,
+"phrase": 133,
+"section": "S13 outro",
+"s": 157.43,
+"e": 157.75,
+"conf": 0.616
+},
+{
+"text": "boleh",
+"hl": false,
+"phrase": 134,
+"section": "S13 outro",
+"s": 157.77,
+"e": 157.91,
+"conf": 0.222
+},
+{
+"text": "tanya",
+"hl": false,
+"phrase": 134,
+"section": "S13 outro",
+"s": 157.91,
+"e": 158.07,
+"conf": 0.739
+},
+{
+"text": "di",
+"hl": false,
+"phrase": 134,
+"section": "S13 outro",
+"s": 158.11,
+"e": 158.17,
+"conf": 0.517
+},
+{
+"text": "dalam",
+"hl": false,
+"phrase": 134,
+"section": "S13 outro",
+"s": 158.21,
+"e": 158.31,
+"conf": 0.075
+},
+{
+"text": "komen.",
+"hl": true,
+"phrase": 134,
+"section": "S13 outro",
+"s": 158.35,
+"e": 158.61,
+"conf": 0.909
+},
+{
+"text": "Take",
+"hl": true,
+"phrase": 135,
+"section": "S13 outro",
+"s": 158.71,
+"e": 158.85,
+"conf": 0.373
+},
+{
+"text": "care.",
+"hl": true,
+"phrase": 135,
+"section": "S13 outro",
+"s": 158.89,
+"e": 159.11,
+"conf": 0.502
+}
+]
+}

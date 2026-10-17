@@ -351,10 +351,16 @@ function drawCaptions(ctx, t, opts) {
 }
 
 // ---------- timeline + render loop ----------
-let TL = null;
+let TL = null, REMAP = [[0, 0], [1e4, 1e4]];
+function T(x) { // old-edit time -> current-edit time (piecewise linear through word anchors)
+  let i = 1; while (i < REMAP.length - 1 && REMAP[i][0] < x) i++;
+  const [a0, b0] = REMAP[i - 1], [a1, b1] = REMAP[i];
+  return b0 + (b1 - b0) * clamp((x - a0) / (a1 - a0 || 1), 0, 1);
+}
 async function init() {
   buildTextures();
-  const [words, clips] = await Promise.all([fetch('data/words.json').then(r => r.json()), fetch('data/clips.json').then(r => r.json())]);
+  const [words, clips, remap] = await Promise.all(['words', 'clips', 'remap'].map(n => fetch(`data/${n}.json`).then(r => r.json())));
+  REMAP = remap;
   setWords(words); CLIPS = clips;
   await Promise.all(['Anton', 'DM Serif Display', 'Plus Jakarta Sans', 'Caveat', 'JetBrains Mono'].flatMap(f =>
     [400, 500, 600, 700, 800].map(w => document.fonts.load(`${w} 40px '${f}'`))));
@@ -363,7 +369,8 @@ async function init() {
   TL.shots.sort((a, b) => a.t0 - b.t0);
   TL.els.sort((a, b) => (a.z || 0) - (b.z || 0));
   window.SFX = SFX; window.DURATION = TL.duration;
-  return { duration: TL.duration, sfx: SFX };
+  const shots = TL.shots.map(s => ({ t0: s.t0, t1: s.t1, clip: s.clip || (s.split ? s.split[0].clip : null), bg: s.bg || null, tr: s.tr ? s.tr.type : null }));
+  return { duration: TL.duration, sfx: SFX, shots };
 }
 function activeShots(t) {
   const sh = TL.shots; let i = sh.findIndex(s => t >= s.t0 && t < s.t1);

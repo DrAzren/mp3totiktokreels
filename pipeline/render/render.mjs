@@ -71,6 +71,7 @@ try {
   } else {
     const { page, info } = await openPage(browser, port);
     fs.writeFileSync(args.sfx || 'sfx.json', JSON.stringify(info.sfx, null, 0));
+    fs.writeFileSync((args.sfx || 'sfx.json').replace(/sfx\.json$/, 'shots.json'), JSON.stringify(info.shots, null, 0));
     await page.close();
     const from = +(args.from || 0), to = +(args.to || info.duration), N = +(args.workers || 4);
     const F0 = Math.round(from * FPS), F1 = Math.round(to * FPS), per = Math.ceil((F1 - F0) / N), parts = [];

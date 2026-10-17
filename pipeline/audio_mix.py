@@ -1,12 +1,15 @@
 """Procedural sound design + score, ducked under the voice, mastered for TikTok.
 
 Usage: python3 audio_mix.py <voice_clean.wav> <sfx.json> <duration_s> <out.wav>
+(reads shots.json from the same folder as sfx.json for transition sounds and scene ambience)
 Everything here is synthesised (no third-party samples), so it is safe for social distribution.
 """
-import json, sys
+import json, os, sys
 import numpy as np
 import soundfile as sf
 from scipy import signal
+
+import sfx_synth as sx
 
 SR = 48000
 rs = np.random.default_rng(7)
@@ -16,158 +19,60 @@ def t_(d):
     return np.arange(int(d * SR)) / SR
 
 
-def env_ar(n, a, r, curve=3.0):
-    """attack/release envelope over n samples (a, r in seconds)."""
-    t = np.arange(n) / SR
-    e = np.minimum(1, t / max(a, 1e-4)) * np.exp(-np.maximum(0, t - a) * curve / max(r, 1e-4))
-    return e
-
-
-def bp(x, lo, hi, order=2):
-    sos = signal.butter(order, [lo, hi], btype="band", fs=SR, output="sos")
-    return signal.sosfilt(sos, x)
-
-
 def lp(x, f, order=2):
     return signal.sosfilt(signal.butter(order, f, fs=SR, output="sos"), x)
 
 
-def hp(x, f, order=2):
-    return signal.sosfilt(signal.butter(order, f, btype="high", fs=SR, output="sos"), x)
-
-
-def noise(d):
-    return rs.standard_normal(int(d * SR))
-
-
-def sweep_noise(d, f0, f1, q=0.6):
-    """noise through a band-pass whose centre glides f0 -> f1 (block-wise)."""
-    x, out, blk = noise(d), np.zeros(int(d * SR)), 1024
-    for i in range(0, len(x), blk):
-        u = i / len(x)
-        fc = f0 * (f1 / f0) ** u
-        out[i:i + blk] = bp(x[i:i + blk + 2048], fc * (1 - q / 2), min(fc * (1 + q / 2), SR / 2 - 100))[:len(x[i:i + blk])]
-    return out
-
-
 # ---------------- SFX ----------------
-def whoosh(d=0.5):
-    n = int(d * SR); x = sweep_noise(d, 300, 4000, 1.0)
-    e = np.sin(np.pi * np.linspace(0, 1, n)) ** 2.2
-    return x * e * 0.5
+def place(L, R, x, t0, g, pan):
+    i = int(t0 * SR); j = min(len(L), i + len(x))
+    if i < 0 or i >= len(L):
+        return
+    L[i:j] += x[:j - i] * g * np.sqrt(0.5 - pan / 2) * 1.41
+    R[i:j] += x[:j - i] * g * np.sqrt(0.5 + pan / 2) * 1.41
 
 
-def rewind(d=0.7):
-    x = whoosh(d)[::-1] * 0.8
-    t = t_(d); return x * (1 + 0.4 * np.sin(2 * np.pi * 9 * t))
-
-
-def hit(d=0.9, f0=90, f1=42):
-    t = t_(d); f = f1 + (f0 - f1) * np.exp(-t * 18)
-    body = np.sin(2 * np.pi * np.cumsum(f) / SR) * np.exp(-t * 4.5)
-    click = hp(noise(d), 2000) * np.exp(-t * 60) * 0.3
-    return (body + click) * 0.9
-
-
-def boom():
-    t = t_(2.2); f = 38 + 50 * np.exp(-t * 10)
-    body = np.sin(2 * np.pi * np.cumsum(f) / SR) * np.exp(-t * 1.6)
-    air = lp(noise(2.2), 900) * np.exp(-t * 3) * 0.25
-    return (body + air) * 1.0
-
-
-def tick():
-    t = t_(0.05); return (np.sin(2 * np.pi * 1800 * t) * np.exp(-t * 140) + bp(noise(0.05), 3000, 7000) * np.exp(-t * 200) * 0.4) * 0.35
-
-
-def click():
-    t = t_(0.04); return bp(noise(0.04), 1500, 5000) * np.exp(-t * 180) * 0.6
-
-
-def pop():
-    t = t_(0.12); f = 380 + 700 * np.exp(-t * 45)
-    return np.sin(2 * np.pi * np.cumsum(f) / SR) * np.exp(-t * 32) * 0.55
-
-
-def paper(d=0.38):
-    n = int(d * SR); x = bp(noise(d), 900, 7000)
-    am = np.abs(lp(rs.standard_normal(n), 40)); am /= am.max() + 1e-9
-    return x * am * np.sin(np.pi * np.linspace(0, 1, n)) * 0.55
-
-
-def tear(d=0.55):
-    n = int(d * SR); imp = (rs.random(n) < 0.012) * rs.standard_normal(n) * 4
-    x = bp(imp + noise(d) * 0.15, 700, 6000) * np.sin(np.pi * np.linspace(0, 1, n) ** 0.7)
-    return x * 0.6
-
-
-def scribble(d=0.45):
-    t = t_(d); x = bp(noise(d), 2500, 9000)
-    am = 0.55 + 0.45 * np.sin(2 * np.pi * 11 * t + 3 * np.sin(2 * np.pi * 2.3 * t))
-    return x * am * np.minimum(1, t / 0.03) * np.minimum(1, (d - t) / 0.05) * 0.35
-
-
-def stamp():
-    t = t_(0.35); f = 60 + 110 * np.exp(-t * 40)
-    thump = np.sin(2 * np.pi * np.cumsum(f) / SR) * np.exp(-t * 14)
-    slap = bp(noise(0.35), 400, 3500) * np.exp(-t * 35) * 0.6
-    return (thump + slap) * 0.9
-
-
-def check():
-    a, b = scribble(0.1), scribble(0.18); out = np.zeros(int(0.32 * SR)); out[:len(a)] += a; out[int(0.12 * SR):int(0.12 * SR) + len(b)] += b
-    return out * 1.3
-
-
-def typewriter(d=1.0, cps=28):
-    out = np.zeros(int((d + 0.1) * SR))
-    for k in range(int(d * cps)):
-        c = click() * (0.6 + 0.4 * rs.random()); i = int((k / cps + rs.random() * 0.01) * SR); out[i:i + len(c)] += c
-    return out * 0.7
-
-
-def swell(d=1.3):
-    n = int(d * SR); t = t_(d); x = noise(d)
-    out = np.zeros(n); blk = 2048
-    for i in range(0, n, blk):
-        u = i / n; out[i:i + blk] = lp(x[i:i + blk + 2048], 300 + 6000 * u ** 2)[:len(x[i:i + blk])]
-    return out * (t / d) ** 2.5 * 0.35
-
-
-def chime():
-    t = t_(2.5); out = np.zeros_like(t)
-    for m, a in [(1, 1), (2.76, 0.4), (5.4, 0.2), (8.93, 0.1)]:
-        out += a * np.sin(2 * np.pi * 880 * m * t) * np.exp(-t * (1.2 + m * 0.8))
-    return out * 0.18
-
-
-SFX_FN = {"whoosh": whoosh, "rewind": rewind, "hit": hit, "boom": boom, "tick": tick, "click": click, "pop": pop,
-          "paper": paper, "tear": tear, "scribble": scribble, "stamp": stamp, "check": check, "type": typewriter,
-          "swell": swell, "chime": chime}
-SFX_GAIN = {"tick": 0.35, "pop": 0.55, "paper": 0.6, "scribble": 0.55, "whoosh": 0.7, "hit": 0.85, "boom": 1.0,
-            "stamp": 0.8, "tear": 0.7, "check": 0.6, "type": 0.45, "swell": 0.6, "chime": 0.6, "click": 0.5, "rewind": 0.7}
-
-
-def build_sfx(cues, n):
+def build_sfx(cues, shots, n):
+    """One-shot effects from the renderer's cue list, plus a transition sound on every cut."""
     L, R = np.zeros(n), np.zeros(n)
+    cues = list(cues)
+    for s in shots[1:]:
+        kind = sx.TRANSITION.get(s["tr"] or "")
+        if kind:   # land the peak of the transition sound on the cut
+            lead = {"swipe": 0.12, "zoom": 0.32, "tear": 0.05, "swish": 0.1, "air": 0.3, "camera": 0.0, "whoosh": 0.2}[kind]
+            cues.append({"type": kind, "t": max(0.0, s["t0"] - lead), "gain": 0.9})
     last = {}
-    for c in sorted(cues, key=lambda c: c["t"]):
-        k = c["type"]
-        if k not in SFX_FN or c["gain"] <= 0:
+    for k, c in enumerate(sorted(cues, key=lambda c: c["t"])):
+        typ = c["type"]
+        if typ not in sx.FX or c["gain"] <= 0:
             continue
-        if c["t"] - last.get(k, -9) < 0.07:   # de-clutter near-simultaneous duplicates
+        if c["t"] - last.get(typ, -9) < 0.06:   # de-clutter near-simultaneous duplicates
             continue
-        last[k] = c["t"]
-        fn = SFX_FN[k]
-        x = fn(c["dur"]) if "dur" in c and k in ("scribble", "type") else fn()
-        x = x * c["gain"] * SFX_GAIN[k]
-        pan = rs.uniform(-0.35, 0.35) if k in ("pop", "tick", "paper", "scribble", "check") else 0
-        i = int(c["t"] * SR); j = min(n, i + len(x))
-        if i >= n:
-            continue
-        L[i:j] += x[:j - i] * np.sqrt(0.5 - pan / 2) * 1.41
-        R[i:j] += x[:j - i] * np.sqrt(0.5 + pan / 2) * 1.41
+        last[typ] = c["t"]
+        r = np.random.default_rng(1000 + k)       # every cue gets its own variant
+        fn = sx.FX[typ]
+        x = fn(r, c["dur"]) if typ in ("scribble", "type", "typewriter") and "dur" in c else fn(r)
+        pan = r.uniform(-0.4, 0.4) if typ in ("pop", "bubble", "tap", "paper", "scribble", "check", "shimmer", "pill", "marker", "glass") else 0.0
+        place(L, R, x, c["t"], c["gain"] * sx.GAIN.get(typ, 0.6), pan)
     return np.stack([L, R], 1)
+
+
+def build_ambience(shots, n):
+    """Scene beds matched to each B-roll clip, crossfaded at the cuts."""
+    out = np.zeros((n, 2)); xf = 0.35
+    for k, s in enumerate(shots):
+        bed = sx.AMBIENCE.get(s.get("clip") or "")
+        if not bed:
+            continue
+        fn, lvl = bed
+        t0, t1 = max(0.0, s["t0"] - xf), min(n / SR, s["t1"] + xf)
+        r = np.random.default_rng(500 + k)
+        a, b = fn(r, t1 - t0), fn(np.random.default_rng(900 + k), t1 - t0)   # decorrelated L/R
+        m = len(a); e = np.ones(m); f = int(xf * SR)
+        e[:f] = np.linspace(0, 1, f); e[-f:] = np.linspace(1, 0, f)
+        i = int(t0 * SR); j = min(n, i + m)
+        out[i:j, 0] += a[:j - i] * e[:j - i] * lvl; out[i:j, 1] += b[:j - i] * e[:j - i] * lvl
+    return out
 
 
 # ---------------- music ----------------
@@ -272,7 +177,7 @@ def build_music(dur):
             while b < s1 - 0.3:
                 add(m, kick() * 0.9, b, 0.22 * L["heart"]); add(m, kick() * 0.6, b + 0.28, 0.18 * L["heart"]); b += 60 / 72
         if "riser" in L:
-            r = swell(max(0.5, s1 - s0)); add(m, r, s0, 0.35 * L["riser"])
+            r = sx.swell(rs, max(0.5, s1 - s0)); add(m, r, s0, 0.35 * L["riser"])
     # simple stereo reverb: exponentially decaying noise IR
     ir_len = int(2.4 * SR); tt = np.arange(ir_len) / SR
     irL = rs.standard_normal(ir_len) * np.exp(-tt * 2.6); irR = rs.standard_normal(ir_len) * np.exp(-tt * 2.6)
@@ -302,21 +207,27 @@ def main(voice_wav, sfx_json, dur, out):
     if v.ndim > 1:
         v = v.mean(1)
     voice = np.zeros(n); voice[:min(n, len(v))] = v[:n]
+    shots_path = os.path.join(os.path.dirname(os.path.abspath(sfx_json)), "shots.json")
+    shots = json.load(open(shots_path)) if os.path.exists(shots_path) else []
     music = build_music(dur)
-    fx = build_sfx(json.load(open(sfx_json)), n)
-    # duck music under speech (~ -9 dB while talking)
-    e = envelope(voice); e = e / (np.percentile(e[e > 1e-4], 95) + 1e-9)
-    duck = 1 - 0.65 * np.clip(e, 0, 1)
-    music *= duck[:, None]
+    fx = build_sfx(json.load(open(sfx_json)), shots, n)
+    amb = build_ambience(shots, n)
+    # duck music (~ -9 dB) and ambience (~ -6 dB) while he talks
+    e = envelope(voice); e = np.clip(e / (np.percentile(e[e > 1e-4], 95) + 1e-9), 0, 1)
+    music *= (1 - 0.65 * e)[:, None]; amb *= (1 - 0.5 * e)[:, None]
     rms = lambda x: np.sqrt(np.mean(x ** 2) + 1e-12)
-    vr = rms(voice[np.abs(voice) > 1e-3])
-    music *= (vr * 10 ** (-15 / 20)) / rms(music)      # music bed sits ~15 dB under the voice
-    fx *= (vr * 10 ** (-9 / 20)) / (np.percentile(np.abs(fx[np.abs(fx) > 1e-4]), 99) + 1e-9) * 1.1
-    mix = music + fx + voice[:, None]
+    speech = np.abs(voice) > 1e-3
+    vr, vpk = rms(voice[speech]), np.percentile(np.abs(voice[speech]), 99.9)
+    music *= (vr * 10 ** (-15 / 20)) / rms(music)          # music bed ~15 dB under the voice
+    amb *= (vr * 10 ** (-27 / 20)) / rms(amb[np.abs(amb).sum(1) > 1e-6])   # room tone, felt more than heard
+    # SFX bus: loud transients (~5 dB under voice peaks), glued with a soft-knee limiter
+    fx *= (vpk * 10 ** (-5 / 20)) / (np.percentile(np.abs(fx[np.abs(fx) > 1e-4]), 99.5) + 1e-9)
+    fx = np.tanh(fx / (vpk * 1.1)) * vpk * 1.1
+    mix = music + amb + fx + voice[:, None]
     sf.write(out, mix.astype(np.float32), SR, subtype="FLOAT")
-    sf.write(out.replace(".wav", "_music.wav"), music.astype(np.float32), SR, subtype="FLOAT")
-    sf.write(out.replace(".wav", "_sfx.wav"), fx.astype(np.float32), SR, subtype="FLOAT")
-    print("mix written", out, f"{dur:.2f}s")
+    for name, stem in (("music", music), ("sfx", fx), ("amb", amb)):
+        sf.write(out.replace(".wav", f"_{name}.wav"), stem.astype(np.float32), SR, subtype="FLOAT")
+    print("mix written", out, f"{dur:.2f}s", f"{len(shots)} shots")
 
 
 if __name__ == "__main__":

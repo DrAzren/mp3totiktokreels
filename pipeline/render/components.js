@@ -4,7 +4,7 @@
 // Big stacked kinetic headline. lines: [{text, at, size, color, font, mark, y, x, align, rot}]
 function headline(lines, t1, o = {}) {
   const t0 = Math.min(...lines.map(l => l.at)) - 0.05;
-  lines.forEach(l => sfx(l.sfx || 'tick', l.at, l.gain || 0.7));
+  lines.forEach(l => { sfx(l.sfx || (l.size >= 120 ? 'thock' : 'tap'), l.at, l.gain || 0.8); if (l.mark) sfx('marker', l.at + 0.12, 0.8); });
   return { t0, t1: t1 + 0.35, z: o.z || 5, draw(ctx, t) {
     const out = E.in(prog(t, t1, 0.3));
     lines.forEach(l => {
@@ -32,7 +32,7 @@ function headline(lines, t1, o = {}) {
 
 // rubber stamp that slams in
 function stamp(text, at, t1, o = {}) {
-  sfx('stamp', at, o.gain || 1);
+  sfx('stamp', at, o.gain || 1); sfx('thud', at + 0.02, 0.7);
   const size = o.size || 110, col = o.color || C.coral;
   return { t0: at, t1: t1 + 0.3, z: o.z || 8, draw(ctx, t) {
     const p = prog(t, at, 0.28), out = prog(t, t1, 0.3);
@@ -51,6 +51,7 @@ function stamp(text, at, t1, o = {}) {
 function card(o) {
   const at = o.at, t1 = o.t1, w = o.w, h = o.h, x = o.x ?? (540 - w / 2), y = o.y;
   if (o.sfx !== 'none') sfx(o.sfx || 'paper', at, o.gain || 0.8);
+  if (o.from !== 'pop') sfx('swish', at - 0.05, 0.6);
   const from = o.from || 'bottom';
   return { t0: at, t1: t1 + 0.4, z: o.z || 4, draw(ctx, t) {
     const p = E.back(prog(t, at, o.din || 0.5)), out = E.in(prog(t, t1, 0.35));
@@ -72,7 +73,7 @@ function card(o) {
 
 // rounded label chip
 function chip(text, at, t1, o = {}) {
-  sfx('pop', at, o.gain || 0.6);
+  sfx(o.icon ? 'bubble' : 'pop', at, o.gain || 0.75);
   const size = o.size || 42;
   return { t0: at, t1: t1 + 0.3, z: o.z || 6, draw(ctx, t) {
     const p = E.back(prog(t, at, 0.32)), out = prog(t, t1, 0.25);
@@ -89,7 +90,7 @@ function chip(text, at, t1, o = {}) {
 
 // sticker icon with white outline
 function sticker(name, at, t1, o = {}) {
-  sfx('pop', at, o.gain || 0.55);
+  sfx('pop', at, o.gain || 0.7); sfx('shimmer', at + 0.06, 0.6);
   return { t0: at, t1: t1 + 0.3, z: o.z || 7, draw(ctx, t) {
     const p = E.back(prog(t, at, 0.36)), out = prog(t, t1, 0.25), wob = Math.sin((t - at) * 3) * 0.05;
     withT(ctx, o.x, o.y + Math.sin((t - at) * 2) * 6, (o.rot || 0) + wob, p * (1 - out), () => {
@@ -177,7 +178,7 @@ function chapter(label, sub, t0, t1) {
 function calendarGrid(o) {
   const at = o.at, t1 = o.t1, missed = new Set(o.missed || []);
   sfx('paper', at, 0.8);
-  for (let d = 0; d < 28; d++) { const tt = o.fillAt + d * o.step; if (missed.has(d)) sfx('scribble', tt, 0.35, { dur: 0.2 }); else if (d % 3 === 0) sfx('tick', tt, 0.25); }
+  for (let d = 0; d < 28; d++) { const tt = o.fillAt + d * o.step; if (missed.has(d)) sfx('scribble', tt, 0.35, { dur: 0.2 }); else if (d % 2 === 0) sfx('pill', tt, 0.35); }
   return card({ at, t1, x: 90, y: o.y || 330, w: 900, h: 940, rot: -0.02, from: 'bottom', seed: 3, sfx: 'none', content(ctx, t, w, h) {
     txt(ctx, o.title || 'UBAT HARI-HARI', w / 2, 82, { font: F.head, size: 64, color: C.navy, track: 2 });
     const days = ['I', 'S', 'R', 'K', 'J', 'S', 'A'], cw = 112, x0 = (w - cw * 7) / 2 + cw / 2, y0 = 170;
@@ -201,7 +202,7 @@ function calendarGrid(o) {
 // plasma level concept graph
 function plasmaGraph(o) {
   const at = o.at, t1 = o.t1, gx = 110, gy = 250, gw = 690, gh = 430;
-  sfx('paper', at, 0.8); sfx('scribble', o.oralAt, 0.4, { dur: 1.2 }); sfx('swell', o.depotAt, 0.6);
+  sfx('paper', at, 0.8); sfx('scribble', o.oralAt, 0.4, { dur: 1.2 }); sfx('riser', o.depotAt, 0.6); sfx('ding', o.consistAt || o.depotAt + 1, 0.5);
   // oral: daily peaks with two missed doses (troughs); depot: smooth gentle wave
   const oral = u => { const day = u * 14, k = Math.floor(day), f = day - k, miss = k === 5 || k === 6 || k === 10;
     let base = 0.55; if (k >= 6 && k <= 7) base = 0.32; if (k === 7) base = 0.22; if (k === 11) base = 0.38;
@@ -233,7 +234,7 @@ function plasmaGraph(o) {
 // periodic injection strip (no fixed interval stated: "berkala")
 function injectionStrip(o) {
   const at = o.at, t1 = o.t1;
-  [0, 1, 2, 3].forEach(k => sfx('pop', o.markAt + k * 0.32, 0.45));
+  [0, 1, 2, 3].forEach(k => sfx('bubble', o.markAt + k * 0.32, 0.6));
   return card({ at, t1, x: 90, y: o.y || 420, w: 900, h: 560, rot: -0.015, from: 'left', seed: 21, content(ctx, t, w, h) {
     txt(ctx, 'SECARA BERKALA', w / 2, 90, { font: F.head, size: 74, color: C.navy, track: 2 });
     const x0 = 80, x1 = w - 80, y = 270, p = E.inOut(prog(t, at + 0.3, 1.2));
@@ -248,7 +249,7 @@ function injectionStrip(o) {
 
 // clipboard checklist; items: [{text, sub, at}]
 function checklist(o) {
-  o.items.forEach(it => { sfx('check', it.at, 0.7); });
+  o.items.forEach(it => { sfx('check', it.at, 0.8); sfx('ding', it.at + 0.12, 0.45); });
   return card({ at: o.at, t1: o.t1, x: 80, y: o.y || 300, w: 920, h: o.h || 900, rot: -0.01, from: 'bottom', seed: 33, tape: false, content(ctx, t, w, h) {
     ctx.fillStyle = '#9C7A54'; rrect(ctx, w / 2 - 120, -28, 240, 64, 14); ctx.fill(); ctx.fillStyle = '#C9C9C9'; rrect(ctx, w / 2 - 80, -40, 160, 36, 10); ctx.fill();
     txt(ctx, o.title || 'PERLU DIPANTAU', w / 2, 100, { font: F.head, size: 66, color: C.navy, track: 2 });
@@ -300,7 +301,7 @@ function vsCard(o) {
 
 // end card overlay (drawn above captions)
 function endCard(at, dur) {
-  sfx('swell', at - 0.3, 0.8); sfx('chime', at + 0.25, 0.6);
+  sfx('riser', at - 0.9, 0.7); sfx('logo', at + 0.2, 0.9); sfx('chime', at + 0.6, 0.6); sfx('shimmer', at + 0.95, 0.5);
   return function (ctx, t) {
     const p = prog(t, at, 0.6); if (p <= 0) return;
     ctx.globalAlpha = E.out(p); const g = ctx.createLinearGradient(0, 0, 0, H); g.addColorStop(0, C.navy2); g.addColorStop(1, C.navy); ctx.fillStyle = g; ctx.fillRect(0, 0, W, H);
