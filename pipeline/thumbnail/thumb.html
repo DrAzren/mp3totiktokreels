@@ -1,0 +1,54 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face{font-family:'League Spartan';src:url(ls_2.woff2) format('woff2');font-weight:100 900;}
+@font-face{font-family:'PJ';src:url(pj800.woff2) format('woff2');font-weight:800;}
+:root{--navy:#04254F;--navy2:#021838;--yellow:#FFE100;--teal:#2EC4B6;}
+html,body{margin:0;background:#000}
+.card{position:relative;width:1080px;overflow:hidden;background:linear-gradient(180deg,#06306A 0%,var(--navy) 45%,var(--navy2) 100%);}
+.bgimg{position:absolute;left:0;width:1080px;object-fit:cover;opacity:.42;filter:saturate(.8) contrast(1.05);}
+.bgfade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(4,37,79,.55) 0%,rgba(4,37,79,.15) 30%,rgba(4,37,79,.75) 62%,var(--navy2) 100%);}
+.glow{position:absolute;left:50%;width:1100px;height:1100px;transform:translateX(-50%);border-radius:50%;
+  background:radial-gradient(circle,rgba(46,196,182,.35) 0%,rgba(46,196,182,.10) 35%,rgba(46,196,182,0) 65%);}
+.logo{position:absolute;left:50%;transform:translateX(-50%);}
+.chip{position:absolute;left:50%;transform:translateX(-50%) rotate(-2deg);background:var(--teal);color:#04254F;font:800 40px 'PJ';
+  letter-spacing:4px;padding:14px 34px 12px;border-radius:999px;box-shadow:0 10px 30px rgba(0,0,0,.35);white-space:nowrap;}
+.head{position:absolute;left:0;width:1080px;text-align:center;font-family:'League Spartan';font-weight:800;color:var(--yellow);
+  line-height:.98;letter-spacing:-1px;text-shadow:0 6px 0 rgba(2,24,56,.55),0 12px 40px rgba(0,0,0,.55);}
+.head .w{color:#fff}
+.person{position:absolute;left:50%;transform:translateX(-50%);filter:drop-shadow(0 0 2px rgba(0,0,0,.4)) drop-shadow(0 30px 60px rgba(0,0,0,.45));}
+.rim{position:absolute;left:50%;transform:translateX(-50%);filter:blur(14px) brightness(0) invert(1) sepia(1) hue-rotate(120deg) saturate(4);opacity:.35;}
+.syr{position:absolute;}
+/* 9:16 */
+#t916{height:1920px}
+#t916 .bgimg{top:0;height:1150px;object-position:50% 70%}
+#t916 .glow{top:720px}
+#t916 .logo{top:250px;height:150px}
+#t916 .chip{top:428px}
+#t916 .head{top:528px;font-size:116px}
+#t916 .person,#t916 .rim{top:470px;width:1210px}
+/* 4:5 */
+#t45{height:1350px}
+#t45 .bgimg{top:0;height:820px;object-position:50% 70%}
+#t45 .glow{top:420px;width:900px;height:900px}
+#t45 .logo{top:30px;height:140px}
+#t45 .chip{top:196px;font-size:34px}
+#t45 .head{top:280px;font-size:92px}
+#t45 .person,#t45 .rim{top:250px;width:1080px}
+</style></head>
+<body>
+<div class="card" id="t916">
+  <img class="bgimg" src="k21.png"><div class="bgfade"></div><div class="glow"></div>
+  <img class="logo" src="logo.png">
+  <div class="chip">DEPOT INJECTION</div>
+  <div class="head">Sekali Cucuk,<br><span class="w">Tak Payah Makan</span><br>Ubat Hari-Hari?</div>
+  <img class="rim" src="person_final.png"><img class="person" src="person_final.png">
+</div>
+<div class="card" id="t45">
+  <img class="bgimg" src="k21.png"><div class="bgfade"></div><div class="glow"></div>
+  <img class="logo" src="logo.png">
+  <div class="chip">DEPOT INJECTION</div>
+  <div class="head">Sekali Cucuk,<br><span class="w">Tak Payah Makan</span><br>Ubat Hari-Hari?</div>
+  <img class="rim" src="person_final.png"><img class="person" src="person_final.png">
+</div>
+</body></html>
