@@ -864,8 +864,8 @@ def caption_file(words, phrases):
         groups.append(f'<div id="{gid}" class="cg clip" data-start="{s0:.3f}" data-duration="{dur:.3f}" data-track-index="9"><div class="in" style="font-size:{fs}px">{spans}</div></div>')
         js.append(f'tl.fromTo("#{gid} .in",{{y:26,opacity:0}},{{y:0,opacity:1,duration:0.16,ease:"power3.out"}},{s0:.3f});')
         for k, w in enumerate(ws):
-            js.append(f'tl.fromTo("#cw{pid}_{k}",{{opacity:0.55,scale:1}},{{opacity:1,scale:1.1,duration:0.09,ease:"power2.out"}},{w["s"]:.3f});'
-                      f'tl.to("#cw{pid}_{k}",{{scale:1,duration:0.2,ease:"power2.out"}},{w["s"]+0.09:.3f});')
+            js.append(f'tl.fromTo("#cw{pid}_{k}",{{opacity:0.55,y:0}},{{opacity:1,y:-7,duration:0.08,ease:"power2.out"}},{w["s"]:.3f});'
+                      f'tl.to("#cw{pid}_{k}",{{y:0,duration:0.22,ease:"power2.out"}},{w["s"]+0.08:.3f});')
             if w["hl"]:
                 js.append(f'tl.fromTo("#cw{pid}_{k}",{{color:"{WHITE}"}},{{color:"{WARM}",duration:0.1}},{w["s"]:.3f});')
         js.append(f'tl.to("#{gid} .in",{{opacity:0,duration:0.1,ease:"power2.in"}},{e0-0.1:.3f});')
@@ -873,7 +873,7 @@ def caption_file(words, phrases):
 .cg{{position:absolute;left:110px;width:860px;top:1080px;height:250px;display:flex;align-items:flex-end;justify-content:center}}
 .cg .in{{width:860px;text-align:center;font-family:'Montserrat',sans-serif;font-weight:800;line-height:1.16;color:{WHITE};text-wrap:balance;
  text-shadow:0 3px 0 rgba(0,0,0,.55),0 6px 22px rgba(0,0,0,.75),0 0 2px rgba(0,0,0,.9)}}
-.cg .w{{display:inline-block;margin:0 .03em}}
+.cg .w{{display:inline-block;margin:0 .05em}}
 .cg .hl{{color:{WHITE}}}"""
     return f"""<template>
 <style>{style}</style>
