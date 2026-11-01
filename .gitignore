@@ -4,3 +4,9 @@ node_modules/
 *.mp3
 __pycache__/
 build/
+# per-project build metadata (small JSON) is kept; heavy intermediates stay out
+!projects/*/build/
+.hyperframes/
+renders/
+# B-roll clips of the editable HyperFrames projects are part of the source (small)
+!projects/*/source_project/assets/vid/*.mp4

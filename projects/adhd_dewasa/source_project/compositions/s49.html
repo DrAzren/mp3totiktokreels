@@ -1,0 +1,38 @@
+<template>
+<style>
+#root{position:absolute;inset:0;overflow:hidden;background:#061024;font-family:'Montserrat',sans-serif;color:#F5F7FA}
+.sc{position:absolute;inset:0;overflow:hidden}
+.cam,.punch{position:absolute;inset:0}
+.plate{position:absolute;left:-27px;top:-48px;width:1134px;height:2016px;object-fit:cover}
+.vid{position:absolute;left:0;top:0;width:1080px;height:1920px;object-fit:cover}
+.shade-t{position:absolute;left:0;top:0;width:1080px;height:560px;background:linear-gradient(180deg,rgba(6,16,36,.62),rgba(6,16,36,0))}
+.shade-b{position:absolute;left:0;top:980px;width:1080px;height:940px;background:linear-gradient(180deg,rgba(6,16,36,0),rgba(6,16,36,.55) 35%,rgba(6,16,36,.82))}
+.mote{position:absolute;border-radius:50%;background:radial-gradient(circle,rgba(255,236,200,.85),rgba(255,236,200,0) 70%)}
+.g{position:absolute;left:90px;width:900px}
+.kt{font-family:'League Gothic','Oswald',sans-serif;text-transform:uppercase;line-height:.92;letter-spacing:.01em;color:#F5F7FA;text-shadow:0 6px 30px rgba(0,0,0,.55)}
+.kick{font-family:'Montserrat',sans-serif;font-weight:800;font-size:34px;letter-spacing:.32em;text-transform:uppercase;color:#6FE3EE}
+.serif{font-family:'Playfair Display',serif;font-style:italic}
+.chip{display:inline-block;padding:14px 26px;border-radius:999px;background:rgba(11,26,51,.78);border:2px solid rgba(111,227,238,.7);font-weight:800;font-size:34px;letter-spacing:.06em;color:#F5F7FA;box-shadow:0 10px 30px rgba(0,0,0,.35)}
+.card{background:rgba(8,20,42,.82);border:1.5px solid rgba(111,227,238,.45);border-radius:28px;box-shadow:0 24px 60px rgba(0,0,0,.45)}
+.ln{display:inline-block;overflow:hidden;vertical-align:bottom}
+.ln>span{display:inline-block}
+.fx{position:absolute;inset:0;pointer-events:none}
+.warm{color:#FFD25A} .cyan{color:#6FE3EE}
+#s49-lt1{top:760px;left:90px;width:840px;padding:36px 44px} #s49-lt1 .k{font-weight:800;font-size:28px;letter-spacing:.28em;color:#6FE3EE}#s49-lt1 .n{font-family:'League Gothic';font-size:150px;line-height:1;margin-top:6px} #s49-lt1 .u{height:6px;width:220px;background:#FFD25A;border-radius:4px;transform-origin:left center;margin:10px 0 16px}#s49-lt1 .p{font-weight:700;font-size:40px} #s49-lt1 .p span{color:#FFD25A}</style>
+<div id="root" data-composition-id="s49" data-width="1080" data-height="1920" data-layout-allow-overflow data-layout-allow-overlap>
+<div id="s49-sc" class="sc"><div id="s49-punch" class="punch"><div id="s49-cam" class="cam"><img class="plate" src="assets/img/s49.jpg" alt=""></div></div><div id="s49-motes" class="fx"><span class="mote" style="left:449px;top:399px;width:15px;height:15px;opacity:0.18"></span><span class="mote" style="left:99px;top:1137px;width:16px;height:16px;opacity:0.50"></span><span class="mote" style="left:938px;top:1686px;width:15px;height:15px;opacity:0.19"></span><span class="mote" style="left:1px;top:477px;width:10px;height:10px;opacity:0.29"></span><span class="mote" style="left:653px;top:1503px;width:18px;height:18px;opacity:0.35"></span><span class="mote" style="left:984px;top:689px;width:13px;height:13px;opacity:0.35"></span><span class="mote" style="left:328px;top:962px;width:6px;height:6px;opacity:0.26"></span><span class="mote" style="left:533px;top:1282px;width:8px;height:8px;opacity:0.34"></span><span class="mote" style="left:1022px;top:1754px;width:7px;height:7px;opacity:0.34"></span><span class="mote" style="left:345px;top:1057px;width:13px;height:13px;opacity:0.26"></span><span class="mote" style="left:813px;top:712px;width:16px;height:16px;opacity:0.18"></span><span class="mote" style="left:845px;top:448px;width:11px;height:11px;opacity:0.41"></span></div><div class="shade-t"></div><div class="shade-b"></div><div id="s49-lt1" class="g card"><div class="k">PENILAIAN KESIHATAN MENTAL</div><div class="n">Dr Azren</div><div class="u"></div><div class="p">Klinik · <span>Nilai</span></div></div></div><div id="s49-leak" class="fx" style="background:radial-gradient(ellipse 60% 45% at 50% 50%,rgba(255,200,120,.85),rgba(255,140,60,.35) 45%,rgba(255,140,60,0) 72%);mix-blend-mode:screen"></div>
+</div>
+<script>
+const tl = gsap.timeline({ paused: true });
+tl.fromTo("#s49-cam",{scale:1.0},{...{scale:1.09},duration:6.630,ease:"sine.inOut"},0);
+tl.fromTo("#s49-motes",{y:20,x:0},{y:-90,x:24,duration:6.630,ease:"none"},0);
+tl.fromTo("#s49-lt1",{opacity:0,x:-80},{opacity:1,x:0,duration:0.55,ease:"power3.out"},1.34);
+tl.fromTo("#s49-lt1 .n",{opacity:0,y:30},{opacity:1,y:0,duration:0.45,ease:"power3.out"},3.61);
+tl.fromTo("#s49-lt1 .u",{scaleX:0},{scaleX:1,duration:0.5,ease:"power3.out"},3.86);
+tl.fromTo("#s49-lt1 .p",{opacity:0},{opacity:1,duration:0.4},5.02);
+tl.to("#s49-lt1",{opacity:0,duration:0.2,ease:"power2.in"},5.96);
+tl.fromTo("#s49-sc",{opacity:0},{opacity:1,duration:0.7,ease:"sine.inOut"},0);
+tl.fromTo("#s49-leak",{xPercent:-70,opacity:0},{keyframes:[{xPercent:-10,opacity:1,duration:0.5,ease:"sine.out"},{xPercent:60,opacity:0,duration:0.8,ease:"sine.in"}]},0);
+window.__timelines["s49"] = tl;
+</script>
+</template>

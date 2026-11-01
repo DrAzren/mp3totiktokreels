@@ -1,0 +1,41 @@
+<template>
+<style>
+#root{position:absolute;inset:0;overflow:hidden;background:#061024;font-family:'Montserrat',sans-serif;color:#F5F7FA}
+.sc{position:absolute;inset:0;overflow:hidden}
+.cam,.punch{position:absolute;inset:0}
+.plate{position:absolute;left:-27px;top:-48px;width:1134px;height:2016px;object-fit:cover}
+.vid{position:absolute;left:0;top:0;width:1080px;height:1920px;object-fit:cover}
+.shade-t{position:absolute;left:0;top:0;width:1080px;height:560px;background:linear-gradient(180deg,rgba(6,16,36,.62),rgba(6,16,36,0))}
+.shade-b{position:absolute;left:0;top:980px;width:1080px;height:940px;background:linear-gradient(180deg,rgba(6,16,36,0),rgba(6,16,36,.55) 35%,rgba(6,16,36,.82))}
+.mote{position:absolute;border-radius:50%;background:radial-gradient(circle,rgba(255,236,200,.85),rgba(255,236,200,0) 70%)}
+.g{position:absolute;left:90px;width:900px}
+.kt{font-family:'League Gothic','Oswald',sans-serif;text-transform:uppercase;line-height:.92;letter-spacing:.01em;color:#F5F7FA;text-shadow:0 6px 30px rgba(0,0,0,.55)}
+.kick{font-family:'Montserrat',sans-serif;font-weight:800;font-size:34px;letter-spacing:.32em;text-transform:uppercase;color:#6FE3EE}
+.serif{font-family:'Playfair Display',serif;font-style:italic}
+.chip{display:inline-block;padding:14px 26px;border-radius:999px;background:rgba(11,26,51,.78);border:2px solid rgba(111,227,238,.7);font-weight:800;font-size:34px;letter-spacing:.06em;color:#F5F7FA;box-shadow:0 10px 30px rgba(0,0,0,.35)}
+.card{background:rgba(8,20,42,.82);border:1.5px solid rgba(111,227,238,.45);border-radius:28px;box-shadow:0 24px 60px rgba(0,0,0,.45)}
+.ln{display:inline-block;overflow:hidden;vertical-align:bottom}
+.ln>span{display:inline-block}
+.fx{position:absolute;inset:0;pointer-events:none}
+.warm{color:#FFD25A} .cyan{color:#6FE3EE}
+#s17-ch1{top:250px;perspective:1000px} #s17-ch1 .tg{font-weight:800;font-size:32px;letter-spacing:.36em;color:#6FE3EE}#s17-ch1 .num{font-family:'League Gothic';font-size:400px;line-height:.86;color:transparent;-webkit-text-stroke:4px #F5F7FA;position:relative;display:inline-block}#s17-ch1 .fill{position:absolute;left:0;top:0;color:#F5F7FA;-webkit-text-stroke:0;clip-path:inset(100% 0 0 0)}#s17-ch1 .tt{font-family:'League Gothic';font-size:150px;line-height:.95;margin-top:6px;text-transform:uppercase}#s17-ch1 .bar{height:8px;width:180px;background:#FFD25A;border-radius:6px;margin:22px 0 18px;transform-origin:left center}#s17-ch1 .dots{display:flex;gap:12px} #s17-ch1 .dots span{width:44px;height:8px;border-radius:5px;background:rgba(255,255,255,.25)}#s17-ch1 .dots .done{background:rgba(111,227,238,.6)} #s17-ch1 .dots .on{background:#FFD25A}</style>
+<div id="root" data-composition-id="s17" data-width="1080" data-height="1920" data-layout-allow-overflow data-layout-allow-overlap>
+<div id="s17-sc" class="sc"><div id="s17-punch" class="punch"><div id="s17-cam" class="cam"><img class="plate" src="assets/img/s17.jpg" alt=""></div></div><div id="s17-motes" class="fx"><span class="mote" style="left:580px;top:352px;width:14px;height:14px;opacity:0.45"></span><span class="mote" style="left:25px;top:1362px;width:8px;height:8px;opacity:0.50"></span><span class="mote" style="left:971px;top:1331px;width:13px;height:13px;opacity:0.28"></span><span class="mote" style="left:556px;top:796px;width:16px;height:16px;opacity:0.16"></span><span class="mote" style="left:41px;top:1296px;width:10px;height:10px;opacity:0.19"></span><span class="mote" style="left:871px;top:502px;width:11px;height:11px;opacity:0.19"></span><span class="mote" style="left:512px;top:1418px;width:6px;height:6px;opacity:0.49"></span><span class="mote" style="left:130px;top:1446px;width:17px;height:17px;opacity:0.33"></span><span class="mote" style="left:895px;top:499px;width:11px;height:11px;opacity:0.34"></span><span class="mote" style="left:116px;top:1674px;width:17px;height:17px;opacity:0.18"></span><span class="mote" style="left:646px;top:1613px;width:7px;height:7px;opacity:0.32"></span><span class="mote" style="left:372px;top:1560px;width:8px;height:8px;opacity:0.31"></span></div><div class="shade-t"></div><div class="shade-b"></div><div id="s17-ch1" class="g"><div class="tg">TANDA</div><div class="num">03<span class="fill">03</span></div><div class="bar"></div><div class="tt"><span class="ln"><span>SELALU</span></span> <span class="ln"><span>TERLUPA</span></span> </div><div class="dots"><span class="d done"></span><span class="d done"></span><span class="d on"></span><span class="d"></span><span class="d"></span><span class="d"></span><span class="d"></span><span class="d"></span><span class="d"></span><span class="d"></span></div></div></div><div id="s17-gl" class="fx"><span style="position:absolute;left:0;width:1080px;top:1219px;height:40px;background:#FF3DA8;mix-blend-mode:screen;opacity:.8"></span><span style="position:absolute;left:0;width:1080px;top:898px;height:32px;background:#6FE3EE;mix-blend-mode:screen;opacity:.8"></span><span style="position:absolute;left:0;width:1080px;top:1594px;height:59px;background:#F5F7FA;mix-blend-mode:screen;opacity:.8"></span><span style="position:absolute;left:0;width:1080px;top:1504px;height:31px;background:#6FE3EE;mix-blend-mode:screen;opacity:.8"></span><span style="position:absolute;left:0;width:1080px;top:205px;height:29px;background:#FF3DA8;mix-blend-mode:screen;opacity:.8"></span><span style="position:absolute;left:0;width:1080px;top:1678px;height:40px;background:#FF3DA8;mix-blend-mode:screen;opacity:.8"></span><span style="position:absolute;left:0;width:1080px;top:1177px;height:65px;background:#FF3DA8;mix-blend-mode:screen;opacity:.8"></span></div>
+</div>
+<script>
+const tl = gsap.timeline({ paused: true });
+tl.fromTo("#s17-cam",{scale:1.0},{...{scale:1.09},duration:3.160,ease:"sine.inOut"},0);
+tl.fromTo("#s17-motes",{y:20,x:0},{y:-90,x:24,duration:3.160,ease:"none"},0);
+tl.fromTo("#s17-ch1 .tg",{opacity:0,x:-40},{opacity:1,x:0,duration:0.5,ease:"power3.out"},0.1);
+tl.fromTo("#s17-ch1 .num",{rotationY:70,opacity:0,x:-80},{rotationY:0,opacity:1,x:0,duration:0.7,ease:"expo.out"},0.15);
+tl.fromTo("#s17-ch1 .fill",{clipPath:"inset(100% 0 0 0)"},{clipPath:"inset(0% 0 0 0)",duration:0.8,ease:"power2.inOut"},0.55);
+tl.fromTo("#s17-ch1 .bar",{scaleX:0},{scaleX:1,duration:0.5,ease:"power3.out"},0.4);
+tl.fromTo("#s17-ch1 .tt .ln>span",{yPercent:110,opacity:0},{yPercent:0,opacity:1,duration:0.5,ease:"power4.out",stagger:0.07},1.05);
+tl.fromTo("#s17-ch1 .dots span",{scaleX:0},{scaleX:1,duration:0.25,stagger:0.03,ease:"power2.out"},0.5);
+tl.to("#s17-ch1",{opacity:0,duration:0.2,ease:"power2.in"},2.49);
+tl.fromTo("#s17-punch",{scale:1},{scale:1.04,duration:0.12,ease:"power2.out",immediateRender:false,overwrite:"auto"},1.13);tl.to("#s17-punch",{scale:1,duration:0.9,ease:"power3.out",overwrite:"auto"},1.25);
+tl.fromTo("#s17-sc",{x:0},{keyframes:[{x:-36,duration:.04},{x:28,duration:.04},{x:-12,duration:.04},{x:0,duration:.04}]},0);
+tl.fromTo("#s17-gl span",{x:(i)=>((i*97)%5-2)*90,opacity:0.85},{x:0,opacity:0,duration:0.3,ease:"steps(5)",stagger:0.01},0);
+window.__timelines["s17"] = tl;
+</script>
+</template>

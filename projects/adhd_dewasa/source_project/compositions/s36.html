@@ -1,0 +1,36 @@
+<template>
+<style>
+#root{position:absolute;inset:0;overflow:hidden;background:#061024;font-family:'Montserrat',sans-serif;color:#F5F7FA}
+.sc{position:absolute;inset:0;overflow:hidden}
+.cam,.punch{position:absolute;inset:0}
+.plate{position:absolute;left:-27px;top:-48px;width:1134px;height:2016px;object-fit:cover}
+.vid{position:absolute;left:0;top:0;width:1080px;height:1920px;object-fit:cover}
+.shade-t{position:absolute;left:0;top:0;width:1080px;height:560px;background:linear-gradient(180deg,rgba(6,16,36,.62),rgba(6,16,36,0))}
+.shade-b{position:absolute;left:0;top:980px;width:1080px;height:940px;background:linear-gradient(180deg,rgba(6,16,36,0),rgba(6,16,36,.55) 35%,rgba(6,16,36,.82))}
+.mote{position:absolute;border-radius:50%;background:radial-gradient(circle,rgba(255,236,200,.85),rgba(255,236,200,0) 70%)}
+.g{position:absolute;left:90px;width:900px}
+.kt{font-family:'League Gothic','Oswald',sans-serif;text-transform:uppercase;line-height:.92;letter-spacing:.01em;color:#F5F7FA;text-shadow:0 6px 30px rgba(0,0,0,.55)}
+.kick{font-family:'Montserrat',sans-serif;font-weight:800;font-size:34px;letter-spacing:.32em;text-transform:uppercase;color:#6FE3EE}
+.serif{font-family:'Playfair Display',serif;font-style:italic}
+.chip{display:inline-block;padding:14px 26px;border-radius:999px;background:rgba(11,26,51,.78);border:2px solid rgba(111,227,238,.7);font-weight:800;font-size:34px;letter-spacing:.06em;color:#F5F7FA;box-shadow:0 10px 30px rgba(0,0,0,.35)}
+.card{background:rgba(8,20,42,.82);border:1.5px solid rgba(111,227,238,.45);border-radius:28px;box-shadow:0 24px 60px rgba(0,0,0,.45)}
+.ln{display:inline-block;overflow:hidden;vertical-align:bottom}
+.ln>span{display:inline-block}
+.fx{position:absolute;inset:0;pointer-events:none}
+.warm{color:#FFD25A} .cyan{color:#6FE3EE}
+</style>
+<div id="root" data-composition-id="s36" data-width="1080" data-height="1920" data-layout-allow-overflow data-layout-allow-overlap>
+<div id="s36-sc" class="sc"><div id="s36-punch" class="punch"><div id="s36-cam" class="cam"><img class="plate" src="assets/img/s36.jpg" alt=""></div></div><div id="s36-motes" class="fx"><span class="mote" style="left:644px;top:495px;width:11px;height:11px;opacity:0.47"></span><span class="mote" style="left:851px;top:1089px;width:18px;height:18px;opacity:0.35"></span><span class="mote" style="left:457px;top:649px;width:6px;height:6px;opacity:0.44"></span><span class="mote" style="left:31px;top:227px;width:7px;height:7px;opacity:0.24"></span><span class="mote" style="left:419px;top:563px;width:14px;height:14px;opacity:0.37"></span><span class="mote" style="left:936px;top:1232px;width:15px;height:15px;opacity:0.16"></span><span class="mote" style="left:466px;top:1391px;width:8px;height:8px;opacity:0.37"></span><span class="mote" style="left:691px;top:456px;width:13px;height:13px;opacity:0.34"></span><span class="mote" style="left:1041px;top:1154px;width:18px;height:18px;opacity:0.26"></span><span class="mote" style="left:1021px;top:1074px;width:10px;height:10px;opacity:0.19"></span><span class="mote" style="left:902px;top:599px;width:17px;height:17px;opacity:0.40"></span><span class="mote" style="left:964px;top:1086px;width:13px;height:13px;opacity:0.35"></span></div><div class="shade-t"></div><div class="shade-b"></div><svg id="s36-se1m" class="fx" viewBox="0 0 1080 1920"><g><circle cx="0" cy="0" r="110" fill="rgba(111,227,238,.08)" stroke="#6FE3EE" stroke-width="10"/><line x1="78" y1="78" x2="170" y2="170" stroke="#6FE3EE" stroke-width="22" stroke-linecap="round"/></g></svg><div id="s36-kl2" class="g kt " style="top:330px;font-size:130px;text-align:center;"><span class="ln"><span>DOKUMEN</span></span> <span class="ln"><span>PENTING?</span></span> </div></div>
+</div>
+<script>
+const tl = gsap.timeline({ paused: true });
+tl.fromTo("#s36-cam",{scale:1.0},{...{scale:1.09},duration:4.120,ease:"sine.inOut"},0);
+tl.fromTo("#s36-motes",{y:20,x:0},{y:-90,x:24,duration:4.120,ease:"none"},0);
+tl.fromTo("#s36-kl2 .ln>span",{yPercent:110,opacity:0},{yPercent:0,opacity:1,duration:0.5,ease:"power4.out",stagger:0.06},2.01);
+tl.fromTo("#s36-se1m g",{x:300,y:1000,opacity:0},{keyframes:[{opacity:1,duration:0.2},{x:700,y:880,duration:0.7,ease:"sine.inOut"},{x:380,y:760,duration:0.7,ease:"sine.inOut"},{x:640,y:960,duration:0.7,ease:"sine.inOut"}]},1.81);
+tl.to("#s36-kl2",{color:"#FF5A5F",duration:0.2},2.81);
+tl.to("#s36-se1m,#s36-kl2",{opacity:0,duration:0.2,ease:"power2.in"},3.45);
+tl.fromTo("#s36-sc",{yPercent:22,opacity:0},{yPercent:0,opacity:1,duration:0.5,ease:"power3.out"},0);
+window.__timelines["s36"] = tl;
+</script>
+</template>

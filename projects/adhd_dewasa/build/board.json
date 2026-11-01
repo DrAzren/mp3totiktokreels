@@ -1,0 +1,320 @@
+[
+{
+"id": "s01",
+"t0": 0.0,
+"t1": 3.78,
+"said": "Korang pernah tak tengah buat satu kerja, tiba-tiba teringat benda lain."
+},
+{
+"id": "s02",
+"t0": 3.78,
+"t1": 5.84,
+"said": "Lepas tu, korang buat benda lain pula."
+},
+{
+"id": "s03",
+"t0": 5.84,
+"t1": 8.78,
+"said": "Belum sempat habis, korang pergi buat kerja lain pula."
+},
+{
+"id": "s04",
+"t0": 8.78,
+"t1": 11.421,
+"said": "Last kali, satu kerja pun tak siap."
+},
+{
+"id": "s05",
+"t0": 11.421,
+"t1": 13.521,
+"said": "Orang lain ingat korang ni pemalas."
+},
+{
+"id": "s06",
+"t0": 13.521,
+"t1": 18.221,
+"said": "Sebenarnya, ada kemungkinan ia berkaitan dengan ADHD."
+},
+{
+"id": "s07",
+"t0": 18.221,
+"t1": 22.061,
+"said": "ADHD bukan penyakit yang just berlaku kat kanak-kanak je."
+},
+{
+"id": "s08",
+"t0": 22.061,
+"t1": 25.021,
+"said": "Orang dewasa pun boleh mengalami ADHD"
+},
+{
+"id": "s09",
+"t0": 25.021,
+"t1": 30.182,
+"said": "dan ada yang hanya mendapat diagnosis selepas umur 30 atau 40 tahun."
+},
+{
+"id": "s10",
+"t0": 30.182,
+"t1": 35.542,
+"said": "Hari ni, saya nak kongsikan 10 tanda ADHD dalam kalangan orang dewasa."
+},
+{
+"id": "s11",
+"t0": 35.542,
+"t1": 38.222,
+"said": "Nombor satu, susah nak fokus."
+},
+{
+"id": "s12",
+"t0": 38.222,
+"t1": 41.802,
+"said": "Korang tengah meeting, tapi fikiran dah melayang entah ke mana."
+},
+{
+"id": "s13",
+"t0": 41.802,
+"t1": 47.203,
+"said": "Orang tengah bercakap, korang dengar suara dia, tapi tak dapat tangkap apa yang dia sampaikan."
+},
+{
+"id": "s14",
+"t0": 47.203,
+"t1": 49.583,
+"said": "Nombor dua, mudah terganggu."
+},
+{
+"id": "s15",
+"t0": 49.583,
+"t1": 53.543,
+"said": "Tengah buat kerja, tiba-tiba telefon berbunyi. Terus buka telefon."
+},
+{
+"id": "s16",
+"t0": 53.543,
+"t1": 58.363,
+"said": "Daripada nak tengok satu mesej, akhirnya setengah jam habis scroll TikTok."
+},
+{
+"id": "s17",
+"t0": 58.363,
+"t1": 60.923,
+"said": "Nombor tiga, selalu terlupa."
+},
+{
+"id": "s18",
+"t0": 60.923,
+"t1": 64.883,
+"said": "Lupa appointment, lupa bayar bil, lupa letak kunci kereta."
+},
+{
+"id": "s19",
+"t0": 64.883,
+"t1": 68.244,
+"said": "Kadang-kadang baru masuk bilik, terus lupa nak ambil apa."
+},
+{
+"id": "s20",
+"t0": 68.244,
+"t1": 71.184,
+"said": "Nombor empat, susah nak menguruskan masa."
+},
+{
+"id": "s21",
+"t0": 71.184,
+"t1": 76.484,
+"said": "Korang rasa kerja tu boleh siap dalam 10 minit, tapi sebenarnya ambil masa sejam."
+},
+{
+"id": "s22",
+"t0": 76.484,
+"t1": 79.384,
+"said": "Akhirnya selalu lambat dan kelam kabut."
+},
+{
+"id": "s23",
+"t0": 79.384,
+"t1": 81.824,
+"said": "Nombor lima, suka bertangguh."
+},
+{
+"id": "s24",
+"t0": 81.824,
+"t1": 88.085,
+"said": "Kerja dah diberikan sejak minggu lepas, tapi korang hanya mula buat apabila deadline tinggal beberapa jam."
+},
+{
+"id": "s25",
+"t0": 88.085,
+"t1": 94.405,
+"said": "Bukan semestinya sebab malas, tetapi mungkin kerana kesukaran memulakan dan menguruskan tugasan."
+},
+{
+"id": "s26",
+"t0": 94.405,
+"t1": 97.045,
+"said": "Nombor enam, susah nak duduk diam."
+},
+{
+"id": "s27",
+"t0": 97.045,
+"t1": 100.485,
+"said": "Kaki sentiasa bergerak, jari asyik mengetuk meja,"
+},
+{
+"id": "s28",
+"t0": 100.485,
+"t1": 104.806,
+"said": "ataupun korang rasa gelisah dari dalam walaupun sedang duduk diam."
+},
+{
+"id": "s29",
+"t0": 104.806,
+"t1": 106.946,
+"said": "Nombor tujuh, impulsif."
+},
+{
+"id": "s30",
+"t0": 106.946,
+"t1": 111.806,
+"said": "Kadang-kadang bercakap sebelum orang lain habis bercakap. Susah nak tunggu giliran,"
+},
+{
+"id": "s31",
+"t0": 111.806,
+"t1": 116.486,
+"said": "ataupun membuat keputusan terlalu cepat tanpa memikirkan akibatnya."
+},
+{
+"id": "s32",
+"t0": 116.486,
+"t1": 119.406,
+"said": "Nombor lapan, susah nak siapkan kerja."
+},
+{
+"id": "s33",
+"t0": 119.406,
+"t1": 123.807,
+"said": "Banyak projek dimulakan, tapi hanya sedikit yang berjaya disiapkan."
+},
+{
+"id": "s34",
+"t0": 123.807,
+"t1": 129.887,
+"said": "Bila sesuatu tugasan menjadi membosankan atau terlalu rumit, korang mudah beralih kepada benda lain."
+},
+{
+"id": "s35",
+"t0": 129.887,
+"t1": 133.687,
+"said": "Nombor sembilan, susah menguruskan barang dan tugasan."
+},
+{
+"id": "s36",
+"t0": 133.687,
+"t1": 137.007,
+"said": "Meja kerja bersepah, dokumen penting hilang."
+},
+{
+"id": "s37",
+"t0": 137.007,
+"t1": 141.648,
+"said": "Banyak perkara yang perlu dibuat, tetapi korang tak tahu nak mula dari mana."
+},
+{
+"id": "s38",
+"t0": 141.648,
+"t1": 145.408,
+"said": "Nombor sepuluh, hyperfocus. Ini yang menarik."
+},
+{
+"id": "s39",
+"t0": 145.408,
+"t1": 150.548,
+"said": "Walaupun seseorang yang ada ADHD boleh mengalami kesukaran memberikan perhatian,"
+},
+{
+"id": "s40",
+"t0": 150.548,
+"t1": 155.168,
+"said": "ada juga yang terlalu fokus pada aktiviti yang sangat menarik minat mereka."
+},
+{
+"id": "s41",
+"t0": 155.168,
+"t1": 161.709,
+"said": "Contohnya bermain game, membuat projek kreatif, atau melakukan hobi tertentu sampai terlupa makan."
+},
+{
+"id": "s42",
+"t0": 161.709,
+"t1": 166.489,
+"said": "Tetapi, hyperfocus bukan simptom diagnostik khusus ADHD."
+},
+{
+"id": "s43",
+"t0": 166.489,
+"t1": 174.829,
+"said": "Sekarang, kena faham satu benda ni. Kalau korang ada satu atau dua tanda tadi, itu tak bermaksud korang mesti ada ADHD."
+},
+{
+"id": "s44",
+"t0": 174.829,
+"t1": 181.77,
+"said": "Untuk diagnosis ADHD, simptom biasanya sudah wujud sejak zaman kanak-kanak sebelum umur 12 tahun."
+},
+{
+"id": "s45",
+"t0": 181.77,
+"t1": 190.73,
+"said": "Simptom juga perlu berlaku dalam lebih daripada satu situasi, contohnya di rumah dan tempat kerja, serta menyebabkan gangguan fungsi yang ketara."
+},
+{
+"id": "s46",
+"t0": 190.73,
+"t1": 198.111,
+"said": "Masalah tidur, anxiety, depression, dan beberapa keadaan lain juga boleh menyebabkan simptom yang hampir sama."
+},
+{
+"id": "s47",
+"t0": 198.111,
+"t1": 201.211,
+"said": "Sebab itu, kita perlukan penilaian yang menyeluruh."
+},
+{
+"id": "s48",
+"t0": 201.211,
+"t1": 204.931,
+"said": "Kalau korang rasa simptom-simptom ni dah lama mengganggu kehidupan,"
+},
+{
+"id": "s49",
+"t0": 204.931,
+"t1": 210.411,
+"said": "boleh dapatkan penilaian kesihatan mental bersama saya, Dr Azren, di klinik saya di Nilai."
+},
+{
+"id": "s50",
+"t0": 210.411,
+"t1": 219.472,
+"said": "Saya juga ada menulis buku bertajuk \"Doktor, Saya Boleh Sembuh Ke?\" terbitan White Coat untuk membantu masyarakat memahami masalah kesihatan mental."
+},
+{
+"id": "s51",
+"t0": 219.472,
+"t1": 224.252,
+"said": "Ingat, ADHD bukan bermaksud seseorang itu bodoh atau pemalas."
+},
+{
+"id": "s52",
+"t0": 224.252,
+"t1": 231.932,
+"said": "Dengan diagnosis yang tepat, rawatan dan strategi yang sesuai, ramai individu dengan ADHD boleh berfungsi dengan lebih baik."
+},
+{
+"id": "s53",
+"t0": 231.932,
+"t1": 241.5,
+"said": "Jadi, antara 10 tanda tadi, yang mana satu korang paling kerap alami? Boleh share di ruangan komen."
+}
+]

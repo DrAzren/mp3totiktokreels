@@ -1,0 +1,37 @@
+<template>
+<style>
+#root{position:absolute;inset:0;overflow:hidden;background:#061024;font-family:'Montserrat',sans-serif;color:#F5F7FA}
+.sc{position:absolute;inset:0;overflow:hidden}
+.cam,.punch{position:absolute;inset:0}
+.plate{position:absolute;left:-27px;top:-48px;width:1134px;height:2016px;object-fit:cover}
+.vid{position:absolute;left:0;top:0;width:1080px;height:1920px;object-fit:cover}
+.shade-t{position:absolute;left:0;top:0;width:1080px;height:560px;background:linear-gradient(180deg,rgba(6,16,36,.62),rgba(6,16,36,0))}
+.shade-b{position:absolute;left:0;top:980px;width:1080px;height:940px;background:linear-gradient(180deg,rgba(6,16,36,0),rgba(6,16,36,.55) 35%,rgba(6,16,36,.82))}
+.mote{position:absolute;border-radius:50%;background:radial-gradient(circle,rgba(255,236,200,.85),rgba(255,236,200,0) 70%)}
+.g{position:absolute;left:90px;width:900px}
+.kt{font-family:'League Gothic','Oswald',sans-serif;text-transform:uppercase;line-height:.92;letter-spacing:.01em;color:#F5F7FA;text-shadow:0 6px 30px rgba(0,0,0,.55)}
+.kick{font-family:'Montserrat',sans-serif;font-weight:800;font-size:34px;letter-spacing:.32em;text-transform:uppercase;color:#6FE3EE}
+.serif{font-family:'Playfair Display',serif;font-style:italic}
+.chip{display:inline-block;padding:14px 26px;border-radius:999px;background:rgba(11,26,51,.78);border:2px solid rgba(111,227,238,.7);font-weight:800;font-size:34px;letter-spacing:.06em;color:#F5F7FA;box-shadow:0 10px 30px rgba(0,0,0,.35)}
+.card{background:rgba(8,20,42,.82);border:1.5px solid rgba(111,227,238,.45);border-radius:28px;box-shadow:0 24px 60px rgba(0,0,0,.45)}
+.ln{display:inline-block;overflow:hidden;vertical-align:bottom}
+.ln>span{display:inline-block}
+.fx{position:absolute;inset:0;pointer-events:none}
+.warm{color:#FFD25A} .cyan{color:#6FE3EE}
+</style>
+<div id="root" data-composition-id="s39" data-width="1080" data-height="1920" data-layout-allow-overflow data-layout-allow-overlap>
+<div id="s39-sc" class="sc"><div id="s39-punch" class="punch"><div id="s39-cam" class="cam"><img class="plate" src="assets/img/s39.jpg" alt=""></div></div><div id="s39-motes" class="fx"><span class="mote" style="left:891px;top:1783px;width:6px;height:6px;opacity:0.48"></span><span class="mote" style="left:743px;top:1193px;width:11px;height:11px;opacity:0.20"></span><span class="mote" style="left:539px;top:1098px;width:14px;height:14px;opacity:0.44"></span><span class="mote" style="left:291px;top:498px;width:11px;height:11px;opacity:0.15"></span><span class="mote" style="left:857px;top:1512px;width:11px;height:11px;opacity:0.48"></span><span class="mote" style="left:149px;top:1156px;width:16px;height:16px;opacity:0.39"></span><span class="mote" style="left:155px;top:878px;width:14px;height:14px;opacity:0.48"></span><span class="mote" style="left:735px;top:404px;width:11px;height:11px;opacity:0.25"></span><span class="mote" style="left:389px;top:1443px;width:10px;height:10px;opacity:0.28"></span><span class="mote" style="left:582px;top:234px;width:9px;height:9px;opacity:0.45"></span><span class="mote" style="left:634px;top:811px;width:15px;height:15px;opacity:0.39"></span><span class="mote" style="left:682px;top:163px;width:9px;height:9px;opacity:0.44"></span></div><div class="shade-t"></div><div class="shade-b"></div><svg id="s39-mt1" class="fx" viewBox="0 0 1080 1920"><path d="M290 700 A250 250 0 0 1 790 700" fill="none" stroke="rgba(255,255,255,.2)" stroke-width="34" stroke-linecap="round"/><path d="M290 700 A250 250 0 0 1 790 700" pathLength="1" fill="none" stroke="#6FE3EE" stroke-width="34" stroke-linecap="round" stroke-dasharray="1" stroke-dashoffset="0.15" class="arc"/><g class="nd"><line x1="540" y1="700" x2="540" y2="490" stroke="#FFD25A" stroke-width="14" stroke-linecap="round"/><circle cx="540" cy="700" r="22" fill="#FFD25A"/></g><text x="540" y="800" text-anchor="middle" font-family="Montserrat" font-weight="800" font-size="40" letter-spacing="10" fill="#F5F7FA">PERHATIAN</text></svg></div>
+</div>
+<script>
+const tl = gsap.timeline({ paused: true });
+tl.fromTo("#s39-cam",{scale:1.03,x:-12,y:10},{...{scale:1.07,x:12,y:-10},duration:6.190,ease:"sine.inOut"},0);
+tl.fromTo("#s39-motes",{y:20,x:0},{y:-90,x:24,duration:6.190,ease:"none"},0);
+tl.fromTo("#s39-mt1",{opacity:0},{opacity:1,duration:0.4},0.7);
+tl.fromTo("#s39-mt1 .nd",{rotation:50,svgOrigin:"540 700"},{rotation:-62,duration:1.0,ease:"power2.inOut"},3.68);
+tl.fromTo("#s39-mt1 .arc",{strokeDashoffset:0.15},{strokeDashoffset:0.82,duration:1.0,ease:"power2.inOut"},3.68);
+tl.to("#s39-mt1 .nd",{rotation:-55,duration:0.25,yoyo:true,repeat:3,ease:"sine.inOut"},4.68);
+tl.to("#s39-mt1",{opacity:0,duration:0.2,ease:"power2.in"},5.52);
+tl.fromTo("#s39-sc",{opacity:0},{opacity:1,duration:0.5,ease:"sine.inOut"},0);
+window.__timelines["s39"] = tl;
+</script>
+</template>

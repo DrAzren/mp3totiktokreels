@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="ms">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+    <style>
+      :root { --ground: #061024; --ink: #F5F7FA; --navy: #0B1A33; --cyan: #6FE3EE; --warm: #FFD25A; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; width: 1080px; height: 1920px; overflow: hidden; background: var(--ground); }
+      #main { position: relative; width: 1080px; height: 1920px; overflow: hidden; }
+      #bg { position: absolute; inset: 0; background: var(--ground); }
+      #grain { position: absolute; inset: 0; pointer-events: none; z-index: 800; background-image: url("assets/fx/grain.png"); background-size: 384px 384px; opacity: 0.075; }
+      #hf-vignette { position: absolute; inset: 0; pointer-events: none; z-index: 790;
+        background: radial-gradient(ellipse at center, transparent 52%, rgba(0, 0, 0, 0.5) 100%); }
+    </style>
+  </head>
+  <body>
+    <div id="main" data-composition-id="main" data-start="0" data-duration="241.5" data-width="1080" data-height="1920" data-fps="30">
+      <div id="bg"></div>
+      <div id="s01" data-composition-id="s01" data-composition-src="compositions/s01.html" data-start="0.000" data-duration="4.330" data-track-index="1" data-track-kind="graphics" data-width="1080" data-height="1920" style="position:absolute;inset:0;z-index:10"></div>
+      <div id="s02" data-composition-id="s02" data-composition-src="compositions/s02.html" data-start="3.630" data-duration="2.760" data-track-index="2" data-track-kind="graphics" data-width="1080" data-height="1920" style="position:absolute;inset:0;z-index:11"></div>
+      <div id="s03" data-composition-id="s03" data-composition-src="compositions/s03.html" data-start="5.590" data-duration="3.740" data-track-index="1" data-track-kind="graphics" data-width="1080" data-height="1920" style="position:absolute;inset:0;z-index:12"></div>
+      <div id="s04" data-composition-id="s04" data-composition-src="compositions/s04.html" data-start="8.280" data-duration="3.691" data-track-index="2" data-track-kind="graphics" data-width="1080" data-height="1920" style="position:absolute;inset:0;z-index:13"></div>
+      <div id="s05" data-composition-id="s05" data-composition-src="compositions/s05.html" data-start="11.271" data-duration="2.800" data-track-index="1" data-track-kind="graphics" data-width="1080" data-height="1920" style="position:absolute;inset:0;z-index:14"></div>
+      <div id="s06" data-composition-id="s06" data-composition-src="compositions/s06.html" data-start="13.521" data-duration="5.250" data-track-index="2" data-track-kind="graphics" data-width="1080" data-height="1920" style="position:absolute;inset:0;z-index:15"></div>
+      <div id="s07" data-composition-id="s07" data-composition-src="compositions/s07.html" data-start="17.971" data-duration="4.640" data-track-index="1" data-track-kind="graphics" data-width="1080" data-height="1920" style="position:absolute;inset:0;z-index:16"></div>
+      <div id="s08" data-composition-id="s08" data-composition-src="compositions/s08.html" data-start="21.811" data-duration="3.760" data-track-index="2" data-track-kind="graphics" data-width="1080" data-height="1920" style="position:absolute;inset:0;z-index:17"></div>
+      <div id="s09" data-composition-id="s09" data-composition-src="compositions/s09.html" data-start="24.521" data-duration="6.211" data-track-index="1" data-track-kind="graphics" data-width="1080" data-height="1920" style="position:absolute;inset:0;z-index:18"></div>
+      <div id="s10" data-composition-id="s10" data-composition-src="compositions/s10.html" data-start="29.932" data-duration="6.160" data-track-index="2" data-track-kind="graphics" data-width="1080" data-height="1920" style="position:absolute;inset:0;z-index:19"></div>
+      <div id="s11" data-composition-id="s11" data-composition-src="compositions/s11.html" data-start="35.492" data-duration="3.280" data-track-index="1" data-track-kind="graphics" data-width="1080" data-height="1920" style="position:absolute;inset:0;z-index:20"></div>
+      <div id="s12" data-composition-id="s12" data-composition-src="compositions/s12.html" data-start="37.972" data-duration="4.380" data-track-index="2" data-track-kind="graphics" data-width="1080" data-height="1920" style="position:absolute;inset:0;z-index:21"></div>
+      <div id="s13" data-composition-id="s13" data-composition-src="compositions/s13.html" data-start="41.302" data-duration="6.451" data-track-index="1" data-track-kind="graphics" data-width="1080" data-height="1920" style="position:absolute;inset:0;z-index:22"></div>
+      <div id="s14" data-composition-id="s14" data-composition-src="compositions/s14.html" data-start="47.153" data-duration="2.980" data-track-index="2" data-track-kind="graphics" data-width="1080" data-height="1920" style="position:absolute;inset:0;z-index:23"></div>
+      <div id="s15" data-composition-id="s15" data-composition-src="compositions/s15.html" data-start="49.433" data-duration="4.660" data-track-index="1" data-track-kind="graphics" data-width="1080" data-height="1920" style="position:absolute;inset:0;z-index:24"></div>
+      <div id="s16" data-composition-id="s16" data-composition-src="compositions/s16.html" data-start="53.043" data-duration="5.870" data-track-index="2" data-track-kind="graphics" data-width="1080" data-height="1920" style="position:absolute;inset:0;z-index:25"></div>
+      <div id="s17" data-composition-id="s17" data-composition-src="compositions/s17.html" data-start="58.313" data-duration="3.160" data-track-index="1" data-track-kind="graphics" data-width="1080" data-height="1920" style="position:absolute;inset:0;z-index:26"></div>
+      <div id="s18" data-composition-id="s18" data-composition-src="compositions/s18.html" data-start="60.673" data-duration="4.760" data-track-index="2" data-track-kind="graphics" data-width="1080" data-height="1920" style="position:absolute;inset:0;z-index:27"></div>
+      <div id="s19" data-composition-id="s19" data-composition-src="compositions/s19.html" data-start="64.383" data-duration="4.411" data-track-index="1" data-track-kind="graphics" data-width="1080" data-height="1920" style="position:absolute;inset:0;z-index:28"></div>
+      <div id="s20" data-composition-id="s20" data-composition-src="compositions/s20.html" data-start="68.194" data-duration="3.540" data-track-index="2" data-track-kind="graphics" data-width="1080" data-height="1920" style="position:absolute;inset:0;z-index:29"></div>
+      <div id="s21" data-composition-id="s21" data-composition-src="compositions/s21.html" data-start="70.934" data-duration="6.100" data-track-index="1" data-track-kind="graphics" data-width="1080" data-height="1920" style="position:absolute;inset:0;z-index:30"></div>
+      <div id="s22" data-composition-id="s22" data-composition-src="compositions/s22.html" data-start="76.334" data-duration="3.600" data-track-index="2" data-track-kind="graphics" data-width="1080" data-height="1920" style="position:absolute;inset:0;z-index:31"></div>
+      <div id="s23" data-composition-id="s23" data-composition-src="compositions/s23.html" data-start="79.334" data-duration="3.040" data-track-index="1" data-track-kind="graphics" data-width="1080" data-height="1920" style="position:absolute;inset:0;z-index:32"></div>
+      <div id="s24" data-composition-id="s24" data-composition-src="compositions/s24.html" data-start="81.574" data-duration="7.061" data-track-index="2" data-track-kind="graphics" data-width="1080" data-height="1920" style="position:absolute;inset:0;z-index:33"></div>
+      <div id="s25" data-composition-id="s25" data-composition-src="compositions/s25.html" data-start="87.585" data-duration="7.370" data-track-index="1" data-track-kind="graphics" data-width="1080" data-height="1920" style="position:absolute;inset:0;z-index:34"></div>
+      <div id="s26" data-composition-id="s26" data-composition-src="compositions/s26.html" data-start="94.355" data-duration="3.240" data-track-index="2" data-track-kind="graphics" data-width="1080" data-height="1920" style="position:absolute;inset:0;z-index:35"></div>
+      <div id="s27" data-composition-id="s27" data-composition-src="compositions/s27.html" data-start="96.795" data-duration="4.240" data-track-index="1" data-track-kind="graphics" data-width="1080" data-height="1920" style="position:absolute;inset:0;z-index:36"></div>
+      <div id="s28" data-composition-id="s28" data-composition-src="compositions/s28.html" data-start="99.985" data-duration="5.371" data-track-index="2" data-track-kind="graphics" data-width="1080" data-height="1920" style="position:absolute;inset:0;z-index:37"></div>
+      <div id="s29" data-composition-id="s29" data-composition-src="compositions/s29.html" data-start="104.756" data-duration="2.740" data-track-index="1" data-track-kind="graphics" data-width="1080" data-height="1920" style="position:absolute;inset:0;z-index:38"></div>
+      <div id="s30" data-composition-id="s30" data-composition-src="compositions/s30.html" data-start="106.696" data-duration="5.660" data-track-index="2" data-track-kind="graphics" data-width="1080" data-height="1920" style="position:absolute;inset:0;z-index:39"></div>
+      <div id="s31" data-composition-id="s31" data-composition-src="compositions/s31.html" data-start="111.656" data-duration="5.380" data-track-index="1" data-track-kind="graphics" data-width="1080" data-height="1920" style="position:absolute;inset:0;z-index:40"></div>
+      <div id="s32" data-composition-id="s32" data-composition-src="compositions/s32.html" data-start="116.436" data-duration="3.520" data-track-index="2" data-track-kind="graphics" data-width="1080" data-height="1920" style="position:absolute;inset:0;z-index:41"></div>
+      <div id="s33" data-composition-id="s33" data-composition-src="compositions/s33.html" data-start="119.156" data-duration="5.201" data-track-index="1" data-track-kind="graphics" data-width="1080" data-height="1920" style="position:absolute;inset:0;z-index:42"></div>
+      <div id="s34" data-composition-id="s34" data-composition-src="compositions/s34.html" data-start="123.307" data-duration="7.130" data-track-index="2" data-track-kind="graphics" data-width="1080" data-height="1920" style="position:absolute;inset:0;z-index:43"></div>
+      <div id="s35" data-composition-id="s35" data-composition-src="compositions/s35.html" data-start="129.837" data-duration="4.400" data-track-index="1" data-track-kind="graphics" data-width="1080" data-height="1920" style="position:absolute;inset:0;z-index:44"></div>
+      <div id="s36" data-composition-id="s36" data-composition-src="compositions/s36.html" data-start="133.437" data-duration="4.120" data-track-index="2" data-track-kind="graphics" data-width="1080" data-height="1920" style="position:absolute;inset:0;z-index:45"></div>
+      <div id="s37" data-composition-id="s37" data-composition-src="compositions/s37.html" data-start="136.507" data-duration="5.691" data-track-index="1" data-track-kind="graphics" data-width="1080" data-height="1920" style="position:absolute;inset:0;z-index:46"></div>
+      <div id="s38" data-composition-id="s38" data-composition-src="compositions/s38.html" data-start="141.598" data-duration="4.360" data-track-index="2" data-track-kind="graphics" data-width="1080" data-height="1920" style="position:absolute;inset:0;z-index:47"></div>
+      <div id="s39" data-composition-id="s39" data-composition-src="compositions/s39.html" data-start="144.908" data-duration="6.190" data-track-index="1" data-track-kind="graphics" data-width="1080" data-height="1920" style="position:absolute;inset:0;z-index:48"></div>
+      <div id="s40" data-composition-id="s40" data-composition-src="compositions/s40.html" data-start="150.298" data-duration="5.420" data-track-index="2" data-track-kind="graphics" data-width="1080" data-height="1920" style="position:absolute;inset:0;z-index:49"></div>
+      <div id="s41" data-composition-id="s41" data-composition-src="compositions/s41.html" data-start="154.668" data-duration="7.591" data-track-index="1" data-track-kind="graphics" data-width="1080" data-height="1920" style="position:absolute;inset:0;z-index:50"></div>
+      <div id="s42" data-composition-id="s42" data-composition-src="compositions/s42.html" data-start="161.209" data-duration="5.830" data-track-index="2" data-track-kind="graphics" data-width="1080" data-height="1920" style="position:absolute;inset:0;z-index:51"></div>
+      <div id="s43" data-composition-id="s43" data-composition-src="compositions/s43.html" data-start="165.889" data-duration="9.490" data-track-index="1" data-track-kind="graphics" data-width="1080" data-height="1920" style="position:absolute;inset:0;z-index:52"></div>
+      <div id="s44" data-composition-id="s44" data-composition-src="compositions/s44.html" data-start="174.329" data-duration="7.991" data-track-index="2" data-track-kind="graphics" data-width="1080" data-height="1920" style="position:absolute;inset:0;z-index:53"></div>
+      <div id="s45" data-composition-id="s45" data-composition-src="compositions/s45.html" data-start="181.270" data-duration="10.010" data-track-index="1" data-track-kind="graphics" data-width="1080" data-height="1920" style="position:absolute;inset:0;z-index:54"></div>
+      <div id="s46" data-composition-id="s46" data-composition-src="compositions/s46.html" data-start="190.230" data-duration="8.431" data-track-index="2" data-track-kind="graphics" data-width="1080" data-height="1920" style="position:absolute;inset:0;z-index:55"></div>
+      <div id="s47" data-composition-id="s47" data-composition-src="compositions/s47.html" data-start="197.511" data-duration="4.250" data-track-index="1" data-track-kind="graphics" data-width="1080" data-height="1920" style="position:absolute;inset:0;z-index:56"></div>
+      <div id="s48" data-composition-id="s48" data-composition-src="compositions/s48.html" data-start="200.711" data-duration="4.770" data-track-index="2" data-track-kind="graphics" data-width="1080" data-height="1920" style="position:absolute;inset:0;z-index:57"></div>
+      <div id="s49" data-composition-id="s49" data-composition-src="compositions/s49.html" data-start="204.331" data-duration="6.630" data-track-index="1" data-track-kind="graphics" data-width="1080" data-height="1920" style="position:absolute;inset:0;z-index:58"></div>
+      <div id="s50" data-composition-id="s50" data-composition-src="compositions/s50.html" data-start="209.911" data-duration="10.111" data-track-index="2" data-track-kind="graphics" data-width="1080" data-height="1920" style="position:absolute;inset:0;z-index:59"></div>
+      <div id="s51" data-composition-id="s51" data-composition-src="compositions/s51.html" data-start="218.872" data-duration="5.930" data-track-index="1" data-track-kind="graphics" data-width="1080" data-height="1920" style="position:absolute;inset:0;z-index:60"></div>
+      <div id="s52" data-composition-id="s52" data-composition-src="compositions/s52.html" data-start="223.652" data-duration="8.830" data-track-index="2" data-track-kind="graphics" data-width="1080" data-height="1920" style="position:absolute;inset:0;z-index:61"></div>
+      <div id="s53" data-composition-id="s53" data-composition-src="compositions/s53.html" data-start="231.432" data-duration="10.068" data-track-index="1" data-track-kind="graphics" data-width="1080" data-height="1920" style="position:absolute;inset:0;z-index:62"></div>
+      <div id="hud" data-composition-id="hud" data-composition-src="compositions/hud.html" data-start="0" data-duration="241.5" data-track-index="7" data-track-kind="graphics" data-width="1080" data-height="1920" style="position:absolute;inset:0;z-index:700"></div>
+      <div id="captions" data-composition-id="captions" data-composition-src="compositions/captions.html" data-start="0" data-duration="241.5" data-track-index="8" data-track-kind="captions" data-width="1080" data-height="1920" style="position:absolute;inset:0;z-index:750"></div>
+      <div id="hf-vignette" data-layout-ignore></div>
+      <div id="grain" data-layout-ignore></div>
+      <audio id="narration" class="clip" src="assets/audio/narration.wav" data-start="0" data-duration="241.5" data-track-index="10" data-volume="1"></audio>
+      <audio id="music" class="clip" src="assets/audio/music.wav" data-start="0" data-duration="241.5" data-track-index="11" data-volume="1"></audio>
+      <audio id="sfx" class="clip" src="assets/audio/sfx.wav" data-start="0" data-duration="241.5" data-track-index="12" data-volume="1"></audio>
+    </div>
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      // film grain: a deterministic stepped walk of the noise tile, 12 changes per second
+      tl.fromTo("#grain", { backgroundPosition: "0px 0px" }, { backgroundPosition: "396204px 610212px", duration: 241.5, ease: "steps(2892)" }, 0);
+      window.__timelines["main"] = tl;
+    </script>
+  </body>
+</html>

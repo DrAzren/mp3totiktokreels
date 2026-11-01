@@ -1,0 +1,35 @@
+<template>
+<style>
+#root{position:absolute;inset:0;overflow:hidden;background:#061024;font-family:'Montserrat',sans-serif;color:#F5F7FA}
+.sc{position:absolute;inset:0;overflow:hidden}
+.cam,.punch{position:absolute;inset:0}
+.plate{position:absolute;left:-27px;top:-48px;width:1134px;height:2016px;object-fit:cover}
+.vid{position:absolute;left:0;top:0;width:1080px;height:1920px;object-fit:cover}
+.shade-t{position:absolute;left:0;top:0;width:1080px;height:560px;background:linear-gradient(180deg,rgba(6,16,36,.62),rgba(6,16,36,0))}
+.shade-b{position:absolute;left:0;top:980px;width:1080px;height:940px;background:linear-gradient(180deg,rgba(6,16,36,0),rgba(6,16,36,.55) 35%,rgba(6,16,36,.82))}
+.mote{position:absolute;border-radius:50%;background:radial-gradient(circle,rgba(255,236,200,.85),rgba(255,236,200,0) 70%)}
+.g{position:absolute;left:90px;width:900px}
+.kt{font-family:'League Gothic','Oswald',sans-serif;text-transform:uppercase;line-height:.92;letter-spacing:.01em;color:#F5F7FA;text-shadow:0 6px 30px rgba(0,0,0,.55)}
+.kick{font-family:'Montserrat',sans-serif;font-weight:800;font-size:34px;letter-spacing:.32em;text-transform:uppercase;color:#6FE3EE}
+.serif{font-family:'Playfair Display',serif;font-style:italic}
+.chip{display:inline-block;padding:14px 26px;border-radius:999px;background:rgba(11,26,51,.78);border:2px solid rgba(111,227,238,.7);font-weight:800;font-size:34px;letter-spacing:.06em;color:#F5F7FA;box-shadow:0 10px 30px rgba(0,0,0,.35)}
+.card{background:rgba(8,20,42,.82);border:1.5px solid rgba(111,227,238,.45);border-radius:28px;box-shadow:0 24px 60px rgba(0,0,0,.45)}
+.ln{display:inline-block;overflow:hidden;vertical-align:bottom}
+.ln>span{display:inline-block}
+.fx{position:absolute;inset:0;pointer-events:none}
+.warm{color:#FFD25A} .cyan{color:#6FE3EE}
+#s42-no1{top:420px;left:130px;width:820px;padding:46px 50px} #s42-no1 .h{display:inline-block;font-weight:900;font-size:30px;letter-spacing:.3em;color:#0B1A33;background:#FFD25A;padding:8px 18px;border-radius:8px}#s42-no1 .t{font-family:'Playfair Display';font-size:66px;line-height:1.18;margin-top:22px} #s42-no1 .t b{color:#6FE3EE;font-style:italic}</style>
+<div id="root" data-composition-id="s42" data-width="1080" data-height="1920" data-layout-allow-overflow data-layout-allow-overlap>
+<div id="s42-sc" class="sc"><div id="s42-punch" class="punch"><div id="s42-cam" class="cam"><img class="plate" src="assets/img/s42.jpg" alt=""></div></div><div id="s42-motes" class="fx"><span class="mote" style="left:530px;top:1061px;width:14px;height:14px;opacity:0.19"></span><span class="mote" style="left:518px;top:1334px;width:15px;height:15px;opacity:0.44"></span><span class="mote" style="left:831px;top:1754px;width:9px;height:9px;opacity:0.37"></span><span class="mote" style="left:238px;top:173px;width:14px;height:14px;opacity:0.41"></span><span class="mote" style="left:235px;top:474px;width:15px;height:15px;opacity:0.34"></span><span class="mote" style="left:422px;top:1289px;width:13px;height:13px;opacity:0.20"></span><span class="mote" style="left:492px;top:1491px;width:18px;height:18px;opacity:0.45"></span><span class="mote" style="left:871px;top:930px;width:13px;height:13px;opacity:0.45"></span><span class="mote" style="left:46px;top:1756px;width:15px;height:15px;opacity:0.48"></span><span class="mote" style="left:301px;top:220px;width:14px;height:14px;opacity:0.44"></span><span class="mote" style="left:73px;top:378px;width:6px;height:6px;opacity:0.22"></span><span class="mote" style="left:720px;top:1777px;width:7px;height:7px;opacity:0.34"></span></div><div class="shade-t"></div><div class="shade-b"></div><div id="s42-no1" class="g card"><span class="h">NOTA</span><div class="t">Hyperfocus <b>bukan simptom diagnostik khusus</b> ADHD.</div></div></div>
+</div>
+<script>
+const tl = gsap.timeline({ paused: true });
+tl.fromTo("#s42-cam",{scale:1.03,x:-12,y:10},{...{scale:1.07,x:12,y:-10},duration:5.830,ease:"sine.inOut"},0);
+tl.fromTo("#s42-motes",{y:20,x:0},{y:-90,x:24,duration:5.830,ease:"none"},0);
+tl.fromTo("#s42-no1",{opacity:0,y:50,rotationX:-20},{opacity:1,y:0,rotationX:0,duration:0.6,ease:"power3.out"},0.75);
+tl.fromTo("#s42-no1 b",{color:"#F5F7FA"},{color:"#6FE3EE",duration:0.4},2.2);
+tl.to("#s42-no1",{opacity:0,duration:0.2,ease:"power2.in"},5.16);
+tl.fromTo("#s42-sc",{opacity:0},{opacity:1,duration:0.5,ease:"sine.inOut"},0);
+window.__timelines["s42"] = tl;
+</script>
+</template>

@@ -1,0 +1,36 @@
+<template>
+<style>
+#root{position:absolute;inset:0;overflow:hidden;background:#061024;font-family:'Montserrat',sans-serif;color:#F5F7FA}
+.sc{position:absolute;inset:0;overflow:hidden}
+.cam,.punch{position:absolute;inset:0}
+.plate{position:absolute;left:-27px;top:-48px;width:1134px;height:2016px;object-fit:cover}
+.vid{position:absolute;left:0;top:0;width:1080px;height:1920px;object-fit:cover}
+.shade-t{position:absolute;left:0;top:0;width:1080px;height:560px;background:linear-gradient(180deg,rgba(6,16,36,.62),rgba(6,16,36,0))}
+.shade-b{position:absolute;left:0;top:980px;width:1080px;height:940px;background:linear-gradient(180deg,rgba(6,16,36,0),rgba(6,16,36,.55) 35%,rgba(6,16,36,.82))}
+.mote{position:absolute;border-radius:50%;background:radial-gradient(circle,rgba(255,236,200,.85),rgba(255,236,200,0) 70%)}
+.g{position:absolute;left:90px;width:900px}
+.kt{font-family:'League Gothic','Oswald',sans-serif;text-transform:uppercase;line-height:.92;letter-spacing:.01em;color:#F5F7FA;text-shadow:0 6px 30px rgba(0,0,0,.55)}
+.kick{font-family:'Montserrat',sans-serif;font-weight:800;font-size:34px;letter-spacing:.32em;text-transform:uppercase;color:#6FE3EE}
+.serif{font-family:'Playfair Display',serif;font-style:italic}
+.chip{display:inline-block;padding:14px 26px;border-radius:999px;background:rgba(11,26,51,.78);border:2px solid rgba(111,227,238,.7);font-weight:800;font-size:34px;letter-spacing:.06em;color:#F5F7FA;box-shadow:0 10px 30px rgba(0,0,0,.35)}
+.card{background:rgba(8,20,42,.82);border:1.5px solid rgba(111,227,238,.45);border-radius:28px;box-shadow:0 24px 60px rgba(0,0,0,.45)}
+.ln{display:inline-block;overflow:hidden;vertical-align:bottom}
+.ln>span{display:inline-block}
+.fx{position:absolute;inset:0;pointer-events:none}
+.warm{color:#FFD25A} .cyan{color:#6FE3EE}
+#s05-st1{top:430px;text-align:center} #s05-st1 .w{display:inline-block;font-family:'League Gothic';font-size:230px;color:#F5F7FA;padding:0 36px;border:10px solid #F5F7FA;border-radius:18px;text-shadow:none;background:rgba(6,16,36,.35)}#s05-st1 .strike{position:absolute;left:120px;top:540px;width:840px;height:22px;background:#6FE3EE;border-radius:12px;transform-origin:left center}</style>
+<div id="root" data-composition-id="s05" data-width="1080" data-height="1920" data-layout-allow-overflow data-layout-allow-overlap>
+<div id="s05-sc" class="sc"><div id="s05-punch" class="punch"><div id="s05-cam" class="cam"><img class="plate" src="assets/img/s05.jpg" alt=""></div></div><div id="s05-motes" class="fx"><span class="mote" style="left:1010px;top:1337px;width:17px;height:17px;opacity:0.21"></span><span class="mote" style="left:905px;top:1615px;width:10px;height:10px;opacity:0.41"></span><span class="mote" style="left:929px;top:1506px;width:12px;height:12px;opacity:0.34"></span><span class="mote" style="left:359px;top:1067px;width:14px;height:14px;opacity:0.33"></span><span class="mote" style="left:483px;top:1406px;width:7px;height:7px;opacity:0.24"></span><span class="mote" style="left:434px;top:349px;width:18px;height:18px;opacity:0.33"></span><span class="mote" style="left:1034px;top:1793px;width:9px;height:9px;opacity:0.29"></span><span class="mote" style="left:611px;top:796px;width:16px;height:16px;opacity:0.40"></span><span class="mote" style="left:676px;top:1294px;width:13px;height:13px;opacity:0.24"></span><span class="mote" style="left:533px;top:1741px;width:7px;height:7px;opacity:0.16"></span><span class="mote" style="left:200px;top:1245px;width:18px;height:18px;opacity:0.40"></span><span class="mote" style="left:485px;top:1289px;width:15px;height:15px;opacity:0.22"></span></div><div class="shade-t"></div><div class="shade-b"></div><div id="s05-st1" class="g"><span class="w">PEMALAS?</span></div><div id="s05-st1s" class="strike" style="position:absolute;left:150px;top:545px;width:780px;height:22px;background:#6FE3EE;border-radius:12px"></div></div><div id="s05-streak" class="fx" style="background:linear-gradient(90deg,rgba(255,255,255,0),rgba(220,250,255,.55),rgba(255,255,255,0));width:500px;left:-500px"></div>
+</div>
+<script>
+const tl = gsap.timeline({ paused: true });
+tl.fromTo("#s05-cam",{scale:1.0},{...{scale:1.09},duration:2.800,ease:"sine.inOut"},0);
+tl.fromTo("#s05-motes",{y:20,x:0},{y:-90,x:24,duration:2.800,ease:"none"},0);
+tl.fromTo("#s05-st1 .w",{scale:2.4,rotation:-14,opacity:0},{scale:1,rotation:-6,opacity:1,duration:0.22,ease:"power4.in"},1.19);
+tl.fromTo("#s05-st1s",{scaleX:0},{scaleX:1,duration:0.35,ease:"power3.inOut"},1.7);
+tl.fromTo("#s05-punch",{scale:1},{scale:1.05,duration:0.12,ease:"power2.out",immediateRender:false,overwrite:"auto"},1.41);tl.to("#s05-punch",{scale:1,duration:0.9,ease:"power3.out",overwrite:"auto"},1.5299999999999998);
+tl.fromTo("#s05-sc",{x:760,skewX:-10},{x:0,skewX:0,duration:0.38,ease:"power4.out"},0);
+tl.fromTo("#s05-streak",{x:0,opacity:1},{x:2100,opacity:0,duration:0.38,ease:"power2.out"},0);
+window.__timelines["s05"] = tl;
+</script>
+</template>

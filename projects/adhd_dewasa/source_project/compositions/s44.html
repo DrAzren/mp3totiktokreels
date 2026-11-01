@@ -1,0 +1,37 @@
+<template>
+<style>
+#root{position:absolute;inset:0;overflow:hidden;background:#061024;font-family:'Montserrat',sans-serif;color:#F5F7FA}
+.sc{position:absolute;inset:0;overflow:hidden}
+.cam,.punch{position:absolute;inset:0}
+.plate{position:absolute;left:-27px;top:-48px;width:1134px;height:2016px;object-fit:cover}
+.vid{position:absolute;left:0;top:0;width:1080px;height:1920px;object-fit:cover}
+.shade-t{position:absolute;left:0;top:0;width:1080px;height:560px;background:linear-gradient(180deg,rgba(6,16,36,.62),rgba(6,16,36,0))}
+.shade-b{position:absolute;left:0;top:980px;width:1080px;height:940px;background:linear-gradient(180deg,rgba(6,16,36,0),rgba(6,16,36,.55) 35%,rgba(6,16,36,.82))}
+.mote{position:absolute;border-radius:50%;background:radial-gradient(circle,rgba(255,236,200,.85),rgba(255,236,200,0) 70%)}
+.g{position:absolute;left:90px;width:900px}
+.kt{font-family:'League Gothic','Oswald',sans-serif;text-transform:uppercase;line-height:.92;letter-spacing:.01em;color:#F5F7FA;text-shadow:0 6px 30px rgba(0,0,0,.55)}
+.kick{font-family:'Montserrat',sans-serif;font-weight:800;font-size:34px;letter-spacing:.32em;text-transform:uppercase;color:#6FE3EE}
+.serif{font-family:'Playfair Display',serif;font-style:italic}
+.chip{display:inline-block;padding:14px 26px;border-radius:999px;background:rgba(11,26,51,.78);border:2px solid rgba(111,227,238,.7);font-weight:800;font-size:34px;letter-spacing:.06em;color:#F5F7FA;box-shadow:0 10px 30px rgba(0,0,0,.35)}
+.card{background:rgba(8,20,42,.82);border:1.5px solid rgba(111,227,238,.45);border-radius:28px;box-shadow:0 24px 60px rgba(0,0,0,.45)}
+.ln{display:inline-block;overflow:hidden;vertical-align:bottom}
+.ln>span{display:inline-block}
+.fx{position:absolute;inset:0;pointer-events:none}
+.warm{color:#FFD25A} .cyan{color:#6FE3EE}
+#s44-tl1{top:360px} #s44-tl1 .lb{font-weight:800;font-size:36px;letter-spacing:.24em;color:#6FE3EE;text-align:center}#s44-tl1 .ax{position:relative;height:200px;margin-top:40px} #s44-tl1 .ln{position:absolute;left:40px;right:40px;top:90px;height:8px;background:rgba(255,255,255,.25);border-radius:4px}#s44-tl1 .fl{position:absolute;left:40px;right:40px;top:90px;height:8px;background:#FFD25A;border-radius:4px;transform-origin:left center}#s44-tl1 .p{position:absolute;top:120px;font-family:'League Gothic';font-size:100px} #s44-tl1 .p0{left:20px} #s44-tl1 .p1{right:0}#s44-tl1 .dt{position:absolute;top:78px;left:28px;width:32px;height:32px;border-radius:50%;background:#FFD25A}</style>
+<div id="root" data-composition-id="s44" data-width="1080" data-height="1920" data-layout-allow-overflow data-layout-allow-overlap>
+<div id="s44-sc" class="sc"><div id="s44-punch" class="punch"><div id="s44-cam" class="cam"><img class="plate" src="assets/img/s44.jpg" alt=""></div></div><div id="s44-motes" class="fx"><span class="mote" style="left:646px;top:420px;width:14px;height:14px;opacity:0.34"></span><span class="mote" style="left:619px;top:1774px;width:14px;height:14px;opacity:0.48"></span><span class="mote" style="left:892px;top:489px;width:9px;height:9px;opacity:0.20"></span><span class="mote" style="left:220px;top:1159px;width:18px;height:18px;opacity:0.38"></span><span class="mote" style="left:1047px;top:1289px;width:9px;height:9px;opacity:0.45"></span><span class="mote" style="left:966px;top:594px;width:8px;height:8px;opacity:0.16"></span><span class="mote" style="left:130px;top:421px;width:12px;height:12px;opacity:0.32"></span><span class="mote" style="left:263px;top:265px;width:8px;height:8px;opacity:0.39"></span><span class="mote" style="left:694px;top:1580px;width:10px;height:10px;opacity:0.27"></span><span class="mote" style="left:556px;top:692px;width:9px;height:9px;opacity:0.38"></span><span class="mote" style="left:579px;top:1442px;width:15px;height:15px;opacity:0.20"></span><span class="mote" style="left:895px;top:509px;width:16px;height:16px;opacity:0.22"></span></div><div class="shade-t"></div><div class="shade-b"></div><div id="s44-tl1" class="g"><div class="lb">SEJAK KANAK-KANAK</div><div class="ax"><div class="ln"></div><div class="fl"></div><div class="dt"></div><div class="p p0">0</div><div class="p p1 warm">12 TAHUN</div></div></div></div>
+</div>
+<script>
+const tl = gsap.timeline({ paused: true });
+tl.fromTo("#s44-cam",{scale:1.06,x:-26},{...{scale:1.06,x:26},duration:7.991,ease:"sine.inOut"},0);
+tl.fromTo("#s44-motes",{y:20,x:0},{y:-90,x:24,duration:7.991,ease:"none"},0);
+tl.fromTo("#s44-tl1 .lb,#s44-tl1 .ln,#s44-tl1 .p0",{opacity:0},{opacity:1,duration:0.4,stagger:0.1},4.781);
+tl.fromTo("#s44-tl1 .fl",{scaleX:0},{scaleX:1,duration:1.6,ease:"power1.inOut"},5.181);
+tl.fromTo("#s44-tl1 .dt",{x:0},{x:780,duration:1.6,ease:"power1.inOut"},5.181);
+tl.fromTo("#s44-tl1 .p1",{opacity:0,scale:1.4},{opacity:1,scale:1,duration:0.35,ease:"power3.out"},6.501);
+tl.to("#s44-tl1",{opacity:0,duration:0.2,ease:"power2.in"},7.321);
+tl.fromTo("#s44-sc",{opacity:0},{opacity:1,duration:0.5,ease:"sine.inOut"},0);
+window.__timelines["s44"] = tl;
+</script>
+</template>

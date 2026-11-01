@@ -1,0 +1,41 @@
+<template>
+<style>
+#root{position:absolute;inset:0;overflow:hidden;background:#061024;font-family:'Montserrat',sans-serif;color:#F5F7FA}
+.sc{position:absolute;inset:0;overflow:hidden}
+.cam,.punch{position:absolute;inset:0}
+.plate{position:absolute;left:-27px;top:-48px;width:1134px;height:2016px;object-fit:cover}
+.vid{position:absolute;left:0;top:0;width:1080px;height:1920px;object-fit:cover}
+.shade-t{position:absolute;left:0;top:0;width:1080px;height:560px;background:linear-gradient(180deg,rgba(6,16,36,.62),rgba(6,16,36,0))}
+.shade-b{position:absolute;left:0;top:980px;width:1080px;height:940px;background:linear-gradient(180deg,rgba(6,16,36,0),rgba(6,16,36,.55) 35%,rgba(6,16,36,.82))}
+.mote{position:absolute;border-radius:50%;background:radial-gradient(circle,rgba(255,236,200,.85),rgba(255,236,200,0) 70%)}
+.g{position:absolute;left:90px;width:900px}
+.kt{font-family:'League Gothic','Oswald',sans-serif;text-transform:uppercase;line-height:.92;letter-spacing:.01em;color:#F5F7FA;text-shadow:0 6px 30px rgba(0,0,0,.55)}
+.kick{font-family:'Montserrat',sans-serif;font-weight:800;font-size:34px;letter-spacing:.32em;text-transform:uppercase;color:#6FE3EE}
+.serif{font-family:'Playfair Display',serif;font-style:italic}
+.chip{display:inline-block;padding:14px 26px;border-radius:999px;background:rgba(11,26,51,.78);border:2px solid rgba(111,227,238,.7);font-weight:800;font-size:34px;letter-spacing:.06em;color:#F5F7FA;box-shadow:0 10px 30px rgba(0,0,0,.35)}
+.card{background:rgba(8,20,42,.82);border:1.5px solid rgba(111,227,238,.45);border-radius:28px;box-shadow:0 24px 60px rgba(0,0,0,.45)}
+.ln{display:inline-block;overflow:hidden;vertical-align:bottom}
+.ln>span{display:inline-block}
+.fx{position:absolute;inset:0;pointer-events:none}
+.warm{color:#FFD25A} .cyan{color:#6FE3EE}
+#s33-pg1{top:320px;left:150px;width:780px;padding:40px} #s33-pg1 .r{margin-bottom:26px} #s33-pg1 .lb{display:flex;justify-content:space-between;font-weight:800;font-size:38px;margin-bottom:12px}#s33-pg1 .tr{height:26px;border-radius:14px;background:rgba(255,255,255,.14);overflow:hidden} #s33-pg1 .f{height:100%;width:100%;background:#6FE3EE;border-radius:14px;transform-origin:left center}#s33-pg1 .pc{color:#FFD25A} #s33-pg1 .st{font-family:'League Gothic';font-size:96px;text-align:center;color:#FFD25A}</style>
+<div id="root" data-composition-id="s33" data-width="1080" data-height="1920" data-layout-allow-overflow data-layout-allow-overlap>
+<div id="s33-sc" class="sc"><div id="s33-punch" class="punch"><div id="s33-cam" class="cam"><img class="plate" src="assets/img/s33.jpg" alt=""></div></div><div id="s33-motes" class="fx"><span class="mote" style="left:909px;top:752px;width:13px;height:13px;opacity:0.48"></span><span class="mote" style="left:991px;top:1501px;width:10px;height:10px;opacity:0.18"></span><span class="mote" style="left:160px;top:304px;width:17px;height:17px;opacity:0.38"></span><span class="mote" style="left:151px;top:1436px;width:10px;height:10px;opacity:0.26"></span><span class="mote" style="left:123px;top:605px;width:17px;height:17px;opacity:0.38"></span><span class="mote" style="left:672px;top:630px;width:8px;height:8px;opacity:0.25"></span><span class="mote" style="left:61px;top:218px;width:16px;height:16px;opacity:0.47"></span><span class="mote" style="left:333px;top:616px;width:15px;height:15px;opacity:0.42"></span><span class="mote" style="left:876px;top:1033px;width:14px;height:14px;opacity:0.37"></span><span class="mote" style="left:422px;top:366px;width:13px;height:13px;opacity:0.46"></span><span class="mote" style="left:699px;top:1427px;width:6px;height:6px;opacity:0.27"></span><span class="mote" style="left:44px;top:1333px;width:7px;height:7px;opacity:0.47"></span></div><div class="shade-t"></div><div class="shade-b"></div><div id="s33-pg1" class="g card"><div class="r"><div class="lb"><span>Projek A</span><span class="pc">0%</span></div><div class="tr"><div class="f" data-v="20"></div></div></div><div class="r"><div class="lb"><span>Projek B</span><span class="pc">0%</span></div><div class="tr"><div class="f" data-v="45"></div></div></div><div class="r"><div class="lb"><span>Projek C</span><span class="pc">0%</span></div><div class="tr"><div class="f" data-v="60"></div></div></div><div class="st">TERHENTI DI TENGAH JALAN</div></div></div>
+</div>
+<script>
+const tl = gsap.timeline({ paused: true });
+tl.fromTo("#s33-cam",{scale:1.06,x:26},{...{scale:1.06,x:-26},duration:5.201,ease:"sine.inOut"},0);
+tl.fromTo("#s33-motes",{y:20,x:0},{y:-90,x:24,duration:5.201,ease:"none"},0);
+tl.fromTo("#s33-pg1",{opacity:0,y:40},{opacity:1,y:0,duration:0.45,ease:"power3.out"},0.45);
+tl.fromTo("#s33-pg1 .r:nth-child(1) .f",{scaleX:0},{scaleX:0.2,duration:0.9,ease:"power2.out"},1.15);
+(function(){const o={v:0},el=document.querySelector("#s33-pg1 .r:nth-child(1) .pc");tl.fromTo(o,{v:0},{v:20,immediateRender:false,duration:0.9,ease:"power2.out",onUpdate:()=>{el.textContent=Math.round(o.v)+"%"}},1.15);})();
+tl.fromTo("#s33-pg1 .r:nth-child(2) .f",{scaleX:0},{scaleX:0.45,duration:0.9,ease:"power2.out"},1.3);
+(function(){const o={v:0},el=document.querySelector("#s33-pg1 .r:nth-child(2) .pc");tl.fromTo(o,{v:0},{v:45,immediateRender:false,duration:0.9,ease:"power2.out",onUpdate:()=>{el.textContent=Math.round(o.v)+"%"}},1.3);})();
+tl.fromTo("#s33-pg1 .r:nth-child(3) .f",{scaleX:0},{scaleX:0.6,duration:0.9,ease:"power2.out"},1.45);
+(function(){const o={v:0},el=document.querySelector("#s33-pg1 .r:nth-child(3) .pc");tl.fromTo(o,{v:0},{v:60,immediateRender:false,duration:0.9,ease:"power2.out",onUpdate:()=>{el.textContent=Math.round(o.v)+"%"}},1.45);})();
+tl.fromTo("#s33-pg1 .st",{opacity:0,scale:1.3},{opacity:1,scale:1,duration:0.35,ease:"power3.out"},2.63);
+tl.to("#s33-pg1",{opacity:0,duration:0.2,ease:"power2.in"},4.531);
+tl.fromTo("#s33-sc",{yPercent:22,opacity:0},{yPercent:0,opacity:1,duration:0.5,ease:"power3.out"},0);
+window.__timelines["s33"] = tl;
+</script>
+</template>

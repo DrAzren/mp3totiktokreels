@@ -1,0 +1,42 @@
+<template>
+<style>#root{position:absolute;inset:0}
+.hud{position:absolute;left:60px;top:186px;width:700px;height:70px}
+.hud .in{display:inline-flex;align-items:center;gap:10px;padding:10px 22px 10px 18px;border-radius:999px;background:rgba(6,16,36,.62);border:1.5px solid rgba(111,227,238,.55);font-family:'Montserrat';font-weight:800;font-size:28px;color:#F5F7FA}
+.hud b{font-family:'League Gothic';font-weight:400;font-size:44px;color:#FFD25A;line-height:1} .hud span{opacity:.7} .hud i{font-style:normal;margin-left:8px;letter-spacing:.04em;text-transform:uppercase;font-size:28px;color:#6FE3EE}</style>
+<div id="root" data-composition-id="hud" data-width="1080" data-height="1920">
+<div id="hud1" class="hud clip" data-start="37.142" data-duration="9.961" data-track-index="8"><div class="in"><b>01</b><span>/10</span><i>Susah nak fokus</i></div></div>
+<div id="hud2" class="hud clip" data-start="48.803" data-duration="9.460" data-track-index="8"><div class="in"><b>02</b><span>/10</span><i>Mudah terganggu</i></div></div>
+<div id="hud3" class="hud clip" data-start="59.963" data-duration="8.181" data-track-index="8"><div class="in"><b>03</b><span>/10</span><i>Selalu terlupa</i></div></div>
+<div id="hud4" class="hud clip" data-start="69.844" data-duration="9.440" data-track-index="8"><div class="in"><b>04</b><span>/10</span><i>Susah urus masa</i></div></div>
+<div id="hud5" class="hud clip" data-start="80.984" data-duration="13.321" data-track-index="8"><div class="in"><b>05</b><span>/10</span><i>Suka bertangguh</i></div></div>
+<div id="hud6" class="hud clip" data-start="96.005" data-duration="8.701" data-track-index="8"><div class="in"><b>06</b><span>/10</span><i>Susah duduk diam</i></div></div>
+<div id="hud7" class="hud clip" data-start="106.406" data-duration="9.980" data-track-index="8"><div class="in"><b>07</b><span>/10</span><i>Impulsif</i></div></div>
+<div id="hud8" class="hud clip" data-start="118.086" data-duration="11.701" data-track-index="8"><div class="in"><b>08</b><span>/10</span><i>Susah siapkan kerja</i></div></div>
+<div id="hud9" class="hud clip" data-start="131.487" data-duration="10.061" data-track-index="8"><div class="in"><b>09</b><span>/10</span><i>Susah urus barang</i></div></div>
+<div id="hud10" class="hud clip" data-start="143.248" data-duration="23.141" data-track-index="8"><div class="in"><b>10</b><span>/10</span><i>Hyperfocus</i></div></div>
+</div>
+<script>
+const tl = gsap.timeline({ paused: true });
+tl.fromTo("#hud1 .in",{x:-40,opacity:0},{x:0,opacity:1,duration:0.4,ease:"power3.out"},37.192);
+tl.to("#hud1 .in",{opacity:0,duration:0.2},46.883);
+tl.fromTo("#hud2 .in",{x:-40,opacity:0},{x:0,opacity:1,duration:0.4,ease:"power3.out"},48.853);
+tl.to("#hud2 .in",{opacity:0,duration:0.2},58.043);
+tl.fromTo("#hud3 .in",{x:-40,opacity:0},{x:0,opacity:1,duration:0.4,ease:"power3.out"},60.013);
+tl.to("#hud3 .in",{opacity:0,duration:0.2},67.924);
+tl.fromTo("#hud4 .in",{x:-40,opacity:0},{x:0,opacity:1,duration:0.4,ease:"power3.out"},69.894);
+tl.to("#hud4 .in",{opacity:0,duration:0.2},79.064);
+tl.fromTo("#hud5 .in",{x:-40,opacity:0},{x:0,opacity:1,duration:0.4,ease:"power3.out"},81.034);
+tl.to("#hud5 .in",{opacity:0,duration:0.2},94.085);
+tl.fromTo("#hud6 .in",{x:-40,opacity:0},{x:0,opacity:1,duration:0.4,ease:"power3.out"},96.055);
+tl.to("#hud6 .in",{opacity:0,duration:0.2},104.486);
+tl.fromTo("#hud7 .in",{x:-40,opacity:0},{x:0,opacity:1,duration:0.4,ease:"power3.out"},106.456);
+tl.to("#hud7 .in",{opacity:0,duration:0.2},116.166);
+tl.fromTo("#hud8 .in",{x:-40,opacity:0},{x:0,opacity:1,duration:0.4,ease:"power3.out"},118.136);
+tl.to("#hud8 .in",{opacity:0,duration:0.2},129.567);
+tl.fromTo("#hud9 .in",{x:-40,opacity:0},{x:0,opacity:1,duration:0.4,ease:"power3.out"},131.537);
+tl.to("#hud9 .in",{opacity:0,duration:0.2},141.328);
+tl.fromTo("#hud10 .in",{x:-40,opacity:0},{x:0,opacity:1,duration:0.4,ease:"power3.out"},143.298);
+tl.to("#hud10 .in",{opacity:0,duration:0.2},166.169);
+window.__timelines["hud"] = tl;
+</script>
+</template>

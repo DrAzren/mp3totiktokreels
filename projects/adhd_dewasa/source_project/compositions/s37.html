@@ -1,0 +1,36 @@
+<template>
+<style>
+#root{position:absolute;inset:0;overflow:hidden;background:#061024;font-family:'Montserrat',sans-serif;color:#F5F7FA}
+.sc{position:absolute;inset:0;overflow:hidden}
+.cam,.punch{position:absolute;inset:0}
+.plate{position:absolute;left:-27px;top:-48px;width:1134px;height:2016px;object-fit:cover}
+.vid{position:absolute;left:0;top:0;width:1080px;height:1920px;object-fit:cover}
+.shade-t{position:absolute;left:0;top:0;width:1080px;height:560px;background:linear-gradient(180deg,rgba(6,16,36,.62),rgba(6,16,36,0))}
+.shade-b{position:absolute;left:0;top:980px;width:1080px;height:940px;background:linear-gradient(180deg,rgba(6,16,36,0),rgba(6,16,36,.55) 35%,rgba(6,16,36,.82))}
+.mote{position:absolute;border-radius:50%;background:radial-gradient(circle,rgba(255,236,200,.85),rgba(255,236,200,0) 70%)}
+.g{position:absolute;left:90px;width:900px}
+.kt{font-family:'League Gothic','Oswald',sans-serif;text-transform:uppercase;line-height:.92;letter-spacing:.01em;color:#F5F7FA;text-shadow:0 6px 30px rgba(0,0,0,.55)}
+.kick{font-family:'Montserrat',sans-serif;font-weight:800;font-size:34px;letter-spacing:.32em;text-transform:uppercase;color:#6FE3EE}
+.serif{font-family:'Playfair Display',serif;font-style:italic}
+.chip{display:inline-block;padding:14px 26px;border-radius:999px;background:rgba(11,26,51,.78);border:2px solid rgba(111,227,238,.7);font-weight:800;font-size:34px;letter-spacing:.06em;color:#F5F7FA;box-shadow:0 10px 30px rgba(0,0,0,.35)}
+.card{background:rgba(8,20,42,.82);border:1.5px solid rgba(111,227,238,.45);border-radius:28px;box-shadow:0 24px 60px rgba(0,0,0,.45)}
+.ln{display:inline-block;overflow:hidden;vertical-align:bottom}
+.ln>span{display:inline-block}
+.fx{position:absolute;inset:0;pointer-events:none}
+.warm{color:#FFD25A} .cyan{color:#6FE3EE}
+#s37-tg1 .t{position:absolute;padding:12px 22px;border-radius:12px;background:rgba(255,210,90,.92);color:#0B1A33;font-weight:800;font-size:30px;box-shadow:0 8px 20px rgba(0,0,0,.35)}#s37-tg1 .q{position:absolute;left:90px;width:900px;top:560px;text-align:center;font-family:'Playfair Display';font-style:italic;font-size:110px;text-shadow:0 6px 30px rgba(0,0,0,.8)}</style>
+<div id="root" data-composition-id="s37" data-width="1080" data-height="1920" data-layout-allow-overflow data-layout-allow-overlap>
+<div id="s37-sc" class="sc"><div id="s37-punch" class="punch"><div id="s37-cam" class="cam"><img class="plate" src="assets/img/s37.jpg" alt=""></div></div><div id="s37-motes" class="fx"><span class="mote" style="left:255px;top:282px;width:9px;height:9px;opacity:0.17"></span><span class="mote" style="left:623px;top:1059px;width:14px;height:14px;opacity:0.46"></span><span class="mote" style="left:520px;top:600px;width:15px;height:15px;opacity:0.45"></span><span class="mote" style="left:614px;top:790px;width:9px;height:9px;opacity:0.34"></span><span class="mote" style="left:263px;top:825px;width:17px;height:17px;opacity:0.46"></span><span class="mote" style="left:534px;top:490px;width:15px;height:15px;opacity:0.21"></span><span class="mote" style="left:623px;top:210px;width:7px;height:7px;opacity:0.42"></span><span class="mote" style="left:990px;top:367px;width:18px;height:18px;opacity:0.44"></span><span class="mote" style="left:106px;top:1240px;width:18px;height:18px;opacity:0.40"></span><span class="mote" style="left:52px;top:1137px;width:14px;height:14px;opacity:0.18"></span><span class="mote" style="left:31px;top:1743px;width:14px;height:14px;opacity:0.18"></span><span class="mote" style="left:519px;top:503px;width:15px;height:15px;opacity:0.27"></span></div><div class="shade-t"></div><div class="shade-b"></div><div id="s37-tg1" class="fx"><span class="t" style="left:544px;top:887px;rotate:-1deg">Emel</span><span class="t" style="left:343px;top:401px;rotate:-7deg">Bil</span><span class="t" style="left:76px;top:606px;rotate:4deg">Laporan</span><span class="t" style="left:544px;top:879px;rotate:-10deg">Mesyuarat</span><span class="t" style="left:412px;top:827px;rotate:7deg">Cuci kereta</span><span class="t" style="left:111px;top:648px;rotate:-7deg">Tempah klinik</span><span class="t" style="left:532px;top:692px;rotate:-7deg">Slide</span><span class="t" style="left:242px;top:503px;rotate:-11deg">Bayar kad</span><span class="t" style="left:183px;top:395px;rotate:4deg">Jawab mesej</span><span class="t" style="left:674px;top:324px;rotate:12deg">Hantar dokumen</span><span class="t" style="left:462px;top:364px;rotate:-3deg">Beli barang</span><div class="q">mula dari mana?</div></div></div>
+</div>
+<script>
+const tl = gsap.timeline({ paused: true });
+tl.fromTo("#s37-cam",{scale:1.1},{...{scale:1.01},duration:5.691,ease:"sine.inOut"},0);
+tl.fromTo("#s37-motes",{y:20,x:0},{y:-90,x:24,duration:5.691,ease:"none"},0);
+tl.fromTo("#s37-tg1 .t",{scale:0,opacity:0},{scale:1,opacity:1,duration:0.3,ease:"back.out(2.5)",stagger:0.11},0.62);
+tl.to("#s37-tg1 .t",{opacity:0.25,duration:0.3},3.7);
+tl.fromTo("#s37-tg1 .q",{opacity:0,y:30},{opacity:1,y:0,duration:0.5,ease:"power3.out"},3.8);
+tl.to("#s37-tg1",{opacity:0,duration:0.2,ease:"power2.in"},5.021);
+tl.fromTo("#s37-sc",{opacity:0},{opacity:1,duration:0.5,ease:"sine.inOut"},0);
+window.__timelines["s37"] = tl;
+</script>
+</template>

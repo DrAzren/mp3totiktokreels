@@ -1,0 +1,35 @@
+<template>
+<style>
+#root{position:absolute;inset:0;overflow:hidden;background:#061024;font-family:'Montserrat',sans-serif;color:#F5F7FA}
+.sc{position:absolute;inset:0;overflow:hidden}
+.cam,.punch{position:absolute;inset:0}
+.plate{position:absolute;left:-27px;top:-48px;width:1134px;height:2016px;object-fit:cover}
+.vid{position:absolute;left:0;top:0;width:1080px;height:1920px;object-fit:cover}
+.shade-t{position:absolute;left:0;top:0;width:1080px;height:560px;background:linear-gradient(180deg,rgba(6,16,36,.62),rgba(6,16,36,0))}
+.shade-b{position:absolute;left:0;top:980px;width:1080px;height:940px;background:linear-gradient(180deg,rgba(6,16,36,0),rgba(6,16,36,.55) 35%,rgba(6,16,36,.82))}
+.mote{position:absolute;border-radius:50%;background:radial-gradient(circle,rgba(255,236,200,.85),rgba(255,236,200,0) 70%)}
+.g{position:absolute;left:90px;width:900px}
+.kt{font-family:'League Gothic','Oswald',sans-serif;text-transform:uppercase;line-height:.92;letter-spacing:.01em;color:#F5F7FA;text-shadow:0 6px 30px rgba(0,0,0,.55)}
+.kick{font-family:'Montserrat',sans-serif;font-weight:800;font-size:34px;letter-spacing:.32em;text-transform:uppercase;color:#6FE3EE}
+.serif{font-family:'Playfair Display',serif;font-style:italic}
+.chip{display:inline-block;padding:14px 26px;border-radius:999px;background:rgba(11,26,51,.78);border:2px solid rgba(111,227,238,.7);font-weight:800;font-size:34px;letter-spacing:.06em;color:#F5F7FA;box-shadow:0 10px 30px rgba(0,0,0,.35)}
+.card{background:rgba(8,20,42,.82);border:1.5px solid rgba(111,227,238,.45);border-radius:28px;box-shadow:0 24px 60px rgba(0,0,0,.45)}
+.ln{display:inline-block;overflow:hidden;vertical-align:bottom}
+.ln>span{display:inline-block}
+.fx{position:absolute;inset:0;pointer-events:none}
+.warm{color:#FFD25A} .cyan{color:#6FE3EE}
+</style>
+<div id="root" data-composition-id="s08" data-width="1080" data-height="1920" data-layout-allow-overflow data-layout-allow-overlap>
+<div id="s08-sc" class="sc"><div id="s08-punch" class="punch"><div id="s08-cam" class="cam"><img class="plate" src="assets/img/s08.jpg" alt=""></div></div><div id="s08-motes" class="fx"><span class="mote" style="left:467px;top:917px;width:15px;height:15px;opacity:0.42"></span><span class="mote" style="left:170px;top:1576px;width:16px;height:16px;opacity:0.24"></span><span class="mote" style="left:107px;top:483px;width:11px;height:11px;opacity:0.31"></span><span class="mote" style="left:866px;top:1237px;width:14px;height:14px;opacity:0.25"></span><span class="mote" style="left:485px;top:1312px;width:12px;height:12px;opacity:0.19"></span><span class="mote" style="left:676px;top:1342px;width:14px;height:14px;opacity:0.27"></span><span class="mote" style="left:427px;top:310px;width:14px;height:14px;opacity:0.35"></span><span class="mote" style="left:372px;top:656px;width:13px;height:13px;opacity:0.22"></span><span class="mote" style="left:908px;top:894px;width:9px;height:9px;opacity:0.27"></span><span class="mote" style="left:229px;top:1091px;width:14px;height:14px;opacity:0.39"></span><span class="mote" style="left:679px;top:1040px;width:7px;height:7px;opacity:0.32"></span><span class="mote" style="left:104px;top:1391px;width:11px;height:11px;opacity:0.43"></span></div><div class="shade-t"></div><div class="shade-b"></div><div id="s08-kl1" class="g kt " style="top:330px;font-size:80px;text-align:center;color:#6FE3EE;"><span class="ln"><span>ORANG</span></span> <span class="ln"><span>DEWASA</span></span> </div><div id="s08-kl2" class="g kt " style="top:420px;font-size:168px;text-align:center;"><span class="ln"><span>PUN</span></span> <span class="ln"><span>BOLEH</span></span> </div></div>
+</div>
+<script>
+const tl = gsap.timeline({ paused: true });
+tl.fromTo("#s08-cam",{scale:1.05,y:40},{...{scale:1.07,y:-40},duration:3.760,ease:"sine.inOut"},0);
+tl.fromTo("#s08-motes",{y:20,x:0},{y:-90,x:24,duration:3.760,ease:"none"},0);
+tl.fromTo("#s08-kl1 .ln>span",{yPercent:110,opacity:0},{yPercent:0,opacity:1,duration:0.5,ease:"power4.out",stagger:0.06},0.4);
+tl.fromTo("#s08-kl2 .ln>span",{yPercent:110,opacity:0},{yPercent:0,opacity:1,duration:0.5,ease:"power4.out",stagger:0.06},0.57);
+tl.to("#s08-kl1,#s08-kl2",{opacity:0,duration:0.2,ease:"power2.in"},2.96);
+tl.fromTo("#s08-sc",{opacity:0},{opacity:1,duration:0.25,ease:"none"},0);
+window.__timelines["s08"] = tl;
+</script>
+</template>

@@ -2,7 +2,10 @@
 
 Turns a voice recording into a 1080×1920 documentary-style reel with photoreal AI B-roll, motion graphics, word-synced captions, sound design and an original score, without altering or replacing the narrator's voice.
 
-First production: **Depot Injection** (Dr Azren | Spread Positivity), Malay, 2:33.
+Productions:
+
+- **Depot Injection** (Dr Azren | Spread Positivity), Malay, 2:33: files at the repo root (below).
+- **ADHD Dewasa: 10 tanda ADHD dalam kalangan orang dewasa**, Malay, 4:01: [`projects/adhd_dewasa/`](projects/adhd_dewasa/README.md), a HyperFrames project with Higgsfield AI B-roll (23.42 of 30 credits).
 
 | Path | What |
 |---|---|

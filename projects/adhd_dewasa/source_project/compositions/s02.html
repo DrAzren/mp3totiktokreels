@@ -1,0 +1,37 @@
+<template>
+<style>
+#root{position:absolute;inset:0;overflow:hidden;background:#061024;font-family:'Montserrat',sans-serif;color:#F5F7FA}
+.sc{position:absolute;inset:0;overflow:hidden}
+.cam,.punch{position:absolute;inset:0}
+.plate{position:absolute;left:-27px;top:-48px;width:1134px;height:2016px;object-fit:cover}
+.vid{position:absolute;left:0;top:0;width:1080px;height:1920px;object-fit:cover}
+.shade-t{position:absolute;left:0;top:0;width:1080px;height:560px;background:linear-gradient(180deg,rgba(6,16,36,.62),rgba(6,16,36,0))}
+.shade-b{position:absolute;left:0;top:980px;width:1080px;height:940px;background:linear-gradient(180deg,rgba(6,16,36,0),rgba(6,16,36,.55) 35%,rgba(6,16,36,.82))}
+.mote{position:absolute;border-radius:50%;background:radial-gradient(circle,rgba(255,236,200,.85),rgba(255,236,200,0) 70%)}
+.g{position:absolute;left:90px;width:900px}
+.kt{font-family:'League Gothic','Oswald',sans-serif;text-transform:uppercase;line-height:.92;letter-spacing:.01em;color:#F5F7FA;text-shadow:0 6px 30px rgba(0,0,0,.55)}
+.kick{font-family:'Montserrat',sans-serif;font-weight:800;font-size:34px;letter-spacing:.32em;text-transform:uppercase;color:#6FE3EE}
+.serif{font-family:'Playfair Display',serif;font-style:italic}
+.chip{display:inline-block;padding:14px 26px;border-radius:999px;background:rgba(11,26,51,.78);border:2px solid rgba(111,227,238,.7);font-weight:800;font-size:34px;letter-spacing:.06em;color:#F5F7FA;box-shadow:0 10px 30px rgba(0,0,0,.35)}
+.card{background:rgba(8,20,42,.82);border:1.5px solid rgba(111,227,238,.45);border-radius:28px;box-shadow:0 24px 60px rgba(0,0,0,.45)}
+.ln{display:inline-block;overflow:hidden;vertical-align:bottom}
+.ln>span{display:inline-block}
+.fx{position:absolute;inset:0;pointer-events:none}
+.warm{color:#FFD25A} .cyan{color:#6FE3EE}
+</style>
+<div id="root" data-composition-id="s02" data-width="1080" data-height="1920" data-layout-allow-overflow data-layout-allow-overlap>
+<div id="s02-sc" class="sc"><div id="s02-punch" class="punch"><div id="s02-cam" class="cam"><img class="plate" src="assets/img/s02.jpg" alt=""></div></div><div id="s02-motes" class="fx"><span class="mote" style="left:598px;top:1268px;width:15px;height:15px;opacity:0.22"></span><span class="mote" style="left:657px;top:601px;width:8px;height:8px;opacity:0.46"></span><span class="mote" style="left:27px;top:821px;width:18px;height:18px;opacity:0.37"></span><span class="mote" style="left:751px;top:1380px;width:7px;height:7px;opacity:0.44"></span><span class="mote" style="left:772px;top:583px;width:6px;height:6px;opacity:0.34"></span><span class="mote" style="left:865px;top:167px;width:6px;height:6px;opacity:0.30"></span><span class="mote" style="left:564px;top:288px;width:8px;height:8px;opacity:0.45"></span><span class="mote" style="left:1024px;top:863px;width:9px;height:9px;opacity:0.36"></span><span class="mote" style="left:543px;top:1753px;width:8px;height:8px;opacity:0.47"></span><span class="mote" style="left:539px;top:219px;width:11px;height:11px;opacity:0.27"></span><span class="mote" style="left:976px;top:564px;width:6px;height:6px;opacity:0.19"></span><span class="mote" style="left:506px;top:412px;width:12px;height:12px;opacity:0.34"></span></div><div class="shade-t"></div><div class="shade-b"></div><div id="s02-tag1" class="chip" style="position:absolute;left:110px;top:330px">KERJA #1</div><div id="s02-tag2" class="chip" style="position:absolute;left:560px;top:520px">KERJA #2</div><svg id="s02-hop3" class="fx" viewBox="0 0 1080 1920"><path d="M260 410 Q440.0 290 620 520" pathLength="1" fill="none" stroke="#6FE3EE" stroke-width="5" stroke-linecap="round" stroke-dasharray="1 1.2" stroke-dashoffset="1.1"/></svg></div><div id="s02-streak" class="fx" style="background:linear-gradient(90deg,rgba(255,255,255,0),rgba(220,250,255,.55),rgba(255,255,255,0));width:500px;left:-500px"></div>
+</div>
+<script>
+const tl = gsap.timeline({ paused: true });
+tl.fromTo("#s02-cam",{scale:1.06,x:-26},{...{scale:1.06,x:26},duration:2.760,ease:"sine.inOut"},0);
+tl.fromTo("#s02-motes",{y:20,x:0},{y:-90,x:24,duration:2.760,ease:"none"},0);
+tl.fromTo("#s02-tag1",{scale:0.4,opacity:0},{scale:1,opacity:1,duration:0.45,ease:"back.out(2.2)"},0.4);
+tl.fromTo("#s02-tag2",{scale:0.4,opacity:0},{scale:1,opacity:1,duration:0.45,ease:"back.out(2.2)"},1.23);
+tl.fromTo("#s02-hop3 path",{strokeDashoffset:1.1},{strokeDashoffset:0,duration:0.35,ease:"power2.inOut"},0.93);
+tl.to("#s02-tag1",{opacity:0.38,duration:0.3,overwrite:"auto"},1.35);
+tl.fromTo("#s02-sc",{x:760,skewX:-10},{x:0,skewX:0,duration:0.38,ease:"power4.out"},0);
+tl.fromTo("#s02-streak",{x:0,opacity:1},{x:2100,opacity:0,duration:0.38,ease:"power2.out"},0);
+window.__timelines["s02"] = tl;
+</script>
+</template>

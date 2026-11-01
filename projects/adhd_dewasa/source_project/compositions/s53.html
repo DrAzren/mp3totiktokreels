@@ -1,0 +1,43 @@
+<template>
+<style>
+#root{position:absolute;inset:0;overflow:hidden;background:#061024;font-family:'Montserrat',sans-serif;color:#F5F7FA}
+.sc{position:absolute;inset:0;overflow:hidden}
+.cam,.punch{position:absolute;inset:0}
+.plate{position:absolute;left:-27px;top:-48px;width:1134px;height:2016px;object-fit:cover}
+.vid{position:absolute;left:0;top:0;width:1080px;height:1920px;object-fit:cover}
+.shade-t{position:absolute;left:0;top:0;width:1080px;height:560px;background:linear-gradient(180deg,rgba(6,16,36,.62),rgba(6,16,36,0))}
+.shade-b{position:absolute;left:0;top:980px;width:1080px;height:940px;background:linear-gradient(180deg,rgba(6,16,36,0),rgba(6,16,36,.55) 35%,rgba(6,16,36,.82))}
+.mote{position:absolute;border-radius:50%;background:radial-gradient(circle,rgba(255,236,200,.85),rgba(255,236,200,0) 70%)}
+.g{position:absolute;left:90px;width:900px}
+.kt{font-family:'League Gothic','Oswald',sans-serif;text-transform:uppercase;line-height:.92;letter-spacing:.01em;color:#F5F7FA;text-shadow:0 6px 30px rgba(0,0,0,.55)}
+.kick{font-family:'Montserrat',sans-serif;font-weight:800;font-size:34px;letter-spacing:.32em;text-transform:uppercase;color:#6FE3EE}
+.serif{font-family:'Playfair Display',serif;font-style:italic}
+.chip{display:inline-block;padding:14px 26px;border-radius:999px;background:rgba(11,26,51,.78);border:2px solid rgba(111,227,238,.7);font-weight:800;font-size:34px;letter-spacing:.06em;color:#F5F7FA;box-shadow:0 10px 30px rgba(0,0,0,.35)}
+.card{background:rgba(8,20,42,.82);border:1.5px solid rgba(111,227,238,.45);border-radius:28px;box-shadow:0 24px 60px rgba(0,0,0,.45)}
+.ln{display:inline-block;overflow:hidden;vertical-align:bottom}
+.ln>span{display:inline-block}
+.fx{position:absolute;inset:0;pointer-events:none}
+.warm{color:#FFD25A} .cyan{color:#6FE3EE}
+#s53-rc1{top:230px;left:70px;width:940px} #s53-rc1 .h{font-family:'League Gothic';font-size:96px;text-align:center;line-height:1;margin-bottom:22px}#s53-rc1 .grid{display:grid;grid-template-columns:1fr 1fr;gap:14px} #s53-rc1 .c{display:flex;gap:16px;align-items:center;padding:18px 20px;border-radius:18px;background:rgba(8,20,42,.82);border:1.5px solid rgba(111,227,238,.4);font-weight:700;font-size:30px}#s53-rc1 .c b{font-family:'League Gothic';font-weight:400;font-size:52px;color:#FFD25A}#s53-rc1 .cm{display:flex;align-items:center;justify-content:center;gap:20px;margin-top:26px;font-weight:800;font-size:40px;color:#F5F7FA}#s53-rc1 .cm svg{width:70px;height:70px}
+#s53-end2{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 42%,rgba(11,26,51,.78),rgba(6,16,36,.96));text-align:center}#s53-end2 .n{position:absolute;left:0;right:0;top:640px;font-family:'League Gothic';font-size:190px;line-height:1;letter-spacing:.02em}#s53-end2 .bar{position:absolute;left:390px;top:850px;width:300px;height:6px;background:#6FE3EE;border-radius:3px;transform-origin:center}#s53-end2 .s{position:absolute;left:0;right:0;top:885px;font-family:'Playfair Display';font-style:italic;font-size:72px;color:#FFD25A}#s53-end2 .pp{position:absolute;left:0;right:0;top:1010px;font-weight:700;font-size:30px;letter-spacing:.42em;color:#6FE3EE}</style>
+<div id="root" data-composition-id="s53" data-width="1080" data-height="1920" data-layout-allow-overflow data-layout-allow-overlap>
+<div id="s53-sc" class="sc"><div id="s53-punch" class="punch"><div id="s53-cam" class="cam"><img class="plate" src="assets/img/s52_last.jpg" alt=""></div></div><div id="s53-motes" class="fx"><span class="mote" style="left:63px;top:1289px;width:18px;height:18px;opacity:0.44"></span><span class="mote" style="left:24px;top:1724px;width:11px;height:11px;opacity:0.17"></span><span class="mote" style="left:621px;top:1627px;width:14px;height:14px;opacity:0.44"></span><span class="mote" style="left:1035px;top:346px;width:7px;height:7px;opacity:0.50"></span><span class="mote" style="left:942px;top:150px;width:12px;height:12px;opacity:0.35"></span><span class="mote" style="left:435px;top:576px;width:18px;height:18px;opacity:0.28"></span><span class="mote" style="left:352px;top:961px;width:18px;height:18px;opacity:0.25"></span><span class="mote" style="left:969px;top:957px;width:7px;height:7px;opacity:0.18"></span><span class="mote" style="left:283px;top:1161px;width:13px;height:13px;opacity:0.28"></span><span class="mote" style="left:777px;top:1560px;width:12px;height:12px;opacity:0.22"></span><span class="mote" style="left:85px;top:1774px;width:17px;height:17px;opacity:0.29"></span><span class="mote" style="left:764px;top:899px;width:11px;height:11px;opacity:0.41"></span></div><div class="shade-t"></div><div class="shade-b"></div><div id="s53-rc1" class="g"><div class="h">MANA SATU <span class="warm">PALING KERAP?</span></div><div class="grid"><div class="c"><b>01</b>Susah nak fokus</div><div class="c"><b>02</b>Mudah terganggu</div><div class="c"><b>03</b>Selalu terlupa</div><div class="c"><b>04</b>Susah urus masa</div><div class="c"><b>05</b>Suka bertangguh</div><div class="c"><b>06</b>Susah duduk diam</div><div class="c"><b>07</b>Impulsif</div><div class="c"><b>08</b>Susah siapkan kerja</div><div class="c"><b>09</b>Susah urus barang</div><div class="c"><b>10</b>Hyperfocus</div></div><div class="cm"><svg viewBox="0 0 64 64"><path d="M8 12h48v32H26l-12 10V44H8z" fill="#6FE3EE"/><circle cx="22" cy="28" r="3.5" fill="#0B1A33"/><circle cx="32" cy="28" r="3.5" fill="#0B1A33"/><circle cx="42" cy="28" r="3.5" fill="#0B1A33"/></svg>Kongsi di ruangan komen</div></div><div id="s53-end2"><div class="n">DR AZREN</div><div class="bar"></div><div class="s">Spread Positivity</div><div class="pp">DR AZREN | SPREAD POSITIVITY</div></div></div>
+</div>
+<script>
+const tl = gsap.timeline({ paused: true });
+tl.fromTo("#s53-cam",{scale:1.1},{...{scale:1.01},duration:10.068,ease:"sine.inOut"},0);
+tl.fromTo("#s53-motes",{y:20,x:0},{y:-90,x:24,duration:10.068,ease:"none"},0);
+tl.fromTo("#s53-rc1 .h",{opacity:0,y:30},{opacity:1,y:0,duration:0.5,ease:"power3.out"},1.38);
+tl.fromTo("#s53-rc1 .c",{opacity:0,scale:0.7},{opacity:1,scale:1,duration:0.3,ease:"back.out(2)",stagger:0.08},1.68);
+tl.to("#s53-rc1 .c",{borderColor:"rgba(255,210,90,.9)",duration:0.15,stagger:{each:0.09,yoyo:true,repeat:1}},2.941);
+tl.fromTo("#s53-rc1 .cm",{opacity:0,y:30},{opacity:1,y:0,duration:0.45,ease:"back.out(2)"},5.241);
+tl.to("#s53-rc1",{opacity:0,y:-40,duration:0.4,ease:"power2.in"},5.941);
+tl.fromTo("#s53-end2",{opacity:0},{opacity:1,duration:0.6,ease:"power2.out"},5.991);
+tl.fromTo("#s53-end2 .n",{opacity:0,y:40,scale:1.12},{opacity:1,y:0,scale:1,duration:1.0,ease:"expo.out"},6.191);
+tl.fromTo("#s53-end2 .bar",{scaleX:0},{scaleX:1,duration:0.6,ease:"power3.out"},6.591);
+tl.fromTo("#s53-end2 .s",{opacity:0,y:20},{opacity:1,y:0,duration:0.6},6.791);
+tl.fromTo("#s53-end2 .pp",{opacity:0},{opacity:1,duration:0.6},7.091);
+tl.fromTo("#s53-sc",{opacity:0},{opacity:1,duration:0.5,ease:"sine.inOut"},0);
+window.__timelines["s53"] = tl;
+</script>
+</template>

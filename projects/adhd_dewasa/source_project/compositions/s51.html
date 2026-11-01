@@ -1,0 +1,38 @@
+<template>
+<style>
+#root{position:absolute;inset:0;overflow:hidden;background:#061024;font-family:'Montserrat',sans-serif;color:#F5F7FA}
+.sc{position:absolute;inset:0;overflow:hidden}
+.cam,.punch{position:absolute;inset:0}
+.plate{position:absolute;left:-27px;top:-48px;width:1134px;height:2016px;object-fit:cover}
+.vid{position:absolute;left:0;top:0;width:1080px;height:1920px;object-fit:cover}
+.shade-t{position:absolute;left:0;top:0;width:1080px;height:560px;background:linear-gradient(180deg,rgba(6,16,36,.62),rgba(6,16,36,0))}
+.shade-b{position:absolute;left:0;top:980px;width:1080px;height:940px;background:linear-gradient(180deg,rgba(6,16,36,0),rgba(6,16,36,.55) 35%,rgba(6,16,36,.82))}
+.mote{position:absolute;border-radius:50%;background:radial-gradient(circle,rgba(255,236,200,.85),rgba(255,236,200,0) 70%)}
+.g{position:absolute;left:90px;width:900px}
+.kt{font-family:'League Gothic','Oswald',sans-serif;text-transform:uppercase;line-height:.92;letter-spacing:.01em;color:#F5F7FA;text-shadow:0 6px 30px rgba(0,0,0,.55)}
+.kick{font-family:'Montserrat',sans-serif;font-weight:800;font-size:34px;letter-spacing:.32em;text-transform:uppercase;color:#6FE3EE}
+.serif{font-family:'Playfair Display',serif;font-style:italic}
+.chip{display:inline-block;padding:14px 26px;border-radius:999px;background:rgba(11,26,51,.78);border:2px solid rgba(111,227,238,.7);font-weight:800;font-size:34px;letter-spacing:.06em;color:#F5F7FA;box-shadow:0 10px 30px rgba(0,0,0,.35)}
+.card{background:rgba(8,20,42,.82);border:1.5px solid rgba(111,227,238,.45);border-radius:28px;box-shadow:0 24px 60px rgba(0,0,0,.45)}
+.ln{display:inline-block;overflow:hidden;vertical-align:bottom}
+.ln>span{display:inline-block}
+.fx{position:absolute;inset:0;pointer-events:none}
+.warm{color:#FFD25A} .cyan{color:#6FE3EE}
+</style>
+<div id="root" data-composition-id="s51" data-width="1080" data-height="1920" data-layout-allow-overflow data-layout-allow-overlap>
+<div id="s51-sc" class="sc"><div id="s51-punch" class="punch"><div id="s51-cam" class="cam"><img class="plate" src="assets/img/s51.jpg" alt=""></div></div><div id="s51-motes" class="fx"><span class="mote" style="left:790px;top:875px;width:16px;height:16px;opacity:0.18"></span><span class="mote" style="left:746px;top:594px;width:7px;height:7px;opacity:0.34"></span><span class="mote" style="left:680px;top:1785px;width:12px;height:12px;opacity:0.44"></span><span class="mote" style="left:713px;top:170px;width:14px;height:14px;opacity:0.17"></span><span class="mote" style="left:682px;top:840px;width:11px;height:11px;opacity:0.30"></span><span class="mote" style="left:851px;top:237px;width:17px;height:17px;opacity:0.25"></span><span class="mote" style="left:329px;top:513px;width:6px;height:6px;opacity:0.29"></span><span class="mote" style="left:89px;top:1481px;width:12px;height:12px;opacity:0.37"></span><span class="mote" style="left:904px;top:625px;width:17px;height:17px;opacity:0.42"></span><span class="mote" style="left:33px;top:332px;width:11px;height:11px;opacity:0.38"></span><span class="mote" style="left:122px;top:958px;width:8px;height:8px;opacity:0.35"></span><span class="mote" style="left:368px;top:1139px;width:10px;height:10px;opacity:0.42"></span></div><div class="shade-t"></div><div class="shade-b"></div><div id="s51-kl1" class="g kt " style="top:330px;font-size:190px;text-align:center;"><span class="ln"><span>BUKAN</span></span> <span class="ln"><span>BODOH.</span></span> </div><div id="s51-kl2" class="g kt " style="top:520px;font-size:190px;text-align:center;color:#FFD25A;"><span class="ln"><span>BUKAN</span></span> <span class="ln"><span>PEMALAS.</span></span> </div></div><div id="s51-leak" class="fx" style="background:radial-gradient(ellipse 60% 45% at 50% 50%,rgba(255,200,120,.85),rgba(255,140,60,.35) 45%,rgba(255,140,60,0) 72%);mix-blend-mode:screen"></div>
+</div>
+<script>
+const tl = gsap.timeline({ paused: true });
+tl.fromTo("#s51-cam",{scale:1.05,y:40},{...{scale:1.07,y:-40},duration:5.930,ease:"sine.inOut"},0);
+tl.fromTo("#s51-motes",{y:20,x:0},{y:-90,x:24,duration:5.930,ease:"none"},0);
+tl.fromTo("#s51-kl1 .ln>span",{yPercent:110,opacity:0},{yPercent:0,opacity:1,duration:0.5,ease:"power4.out",stagger:0.06},3.78);
+tl.fromTo("#s51-kl2 .ln>span",{yPercent:110,opacity:0},{yPercent:0,opacity:1,duration:0.5,ease:"power4.out",stagger:0.06},4.52);
+tl.fromTo("#s51-punch",{scale:1},{scale:1.04,duration:0.12,ease:"power2.out",immediateRender:false,overwrite:"auto"},3.86);tl.to("#s51-punch",{scale:1,duration:0.9,ease:"power3.out",overwrite:"auto"},3.98);
+tl.fromTo("#s51-punch",{scale:1},{scale:1.04,duration:0.12,ease:"power2.out",immediateRender:false,overwrite:"auto"},4.6);tl.to("#s51-punch",{scale:1,duration:0.9,ease:"power3.out",overwrite:"auto"},4.72);
+tl.to("#s51-kl1,#s51-kl2",{opacity:0,duration:0.2,ease:"power2.in"},5.26);
+tl.fromTo("#s51-sc",{opacity:0},{opacity:1,duration:0.7,ease:"sine.inOut"},0);
+tl.fromTo("#s51-leak",{xPercent:-70,opacity:0},{keyframes:[{xPercent:-10,opacity:1,duration:0.5,ease:"sine.out"},{xPercent:60,opacity:0,duration:0.8,ease:"sine.in"}]},0);
+window.__timelines["s51"] = tl;
+</script>
+</template>

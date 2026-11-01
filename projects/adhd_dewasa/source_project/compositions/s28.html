@@ -1,0 +1,36 @@
+<template>
+<style>
+#root{position:absolute;inset:0;overflow:hidden;background:#061024;font-family:'Montserrat',sans-serif;color:#F5F7FA}
+.sc{position:absolute;inset:0;overflow:hidden}
+.cam,.punch{position:absolute;inset:0}
+.plate{position:absolute;left:-27px;top:-48px;width:1134px;height:2016px;object-fit:cover}
+.vid{position:absolute;left:0;top:0;width:1080px;height:1920px;object-fit:cover}
+.shade-t{position:absolute;left:0;top:0;width:1080px;height:560px;background:linear-gradient(180deg,rgba(6,16,36,.62),rgba(6,16,36,0))}
+.shade-b{position:absolute;left:0;top:980px;width:1080px;height:940px;background:linear-gradient(180deg,rgba(6,16,36,0),rgba(6,16,36,.55) 35%,rgba(6,16,36,.82))}
+.mote{position:absolute;border-radius:50%;background:radial-gradient(circle,rgba(255,236,200,.85),rgba(255,236,200,0) 70%)}
+.g{position:absolute;left:90px;width:900px}
+.kt{font-family:'League Gothic','Oswald',sans-serif;text-transform:uppercase;line-height:.92;letter-spacing:.01em;color:#F5F7FA;text-shadow:0 6px 30px rgba(0,0,0,.55)}
+.kick{font-family:'Montserrat',sans-serif;font-weight:800;font-size:34px;letter-spacing:.32em;text-transform:uppercase;color:#6FE3EE}
+.serif{font-family:'Playfair Display',serif;font-style:italic}
+.chip{display:inline-block;padding:14px 26px;border-radius:999px;background:rgba(11,26,51,.78);border:2px solid rgba(111,227,238,.7);font-weight:800;font-size:34px;letter-spacing:.06em;color:#F5F7FA;box-shadow:0 10px 30px rgba(0,0,0,.35)}
+.card{background:rgba(8,20,42,.82);border:1.5px solid rgba(111,227,238,.45);border-radius:28px;box-shadow:0 24px 60px rgba(0,0,0,.45)}
+.ln{display:inline-block;overflow:hidden;vertical-align:bottom}
+.ln>span{display:inline-block}
+.fx{position:absolute;inset:0;pointer-events:none}
+.warm{color:#FFD25A} .cyan{color:#6FE3EE}
+</style>
+<div id="root" data-composition-id="s28" data-width="1080" data-height="1920" data-layout-allow-overflow data-layout-allow-overlap>
+<div id="s28-sc" class="sc"><div id="s28-punch" class="punch"><div id="s28-cam" class="cam"><img class="plate" src="assets/img/s28.jpg" alt=""></div></div><div id="s28-motes" class="fx"><span class="mote" style="left:784px;top:1343px;width:17px;height:17px;opacity:0.21"></span><span class="mote" style="left:397px;top:496px;width:8px;height:8px;opacity:0.38"></span><span class="mote" style="left:309px;top:1597px;width:7px;height:7px;opacity:0.25"></span><span class="mote" style="left:26px;top:1053px;width:18px;height:18px;opacity:0.31"></span><span class="mote" style="left:236px;top:207px;width:17px;height:17px;opacity:0.33"></span><span class="mote" style="left:909px;top:1546px;width:13px;height:13px;opacity:0.26"></span><span class="mote" style="left:520px;top:1402px;width:7px;height:7px;opacity:0.21"></span><span class="mote" style="left:625px;top:302px;width:11px;height:11px;opacity:0.34"></span><span class="mote" style="left:68px;top:587px;width:11px;height:11px;opacity:0.26"></span><span class="mote" style="left:142px;top:786px;width:17px;height:17px;opacity:0.18"></span><span class="mote" style="left:313px;top:1152px;width:16px;height:16px;opacity:0.45"></span><span class="mote" style="left:560px;top:555px;width:10px;height:10px;opacity:0.18"></span></div><div class="shade-t"></div><div class="shade-b"></div><svg id="s28-pl1" class="fx" viewBox="0 0 1080 1920"><polyline points="0 300 20 300 40 300 60 300 80 300 100 300 120 300 140 300 160 300 180 300 200 308 220 308 240 370 260 308 280 308 300 260 320 308 340 308 360 370 380 308 400 308 420 260 440 308 460 308 480 370 500 308 520 308 540 260 560 308 580 308 600 370 620 308 640 308 660 260 680 308 700 308 720 370 740 308 760 308 780 260 800 308 820 308 840 370 860 308 880 308 900 300 920 300 940 300 960 300 980 300 1000 300 1020 300 1040 300 1060 300 1080 300" pathLength="1" fill="none" stroke="#6FE3EE" stroke-width="5" stroke-dasharray="1 1.2" stroke-dashoffset="1.1" stroke-linejoin="round"/></svg><div id="s28-kl2" class="g kt " style="top:420px;font-size:150px;text-align:center;"><span class="ln"><span>GELISAH</span></span> <span class="ln"><span>DARI</span></span> <span class="ln"><span>DALAM</span></span> </div></div>
+</div>
+<script>
+const tl = gsap.timeline({ paused: true });
+tl.fromTo("#s28-cam",{scale:1.0},{...{scale:1.09},duration:5.371,ease:"sine.inOut"},0);
+tl.fromTo("#s28-motes",{y:20,x:0},{y:-90,x:24,duration:5.371,ease:"none"},0);
+tl.fromTo("#s28-kl2 .ln>span",{yPercent:110,opacity:0},{yPercent:0,opacity:1,duration:0.5,ease:"power4.out",stagger:0.06},1.65);
+tl.fromTo("#s28-pl1 polyline",{strokeDashoffset:1.1},{strokeDashoffset:0,duration:1.2,ease:"none"},0.7);
+tl.fromTo("#s28-kl2",{x:0},{keyframes:[{x:-6,duration:.04},{x:5,duration:.04},{x:-4,duration:.04},{x:3,duration:.04},{x:-2,duration:.04},{x:0,duration:.04}]},2.2);
+tl.to("#s28-pl1,#s28-kl2",{opacity:0,duration:0.2,ease:"power2.in"},4.701);
+tl.fromTo("#s28-sc",{opacity:0},{opacity:1,duration:0.5,ease:"sine.inOut"},0);
+window.__timelines["s28"] = tl;
+</script>
+</template>

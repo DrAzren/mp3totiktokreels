@@ -1,0 +1,191 @@
+# ADHD Dewasa — verbatim caption script (Dr Azren). One caption group per line.
+# *word = highlighted keyword. Display=spoken gives the aligner a phonetic spelling (letters a-z only).
+## hook
+Korang pernah tak tengah
+buat *satu kerja,
+tiba-tiba=tiba_tiba *teringat benda lain.
+Lepas tu, korang buat
+*benda lain pula.
+Belum sempat habis,
+korang pergi buat
+*kerja lain pula.
+Last=las kali, satu kerja
+pun *tak siap.
+Orang lain ingat korang
+ni *pemalas.
+Sebenarnya, ada kemungkinan
+ia berkaitan dengan *ADHD.=ei_di_eic_di
+## intro
+*ADHD=ei_di_eic_di bukan penyakit
+yang just=jas berlaku kat
+*kanak-kanak=kanak_kanak je.
+*Orang dewasa pun boleh
+mengalami ADHD=ei_di_eic_di
+dan ada yang hanya
+mendapat *diagnosis
+selepas umur *30=tiga_puluh atau *40=empat_puluh tahun.
+Hari ni, saya nak kongsikan
+*10=sepuluh *tanda ADHD=ei_di_eic_di
+dalam kalangan *orang dewasa.
+## s1
+Nombor satu,
+susah nak *fokus.
+Korang tengah meeting,=miting
+tapi fikiran dah *melayang
+entah ke mana.
+Orang tengah bercakap,
+korang dengar suara dia,
+tapi tak dapat tangkap
+apa yang dia sampaikan.
+## s2
+Nombor dua,
+mudah *terganggu.
+Tengah buat kerja,
+tiba-tiba=tiba_tiba *telefon berbunyi.
+Terus buka telefon.
+Daripada nak tengok
+satu mesej, akhirnya
+*setengah *jam habis
+scroll=skrol TikTok.=tiktok
+## s3
+Nombor tiga,=tiga
+selalu *terlupa.
+Lupa *appointment,=apoinmen
+lupa bayar *bil,
+lupa letak *kunci kereta.
+Kadang-kadang=kadang_kadang baru masuk bilik,
+terus *lupa nak ambil apa.
+## s4
+Nombor empat,
+susah nak menguruskan *masa.
+Korang rasa kerja tu
+boleh siap dalam *10=sepuluh *minit,
+tapi sebenarnya
+ambil masa *sejam.
+Akhirnya selalu *lambat
+dan *kelam kabut.
+## s5
+Nombor lima,
+suka *bertangguh.
+Kerja dah diberikan
+sejak minggu lepas,
+tapi korang hanya mula buat
+apabila *deadline=dedlain
+tinggal beberapa jam.
+Bukan semestinya sebab *malas,
+tetapi mungkin kerana
+*kesukaran memulakan
+dan menguruskan tugasan.
+## s6
+Nombor enam,
+susah nak *duduk *diam.
+Kaki sentiasa bergerak,
+jari asyik *mengetuk meja,
+ataupun korang rasa
+*gelisah dari dalam
+walaupun sedang duduk diam.
+## s7
+Nombor tujuh,
+*impulsif.
+Kadang-kadang=kadang_kadang bercakap
+sebelum orang lain
+habis bercakap.
+Susah nak tunggu *giliran,
+ataupun membuat keputusan
+*terlalu *cepat
+tanpa memikirkan *akibatnya.
+## s8
+Nombor lapan,
+susah nak *siapkan kerja.
+Banyak projek *dimulakan,
+tapi hanya *sedikit
+yang berjaya disiapkan.
+Bila sesuatu tugasan
+menjadi *membosankan
+atau terlalu *rumit,
+korang mudah *beralih
+kepada benda lain.
+## s9
+Nombor sembilan,
+susah menguruskan
+*barang dan *tugasan.
+Meja kerja *bersepah,
+dokumen penting *hilang.
+Banyak perkara yang perlu dibuat,
+tetapi korang tak tahu
+nak *mula dari mana.
+## s10
+Nombor sepuluh,
+*hyperfocus.=haiperfokus
+Ini yang menarik.
+Walaupun seseorang
+yang ada ADHD=ei_di_eic_di
+boleh mengalami kesukaran
+memberikan perhatian,
+ada juga yang
+*terlalu *fokus
+pada aktiviti yang sangat
+menarik minat mereka.
+Contohnya bermain *game,=geim
+membuat projek *kreatif,
+atau melakukan hobi tertentu
+sampai *terlupa *makan.
+Tetapi, hyperfocus=haiperfokus
+*bukan simptom diagnostik
+khusus ADHD.=ei_di_eic_di
+## caveat
+Sekarang, kena faham
+satu benda ni.
+Kalau korang ada
+*satu atau *dua tanda tadi,
+itu *tak *bermaksud
+korang mesti ada ADHD.=ei_di_eic_di
+Untuk diagnosis ADHD,=ei_di_eic_di
+simptom biasanya sudah wujud
+sejak zaman *kanak-kanak=kanak_kanak
+sebelum umur *12=dua_belas tahun.
+Simptom juga perlu berlaku
+dalam *lebih daripada
+satu situasi,
+contohnya di *rumah
+dan *tempat *kerja,
+serta menyebabkan
+*gangguan *fungsi yang ketara.
+Masalah *tidur,
+*anxiety,=angzaieti *depression,=dipresyen
+dan beberapa keadaan lain
+juga boleh menyebabkan
+simptom yang *hampir *sama.
+Sebab itu, kita perlukan
+*penilaian yang *menyeluruh.
+## cta
+Kalau korang rasa
+simptom-simptom=simptom_simptom ni dah lama
+mengganggu kehidupan,
+boleh dapatkan *penilaian
+*kesihatan *mental
+bersama saya, *Dr=doktor *Azren,
+di klinik saya
+di=di *Nilai.=nilai
+Saya juga ada
+menulis buku bertajuk
+*"Doktor, *Saya *Boleh *Sembuh *Ke?"
+terbitan White=wait Coat=kot
+untuk membantu masyarakat
+memahami masalah
+*kesihatan *mental.
+## outro
+Ingat, ADHD=ei_di_eic_di
+*bukan bermaksud seseorang itu
+*bodoh atau *pemalas.
+Dengan *diagnosis yang tepat,
+*rawatan dan *strategi
+yang sesuai,
+ramai individu dengan ADHD=ei_di_eic_di
+boleh *berfungsi
+dengan *lebih *baik.
+Jadi, antara *10=sepuluh tanda tadi,
+yang mana satu korang
+paling kerap alami?
+Boleh *share=syer
+di ruangan *komen.

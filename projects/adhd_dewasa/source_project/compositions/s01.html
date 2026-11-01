@@ -1,0 +1,37 @@
+<template>
+<style>
+#root{position:absolute;inset:0;overflow:hidden;background:#061024;font-family:'Montserrat',sans-serif;color:#F5F7FA}
+.sc{position:absolute;inset:0;overflow:hidden}
+.cam,.punch{position:absolute;inset:0}
+.plate{position:absolute;left:-27px;top:-48px;width:1134px;height:2016px;object-fit:cover}
+.vid{position:absolute;left:0;top:0;width:1080px;height:1920px;object-fit:cover}
+.shade-t{position:absolute;left:0;top:0;width:1080px;height:560px;background:linear-gradient(180deg,rgba(6,16,36,.62),rgba(6,16,36,0))}
+.shade-b{position:absolute;left:0;top:980px;width:1080px;height:940px;background:linear-gradient(180deg,rgba(6,16,36,0),rgba(6,16,36,.55) 35%,rgba(6,16,36,.82))}
+.mote{position:absolute;border-radius:50%;background:radial-gradient(circle,rgba(255,236,200,.85),rgba(255,236,200,0) 70%)}
+.g{position:absolute;left:90px;width:900px}
+.kt{font-family:'League Gothic','Oswald',sans-serif;text-transform:uppercase;line-height:.92;letter-spacing:.01em;color:#F5F7FA;text-shadow:0 6px 30px rgba(0,0,0,.55)}
+.kick{font-family:'Montserrat',sans-serif;font-weight:800;font-size:34px;letter-spacing:.32em;text-transform:uppercase;color:#6FE3EE}
+.serif{font-family:'Playfair Display',serif;font-style:italic}
+.chip{display:inline-block;padding:14px 26px;border-radius:999px;background:rgba(11,26,51,.78);border:2px solid rgba(111,227,238,.7);font-weight:800;font-size:34px;letter-spacing:.06em;color:#F5F7FA;box-shadow:0 10px 30px rgba(0,0,0,.35)}
+.card{background:rgba(8,20,42,.82);border:1.5px solid rgba(111,227,238,.45);border-radius:28px;box-shadow:0 24px 60px rgba(0,0,0,.45)}
+.ln{display:inline-block;overflow:hidden;vertical-align:bottom}
+.ln>span{display:inline-block}
+.fx{position:absolute;inset:0;pointer-events:none}
+.warm{color:#FFD25A} .cyan{color:#6FE3EE}
+</style>
+<div id="root" data-composition-id="s01" data-width="1080" data-height="1920" data-layout-allow-overflow data-layout-allow-overlap>
+<div id="s01-sc" class="sc"><div id="s01-punch" class="punch"><div id="s01-cam" class="cam"><img class="plate" src="assets/img/s01_last.jpg" alt=""><video id="s01-v" class="vid clip" src="assets/vid/s01.mp4" muted playsinline data-start="0" data-duration="4.330" data-playback-rate="0.928" data-track-index="1"></video></div></div><div id="s01-motes" class="fx"><span class="mote" style="left:478px;top:713px;width:7px;height:7px;opacity:0.50"></span><span class="mote" style="left:554px;top:1055px;width:18px;height:18px;opacity:0.44"></span><span class="mote" style="left:35px;top:1459px;width:17px;height:17px;opacity:0.38"></span><span class="mote" style="left:833px;top:366px;width:9px;height:9px;opacity:0.37"></span><span class="mote" style="left:579px;top:994px;width:14px;height:14px;opacity:0.26"></span><span class="mote" style="left:920px;top:1658px;width:7px;height:7px;opacity:0.25"></span><span class="mote" style="left:549px;top:1079px;width:10px;height:10px;opacity:0.34"></span><span class="mote" style="left:1007px;top:534px;width:11px;height:11px;opacity:0.34"></span><span class="mote" style="left:1002px;top:1596px;width:18px;height:18px;opacity:0.35"></span><span class="mote" style="left:209px;top:480px;width:7px;height:7px;opacity:0.32"></span><span class="mote" style="left:625px;top:217px;width:14px;height:14px;opacity:0.40"></span><span class="mote" style="left:125px;top:508px;width:10px;height:10px;opacity:0.38"></span></div><div class="shade-t"></div><div class="shade-b"></div><div id="s01-kl1" class="g kt " style="top:300px;font-size:120px;text-align:center;"><span class="ln"><span>SATU</span></span> <span class="ln"><span>KERJA</span></span> </div><div id="s01-kl2" class="g kt cyan" style="top:420px;font-size:210px;text-align:center;"><span class="ln"><span>TIBA-TIBA…</span></span> </div><div id="s01-kl3" class="g kt " style="top:640px;font-size:120px;text-align:center;"><span class="ln"><span>BENDA</span></span> <span class="ln"><span>LAIN</span></span> </div></div>
+</div>
+<script>
+const tl = gsap.timeline({ paused: true });
+tl.fromTo("#s01-cam",{scale:1.0},{...{scale:1.09},duration:4.330,ease:"sine.inOut"},0);
+tl.fromTo("#s01-motes",{y:20,x:0},{y:-90,x:24,duration:4.330,ease:"none"},0);
+tl.fromTo("#s01-kl1 .ln>span",{yPercent:110,opacity:0},{yPercent:0,opacity:1,duration:0.5,ease:"power4.out",stagger:0.06},1.29);
+tl.fromTo("#s01-kl2 .ln>span",{yPercent:110,opacity:0},{yPercent:0,opacity:1,duration:0.5,ease:"power4.out",stagger:0.06},2.21);
+tl.fromTo("#s01-kl3 .ln>span",{yPercent:110,opacity:0},{yPercent:0,opacity:1,duration:0.5,ease:"power4.out",stagger:0.06},2.97);
+tl.fromTo("#s01-kl3",{x:0},{keyframes:[{x:-18,duration:.04},{x:14,duration:.04},{x:-6,duration:.04},{x:0,duration:.04}]},3.37);
+tl.to("#s01-kl1,#s01-kl2,#s01-kl3",{opacity:0,duration:0.2,ease:"power2.in"},3.53);
+tl.fromTo("#s01-punch",{scale:1},{scale:1.05,duration:0.12,ease:"power2.out",immediateRender:false,overwrite:"auto"},2.24);tl.to("#s01-punch",{scale:1,duration:0.9,ease:"power3.out",overwrite:"auto"},2.3600000000000003);
+window.__timelines["s01"] = tl;
+</script>
+</template>

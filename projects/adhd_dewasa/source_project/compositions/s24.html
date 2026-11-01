@@ -1,0 +1,39 @@
+<template>
+<style>
+#root{position:absolute;inset:0;overflow:hidden;background:#061024;font-family:'Montserrat',sans-serif;color:#F5F7FA}
+.sc{position:absolute;inset:0;overflow:hidden}
+.cam,.punch{position:absolute;inset:0}
+.plate{position:absolute;left:-27px;top:-48px;width:1134px;height:2016px;object-fit:cover}
+.vid{position:absolute;left:0;top:0;width:1080px;height:1920px;object-fit:cover}
+.shade-t{position:absolute;left:0;top:0;width:1080px;height:560px;background:linear-gradient(180deg,rgba(6,16,36,.62),rgba(6,16,36,0))}
+.shade-b{position:absolute;left:0;top:980px;width:1080px;height:940px;background:linear-gradient(180deg,rgba(6,16,36,0),rgba(6,16,36,.55) 35%,rgba(6,16,36,.82))}
+.mote{position:absolute;border-radius:50%;background:radial-gradient(circle,rgba(255,236,200,.85),rgba(255,236,200,0) 70%)}
+.g{position:absolute;left:90px;width:900px}
+.kt{font-family:'League Gothic','Oswald',sans-serif;text-transform:uppercase;line-height:.92;letter-spacing:.01em;color:#F5F7FA;text-shadow:0 6px 30px rgba(0,0,0,.55)}
+.kick{font-family:'Montserrat',sans-serif;font-weight:800;font-size:34px;letter-spacing:.32em;text-transform:uppercase;color:#6FE3EE}
+.serif{font-family:'Playfair Display',serif;font-style:italic}
+.chip{display:inline-block;padding:14px 26px;border-radius:999px;background:rgba(11,26,51,.78);border:2px solid rgba(111,227,238,.7);font-weight:800;font-size:34px;letter-spacing:.06em;color:#F5F7FA;box-shadow:0 10px 30px rgba(0,0,0,.35)}
+.card{background:rgba(8,20,42,.82);border:1.5px solid rgba(111,227,238,.45);border-radius:28px;box-shadow:0 24px 60px rgba(0,0,0,.45)}
+.ln{display:inline-block;overflow:hidden;vertical-align:bottom}
+.ln>span{display:inline-block}
+.fx{position:absolute;inset:0;pointer-events:none}
+.warm{color:#FFD25A} .cyan{color:#6FE3EE}
+#s24-cd1{top:300px;text-align:center} #s24-cd1 .lb{font-weight:900;font-size:40px;letter-spacing:.4em;color:#FF5A5F}#s24-cd1 .big{font-family:'League Gothic';font-size:250px;line-height:1;font-variant-numeric:tabular-nums} #s24-cd1 .cal{display:flex;justify-content:center;gap:10px;margin-top:12px}#s24-cd1 .cal span{width:80px;height:80px;border-radius:14px;background:rgba(255,255,255,.12);font-weight:800;font-size:30px;line-height:80px}</style>
+<div id="root" data-composition-id="s24" data-width="1080" data-height="1920" data-layout-allow-overflow data-layout-allow-overlap>
+<div id="s24-sc" class="sc"><div id="s24-punch" class="punch"><div id="s24-cam" class="cam"><img class="plate" src="assets/img/s24.jpg" alt=""></div></div><div id="s24-motes" class="fx"><span class="mote" style="left:169px;top:1780px;width:7px;height:7px;opacity:0.26"></span><span class="mote" style="left:479px;top:574px;width:10px;height:10px;opacity:0.22"></span><span class="mote" style="left:490px;top:1392px;width:11px;height:11px;opacity:0.28"></span><span class="mote" style="left:477px;top:1351px;width:8px;height:8px;opacity:0.29"></span><span class="mote" style="left:842px;top:647px;width:7px;height:7px;opacity:0.48"></span><span class="mote" style="left:599px;top:419px;width:13px;height:13px;opacity:0.29"></span><span class="mote" style="left:733px;top:972px;width:14px;height:14px;opacity:0.41"></span><span class="mote" style="left:637px;top:1457px;width:16px;height:16px;opacity:0.49"></span><span class="mote" style="left:977px;top:944px;width:12px;height:12px;opacity:0.46"></span><span class="mote" style="left:68px;top:424px;width:7px;height:7px;opacity:0.34"></span><span class="mote" style="left:376px;top:152px;width:16px;height:16px;opacity:0.16"></span><span class="mote" style="left:43px;top:538px;width:7px;height:7px;opacity:0.24"></span></div><div class="shade-t"></div><div class="shade-b"></div><div id="s24-cd1" class="g"><div class="lb">DEADLINE</div><div class="big">7 HARI</div><div class="cal"><span>I</span><span>S</span><span>R</span><span>K</span><span>J</span><span>S</span><span>A</span></div></div></div>
+</div>
+<script>
+const tl = gsap.timeline({ paused: true });
+tl.fromTo("#s24-cam",{scale:1.0},{...{scale:1.09},duration:7.061,ease:"sine.inOut"},0);
+tl.fromTo("#s24-motes",{y:20,x:0},{y:-90,x:24,duration:7.061,ease:"none"},0);
+tl.fromTo("#s24-cd1 .lb,#s24-cd1 .big",{opacity:0,y:20},{opacity:1,y:0,duration:0.4,stagger:0.08},0.37);
+tl.fromTo("#s24-cd1 .cal span",{opacity:0,scale:0.6},{opacity:1,scale:1,duration:0.25,stagger:0.07},0.57);
+tl.to("#s24-cd1 .cal span",{background:"rgba(255,90,95,.75)",duration:0.12,stagger:0.12},3.711);
+(function(){const o={v:10800},el=document.querySelector("#s24-cd1 .big");tl.fromTo(o,{v:10800},{v:10790,duration:1.50,ease:"none",onUpdate:()=>{const s=Math.round(o.v);el.textContent="0"+Math.floor(s/3600)+":"+String(Math.floor(s%3600/60)).padStart(2,"0")+":"+String(s%60).padStart(2,"0")}},4.611);})();
+tl.to("#s24-cd1 .big",{color:"#FF5A5F",duration:0.2},4.611);
+tl.fromTo("#s24-punch",{scale:1},{scale:1.04,duration:0.12,ease:"power2.out",immediateRender:false,overwrite:"auto"},4.611);tl.to("#s24-punch",{scale:1,duration:0.9,ease:"power3.out",overwrite:"auto"},4.731);
+tl.to("#s24-cd1",{opacity:0,duration:0.2,ease:"power2.in"},6.391);
+tl.fromTo("#s24-sc",{yPercent:22,opacity:0},{yPercent:0,opacity:1,duration:0.5,ease:"power3.out"},0);
+window.__timelines["s24"] = tl;
+</script>
+</template>
