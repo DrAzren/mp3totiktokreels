@@ -11,6 +11,7 @@ First production: **Depot Injection** (Dr Azren | Spread Positivity), Malay, 2:3
 | `deliverables/captions.srt` | Malay subtitles (forced-aligned) for upload as a separate caption track |
 | `deliverables/transcript_ms.txt` | Clean transcript of the edited voice track |
 | `deliverables/broll_jobs.json` | Higgsfield job IDs (keyframes + clips) |
+| `.claude/skills/` | Vendored editing skills (video-use + HyperFrames), same pins as `tiktokvideo`; refresh with `scripts/sync-skills.sh` |
 | `pipeline/` | Reproducible build: `edit_voice.py` → `align_captions.py` → `render/` (canvas engine, components, `timeline.js` = the editable project) → `audio_mix.py`; `build.sh` runs it end to end |
 
 The rendered MP4 (~220 MB) is not committed. Run `pipeline/build.sh` to reproduce it.
