@@ -45,7 +45,8 @@ GFX_DESC = {
     "split": "LEBIH DARIPADA SATU SITUASI → screen splits RUMAH / TEMPAT KERJA (second AI still) → GANGGUAN FUNGSI",
     "venn": "Venn circles TIDUR / ANXIETY / DEPRESSION overlap onto ADHD?",
     "lower": "Lower-third card: PENILAIAN KESIHATAN MENTAL · Dr Azren · Klinik · Nilai",
-    "book": "Typographic book card: “Doktor, Saya Boleh Sembuh Ke?” · terbitan White Coat",
+    "book": "Typographic book card",
+    "book3d": "Dr Azren's real book as a 3D object built from the print file (front cover, spine, back cover, paper page edges): rises out of depth, turns to face camera on the spoken title with a light sweep across the cover, then slowly turns to reveal the spine; BUKU OLEH DR AZREN above, terbitan Whitecoat below, soft floor shadow",
     "twoline": "BUKAN BODOH. / BUKAN PEMALAS. with double punch-in",
     "checks": "Checklist ticks Diagnosis yang tepat ✓ Rawatan ✓ Strategi yang sesuai ✓ → BERFUNGSI DENGAN LEBIH BAIK",
     "recap": "10-sign recap grid, comment prompt, then end card DR AZREN | Spread Positivity",
@@ -91,6 +92,8 @@ def main(jobs_json, out):
         L.append(f"- **Visual:** {sc['prompt']}" + (f"  \n  *Motion prompt:* {sc['motion']}" if sc.get("motion") else ""))
         if sid == "s45":
             L.append(f"  *Second plate (split screen):* {next(x for x in S.SCENES if x['id']=='s45b')['prompt']}")
+        if sc.get("plate"):
+            kind += f" (plate defocused as `{sc['plate']}` behind the 3D book; book artwork from the print PDF in Google Drive)"
         L.append(f"- **Source:** {kind} · camera: {sc['cam']}")
         L.append(f"- **Motion graphics:** {GFX_DESC.get(gx['t'], gx['t']) if gx else 'none (breathing room for the voice)'}")
         L.append(f"- **Transition in:** {TR_DESC.get(sc.get('tr') or 'cold')}")

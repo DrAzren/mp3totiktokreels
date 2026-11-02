@@ -169,8 +169,8 @@ di klinik saya
 di=di *Nilai.=nilai
 Saya juga ada
 menulis buku bertajuk
-*"Doktor, *Saya *Boleh *Sembuh *Ke?"
-terbitan White=wait Coat=kot
+*"Dr,=doktor *Saya *Boleh *Sembuh *Ke?"
+terbitan *Whitecoat=wait_kot
 untuk membantu masyarakat
 memahami masalah
 *kesihatan *mental.

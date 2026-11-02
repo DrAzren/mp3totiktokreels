@@ -4293,7 +4293,7 @@
 "conf": 0.929
 },
 {
-"text": "\"Doktor,",
+"text": "\"Dr,",
 "hl": true,
 "phrase": 155,
 "section": "cta",
@@ -4347,22 +4347,13 @@
 "conf": 0.992
 },
 {
-"text": "White",
-"hl": false,
+"text": "Whitecoat",
+"hl": true,
 "phrase": 156,
 "section": "cta",
 "s": 215.171,
-"e": 215.351,
-"conf": 0.788
-},
-{
-"text": "Coat",
-"hl": false,
-"phrase": 156,
-"section": "cta",
-"s": 215.411,
 "e": 215.612,
-"conf": 0.86
+"conf": 0.788
 },
 {
 "text": "untuk",

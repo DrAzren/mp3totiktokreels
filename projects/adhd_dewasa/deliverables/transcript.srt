@@ -620,11 +620,11 @@ menulis buku bertajuk
 
 156
 00:03:32,811 --> 00:03:34,711
-"Doktor, Saya Boleh Sembuh Ke?"
+"Dr, Saya Boleh Sembuh Ke?"
 
 157
 00:03:34,711 --> 00:03:35,852
-terbitan White Coat
+terbitan Whitecoat
 
 158
 00:03:35,852 --> 00:03:37,212

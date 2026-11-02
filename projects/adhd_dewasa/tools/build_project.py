@@ -678,6 +678,59 @@ def g_book(ctx, g):
     fade_out(ctx, f"#{i}", ctx.t1 - 0.12)
 
 
+def g_book3d(ctx, g):
+    """Dr Azren's real book as a 3D object built from the print artwork (front, spine, back, page edges)."""
+    i = ctx.id("b3")
+    tm, tb, tt, tp = ctx.w("menulis"), ctx.w("buku"), ctx.w("dr", after=ctx.w("bertajuk")), ctx.w("terbitan")
+    BW, BH, T = 500, 711, 51           # 125 x 177 mm cover, 13 mm spine, same proportions as the print file
+    hw, hh, ht = BW / 2, BH / 2, T / 2
+    ctx.css.append(
+        f"#{i}k{{position:absolute;left:0;right:0;top:206px;text-align:center;font-weight:800;font-size:30px;letter-spacing:.36em;color:{CYAN}}}"
+        f"#{i}s{{position:absolute;left:0;width:1080px;top:270px;height:900px;perspective:1700px;perspective-origin:50% 40%}}"
+        f"#{i}sh{{position:absolute;left:250px;top:800px;width:580px;height:90px;border-radius:50%;"
+        f"background:radial-gradient(ellipse at center,rgba(0,0,0,.62),rgba(0,0,0,.25) 45%,rgba(0,0,0,0) 72%)}}"
+        f"#{i}{{position:absolute;left:{540-hw}px;top:40px;width:{BW}px;height:{BH}px;transform-style:preserve-3d}}"
+        f"#{i} .f{{position:absolute;backface-visibility:hidden;overflow:hidden}}"
+        f"#{i} .fr{{left:0;top:0;width:{BW}px;height:{BH}px;background:url('assets/book/front.jpg') center/100% 100% no-repeat;transform:translateZ({ht}px);border-radius:0 4px 4px 0}}"
+        f"#{i} .bk{{left:0;top:0;width:{BW}px;height:{BH}px;background:url('assets/book/back.jpg') center/100% 100% no-repeat;transform:rotateY(180deg) translateZ({ht}px)}}"
+        f"#{i} .sp{{left:{hw-ht}px;top:0;width:{T}px;height:{BH}px;background:url('assets/book/spine.jpg') center/100% 100% no-repeat;transform:rotateY(-90deg) translateZ({hw}px)}}"
+        f"#{i} .pr{{left:{hw-ht+2}px;top:3px;width:{T-4}px;height:{BH-6}px;background:repeating-linear-gradient(90deg,#f5f0e6 0 2px,#d9d1c0 2px 3px);transform:rotateY(90deg) translateZ({hw-3}px)}}"
+        f"#{i} .pt{{left:3px;top:{hh-ht+2}px;width:{BW-6}px;height:{T-4}px;background:repeating-linear-gradient(0deg,#f5f0e6 0 2px,#d9d1c0 2px 3px);transform:rotateX(90deg) translateZ({hh-2}px)}}"
+        f"#{i} .pb{{left:3px;top:{hh-ht+2}px;width:{BW-6}px;height:{T-4}px;background:repeating-linear-gradient(0deg,#efe9dc 0 2px,#cfc6b4 2px 3px);transform:rotateX(-90deg) translateZ({hh-2}px)}}"
+        f"#{i} .sd{{position:absolute;inset:0;background:linear-gradient(100deg,rgba(255,255,255,.10),rgba(255,255,255,0) 35%,rgba(0,0,0,.10) 80%,rgba(0,0,0,.22))}}"
+        f"#{i} .hinge{{position:absolute;left:0;top:0;bottom:0;width:22px;background:linear-gradient(90deg,rgba(0,0,0,.28),rgba(255,255,255,.08) 55%,rgba(0,0,0,0))}}"
+        f"#{i} .spd{{position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.30),rgba(0,0,0,.05) 50%,rgba(0,0,0,.25))}}"
+        f"#{i} .gl{{position:absolute;top:-20%;left:0;width:180px;height:140%;background:linear-gradient(90deg,rgba(255,255,255,0),rgba(255,255,255,.55),rgba(255,255,255,0));opacity:.9}}"
+        f"#{i}p{{position:absolute;left:0;right:0;top:1062px;text-align:center;font-weight:700;font-size:34px;letter-spacing:.08em;color:{WHITE};text-shadow:0 4px 18px rgba(0,0,0,.8)}}"
+        f"#{i}p b{{color:{WARM};font-weight:800}}")
+    ctx.html.append(
+        f'<div id="{i}k">BUKU OLEH DR AZREN</div>'
+        f'<div id="{i}s"><div id="{i}sh"></div><div id="{i}">'
+        f'<div class="f bk"><div class="sd"></div></div>'
+        f'<div class="f pr"></div><div class="f pt"></div><div class="f pb"></div>'
+        f'<div class="f sp"><div class="spd"></div></div>'
+        f'<div class="f fr"><div class="sd"></div><div class="hinge"></div><div class="gl"></div></div>'
+        f'</div></div>'
+        f'<div id="{i}p">terbitan <b>{esc(g["publisher"])}</b></div>')
+    J = ctx.js.append
+    # enter: rises out of depth, pages edge toward camera
+    J(f'tl.fromTo("#{i}",{{y:620,z:-420,rotationY:-62,rotationX:18,rotationZ:-4,opacity:0}},{{y:0,z:0,rotationY:-30,rotationX:7,rotationZ:-1.5,opacity:1,duration:1.15,ease:"expo.out"}},{ctx.L(tm-0.15)});')
+    J(f'tl.fromTo("#{i}sh",{{opacity:0,scaleX:0.4}},{{opacity:1,scaleX:1,duration:1.0,ease:"power3.out"}},{ctx.L(tm)});')
+    J(f'tl.fromTo("#{i}k",{{opacity:0,y:16}},{{opacity:1,y:0,duration:0.6,ease:"power3.out"}},{ctx.L(tb)});')
+    # turn to face the viewer while the title is spoken, light sweeps across the cover
+    J(f'tl.to("#{i}",{{rotationY:-9,rotationX:4,rotationZ:0,duration:1.3,ease:"power2.inOut"}},{ctx.L(tt-0.35)});')
+    J(f'tl.fromTo("#{i} .gl",{{x:-260}},{{x:{BW+120},duration:1.1,ease:"power2.inOut"}},{ctx.L(tt+0.2)});')
+    J(f'tl.fromTo("#{i}p",{{opacity:0,y:20}},{{opacity:1,y:0,duration:0.5,ease:"power3.out"}},{ctx.L(tp)});')
+    # slow hero turn that reveals the spine, gentle float
+    turn = max(1.0, ctx.t1 - 0.7 - (tp + 0.3))
+    J(f'tl.to("#{i}",{{rotationY:28,rotationX:5,duration:{turn:.2f},ease:"sine.inOut"}},{ctx.L(tp+0.3)});')
+    J(f'tl.fromTo("#{i}s",{{y:0}},{{y:-14,duration:1.6,ease:"sine.inOut",yoyo:true,repeat:{max(1, int((ctx.t1 - tm) / 1.6))}}},{ctx.L(tm+0.8)});')
+    J(f'tl.fromTo("#{i} .gl",{{x:{BW+120}}},{{x:-260,duration:1.4,ease:"power2.inOut",immediateRender:false}},{ctx.L(tp+1.6)});')
+    ctx.cue("hf:whoosh-cinematic", tm - 0.55, 0.45, src_from=1.6); ctx.cue("thud", tm + 0.55, 0.35)
+    ctx.cue("paper", tb, 0.45); ctx.cue("shimmer", tt + 0.25, 0.4); ctx.cue("swish", tp + 0.4, 0.35)
+    fade_out(ctx, f"#{i}k,#{i}p", ctx.t1 - 0.12)
+
+
 def g_twoline(ctx, g):
     tb, tp = ctx.w("bodoh"), ctx.w("pemalas")
     a = kt_line(ctx, g["a"], 330, 190, t=tb - 0.08)
@@ -818,7 +871,7 @@ def scene_file(ctx, host_dur):
                      f'<video id="{sid}-v" class="vid clip" src="assets/vid/{sid}.mp4" muted playsinline data-start="0" data-duration="{vdur:.3f}" '
                      f'data-playback-rate="{rate:.3f}" data-track-index="1"></video>')
     else:
-        plate = f'<img class="plate" src="assets/img/{sid}.jpg" alt="">'
+        plate = f'<img class="plate" src="assets/img/{sc.get("plate", sid)}.jpg" alt="">'
     camera(ctx, sc["cam"], host_dur)
     motes(ctx, host_dur)
     gx = sc.get("gfx")

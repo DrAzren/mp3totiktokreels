@@ -1369,14 +1369,33 @@
 "scene": "s49"
 },
 {
+"type": "hf:whoosh-cinematic",
+"t": 210.641,
+"gain": 0.45,
+"scene": "s50",
+"src_from": 1.6
+},
+{
+"type": "thud",
+"t": 211.741,
+"gain": 0.35,
+"scene": "s50"
+},
+{
 "type": "paper",
 "t": 211.571,
-"gain": 0.5,
+"gain": 0.45,
 "scene": "s50"
 },
 {
 "type": "shimmer",
-"t": 212.811,
+"t": 213.061,
+"gain": 0.4,
+"scene": "s50"
+},
+{
+"type": "swish",
+"t": 215.111,
 "gain": 0.35,
 "scene": "s50"
 },

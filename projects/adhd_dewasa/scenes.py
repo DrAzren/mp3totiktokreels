@@ -186,7 +186,8 @@ SCENES = [
       gfx=dict(t="lower", name="Dr Azren", role="Penilaian Kesihatan Mental", place="Klinik · Nilai"), sfx=["logo"]),
  dict(id="s50", p=153, kind="img", cam="pushin", tr="dissolve",
       prompt="A plain dark navy hardcover book lying on a wooden table beside a window, soft morning light, a cup of tea and reading glasses nearby, the cover blank with no text.",
-      gfx=dict(t="book", title="Doktor, Saya Boleh Sembuh Ke?", sub="terbitan White Coat"), sfx=["paper"]),
+      plate="s50_bg",   # the AI desk plate, defocused, behind the real 3D book
+      gfx=dict(t="book3d", publisher="Whitecoat"), sfx=["paper"]),
  # ---------------- OUTRO ----------------
  dict(id="s51", p=160, kind="img", cam="rise", tr="light",
       prompt="A confident Malaysian adult walks along a city street at sunrise, seen from behind, warm golden light breaking between buildings, hopeful mood.",

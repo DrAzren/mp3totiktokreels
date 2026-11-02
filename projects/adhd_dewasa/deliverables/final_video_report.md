@@ -46,8 +46,13 @@
 | “selalu tersenyum” | **selalu terlupa** | Re-decoding the clip alone gives “terlupa”; forced alignment also scores it better, and the examples that follow are all about forgetting |
 | “Dr. Azrin” | **Dr Azren** | creator's name |
 | “di klinik saya dinilai” | **di klinik saya di Nilai** | sounds identical; read as the town of Nilai (same as the Depot Injection reel); shown as “Klinik · Nilai” on the lower third |
-| “terbitan white code” | **terbitan White Coat** | isolated re-decode hears “White Coat”. **The publisher could not be verified online; please confirm the spelling.** |
+| “terbitan white code” | **terbitan Whitecoat** | confirmed from the book's own cover (WHITECOAT NON-FICTION logo, www.whitecoat.com.my) |
+| “Doktor, Saya Boleh Sembuh Ke?” | **“Dr, Saya Boleh Sembuh Ke?”** | spoken “Doktor”; subtitle uses the book's real title as printed on the cover |
 | meeting, appointment, scroll TikTok, deadline, game, hyperfocus, anxiety, depression, share | kept in English as spoken | code-switching preserved verbatim |
+
+## Book scene (s50, 3:30–3:39)
+
+Dr Azren's book is shown as a real 3D object, built in HyperFrames (CSS 3D) from the print-ready cover PDF in Google Drive (“Front and Back Cover Dr Saya Boleh Sembuh Ke?.pdf”, rasterised at 300 dpi and cut along its trim marks): front cover, 13 mm spine and back cover at their true 125 × 177 mm proportions, with paper page edges. It rises in, faces the camera as the title is spoken (light sweep across the cover), then turns to reveal the spine. The cover artwork is used as-is, not AI-regenerated, so every word on it stays exact. It cost no Higgsfield credits.
 
 ## Limitations and disclosures
 

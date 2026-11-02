@@ -448,12 +448,12 @@ Times are the cut points on the master timeline. Every graphic is keyed to the a
 - **Sound:** swish, logo, air, shimmer
 
 ### S50 · 3:30.41–3:39.47 (9.1 s)
-- **Narration:** “Saya juga ada menulis buku bertajuk "Doktor, Saya Boleh Sembuh Ke?" terbitan White Coat untuk membantu masyarakat memahami masalah kesihatan mental.”
+- **Narration:** “Saya juga ada menulis buku bertajuk "Dr, Saya Boleh Sembuh Ke?" terbitan Whitecoat untuk membantu masyarakat memahami masalah kesihatan mental.”
 - **Visual:** A plain dark navy hardcover book lying on a wooden table beside a window, soft morning light, a cup of tea and reading glasses nearby, the cover blank with no text.
-- **Source:** Z Image still → local camera move · camera: pushin
-- **Motion graphics:** Typographic book card: “Doktor, Saya Boleh Sembuh Ke?” · terbitan White Coat
+- **Source:** Z Image still → local camera move (plate defocused as `s50_bg` behind the 3D book; book artwork from the print PDF in Google Drive) · camera: pushin
+- **Motion graphics:** Dr Azren's real book as a 3D object built from the print file (front cover, spine, back cover, paper page edges): rises out of depth, turns to face camera on the spoken title with a light sweep across the cover, then slowly turns to reveal the spine; BUKU OLEH DR AZREN above, terbitan Whitecoat below, soft floor shadow
 - **Transition in:** soft dissolve
-- **Sound:** paper, shimmer, air
+- **Sound:** whoosh-cinematic, thud, paper, shimmer, swish, air
 
 
 ## PENUTUP
