@@ -7,7 +7,7 @@
   "fps": "30/1",
   "pix_fmt": "yuv420p",
   "frames": "7245",
-  "bitrate_kbps": 9018
+  "bitrate_kbps": 9021
  },
  "audio": {
   "codec": "aac",
@@ -16,13 +16,13 @@
   "bitrate_kbps": 257
  },
  "duration": 241.5,
- "size_mb": 280.3,
+ "size_mb": 280.4,
  "black_segments": [],
  "frozen_segments": [],
  "loudness": {
   "integrated_lufs": -14.02,
-  "true_peak_dbtp": -1.42,
+  "true_peak_dbtp": -1.47,
   "lra": 1.6,
-  "max_volume_db": -1.4
+  "max_volume_db": -1.5
  }
 }
