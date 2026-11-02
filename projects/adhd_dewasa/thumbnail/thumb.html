@@ -1,0 +1,59 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face{font-family:'League Spartan';src:url(ls_2.woff2) format('woff2');font-weight:100 900;}
+@font-face{font-family:'PJ';src:url(pj800.woff2) format('woff2');font-weight:800;}
+:root{--navy:#0B1A33;--navy2:#061024;--yellow:#FFE100;--cyan:#6FE3EE;}
+html,body{margin:0;background:#000}
+.card{position:relative;width:1080px;overflow:hidden;background:linear-gradient(180deg,#0E2A52 0%,var(--navy) 45%,var(--navy2) 100%);}
+.bgimg{position:absolute;left:0;width:1080px;object-fit:cover;opacity:.4;filter:saturate(.85) contrast(1.05);}
+.bgfade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,16,36,.62) 0%,rgba(6,16,36,.20) 32%,rgba(6,16,36,.70) 60%,var(--navy2) 100%);}
+.glow{position:absolute;left:50%;width:1100px;height:1100px;transform:translateX(-50%);border-radius:50%;
+  background:radial-gradient(circle,rgba(111,227,238,.34) 0%,rgba(111,227,238,.10) 35%,rgba(111,227,238,0) 65%);}
+.chip{position:absolute;left:50%;transform:translateX(-50%) rotate(-2deg);background:var(--cyan);color:#0B1A33;font:800 40px 'PJ';
+  letter-spacing:4px;padding:14px 34px 12px;border-radius:999px;box-shadow:0 10px 30px rgba(0,0,0,.35);white-space:nowrap;}
+.head{position:absolute;left:0;width:1080px;text-align:center;font-family:'League Spartan';font-weight:800;color:#fff;
+  line-height:.98;letter-spacing:-1px;text-shadow:0 6px 0 rgba(2,12,30,.55),0 12px 40px rgba(0,0,0,.55);}
+.head .y{color:var(--yellow)}
+.person{position:absolute;left:50%;transform:translateX(-50%);filter:drop-shadow(0 0 2px rgba(0,0,0,.4)) drop-shadow(0 30px 60px rgba(0,0,0,.45));}
+.rim{position:absolute;left:50%;transform:translateX(-50%);filter:blur(14px) brightness(0) invert(1) sepia(1) hue-rotate(140deg) saturate(4);opacity:.38;}
+.tag{position:absolute;background:#FFD25A;color:#0B1A33;font:800 34px 'PJ';padding:14px 22px 12px;border-radius:10px;box-shadow:0 12px 26px rgba(0,0,0,.45);white-space:nowrap}
+.tag:before{content:"";position:absolute;left:50%;top:-12px;width:70px;height:22px;margin-left:-35px;background:rgba(255,255,255,.55);transform:rotate(-3deg)}
+/* 9:16 */
+#t916{height:1920px}
+#t916 .bgimg{top:0;height:1240px;object-position:50% 30%}
+#t916 .glow{top:760px}
+#t916 .chip{top:290px}
+#t916 .head{top:392px;font-size:132px}
+#t916 .person,#t916 .rim{top:560px;width:1210px}
+#t916 .t1{left:46px;top:820px;transform:rotate(-7deg)}
+#t916 .t2{right:40px;top:760px;transform:rotate(6deg)}
+#t916 .t3{left:60px;top:1010px;transform:rotate(4deg)}
+/* 4:5 */
+#t45{height:1350px}
+#t45 .bgimg{top:0;height:900px;object-position:50% 30%}
+#t45 .glow{top:430px;width:900px;height:900px}
+#t45 .chip{top:56px;font-size:34px}
+#t45 .head{top:140px;font-size:110px}
+#t45 .person,#t45 .rim{top:250px;width:1080px}
+#t45 .tag{font-size:30px}
+#t45 .t1{left:34px;top:480px;transform:rotate(-7deg)}
+#t45 .t2{right:30px;top:430px;transform:rotate(6deg)}
+#t45 .t3{left:44px;top:650px;transform:rotate(4deg)}
+</style></head>
+<body>
+<div class="card" id="t916">
+  <img class="bgimg" src="bg.jpg"><div class="bgfade"></div><div class="glow"></div>
+  <div class="chip">10 TANDA ADHD DEWASA</div>
+  <div class="head">Bukan Malas,<br><span class="y">Mungkin ADHD?</span></div>
+  <img class="rim" src="person_final.png"><img class="person" src="person_final.png">
+  <div class="tag t1">Susah fokus</div><div class="tag t2">Selalu lupa</div><div class="tag t3">Bertangguh</div>
+</div>
+<div class="card" id="t45">
+  <img class="bgimg" src="bg.jpg"><div class="bgfade"></div><div class="glow"></div>
+  <div class="chip">10 TANDA ADHD DEWASA</div>
+  <div class="head">Bukan Malas,<br><span class="y">Mungkin ADHD?</span></div>
+  <img class="rim" src="person_final.png"><img class="person" src="person_final.png">
+  <div class="tag t1">Susah fokus</div><div class="tag t2">Selalu lupa</div><div class="tag t3">Bertangguh</div>
+</div>
+</body></html>

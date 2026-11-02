@@ -8,6 +8,8 @@ Second production: Dr Azren's ElevenLabs narration (Malay, 3:58) turned into a 1
 | `deliverables/transcript.srt` | Verbatim Malay subtitles (forced-aligned, 174 cues) |
 | `deliverables/higgsfield_credit_report.md` | Price checks, chronological credit ledger, job IDs |
 | `deliverables/final_video_report.md` | Render specs, QA checks, audio measurements, limitations |
+| `deliverables/Thumbnail_ADHD_9x16.jpg`, `Thumbnail_ADHD_4x5.jpg` | Cover thumbnails with Dr Azren's photo (built from `thumbnail/thumb.html`: `node thumbnail/shot.mjs $PWD/thumbnail`) |
+| `deliverables/tiktok_caption.md` | TikTok / Reels caption, short version, hashtags, upload settings |
 | `deliverables/final_tiktok_reel.mp4` | The finished reel (not committed: too large for git; see the report) |
 | `source_project/` | The editable HyperFrames project: `index.html` + 53 scene compositions + captions + HUD, graded stills, clips, audio stems |
 | `captions.txt` | Verbatim caption script (`*word` = highlight, `Display=spoken` = aligner spelling) |
