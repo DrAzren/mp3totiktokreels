@@ -24,179 +24,179 @@
 "hl": false,
 "phrase": 0,
 "section": "hook",
-"s": 0.12,
-"e": 0.4,
-"conf": 0.57
+"s": 0.06,
+"e": 0.36,
+"conf": 0.637
 },
 {
 "text": "sejak",
 "hl": false,
 "phrase": 0,
 "section": "hook",
-"s": 0.56,
-"e": 0.82,
-"conf": 0.994
+"s": 0.54,
+"e": 0.76,
+"conf": 0.987
 },
 {
 "text": "makan",
 "hl": false,
 "phrase": 0,
 "section": "hook",
-"s": 0.86,
-"e": 1.1,
-"conf": 0.999
+"s": 0.8,
+"e": 1.0,
+"conf": 0.995
 },
 {
 "text": "ubat",
 "hl": false,
 "phrase": 0,
 "section": "hook",
-"s": 1.16,
-"e": 1.38,
-"conf": 0.958
+"s": 1.04,
+"e": 1.24,
+"conf": 0.988
 },
 {
 "text": "ni,",
 "hl": false,
 "phrase": 0,
 "section": "hook",
-"s": 1.42,
-"e": 1.5,
-"conf": 0.994
+"s": 1.3,
+"e": 1.38,
+"conf": 0.987
 },
 {
 "text": "kenapa",
 "hl": false,
 "phrase": 1,
 "section": "hook",
-"s": 1.56,
-"e": 1.82,
-"conf": 0.998
+"s": 1.54,
+"e": 1.84,
+"conf": 0.964
 },
 {
 "text": "berat",
 "hl": false,
 "phrase": 1,
 "section": "hook",
-"s": 1.88,
-"e": 2.04,
-"conf": 0.983
+"s": 1.92,
+"e": 2.08,
+"conf": 0.802
 },
 {
 "text": "badan",
 "hl": false,
 "phrase": 1,
 "section": "hook",
-"s": 2.06,
-"e": 2.28,
-"conf": 0.949
+"s": 2.12,
+"e": 2.32,
+"conf": 0.997
 },
 {
 "text": "saya",
 "hl": false,
 "phrase": 2,
 "section": "hook",
-"s": 2.3,
-"e": 2.44,
-"conf": 0.558
+"s": 2.36,
+"e": 2.48,
+"conf": 0.623
 },
 {
 "text": "naik?\"",
 "hl": true,
 "phrase": 2,
 "section": "hook",
-"s": 2.46,
-"e": 2.7,
-"conf": 0.974
+"s": 2.5,
+"e": 2.78,
+"conf": 0.964
 },
 {
 "text": "Soalan",
 "hl": false,
 "phrase": 3,
 "section": "hook",
-"s": 2.96,
-"e": 3.22,
-"conf": 0.821
+"s": 3.02,
+"e": 3.34,
+"conf": 0.952
 },
 {
 "text": "ni",
 "hl": false,
 "phrase": 3,
 "section": "hook",
-"s": 3.24,
-"e": 3.3,
-"conf": 0.994
+"s": 3.38,
+"e": 3.44,
+"conf": 0.997
 },
 {
 "text": "saya",
 "hl": false,
 "phrase": 3,
 "section": "hook",
-"s": 3.38,
-"e": 3.54,
-"conf": 0.938
+"s": 3.56,
+"e": 3.72,
+"conf": 0.998
 },
 {
 "text": "selalu",
 "hl": false,
 "phrase": 3,
 "section": "hook",
-"s": 3.56,
-"e": 3.82,
-"conf": 0.999
+"s": 3.8,
+"e": 4.16,
+"conf": 0.998
 },
 {
 "text": "dapat",
 "hl": false,
 "phrase": 3,
 "section": "hook",
-"s": 3.88,
-"e": 4.12,
-"conf": 0.998
+"s": 4.22,
+"e": 4.44,
+"conf": 0.999
 },
 {
 "text": "di",
 "hl": false,
 "phrase": 4,
 "section": "hook",
-"s": 4.14,
-"e": 4.2,
-"conf": 0.997
+"s": 4.46,
+"e": 4.52,
+"conf": 0.996
 },
 {
 "text": "klinik.",
 "hl": false,
 "phrase": 4,
 "section": "hook",
-"s": 4.24,
-"e": 4.54,
-"conf": 0.998
+"s": 4.56,
+"e": 4.841,
+"conf": 0.991
 },
 {
 "text": "Jawapannya,",
 "hl": false,
 "phrase": 5,
 "section": "hook",
-"s": 4.62,
-"e": 5.02,
-"conf": 0.914
+"s": 5.081,
+"e": 5.601,
+"conf": 0.902
 },
 {
 "text": "ya.",
 "hl": true,
 "phrase": 5,
 "section": "hook",
-"s": 5.18,
-"e": 5.281,
-"conf": 0.581
+"s": 5.741,
+"e": 5.841,
+"conf": 0.633
 },
 {
 "text": "Ada",
 "hl": false,
 "phrase": 6,
 "section": "hook",
-"s": 5.501,
-"e": 5.661,
+"s": 6.101,
+"e": 6.341,
 "conf": 0.999
 },
 {
@@ -204,8 +204,8 @@
 "hl": false,
 "phrase": 6,
 "section": "hook",
-"s": 5.741,
-"e": 5.941,
+"s": 6.461,
+"e": 6.641,
 "conf": 0.997
 },
 {
@@ -213,35 +213,35 @@
 "hl": false,
 "phrase": 6,
 "section": "hook",
-"s": 5.961,
-"e": 6.461,
-"conf": 0.631
+"s": 6.661,
+"e": 7.161,
+"conf": 0.806
 },
 {
 "text": "yang",
 "hl": false,
 "phrase": 7,
 "section": "hook",
-"s": 6.521,
-"e": 6.661,
-"conf": 0.999
+"s": 7.261,
+"e": 7.401,
+"conf": 0.996
 },
 {
 "text": "memang",
 "hl": false,
 "phrase": 7,
 "section": "hook",
-"s": 6.681,
-"e": 6.961,
-"conf": 0.999
+"s": 7.481,
+"e": 7.861,
+"conf": 0.987
 },
 {
 "text": "boleh",
 "hl": false,
 "phrase": 7,
 "section": "hook",
-"s": 7.001,
-"e": 7.241,
+"s": 7.901,
+"e": 8.081,
 "conf": 0.999
 },
 {
@@ -249,53 +249,53 @@
 "hl": false,
 "phrase": 7,
 "section": "hook",
-"s": 7.261,
-"e": 7.401,
-"conf": 0.997
+"s": 8.121,
+"e": 8.261,
+"conf": 0.999
 },
 {
 "text": "berat",
 "hl": false,
 "phrase": 8,
 "section": "hook",
-"s": 7.421,
-"e": 7.561,
-"conf": 0.964
+"s": 8.301,
+"e": 8.461,
+"conf": 0.805
 },
 {
 "text": "badan",
 "hl": false,
 "phrase": 8,
 "section": "hook",
-"s": 7.581,
-"e": 7.801,
-"conf": 0.995
+"s": 8.501,
+"e": 8.701,
+"conf": 0.974
 },
 {
 "text": "naik.",
 "hl": false,
 "phrase": 8,
 "section": "hook",
-"s": 7.841,
-"e": 8.081,
-"conf": 0.987
+"s": 8.721,
+"e": 8.921,
+"conf": 0.952
 },
 {
 "text": "Jom",
 "hl": false,
 "phrase": 9,
 "section": "hook",
-"s": 8.161,
-"e": 8.321,
-"conf": 0.781
+"s": 9.181,
+"e": 9.301,
+"conf": 0.904
 },
 {
 "text": "kita",
 "hl": false,
 "phrase": 9,
 "section": "hook",
-"s": 8.361,
-"e": 8.501,
+"s": 9.341,
+"e": 9.481,
 "conf": 0.998
 },
 {
@@ -303,224 +303,224 @@
 "hl": false,
 "phrase": 9,
 "section": "hook",
-"s": 8.561,
-"e": 8.801,
-"conf": 0.894
+"s": 9.521,
+"e": 9.761,
+"conf": 0.973
 },
 {
 "text": "sepuluh",
 "hl": true,
 "phrase": 10,
 "section": "hook",
-"s": 8.841,
-"e": 9.141,
-"conf": 0.994
+"s": 9.841,
+"e": 10.301,
+"conf": 0.932
 },
 {
 "text": "ubat",
 "hl": false,
 "phrase": 10,
 "section": "hook",
-"s": 9.221,
-"e": 9.441,
-"conf": 0.998
+"s": 10.401,
+"e": 10.621,
+"conf": 0.984
 },
 {
 "text": "yang",
 "hl": false,
 "phrase": 11,
 "section": "hook",
-"s": 9.481,
-"e": 9.601,
-"conf": 0.979
+"s": 10.661,
+"e": 10.801,
+"conf": 0.965
 },
 {
 "text": "paling",
 "hl": false,
 "phrase": 11,
 "section": "hook",
-"s": 9.641,
-"e": 9.881,
-"conf": 0.977
+"s": 10.881,
+"e": 11.201,
+"conf": 0.935
 },
 {
 "text": "kerap",
 "hl": false,
 "phrase": 11,
 "section": "hook",
-"s": 9.921,
-"e": 10.121,
-"conf": 0.997
+"s": 11.221,
+"e": 11.441,
+"conf": 0.989
 },
 {
 "text": "dikaitkan,",
 "hl": false,
 "phrase": 11,
 "section": "hook",
-"s": 10.181,
-"e": 10.741,
-"conf": 0.99
+"s": 11.481,
+"e": 11.981,
+"conf": 0.994
 },
 {
 "text": "apa",
 "hl": false,
 "phrase": 12,
 "section": "hook",
-"s": 10.901,
-"e": 11.081,
-"conf": 0.994
+"s": 12.161,
+"e": 12.341,
+"conf": 0.997
 },
 {
 "text": "fungsinya,",
 "hl": false,
 "phrase": 12,
 "section": "hook",
-"s": 11.181,
-"e": 11.681,
-"conf": 0.977
+"s": 12.421,
+"e": 12.881,
+"conf": 0.908
 },
 {
 "text": "dan",
 "hl": false,
 "phrase": 13,
 "section": "hook",
-"s": 11.841,
-"e": 11.961,
-"conf": 0.996
+"s": 13.021,
+"e": 13.141,
+"conf": 0.998
 },
 {
 "text": "kenapa",
 "hl": false,
 "phrase": 13,
 "section": "hook",
-"s": 12.041,
-"e": 12.441,
-"conf": 0.998
+"s": 13.221,
+"e": 13.661,
+"conf": 0.999
 },
 {
 "text": "ia",
 "hl": false,
 "phrase": 13,
 "section": "hook",
-"s": 12.581,
-"e": 12.661,
-"conf": 0.995
+"s": 13.801,
+"e": 13.881,
+"conf": 0.998
 },
 {
 "text": "boleh",
 "hl": false,
 "phrase": 13,
 "section": "hook",
-"s": 12.741,
-"e": 12.961,
-"conf": 0.945
+"s": 13.941,
+"e": 14.122,
+"conf": 0.999
 },
 {
 "text": "naikkan",
 "hl": false,
 "phrase": 14,
 "section": "hook",
-"s": 13.001,
-"e": 13.401,
-"conf": 0.989
+"s": 14.162,
+"e": 14.502,
+"conf": 0.991
 },
 {
 "text": "berat",
 "hl": false,
 "phrase": 14,
 "section": "hook",
-"s": 13.441,
-"e": 13.621,
-"conf": 0.989
+"s": 14.542,
+"e": 14.702,
+"conf": 0.774
 },
 {
 "text": "badan.",
 "hl": false,
 "phrase": 14,
 "section": "hook",
-"s": 13.681,
-"e": 13.981,
-"conf": 0.995
+"s": 14.722,
+"e": 14.982,
+"conf": 0.998
 },
 {
 "text": "Secara",
 "hl": false,
 "phrase": 15,
 "section": "mechanism",
-"s": 14.301,
-"e": 14.661,
-"conf": 0.999
+"s": 15.302,
+"e": 15.582,
+"conf": 0.958
 },
 {
 "text": "umum,",
 "hl": false,
 "phrase": 15,
 "section": "mechanism",
-"s": 14.761,
-"e": 15.061,
-"conf": 0.996
+"s": 15.662,
+"e": 15.922,
+"conf": 0.997
 },
 {
 "text": "banyak",
 "hl": false,
 "phrase": 15,
 "section": "mechanism",
-"s": 15.221,
-"e": 15.521,
-"conf": 0.992
+"s": 16.102,
+"e": 16.382,
+"conf": 0.998
 },
 {
 "text": "ubat",
 "hl": false,
 "phrase": 15,
 "section": "mechanism",
-"s": 15.601,
-"e": 15.842,
-"conf": 0.981
+"s": 16.442,
+"e": 16.642,
+"conf": 0.997
 },
 {
 "text": "ni",
 "hl": false,
 "phrase": 15,
 "section": "mechanism",
-"s": 15.902,
-"e": 15.962,
-"conf": 0.984
+"s": 16.682,
+"e": 16.762,
+"conf": 0.996
 },
 {
 "text": "menyekat",
 "hl": false,
 "phrase": 16,
 "section": "mechanism",
-"s": 16.082,
-"e": 16.542,
-"conf": 0.975
+"s": 16.842,
+"e": 17.222,
+"conf": 0.999
 },
 {
 "text": "reseptor",
 "hl": false,
 "phrase": 16,
 "section": "mechanism",
-"s": 16.642,
-"e": 17.022,
-"conf": 0.953
+"s": 17.282,
+"e": 17.722,
+"conf": 0.836
 },
 {
 "text": "histamin",
 "hl": true,
 "phrase": 17,
 "section": "mechanism",
-"s": 17.062,
-"e": 17.502,
-"conf": 0.993
+"s": 17.782,
+"e": 18.282,
+"conf": 0.853
 },
 {
 "text": "dan",
 "hl": false,
 "phrase": 17,
 "section": "mechanism",
-"s": 17.542,
-"e": 17.662,
+"s": 18.342,
+"e": 18.462,
 "conf": 0.998
 },
 {
@@ -528,17 +528,17 @@
 "hl": true,
 "phrase": 17,
 "section": "mechanism",
-"s": 17.742,
-"e": 18.262,
-"conf": 0.991
+"s": 18.542,
+"e": 19.062,
+"conf": 0.982
 },
 {
 "text": "di",
 "hl": false,
 "phrase": 18,
 "section": "mechanism",
-"s": 18.302,
-"e": 18.362,
+"s": 19.082,
+"e": 19.142,
 "conf": 0.997
 },
 {
@@ -546,8 +546,8 @@
 "hl": false,
 "phrase": 18,
 "section": "mechanism",
-"s": 18.442,
-"e": 18.722,
+"s": 19.222,
+"e": 19.502,
 "conf": 0.992
 },
 {
@@ -555,422 +555,422 @@
 "hl": false,
 "phrase": 18,
 "section": "mechanism",
-"s": 18.882,
-"e": 19.022,
-"conf": 0.987
+"s": 19.682,
+"e": 19.802,
+"conf": 0.998
 },
 {
 "text": "membantu",
 "hl": false,
 "phrase": 18,
 "section": "mechanism",
-"s": 19.042,
-"e": 19.522,
-"conf": 0.998
+"s": 19.822,
+"e": 20.222,
+"conf": 0.996
 },
 {
 "text": "mengawal",
 "hl": false,
 "phrase": 19,
 "section": "mechanism",
-"s": 19.602,
-"e": 20.122,
-"conf": 0.998
+"s": 20.302,
+"e": 20.722,
+"conf": 0.979
 },
 {
 "text": "rasa",
 "hl": false,
 "phrase": 19,
 "section": "mechanism",
-"s": 20.182,
-"e": 20.402,
-"conf": 0.996
+"s": 20.782,
+"e": 20.962,
+"conf": 0.998
 },
 {
 "text": "kenyang.",
 "hl": false,
 "phrase": 19,
 "section": "mechanism",
-"s": 20.462,
-"e": 20.802,
-"conf": 0.987
+"s": 21.042,
+"e": 21.362,
+"conf": 0.961
 },
 {
 "text": "Jadi",
 "hl": false,
 "phrase": 20,
 "section": "mechanism",
-"s": 21.022,
-"e": 21.162,
-"conf": 0.997
+"s": 21.602,
+"e": 21.822,
+"conf": 0.999
 },
 {
 "text": "kita",
 "hl": false,
 "phrase": 20,
 "section": "mechanism",
-"s": 21.202,
-"e": 21.362,
-"conf": 0.997
+"s": 21.942,
+"e": 22.102,
+"conf": 0.998
 },
 {
 "text": "cepat",
 "hl": false,
 "phrase": 20,
 "section": "mechanism",
-"s": 21.402,
-"e": 21.662,
-"conf": 0.994
+"s": 22.182,
+"e": 22.462,
+"conf": 0.997
 },
 {
 "text": "lapar,",
 "hl": true,
 "phrase": 20,
 "section": "mechanism",
-"s": 21.722,
-"e": 22.122,
-"conf": 0.986
+"s": 22.502,
+"e": 22.842,
+"conf": 0.769
 },
 {
 "text": "lambat",
 "hl": false,
 "phrase": 21,
 "section": "mechanism",
-"s": 22.282,
-"e": 22.562,
-"conf": 0.992
+"s": 22.982,
+"e": 23.262,
+"conf": 0.964
 },
 {
 "text": "kenyang.",
 "hl": true,
 "phrase": 21,
 "section": "mechanism",
-"s": 22.622,
-"e": 22.962,
-"conf": 0.969
+"s": 23.303,
+"e": 23.623,
+"conf": 0.959
 },
 {
 "text": "Yang",
 "hl": false,
 "phrase": 22,
 "section": "clozapine",
-"s": 23.122,
-"e": 23.262,
-"conf": 0.992
+"s": 23.943,
+"e": 24.063,
+"conf": 0.99
 },
 {
 "text": "pertama,",
 "hl": false,
 "phrase": 22,
 "section": "clozapine",
-"s": 23.302,
-"e": 23.702,
-"conf": 0.99
+"s": 24.083,
+"e": 24.403,
+"conf": 0.943
 },
 {
 "text": "clozapine",
 "hl": true,
 "phrase": 23,
 "section": "clozapine",
-"s": 23.842,
-"e": 24.522,
-"conf": 0.96
+"s": 24.563,
+"e": 25.083,
+"conf": 0.875
 },
 {
 "text": "Ubat",
 "hl": false,
 "phrase": 24,
 "section": "clozapine",
-"s": 24.622,
-"e": 24.902,
-"conf": 0.916
+"s": 25.203,
+"e": 25.383,
+"conf": 0.995
 },
 {
 "text": "ni",
 "hl": false,
 "phrase": 24,
 "section": "clozapine",
-"s": 24.942,
-"e": 25.022,
-"conf": 0.984
+"s": 25.443,
+"e": 25.503,
+"conf": 0.996
 },
 {
 "text": "untuk",
 "hl": false,
 "phrase": 24,
 "section": "clozapine",
-"s": 25.122,
-"e": 25.442,
-"conf": 0.975
+"s": 25.623,
+"e": 25.823,
+"conf": 0.997
 },
 {
 "text": "skizofrenia",
 "hl": false,
 "phrase": 24,
 "section": "clozapine",
-"s": 25.522,
-"e": 26.182,
-"conf": 0.97
+"s": 25.863,
+"e": 26.523,
+"conf": 0.963
 },
 {
 "text": "yang",
 "hl": false,
 "phrase": 25,
 "section": "clozapine",
-"s": 26.262,
-"e": 26.403,
-"conf": 0.97
+"s": 26.643,
+"e": 26.783,
+"conf": 0.993
 },
 {
 "text": "tak",
 "hl": false,
 "phrase": 25,
 "section": "clozapine",
-"s": 26.463,
-"e": 26.603,
-"conf": 0.988
+"s": 26.863,
+"e": 27.003,
+"conf": 0.992
 },
 {
 "text": "respon",
 "hl": false,
 "phrase": 25,
 "section": "clozapine",
-"s": 26.683,
-"e": 27.063,
-"conf": 0.99
+"s": 27.063,
+"e": 27.423,
+"conf": 0.996
 },
 {
 "text": "dengan",
 "hl": false,
 "phrase": 26,
 "section": "clozapine",
-"s": 27.123,
-"e": 27.363,
-"conf": 0.96
+"s": 27.483,
+"e": 27.663,
+"conf": 0.992
 },
 {
 "text": "ubat",
 "hl": false,
 "phrase": 26,
 "section": "clozapine",
-"s": 27.463,
-"e": 27.703,
-"conf": 0.963
+"s": 27.703,
+"e": 27.863,
+"conf": 0.991
 },
 {
 "text": "lain.",
 "hl": false,
 "phrase": 26,
 "section": "clozapine",
-"s": 27.763,
-"e": 28.003,
-"conf": 0.969
+"s": 27.903,
+"e": 28.143,
+"conf": 0.998
 },
 {
 "text": "Ia",
 "hl": false,
 "phrase": 27,
 "section": "clozapine",
-"s": 28.223,
-"e": 28.323,
-"conf": 0.938
+"s": 28.363,
+"e": 28.463,
+"conf": 0.994
 },
 {
 "text": "sangat",
 "hl": false,
 "phrase": 27,
 "section": "clozapine",
-"s": 28.443,
-"e": 28.663,
-"conf": 0.944
+"s": 28.603,
+"e": 28.883,
+"conf": 0.946
 },
 {
 "text": "berkesan,",
 "hl": false,
 "phrase": 27,
 "section": "clozapine",
-"s": 28.683,
-"e": 29.163,
-"conf": 0.983
+"s": 28.923,
+"e": 29.363,
+"conf": 0.996
 },
 {
 "text": "tapi",
 "hl": false,
 "phrase": 28,
 "section": "clozapine",
-"s": 29.243,
-"e": 29.503,
-"conf": 0.996
+"s": 29.543,
+"e": 29.783,
+"conf": 0.999
 },
 {
 "text": "antara",
 "hl": false,
 "phrase": 28,
 "section": "clozapine",
-"s": 29.583,
-"e": 29.903,
-"conf": 0.967
+"s": 29.903,
+"e": 30.183,
+"conf": 0.992
 },
 {
 "text": "yang",
 "hl": false,
 "phrase": 28,
 "section": "clozapine",
-"s": 29.963,
-"e": 30.063,
-"conf": 0.986
+"s": 30.223,
+"e": 30.343,
+"conf": 0.96
 },
 {
 "text": "paling",
 "hl": false,
 "phrase": 28,
 "section": "clozapine",
-"s": 30.083,
-"e": 30.323,
-"conf": 0.977
+"s": 30.443,
+"e": 30.803,
+"conf": 0.99
 },
 {
 "text": "tinggi",
 "hl": false,
 "phrase": 28,
 "section": "clozapine",
-"s": 30.343,
-"e": 30.583,
-"conf": 0.995
+"s": 30.843,
+"e": 31.103,
+"conf": 0.996
 },
 {
 "text": "risiko",
 "hl": false,
 "phrase": 29,
 "section": "clozapine",
-"s": 30.683,
-"e": 31.063,
-"conf": 0.986
+"s": 31.203,
+"e": 31.503,
+"conf": 0.988
 },
 {
 "text": "naik",
 "hl": false,
 "phrase": 29,
 "section": "clozapine",
-"s": 31.183,
-"e": 31.383,
-"conf": 0.919
+"s": 31.563,
+"e": 31.743,
+"conf": 0.967
 },
 {
 "text": "berat",
 "hl": false,
 "phrase": 29,
 "section": "clozapine",
-"s": 31.423,
-"e": 31.603,
-"conf": 0.983
+"s": 31.763,
+"e": 31.923,
+"conf": 0.792
 },
 {
 "text": "badan.",
 "hl": false,
 "phrase": 29,
 "section": "clozapine",
-"s": 31.663,
-"e": 31.983,
-"conf": 0.987
+"s": 31.943,
+"e": 32.223,
+"conf": 0.999
 },
 {
 "text": "Selera",
 "hl": false,
 "phrase": 30,
 "section": "clozapine",
-"s": 32.223,
-"e": 32.563,
-"conf": 0.982
+"s": 32.463,
+"e": 32.704,
+"conf": 0.96
 },
 {
 "text": "makan",
 "hl": false,
 "phrase": 30,
 "section": "clozapine",
-"s": 32.623,
-"e": 32.903,
-"conf": 0.993
+"s": 32.764,
+"e": 32.964,
+"conf": 0.998
 },
 {
 "text": "bertambah,",
 "hl": false,
 "phrase": 30,
 "section": "clozapine",
-"s": 32.943,
-"e": 33.423,
-"conf": 0.995
+"s": 32.984,
+"e": 33.564,
+"conf": 0.999
 },
 {
 "text": "dan",
 "hl": false,
 "phrase": 31,
 "section": "clozapine",
-"s": 33.603,
-"e": 33.723,
-"conf": 0.992
+"s": 33.724,
+"e": 33.844,
+"conf": 0.999
 },
 {
 "text": "badan",
 "hl": false,
 "phrase": 31,
 "section": "clozapine",
-"s": 33.783,
-"e": 34.083,
-"conf": 0.996
+"s": 33.904,
+"e": 34.144,
+"conf": 0.999
 },
 {
 "text": "jadi",
 "hl": false,
 "phrase": 31,
 "section": "clozapine",
-"s": 34.143,
-"e": 34.363,
-"conf": 0.997
+"s": 34.184,
+"e": 34.324,
+"conf": 0.999
 },
 {
 "text": "kurang",
 "hl": false,
 "phrase": 31,
 "section": "clozapine",
-"s": 34.443,
-"e": 34.723,
-"conf": 0.955
+"s": 34.424,
+"e": 34.724,
+"conf": 0.999
 },
 {
 "text": "sensitif",
 "hl": false,
 "phrase": 31,
 "section": "clozapine",
-"s": 34.763,
-"e": 35.263,
-"conf": 0.989
+"s": 34.764,
+"e": 35.224,
+"conf": 0.995
 },
 {
 "text": "kepada",
 "hl": false,
 "phrase": 32,
 "section": "clozapine",
-"s": 35.343,
-"e": 35.623,
-"conf": 0.997
+"s": 35.284,
+"e": 35.524,
+"conf": 0.999
 },
 {
 "text": "insulin,",
 "hl": true,
 "phrase": 32,
 "section": "clozapine",
-"s": 35.703,
-"e": 36.123,
-"conf": 0.982
+"s": 35.584,
+"e": 35.984,
+"conf": 0.998
 },
 {
 "text": "jadi",
 "hl": false,
 "phrase": 33,
 "section": "clozapine",
-"s": 36.283,
-"e": 36.503,
+"s": 36.164,
+"e": 36.324,
 "conf": 0.999
 },
 {
@@ -978,44 +978,44 @@
 "hl": false,
 "phrase": 33,
 "section": "clozapine",
-"s": 36.603,
-"e": 36.863,
-"conf": 0.996
+"s": 36.424,
+"e": 36.704,
+"conf": 0.999
 },
 {
 "text": "dan",
 "hl": false,
 "phrase": 33,
 "section": "clozapine",
-"s": 36.924,
-"e": 37.044,
-"conf": 0.997
+"s": 36.784,
+"e": 36.904,
+"conf": 0.979
 },
 {
 "text": "kolesterol",
 "hl": false,
 "phrase": 33,
 "section": "clozapine",
-"s": 37.084,
-"e": 37.484,
-"conf": 0.883
+"s": 36.944,
+"e": 37.444,
+"conf": 0.805
 },
 {
 "text": "pun",
 "hl": false,
 "phrase": 34,
 "section": "clozapine",
-"s": 37.504,
-"e": 37.624,
-"conf": 0.972
+"s": 37.524,
+"e": 37.704,
+"conf": 0.988
 },
 {
 "text": "boleh",
 "hl": false,
 "phrase": 34,
 "section": "clozapine",
-"s": 37.664,
-"e": 37.844,
+"s": 37.764,
+"e": 37.924,
 "conf": 0.998
 },
 {
@@ -1023,404 +1023,404 @@
 "hl": false,
 "phrase": 34,
 "section": "clozapine",
-"s": 37.864,
-"e": 38.104,
-"conf": 0.994
+"s": 37.944,
+"e": 38.184,
+"conf": 0.975
 },
 {
 "text": "Kedua,",
 "hl": false,
 "phrase": 35,
 "section": "olanzapine",
-"s": 38.204,
-"e": 38.544,
-"conf": 0.993
+"s": 38.524,
+"e": 38.784,
+"conf": 0.997
 },
 {
 "text": "olanzapine",
 "hl": true,
 "phrase": 35,
 "section": "olanzapine",
-"s": 38.704,
-"e": 39.424,
-"conf": 0.98
+"s": 38.944,
+"e": 39.544,
+"conf": 0.966
 },
 {
 "text": "Digunakan",
 "hl": false,
 "phrase": 36,
 "section": "olanzapine",
-"s": 39.524,
-"e": 39.984,
-"conf": 0.978
+"s": 39.664,
+"e": 40.104,
+"conf": 0.999
 },
 {
 "text": "untuk",
 "hl": false,
 "phrase": 36,
 "section": "olanzapine",
-"s": 40.024,
-"e": 40.224,
-"conf": 0.994
+"s": 40.164,
+"e": 40.364,
+"conf": 0.962
 },
 {
 "text": "skizofrenia",
 "hl": false,
 "phrase": 36,
 "section": "olanzapine",
-"s": 40.284,
-"e": 40.904,
-"conf": 0.98
+"s": 40.404,
+"e": 41.084,
+"conf": 0.889
 },
 {
 "text": "dan",
 "hl": false,
 "phrase": 37,
 "section": "olanzapine",
-"s": 40.964,
-"e": 41.064,
-"conf": 0.995
+"s": 41.184,
+"e": 41.324,
+"conf": 0.933
 },
 {
 "text": "bipolar.",
 "hl": false,
 "phrase": 37,
 "section": "olanzapine",
-"s": 41.124,
-"e": 41.604,
-"conf": 0.753
+"s": 41.384,
+"e": 41.884,
+"conf": 0.845
 },
 {
 "text": "Ia",
 "hl": false,
 "phrase": 38,
 "section": "olanzapine",
-"s": 41.824,
-"e": 41.904,
-"conf": 0.997
+"s": 42.105,
+"e": 42.205,
+"conf": 0.998
 },
 {
 "text": "kuat",
 "hl": false,
 "phrase": 38,
 "section": "olanzapine",
-"s": 42.004,
-"e": 42.204,
-"conf": 0.993
+"s": 42.305,
+"e": 42.605,
+"conf": 0.995
 },
 {
 "text": "menyekat",
 "hl": false,
 "phrase": 38,
 "section": "olanzapine",
-"s": 42.244,
-"e": 42.604,
-"conf": 0.996
+"s": 42.645,
+"e": 42.965,
+"conf": 0.999
 },
 {
 "text": "histamin",
 "hl": false,
 "phrase": 39,
 "section": "olanzapine",
-"s": 42.684,
-"e": 43.184,
-"conf": 0.992
+"s": 43.025,
+"e": 43.445,
+"conf": 0.87
 },
 {
 "text": "dan",
 "hl": false,
 "phrase": 39,
 "section": "olanzapine",
-"s": 43.224,
-"e": 43.344,
-"conf": 0.996
+"s": 43.505,
+"e": 43.605,
+"conf": 0.998
 },
 {
 "text": "serotonin,",
 "hl": false,
 "phrase": 39,
 "section": "olanzapine",
-"s": 43.404,
-"e": 44.004,
-"conf": 0.993
+"s": 43.665,
+"e": 44.205,
+"conf": 0.982
 },
 {
 "text": "jadi",
 "hl": false,
 "phrase": 40,
 "section": "olanzapine",
-"s": 44.164,
-"e": 44.344,
-"conf": 0.999
+"s": 44.365,
+"e": 44.525,
+"conf": 0.987
 },
 {
 "text": "rasa",
 "hl": false,
 "phrase": 40,
 "section": "olanzapine",
-"s": 44.404,
-"e": 44.584,
-"conf": 0.998
+"s": 44.605,
+"e": 44.785,
+"conf": 0.999
 },
 {
 "text": "lapar",
 "hl": false,
 "phrase": 40,
 "section": "olanzapine",
-"s": 44.644,
-"e": 44.924,
-"conf": 0.998
+"s": 44.845,
+"e": 45.145,
+"conf": 0.799
 },
 {
 "text": "bertambah.",
 "hl": false,
 "phrase": 40,
 "section": "olanzapine",
-"s": 44.964,
-"e": 45.444,
-"conf": 0.997
+"s": 45.185,
+"e": 45.725,
+"conf": 0.999
 },
 {
 "text": "Ketiga,",
 "hl": false,
 "phrase": 41,
 "section": "quetiapine",
-"s": 45.604,
-"e": 46.004,
-"conf": 0.979
+"s": 45.905,
+"e": 46.245,
+"conf": 0.995
 },
 {
 "text": "quetiapine",
 "hl": true,
 "phrase": 41,
 "section": "quetiapine",
-"s": 46.144,
-"e": 46.944,
-"conf": 0.92
+"s": 46.405,
+"e": 47.025,
+"conf": 0.875
 },
 {
 "text": "Untuk",
 "hl": false,
 "phrase": 42,
 "section": "quetiapine",
-"s": 47.044,
-"e": 47.324,
-"conf": 0.985
+"s": 47.145,
+"e": 47.365,
+"conf": 0.999
 },
 {
 "text": "skizofrenia,",
 "hl": false,
 "phrase": 42,
 "section": "quetiapine",
-"s": 47.404,
-"e": 48.165,
-"conf": 0.972
+"s": 47.405,
+"e": 48.045,
+"conf": 0.888
 },
 {
 "text": "bipolar,",
 "hl": false,
 "phrase": 42,
 "section": "quetiapine",
-"s": 48.325,
-"e": 48.845,
-"conf": 0.727
+"s": 48.205,
+"e": 48.725,
+"conf": 0.844
 },
 {
 "text": "dan",
 "hl": false,
 "phrase": 43,
 "section": "quetiapine",
-"s": 49.005,
-"e": 49.125,
-"conf": 0.994
+"s": 48.885,
+"e": 49.005,
+"conf": 0.959
 },
 {
 "text": "kadang-kadang",
 "hl": false,
 "phrase": 43,
 "section": "quetiapine",
-"s": 49.165,
-"e": 49.725,
-"conf": 0.966
+"s": 49.065,
+"e": 49.525,
+"conf": 0.992
 },
 {
 "text": "sebagai",
 "hl": false,
 "phrase": 44,
 "section": "quetiapine",
-"s": 49.805,
-"e": 50.165,
-"conf": 0.998
+"s": 49.565,
+"e": 49.845,
+"conf": 0.968
 },
 {
 "text": "ubat",
 "hl": false,
 "phrase": 44,
 "section": "quetiapine",
-"s": 50.265,
-"e": 50.485,
-"conf": 0.993
+"s": 49.905,
+"e": 50.065,
+"conf": 0.996
 },
 {
 "text": "tambahan",
 "hl": false,
 "phrase": 44,
 "section": "quetiapine",
-"s": 50.565,
-"e": 51.065,
-"conf": 0.996
+"s": 50.105,
+"e": 50.585,
+"conf": 0.999
 },
 {
 "text": "untuk",
 "hl": false,
 "phrase": 45,
 "section": "quetiapine",
-"s": 51.165,
-"e": 51.405,
-"conf": 0.997
+"s": 50.645,
+"e": 50.805,
+"conf": 0.999
 },
 {
 "text": "kemurungan.",
 "hl": false,
 "phrase": 45,
 "section": "quetiapine",
-"s": 51.485,
-"e": 52.025,
-"conf": 0.982
+"s": 50.845,
+"e": 51.326,
+"conf": 0.989
 },
 {
 "text": "Ia",
 "hl": false,
 "phrase": 46,
 "section": "quetiapine",
-"s": 52.245,
-"e": 52.325,
-"conf": 0.989
+"s": 51.566,
+"e": 51.666,
+"conf": 0.915
 },
 {
 "text": "buat",
 "hl": false,
 "phrase": 46,
 "section": "quetiapine",
-"s": 52.405,
-"e": 52.565,
-"conf": 0.997
+"s": 51.726,
+"e": 51.866,
+"conf": 0.999
 },
 {
 "text": "mengantuk",
 "hl": false,
 "phrase": 46,
 "section": "quetiapine",
-"s": 52.605,
-"e": 53.125,
-"conf": 0.951
+"s": 51.906,
+"e": 52.426,
+"conf": 0.974
 },
 {
 "text": "dan",
 "hl": false,
 "phrase": 46,
 "section": "quetiapine",
-"s": 53.245,
-"e": 53.385,
-"conf": 0.993
+"s": 52.486,
+"e": 52.606,
+"conf": 0.985
 },
 {
 "text": "lapar.",
 "hl": false,
 "phrase": 46,
 "section": "quetiapine",
-"s": 53.445,
-"e": 53.785,
-"conf": 0.992
+"s": 52.646,
+"e": 52.986,
+"conf": 0.796
 },
 {
 "text": "Keempat,",
 "hl": false,
 "phrase": 47,
 "section": "risperidone",
-"s": 53.965,
-"e": 54.385,
-"conf": 0.965
+"s": 53.166,
+"e": 53.586,
+"conf": 0.99
 },
 {
 "text": "risperidone",
 "hl": true,
 "phrase": 47,
 "section": "risperidone",
-"s": 54.545,
-"e": 55.165,
-"conf": 0.961
+"s": 53.766,
+"e": 54.386,
+"conf": 0.965
 },
 {
 "text": "Digunakan",
 "hl": false,
 "phrase": 48,
 "section": "risperidone",
-"s": 55.265,
-"e": 55.705,
-"conf": 0.998
+"s": 54.486,
+"e": 54.926,
+"conf": 0.999
 },
 {
 "text": "untuk",
 "hl": false,
 "phrase": 48,
 "section": "risperidone",
-"s": 55.785,
-"e": 56.005,
-"conf": 0.998
+"s": 55.006,
+"e": 55.186,
+"conf": 0.801
 },
 {
 "text": "skizofrenia,",
 "hl": false,
 "phrase": 48,
 "section": "risperidone",
-"s": 56.085,
-"e": 56.785,
-"conf": 0.983
+"s": 55.246,
+"e": 55.906,
+"conf": 0.907
 },
 {
 "text": "bipolar,",
 "hl": false,
 "phrase": 49,
 "section": "risperidone",
-"s": 56.925,
-"e": 57.485,
-"conf": 0.752
+"s": 56.066,
+"e": 56.566,
+"conf": 0.718
 },
 {
 "text": "dan",
 "hl": false,
 "phrase": 49,
 "section": "risperidone",
-"s": 57.625,
-"e": 57.745,
-"conf": 0.996
+"s": 56.746,
+"e": 56.846,
+"conf": 0.999
 },
 {
 "text": "juga",
 "hl": false,
 "phrase": 49,
 "section": "risperidone",
-"s": 57.785,
-"e": 57.985,
-"conf": 0.998
+"s": 56.906,
+"e": 57.126,
+"conf": 1.0
 },
 {
 "text": "untuk",
 "hl": false,
 "phrase": 49,
 "section": "risperidone",
-"s": 58.086,
-"e": 58.266,
-"conf": 0.998
+"s": 57.246,
+"e": 57.426,
+"conf": 0.999
 },
 {
 "text": "sifat",
 "hl": false,
 "phrase": 50,
 "section": "risperidone",
-"s": 58.326,
-"e": 58.666,
+"s": 57.486,
+"e": 57.746,
 "conf": 0.988
 },
 {
@@ -1428,44 +1428,44 @@
 "hl": false,
 "phrase": 50,
 "section": "risperidone",
-"s": 58.746,
-"e": 59.046,
-"conf": 0.997
+"s": 57.786,
+"e": 58.026,
+"conf": 0.999
 },
 {
 "text": "marah",
 "hl": false,
 "phrase": 50,
 "section": "risperidone",
-"s": 59.146,
-"e": 59.466,
-"conf": 0.998
+"s": 58.086,
+"e": 58.406,
+"conf": 0.999
 },
 {
 "text": "dan",
 "hl": false,
 "phrase": 50,
 "section": "risperidone",
-"s": 59.526,
-"e": 59.646,
-"conf": 0.998
+"s": 58.486,
+"e": 58.586,
+"conf": 0.999
 },
 {
 "text": "agresif",
 "hl": false,
 "phrase": 50,
 "section": "risperidone",
-"s": 59.746,
-"e": 60.186,
-"conf": 0.937
+"s": 58.646,
+"e": 59.166,
+"conf": 0.991
 },
 {
 "text": "pada",
 "hl": false,
 "phrase": 51,
 "section": "risperidone",
-"s": 60.266,
-"e": 60.426,
+"s": 59.246,
+"e": 59.406,
 "conf": 0.999
 },
 {
@@ -1473,368 +1473,368 @@
 "hl": false,
 "phrase": 51,
 "section": "risperidone",
-"s": 60.486,
-"e": 60.966,
-"conf": 0.995
+"s": 59.446,
+"e": 59.886,
+"conf": 0.974
 },
 {
 "text": "autisme.",
 "hl": false,
 "phrase": 51,
 "section": "risperidone",
-"s": 61.026,
-"e": 61.426,
-"conf": 0.439
+"s": 59.946,
+"e": 60.306,
+"conf": 0.586
 },
 {
 "text": "Risikonya",
 "hl": false,
 "phrase": 52,
 "section": "risperidone",
-"s": 61.646,
-"e": 62.106,
-"conf": 0.987
+"s": 60.546,
+"e": 61.047,
+"conf": 0.965
 },
 {
 "text": "sederhana,",
 "hl": false,
 "phrase": 52,
 "section": "risperidone",
-"s": 62.186,
-"e": 62.606,
-"conf": 0.988
+"s": 61.107,
+"e": 61.567,
+"conf": 0.991
 },
 {
 "text": "tapi",
 "hl": false,
 "phrase": 53,
 "section": "risperidone",
-"s": 62.746,
-"e": 62.986,
-"conf": 0.999
+"s": 61.747,
+"e": 62.007,
+"conf": 1.0
 },
 {
 "text": "kanak-kanak",
 "hl": false,
 "phrase": 53,
 "section": "risperidone",
-"s": 63.066,
-"e": 63.586,
-"conf": 0.966
+"s": 62.127,
+"e": 62.647,
+"conf": 0.976
 },
 {
 "text": "dan",
 "hl": false,
 "phrase": 53,
 "section": "risperidone",
-"s": 63.626,
-"e": 63.726,
-"conf": 0.989
+"s": 62.707,
+"e": 62.807,
+"conf": 0.988
 },
 {
 "text": "remaja",
 "hl": false,
 "phrase": 53,
 "section": "risperidone",
-"s": 63.766,
-"e": 64.146,
-"conf": 0.882
+"s": 62.847,
+"e": 63.227,
+"conf": 0.912
 },
 {
 "text": "lebih",
 "hl": false,
 "phrase": 54,
 "section": "risperidone",
-"s": 64.286,
-"e": 64.606,
-"conf": 0.998
+"s": 63.327,
+"e": 63.527,
+"conf": 0.972
 },
 {
 "text": "mudah",
 "hl": false,
 "phrase": 54,
 "section": "risperidone",
-"s": 64.666,
-"e": 64.966,
-"conf": 0.981
+"s": 63.587,
+"e": 63.907,
+"conf": 0.997
 },
 {
 "text": "terkesan.",
 "hl": false,
 "phrase": 54,
 "section": "risperidone",
-"s": 65.006,
-"e": 65.486,
-"conf": 0.956
+"s": 63.947,
+"e": 64.387,
+"conf": 0.999
 },
 {
 "text": "Kelima,",
 "hl": false,
 "phrase": 55,
 "section": "chlorpromazine",
-"s": 65.806,
-"e": 66.126,
-"conf": 0.973
+"s": 64.707,
+"e": 65.027,
+"conf": 0.957
 },
 {
 "text": "chlorpromazine",
 "hl": true,
 "phrase": 55,
 "section": "chlorpromazine",
-"s": 66.266,
-"e": 67.086,
-"conf": 0.958
+"s": 65.187,
+"e": 65.987,
+"conf": 0.956
 },
 {
 "text": "Antipsikotik",
 "hl": false,
 "phrase": 56,
 "section": "chlorpromazine",
-"s": 67.206,
-"e": 68.026,
-"conf": 0.942
+"s": 66.107,
+"e": 66.767,
+"conf": 0.9
 },
 {
 "text": "generasi",
 "hl": false,
 "phrase": 56,
 "section": "chlorpromazine",
-"s": 68.086,
-"e": 68.486,
-"conf": 0.901
+"s": 66.827,
+"e": 67.227,
+"conf": 0.919
 },
 {
 "text": "lama",
 "hl": false,
 "phrase": 56,
 "section": "chlorpromazine",
-"s": 68.546,
-"e": 68.767,
-"conf": 0.997
+"s": 67.287,
+"e": 67.547,
+"conf": 0.999
 },
 {
 "text": "untuk",
 "hl": false,
 "phrase": 57,
 "section": "chlorpromazine",
-"s": 68.907,
-"e": 69.087,
-"conf": 0.999
+"s": 67.647,
+"e": 67.827,
+"conf": 1.0
 },
 {
 "text": "psikosis",
 "hl": false,
 "phrase": 57,
 "section": "chlorpromazine",
-"s": 69.107,
-"e": 69.687,
-"conf": 0.848
+"s": 67.847,
+"e": 68.467,
+"conf": 0.851
 },
 {
 "text": "dan",
 "hl": false,
 "phrase": 57,
 "section": "chlorpromazine",
-"s": 69.767,
-"e": 69.887,
-"conf": 0.997
+"s": 68.567,
+"e": 68.687,
+"conf": 0.999
 },
 {
 "text": "keadaan",
 "hl": false,
 "phrase": 58,
 "section": "chlorpromazine",
-"s": 69.967,
-"e": 70.367,
-"conf": 0.997
+"s": 68.747,
+"e": 69.107,
+"conf": 0.97
 },
 {
 "text": "gelisah",
 "hl": false,
 "phrase": 58,
 "section": "chlorpromazine",
-"s": 70.427,
-"e": 70.847,
-"conf": 0.996
+"s": 69.167,
+"e": 69.587,
+"conf": 0.997
 },
 {
 "text": "yang",
 "hl": false,
 "phrase": 58,
 "section": "chlorpromazine",
-"s": 70.947,
-"e": 71.107,
-"conf": 0.984
+"s": 69.627,
+"e": 69.747,
+"conf": 0.975
 },
 {
 "text": "teruk.",
 "hl": false,
 "phrase": 58,
 "section": "chlorpromazine",
-"s": 71.187,
-"e": 71.427,
-"conf": 0.863
+"s": 69.767,
+"e": 70.028,
+"conf": 0.887
 },
 {
 "text": "Ia",
 "hl": false,
 "phrase": 59,
 "section": "chlorpromazine",
-"s": 71.667,
-"e": 71.767,
-"conf": 0.984
+"s": 70.268,
+"e": 70.348,
+"conf": 0.994
 },
 {
 "text": "sangat",
 "hl": false,
 "phrase": 59,
 "section": "chlorpromazine",
-"s": 71.867,
-"e": 72.087,
-"conf": 0.977
+"s": 70.488,
+"e": 70.788,
+"conf": 0.955
 },
 {
 "text": "menenangkan,",
 "hl": false,
 "phrase": 59,
 "section": "chlorpromazine",
-"s": 72.107,
-"e": 72.707,
-"conf": 0.97
+"s": 70.828,
+"e": 71.408,
+"conf": 0.983
 },
 {
 "text": "sampai",
 "hl": false,
 "phrase": 60,
 "section": "chlorpromazine",
-"s": 72.867,
-"e": 73.227,
-"conf": 0.998
+"s": 71.588,
+"e": 71.828,
+"conf": 0.999
 },
 {
 "text": "mengantuk,",
 "hl": false,
 "phrase": 60,
 "section": "chlorpromazine",
-"s": 73.307,
-"e": 73.867,
-"conf": 0.984
+"s": 71.868,
+"e": 72.368,
+"conf": 0.909
 },
 {
 "text": "dan",
 "hl": false,
 "phrase": 61,
 "section": "chlorpromazine",
-"s": 74.047,
-"e": 74.167,
-"conf": 0.995
+"s": 72.548,
+"e": 72.668,
+"conf": 0.994
 },
 {
 "text": "selera",
 "hl": false,
 "phrase": 61,
 "section": "chlorpromazine",
-"s": 74.247,
-"e": 74.567,
-"conf": 0.986
+"s": 72.728,
+"e": 72.968,
+"conf": 0.88
 },
 {
 "text": "makan",
 "hl": false,
 "phrase": 61,
 "section": "chlorpromazine",
-"s": 74.627,
-"e": 74.887,
-"conf": 0.968
+"s": 73.028,
+"e": 73.348,
+"conf": 0.989
 },
 {
 "text": "pun",
 "hl": false,
 "phrase": 61,
 "section": "chlorpromazine",
-"s": 74.947,
-"e": 75.047,
-"conf": 0.978
+"s": 73.408,
+"e": 73.548,
+"conf": 0.987
 },
 {
 "text": "bertambah.",
 "hl": false,
 "phrase": 61,
 "section": "chlorpromazine",
-"s": 75.067,
-"e": 75.487,
-"conf": 0.908
+"s": 73.568,
+"e": 74.028,
+"conf": 0.994
 },
 {
 "text": "Keenam,",
 "hl": false,
 "phrase": 62,
 "section": "mirtazapine",
-"s": 75.807,
-"e": 76.267,
-"conf": 0.952
+"s": 74.388,
+"e": 74.768,
+"conf": 0.959
 },
 {
 "text": "mirtazapine",
 "hl": true,
 "phrase": 62,
 "section": "mirtazapine",
-"s": 76.407,
-"e": 77.127,
-"conf": 0.95
+"s": 74.928,
+"e": 75.608,
+"conf": 0.979
 },
 {
 "text": "Ini",
 "hl": false,
 "phrase": 63,
 "section": "mirtazapine",
-"s": 77.247,
-"e": 77.407,
-"conf": 0.989
+"s": 75.728,
+"e": 75.908,
+"conf": 0.998
 },
 {
 "text": "antidepresan,",
 "hl": false,
 "phrase": 63,
 "section": "mirtazapine",
-"s": 77.527,
-"e": 78.247,
-"conf": 0.953
+"s": 75.988,
+"e": 76.708,
+"conf": 0.917
 },
 {
 "text": "yang",
 "hl": false,
 "phrase": 64,
 "section": "mirtazapine",
-"s": 78.387,
-"e": 78.547,
-"conf": 0.998
+"s": 76.868,
+"e": 77.008,
+"conf": 0.947
 },
 {
 "text": "selalu",
 "hl": false,
 "phrase": 64,
 "section": "mirtazapine",
-"s": 78.587,
-"e": 78.927,
-"conf": 0.998
+"s": 77.048,
+"e": 77.388,
+"conf": 0.999
 },
 {
 "text": "dipilih",
 "hl": false,
 "phrase": 64,
 "section": "mirtazapine",
-"s": 78.987,
-"e": 79.408,
-"conf": 0.995
+"s": 77.448,
+"e": 77.828,
+"conf": 0.993
 },
 {
 "text": "untuk",
 "hl": false,
 "phrase": 64,
 "section": "mirtazapine",
-"s": 79.488,
-"e": 79.688,
+"s": 77.908,
+"e": 78.068,
 "conf": 0.999
 },
 {
@@ -1842,35 +1842,35 @@
 "hl": false,
 "phrase": 65,
 "section": "mirtazapine",
-"s": 79.748,
-"e": 80.168,
-"conf": 0.982
+"s": 78.108,
+"e": 78.448,
+"conf": 0.999
 },
 {
 "text": "kemurungan",
 "hl": false,
 "phrase": 65,
 "section": "mirtazapine",
-"s": 80.228,
-"e": 80.748,
-"conf": 0.956
+"s": 78.488,
+"e": 78.988,
+"conf": 0.971
 },
 {
 "text": "yang",
 "hl": false,
 "phrase": 66,
 "section": "mirtazapine",
-"s": 80.788,
-"e": 80.908,
-"conf": 0.999
+"s": 79.028,
+"e": 79.168,
+"conf": 0.953
 },
 {
 "text": "susah",
 "hl": false,
 "phrase": 66,
 "section": "mirtazapine",
-"s": 80.928,
-"e": 81.168,
+"s": 79.229,
+"e": 79.569,
 "conf": 0.999
 },
 {
@@ -1878,17 +1878,17 @@
 "hl": false,
 "phrase": 66,
 "section": "mirtazapine",
-"s": 81.208,
-"e": 81.528,
-"conf": 0.942
+"s": 79.609,
+"e": 79.969,
+"conf": 0.617
 },
 {
 "text": "dan",
 "hl": false,
 "phrase": 67,
 "section": "mirtazapine",
-"s": 81.608,
-"e": 81.728,
+"s": 80.069,
+"e": 80.189,
 "conf": 0.998
 },
 {
@@ -1896,26 +1896,26 @@
 "hl": false,
 "phrase": 67,
 "section": "mirtazapine",
-"s": 81.788,
-"e": 82.088,
-"conf": 0.999
+"s": 80.269,
+"e": 80.629,
+"conf": 0.986
 },
 {
 "text": "selera",
 "hl": false,
 "phrase": 67,
 "section": "mirtazapine",
-"s": 82.128,
-"e": 82.408,
-"conf": 0.993
+"s": 80.669,
+"e": 80.909,
+"conf": 0.935
 },
 {
 "text": "makan.",
 "hl": false,
 "phrase": 67,
 "section": "mirtazapine",
-"s": 82.448,
-"e": 82.768,
+"s": 80.949,
+"e": 81.249,
 "conf": 0.998
 },
 {
@@ -1923,17 +1923,17 @@
 "hl": false,
 "phrase": 68,
 "section": "mirtazapine",
-"s": 83.008,
-"e": 83.228,
-"conf": 0.998
+"s": 81.489,
+"e": 81.689,
+"conf": 0.999
 },
 {
 "text": "itulah",
 "hl": false,
 "phrase": 68,
 "section": "mirtazapine",
-"s": 83.288,
-"e": 83.568,
+"s": 81.749,
+"e": 82.069,
 "conf": 0.997
 },
 {
@@ -1941,8 +1941,8 @@
 "hl": false,
 "phrase": 68,
 "section": "mirtazapine",
-"s": 83.648,
-"e": 83.728,
+"s": 82.169,
+"e": 82.249,
 "conf": 0.996
 },
 {
@@ -1950,134 +1950,134 @@
 "hl": false,
 "phrase": 68,
 "section": "mirtazapine",
-"s": 83.788,
-"e": 84.008,
-"conf": 0.998
+"s": 82.289,
+"e": 82.469,
+"conf": 0.997
 },
 {
 "text": "buat",
 "hl": false,
 "phrase": 68,
 "section": "mirtazapine",
-"s": 84.068,
-"e": 84.248,
-"conf": 0.998
+"s": 82.509,
+"e": 82.629,
+"conf": 0.958
 },
 {
 "text": "cepat",
 "hl": false,
 "phrase": 69,
 "section": "mirtazapine",
-"s": 84.288,
-"e": 84.528,
-"conf": 0.994
+"s": 82.669,
+"e": 82.889,
+"conf": 0.996
 },
 {
 "text": "lapar,",
 "hl": false,
 "phrase": 69,
 "section": "mirtazapine",
-"s": 84.588,
-"e": 85.048,
-"conf": 0.995
+"s": 82.929,
+"e": 83.269,
+"conf": 0.795
 },
 {
 "text": "terutamanya",
 "hl": false,
 "phrase": 70,
 "section": "mirtazapine",
-"s": 85.188,
-"e": 85.748,
-"conf": 0.968
+"s": 83.449,
+"e": 84.009,
+"conf": 0.997
 },
 {
 "text": "teringin",
 "hl": false,
 "phrase": 70,
 "section": "mirtazapine",
-"s": 85.828,
-"e": 86.188,
-"conf": 0.971
+"s": 84.109,
+"e": 84.529,
+"conf": 0.983
 },
 {
 "text": "makanan",
 "hl": false,
 "phrase": 71,
 "section": "mirtazapine",
-"s": 86.248,
-"e": 86.588,
-"conf": 0.99
+"s": 84.569,
+"e": 84.889,
+"conf": 0.978
 },
 {
 "text": "manis.",
 "hl": true,
 "phrase": 71,
 "section": "mirtazapine",
-"s": 86.628,
-"e": 86.968,
-"conf": 0.981
+"s": 84.909,
+"e": 85.249,
+"conf": 0.994
 },
 {
 "text": "Ketujuh,",
 "hl": false,
 "phrase": 72,
 "section": "amitriptyline",
-"s": 87.288,
-"e": 87.728,
-"conf": 0.947
+"s": 85.589,
+"e": 86.029,
+"conf": 0.985
 },
 {
 "text": "amitriptyline",
 "hl": true,
 "phrase": 72,
 "section": "amitriptyline",
-"s": 87.888,
-"e": 88.528,
-"conf": 0.939
+"s": 86.189,
+"e": 86.909,
+"conf": 0.95
 },
 {
 "text": "Antidepresan",
 "hl": false,
 "phrase": 73,
 "section": "amitriptyline",
-"s": 88.628,
-"e": 89.248,
-"conf": 0.964
+"s": 87.009,
+"e": 87.669,
+"conf": 0.916
 },
 {
 "text": "generasi",
 "hl": false,
 "phrase": 73,
 "section": "amitriptyline",
-"s": 89.288,
-"e": 89.709,
-"conf": 0.903
+"s": 87.709,
+"e": 88.109,
+"conf": 0.9
 },
 {
 "text": "lama,",
 "hl": false,
 "phrase": 73,
 "section": "amitriptyline",
-"s": 89.769,
-"e": 90.009,
-"conf": 0.997
+"s": 88.169,
+"e": 88.389,
+"conf": 0.999
 },
 {
 "text": "tapi",
 "hl": false,
 "phrase": 74,
 "section": "amitriptyline",
-"s": 90.169,
-"e": 90.429,
-"conf": 0.998
+"s": 88.57,
+"e": 88.75,
+"conf": 0.992
 },
 {
 "text": "sekarang",
 "hl": false,
 "phrase": 74,
 "section": "amitriptyline",
-"s": 90.529,
-"e": 90.869,
+"s": 88.79,
+"e": 89.11,
 "conf": 0.998
 },
 {
@@ -2085,521 +2085,521 @@
 "hl": false,
 "phrase": 74,
 "section": "amitriptyline",
-"s": 90.909,
-"e": 91.109,
-"conf": 0.998
+"s": 89.13,
+"e": 89.31,
+"conf": 0.942
 },
 {
 "text": "banyak",
 "hl": false,
 "phrase": 74,
 "section": "amitriptyline",
-"s": 91.149,
-"e": 91.389,
-"conf": 0.997
+"s": 89.33,
+"e": 89.61,
+"conf": 0.999
 },
 {
 "text": "digunakan",
 "hl": false,
 "phrase": 74,
 "section": "amitriptyline",
-"s": 91.429,
-"e": 91.909,
-"conf": 0.997
+"s": 89.65,
+"e": 90.13,
+"conf": 0.999
 },
 {
 "text": "untuk",
 "hl": false,
 "phrase": 75,
 "section": "amitriptyline",
-"s": 91.989,
-"e": 92.209,
-"conf": 0.982
+"s": 90.19,
+"e": 90.37,
+"conf": 0.999
 },
 {
 "text": "sakit",
 "hl": false,
 "phrase": 75,
 "section": "amitriptyline",
-"s": 92.289,
-"e": 92.569,
-"conf": 0.978
+"s": 90.41,
+"e": 90.63,
+"conf": 0.999
 },
 {
 "text": "saraf",
 "hl": false,
 "phrase": 75,
 "section": "amitriptyline",
-"s": 92.629,
-"e": 93.009,
-"conf": 0.988
+"s": 90.69,
+"e": 91.05,
+"conf": 0.995
 },
 {
 "text": "dan",
 "hl": false,
 "phrase": 76,
 "section": "amitriptyline",
-"s": 93.109,
-"e": 93.209,
-"conf": 0.995
+"s": 91.13,
+"e": 91.25,
+"conf": 0.999
 },
 {
 "text": "mencegah",
 "hl": false,
 "phrase": 76,
 "section": "amitriptyline",
-"s": 93.269,
-"e": 93.729,
-"conf": 0.996
+"s": 91.29,
+"e": 91.69,
+"conf": 0.998
 },
 {
 "text": "migrain.",
 "hl": false,
 "phrase": 76,
 "section": "amitriptyline",
-"s": 93.809,
-"e": 94.169,
-"conf": 0.839
+"s": 91.73,
+"e": 92.15,
+"conf": 0.675
 },
 {
 "text": "Ia",
 "hl": false,
 "phrase": 77,
 "section": "amitriptyline",
-"s": 94.389,
-"e": 94.469,
-"conf": 0.993
+"s": 92.37,
+"e": 92.47,
+"conf": 0.998
 },
 {
 "text": "juga",
 "hl": false,
 "phrase": 77,
 "section": "amitriptyline",
-"s": 94.529,
-"e": 94.709,
-"conf": 0.994
+"s": 92.53,
+"e": 92.73,
+"conf": 0.999
 },
 {
 "text": "menyekat",
 "hl": false,
 "phrase": 77,
 "section": "amitriptyline",
-"s": 94.789,
-"e": 95.129,
-"conf": 0.997
+"s": 92.79,
+"e": 93.11,
+"conf": 0.998
 },
 {
 "text": "histamin,",
 "hl": false,
 "phrase": 77,
 "section": "amitriptyline",
-"s": 95.189,
-"e": 95.669,
-"conf": 0.989
+"s": 93.17,
+"e": 93.61,
+"conf": 0.871
 },
 {
 "text": "jadi",
 "hl": false,
 "phrase": 78,
 "section": "amitriptyline",
-"s": 95.829,
-"e": 96.049,
-"conf": 0.998
+"s": 93.79,
+"e": 93.97,
+"conf": 0.999
 },
 {
 "text": "buat",
 "hl": false,
 "phrase": 78,
 "section": "amitriptyline",
-"s": 96.109,
-"e": 96.269,
-"conf": 0.965
+"s": 94.05,
+"e": 94.21,
+"conf": 1.0
 },
 {
 "text": "mengantuk",
 "hl": false,
 "phrase": 78,
 "section": "amitriptyline",
-"s": 96.289,
-"e": 96.769,
-"conf": 0.972
+"s": 94.23,
+"e": 94.77,
+"conf": 0.969
 },
 {
 "text": "dan",
 "hl": false,
 "phrase": 79,
 "section": "amitriptyline",
-"s": 96.889,
-"e": 97.009,
-"conf": 0.992
+"s": 94.87,
+"e": 94.97,
+"conf": 0.998
 },
 {
 "text": "teringin",
 "hl": false,
 "phrase": 79,
 "section": "amitriptyline",
-"s": 97.089,
-"e": 97.529,
-"conf": 0.969
+"s": 95.03,
+"e": 95.45,
+"conf": 0.987
 },
 {
 "text": "makanan",
 "hl": false,
 "phrase": 79,
 "section": "amitriptyline",
-"s": 97.589,
-"e": 97.929,
-"conf": 0.968
+"s": 95.49,
+"e": 95.79,
+"conf": 0.997
 },
 {
 "text": "manis.",
 "hl": false,
 "phrase": 79,
 "section": "amitriptyline",
-"s": 97.969,
-"e": 98.249,
-"conf": 0.965
+"s": 95.81,
+"e": 96.17,
+"conf": 0.993
 },
 {
 "text": "Kelapan,",
 "hl": false,
 "phrase": 80,
 "section": "paroxetine",
-"s": 98.569,
-"e": 99.029,
-"conf": 0.913
+"s": 96.49,
+"e": 96.91,
+"conf": 0.975
 },
 {
 "text": "paroxetine",
 "hl": true,
 "phrase": 80,
 "section": "paroxetine",
-"s": 99.169,
-"e": 99.789,
-"conf": 0.908
+"s": 97.07,
+"e": 97.73,
+"conf": 0.942
 },
 {
 "text": "Antidepresan",
 "hl": false,
 "phrase": 81,
 "section": "paroxetine",
-"s": 99.889,
-"e": 100.61,
-"conf": 0.985
+"s": 97.851,
+"e": 98.511,
+"conf": 0.913
 },
 {
 "text": "SSRI",
 "hl": false,
 "phrase": 81,
 "section": "paroxetine",
-"s": 100.75,
-"e": 101.39,
-"conf": 0.959
+"s": 98.651,
+"e": 99.371,
+"conf": 0.978
 },
 {
 "text": "untuk",
 "hl": false,
 "phrase": 82,
 "section": "paroxetine",
-"s": 101.49,
-"e": 101.69,
-"conf": 0.996
+"s": 99.511,
+"e": 99.691,
+"conf": 0.999
 },
 {
 "text": "kemurungan",
 "hl": false,
 "phrase": 82,
 "section": "paroxetine",
-"s": 101.75,
-"e": 102.21,
-"conf": 0.983
+"s": 99.731,
+"e": 100.271,
+"conf": 0.997
 },
 {
 "text": "dan",
 "hl": false,
 "phrase": 83,
 "section": "paroxetine",
-"s": 102.25,
-"e": 102.35,
-"conf": 0.995
+"s": 100.311,
+"e": 100.431,
+"conf": 0.998
 },
 {
 "text": "masalah",
 "hl": false,
 "phrase": 83,
 "section": "paroxetine",
-"s": 102.37,
-"e": 102.67,
-"conf": 0.997
+"s": 100.471,
+"e": 100.851,
+"conf": 0.999
 },
 {
 "text": "keresahan,",
 "hl": false,
 "phrase": 83,
 "section": "paroxetine",
-"s": 102.69,
-"e": 103.15,
-"conf": 0.996
+"s": 100.891,
+"e": 101.411,
+"conf": 0.982
 },
 {
 "text": "macam",
 "hl": false,
 "phrase": 84,
 "section": "paroxetine",
-"s": 103.31,
-"e": 103.63,
-"conf": 0.993
+"s": 101.571,
+"e": 101.811,
+"conf": 0.997
 },
 {
 "text": "panik",
 "hl": false,
 "phrase": 84,
 "section": "paroxetine",
-"s": 103.69,
-"e": 104.01,
-"conf": 0.865
+"s": 101.871,
+"e": 102.231,
+"conf": 0.879
 },
 {
 "text": "dan",
 "hl": false,
 "phrase": 84,
 "section": "paroxetine",
-"s": 104.11,
-"e": 104.23,
-"conf": 0.99
+"s": 102.311,
+"e": 102.431,
+"conf": 0.997
 },
 {
 "text": "OCD",
 "hl": false,
 "phrase": 84,
 "section": "paroxetine",
-"s": 104.35,
-"e": 104.83,
-"conf": 0.306
+"s": 102.531,
+"e": 102.851,
+"conf": 0.004
 },
 {
 "text": "Dalam",
 "hl": false,
 "phrase": 85,
 "section": "paroxetine",
-"s": 104.95,
-"e": 105.15,
-"conf": 0.996
+"s": 102.971,
+"e": 103.151,
+"conf": 0.997
 },
 {
 "text": "kumpulan",
 "hl": false,
 "phrase": 85,
 "section": "paroxetine",
-"s": 105.19,
-"e": 105.57,
-"conf": 0.997
+"s": 103.191,
+"e": 103.551,
+"conf": 0.967
 },
 {
 "text": "SSRI",
 "hl": false,
 "phrase": 85,
 "section": "paroxetine",
-"s": 105.69,
-"e": 106.19,
-"conf": 0.241
+"s": 103.671,
+"e": 104.271,
+"conf": 0.979
 },
 {
 "text": "inilah",
 "hl": false,
 "phrase": 86,
 "section": "paroxetine",
-"s": 106.31,
-"e": 106.63,
-"conf": 0.994
+"s": 104.391,
+"e": 104.731,
+"conf": 0.998
 },
 {
 "text": "yang",
 "hl": false,
 "phrase": 86,
 "section": "paroxetine",
-"s": 106.69,
-"e": 106.83,
-"conf": 0.995
+"s": 104.771,
+"e": 104.911,
+"conf": 0.997
 },
 {
 "text": "paling",
 "hl": false,
 "phrase": 86,
 "section": "paroxetine",
-"s": 106.85,
-"e": 107.09,
-"conf": 0.997
+"s": 104.971,
+"e": 105.311,
+"conf": 0.964
 },
 {
 "text": "kerap",
 "hl": false,
 "phrase": 86,
 "section": "paroxetine",
-"s": 107.11,
-"e": 107.35,
-"conf": 0.997
+"s": 105.311,
+"e": 105.551,
+"conf": 0.995
 },
 {
 "text": "dikaitkan",
 "hl": false,
 "phrase": 86,
 "section": "paroxetine",
-"s": 107.39,
-"e": 107.85,
-"conf": 0.99
+"s": 105.611,
+"e": 106.111,
+"conf": 0.995
 },
 {
 "text": "dengan",
 "hl": false,
 "phrase": 87,
 "section": "paroxetine",
-"s": 107.89,
-"e": 108.09,
-"conf": 0.954
+"s": 106.131,
+"e": 106.331,
+"conf": 0.961
 },
 {
 "text": "naik",
 "hl": false,
 "phrase": 87,
 "section": "paroxetine",
-"s": 108.13,
-"e": 108.33,
-"conf": 0.992
+"s": 106.371,
+"e": 106.611,
+"conf": 0.989
 },
 {
 "text": "berat",
 "hl": false,
 "phrase": 87,
 "section": "paroxetine",
-"s": 108.37,
-"e": 108.55,
-"conf": 0.991
+"s": 106.671,
+"e": 106.831,
+"conf": 0.976
 },
 {
 "text": "badan,",
 "hl": false,
 "phrase": 87,
 "section": "paroxetine",
-"s": 108.59,
-"e": 108.87,
-"conf": 0.993
+"s": 106.891,
+"e": 107.212,
+"conf": 0.998
 },
 {
 "text": "bila",
 "hl": false,
 "phrase": 88,
 "section": "paroxetine",
-"s": 109.01,
-"e": 109.15,
-"conf": 0.997
+"s": 107.352,
+"e": 107.512,
+"conf": 0.999
 },
 {
 "text": "diambil",
 "hl": false,
 "phrase": 88,
 "section": "paroxetine",
-"s": 109.19,
-"e": 109.53,
-"conf": 0.994
+"s": 107.552,
+"e": 107.952,
+"conf": 0.997
 },
 {
 "text": "jangka",
 "hl": false,
 "phrase": 88,
 "section": "paroxetine",
-"s": 109.59,
-"e": 109.85,
-"conf": 0.924
+"s": 107.992,
+"e": 108.212,
+"conf": 0.821
 },
 {
 "text": "panjang.",
 "hl": false,
 "phrase": 88,
 "section": "paroxetine",
-"s": 109.95,
-"e": 110.31,
-"conf": 0.976
+"s": 108.252,
+"e": 108.652,
+"conf": 0.982
 },
 {
 "text": "Kesembilan,",
 "hl": false,
 "phrase": 89,
 "section": "lithium",
-"s": 110.65,
-"e": 111.211,
-"conf": 0.988
+"s": 108.992,
+"e": 109.512,
+"conf": 0.992
 },
 {
 "text": "lithium",
 "hl": true,
 "phrase": 89,
 "section": "lithium",
-"s": 111.371,
-"e": 111.791,
-"conf": 0.924
+"s": 109.672,
+"e": 110.052,
+"conf": 0.873
 },
 {
 "text": "Penstabil",
 "hl": false,
 "phrase": 90,
 "section": "lithium",
-"s": 111.891,
-"e": 112.471,
-"conf": 0.994
+"s": 110.152,
+"e": 110.632,
+"conf": 0.995
 },
 {
 "text": "mood",
 "hl": false,
 "phrase": 90,
 "section": "lithium",
-"s": 112.551,
-"e": 112.731,
-"conf": 0.255
+"s": 110.712,
+"e": 110.912,
+"conf": 0.388
 },
 {
 "text": "untuk",
 "hl": false,
 "phrase": 90,
 "section": "lithium",
-"s": 112.831,
-"e": 113.071,
-"conf": 0.999
+"s": 110.972,
+"e": 111.172,
+"conf": 0.981
 },
 {
 "text": "bipolar,",
 "hl": false,
 "phrase": 90,
 "section": "lithium",
-"s": 113.131,
-"e": 113.651,
-"conf": 0.823
+"s": 111.212,
+"e": 111.692,
+"conf": 0.834
 },
 {
 "text": "Lithium",
 "hl": false,
 "phrase": 91,
 "section": "lithium",
-"s": 113.751,
-"e": 114.151,
-"conf": 0.937
+"s": 111.812,
+"e": 112.152,
+"conf": 0.899
 },
 {
 "text": "buat",
 "hl": false,
 "phrase": 91,
 "section": "lithium",
-"s": 114.251,
-"e": 114.391,
-"conf": 0.998
+"s": 112.192,
+"e": 112.332,
+"conf": 0.999
 },
 {
 "text": "kita",
 "hl": false,
 "phrase": 91,
 "section": "lithium",
-"s": 114.451,
-"e": 114.611,
+"s": 112.372,
+"e": 112.532,
 "conf": 0.998
 },
 {
@@ -2607,17 +2607,17 @@
 "hl": false,
 "phrase": 92,
 "section": "lithium",
-"s": 114.671,
-"e": 114.911,
-"conf": 0.998
+"s": 112.632,
+"e": 112.952,
+"conf": 0.999
 },
 {
 "text": "dahaga.",
 "hl": true,
 "phrase": 92,
 "section": "lithium",
-"s": 114.991,
-"e": 115.331,
+"s": 112.992,
+"e": 113.312,
 "conf": 0.99
 },
 {
@@ -2625,8 +2625,8 @@
 "hl": false,
 "phrase": 93,
 "section": "lithium",
-"s": 115.571,
-"e": 115.771,
+"s": 113.552,
+"e": 113.732,
 "conf": 1.0
 },
 {
@@ -2634,8 +2634,8 @@
 "hl": false,
 "phrase": 93,
 "section": "lithium",
-"s": 115.791,
-"e": 115.951,
+"s": 113.752,
+"e": 113.912,
 "conf": 0.999
 },
 {
@@ -2643,17 +2643,17 @@
 "hl": false,
 "phrase": 93,
 "section": "lithium",
-"s": 116.011,
-"e": 116.451,
-"conf": 0.997
+"s": 113.972,
+"e": 114.352,
+"conf": 0.993
 },
 {
 "text": "dahaga",
 "hl": false,
 "phrase": 93,
 "section": "lithium",
-"s": 116.491,
-"e": 116.771,
+"s": 114.392,
+"e": 114.692,
 "conf": 0.996
 },
 {
@@ -2661,107 +2661,107 @@
 "hl": false,
 "phrase": 94,
 "section": "lithium",
-"s": 116.811,
-"e": 117.031,
-"conf": 0.994
+"s": 114.772,
+"e": 114.952,
+"conf": 0.998
 },
 {
 "text": "air",
 "hl": false,
 "phrase": 94,
 "section": "lithium",
-"s": 117.091,
-"e": 117.251,
-"conf": 0.989
+"s": 115.012,
+"e": 115.152,
+"conf": 0.974
 },
 {
 "text": "manis,",
 "hl": false,
 "phrase": 94,
 "section": "lithium",
-"s": 117.291,
-"e": 117.631,
-"conf": 0.993
+"s": 115.172,
+"e": 115.532,
+"conf": 0.991
 },
 {
 "text": "kalori",
 "hl": false,
 "phrase": 95,
 "section": "lithium",
-"s": 117.771,
-"e": 118.111,
-"conf": 0.815
+"s": 115.692,
+"e": 115.992,
+"conf": 0.836
 },
 {
 "text": "bertambah.",
 "hl": false,
 "phrase": 95,
 "section": "lithium",
-"s": 118.171,
-"e": 118.631,
-"conf": 0.999
+"s": 116.032,
+"e": 116.493,
+"conf": 0.998
 },
 {
 "text": "Ia",
 "hl": false,
 "phrase": 96,
 "section": "lithium",
-"s": 118.851,
-"e": 118.931,
-"conf": 0.998
+"s": 116.733,
+"e": 116.813,
+"conf": 0.993
 },
 {
 "text": "juga",
 "hl": false,
 "phrase": 96,
 "section": "lithium",
-"s": 118.971,
-"e": 119.151,
-"conf": 0.999
+"s": 116.873,
+"e": 117.073,
+"conf": 0.997
 },
 {
 "text": "boleh",
 "hl": false,
 "phrase": 96,
 "section": "lithium",
-"s": 119.231,
-"e": 119.411,
-"conf": 0.999
+"s": 117.133,
+"e": 117.313,
+"conf": 0.998
 },
 {
 "text": "menyebabkan",
 "hl": false,
 "phrase": 96,
 "section": "lithium",
-"s": 119.451,
-"e": 119.991,
-"conf": 0.988
+"s": 117.333,
+"e": 117.793,
+"conf": 0.995
 },
 {
 "text": "air",
 "hl": false,
 "phrase": 97,
 "section": "lithium",
-"s": 120.091,
-"e": 120.251,
-"conf": 0.997
+"s": 117.913,
+"e": 118.093,
+"conf": 0.991
 },
 {
 "text": "tertahan",
 "hl": false,
 "phrase": 97,
 "section": "lithium",
-"s": 120.291,
-"e": 120.691,
-"conf": 0.925
+"s": 118.133,
+"e": 118.613,
+"conf": 0.999
 },
 {
 "text": "dalam",
 "hl": false,
 "phrase": 97,
 "section": "lithium",
-"s": 120.731,
-"e": 120.931,
+"s": 118.653,
+"e": 118.833,
 "conf": 0.999
 },
 {
@@ -2769,188 +2769,188 @@
 "hl": false,
 "phrase": 97,
 "section": "lithium",
-"s": 120.971,
-"e": 121.332,
-"conf": 0.997
+"s": 118.873,
+"e": 119.213,
+"conf": 0.999
 },
 {
 "text": "dan",
 "hl": false,
 "phrase": 98,
 "section": "lithium",
-"s": 121.472,
-"e": 121.592,
-"conf": 0.998
+"s": 119.373,
+"e": 119.493,
+"conf": 0.999
 },
 {
 "text": "menjejaskan",
 "hl": false,
 "phrase": 98,
 "section": "lithium",
-"s": 121.632,
-"e": 122.132,
-"conf": 0.995
+"s": 119.533,
+"e": 120.133,
+"conf": 0.999
 },
 {
 "text": "fungsi",
 "hl": false,
 "phrase": 98,
 "section": "lithium",
-"s": 122.172,
-"e": 122.412,
-"conf": 0.954
+"s": 120.193,
+"e": 120.453,
+"conf": 0.996
 },
 {
 "text": "tiroid,",
 "hl": true,
 "phrase": 98,
 "section": "lithium",
-"s": 122.492,
-"e": 122.872,
-"conf": 0.764
+"s": 120.513,
+"e": 120.933,
+"conf": 0.87
 },
 {
 "text": "yang",
 "hl": false,
 "phrase": 99,
 "section": "lithium",
-"s": 123.032,
-"e": 123.172,
-"conf": 0.996
+"s": 121.093,
+"e": 121.213,
+"conf": 0.969
 },
 {
 "text": "memperlahankan",
 "hl": false,
 "phrase": 99,
 "section": "lithium",
-"s": 123.212,
-"e": 123.952,
-"conf": 0.998
+"s": 121.233,
+"e": 122.033,
+"conf": 0.995
 },
 {
 "text": "metabolisme.",
 "hl": false,
 "phrase": 99,
 "section": "lithium",
-"s": 123.992,
-"e": 124.612,
-"conf": 0.878
+"s": 122.073,
+"e": 122.673,
+"conf": 0.903
 },
 {
 "text": "Kesepuluh,",
 "hl": false,
 "phrase": 100,
 "section": "valproate",
-"s": 124.972,
-"e": 125.472,
-"conf": 0.952
+"s": 122.993,
+"e": 123.493,
+"conf": 0.85
 },
 {
 "text": "sodium",
 "hl": true,
 "phrase": 100,
 "section": "valproate",
-"s": 125.632,
-"e": 125.952,
-"conf": 0.864
+"s": 123.673,
+"e": 124.053,
+"conf": 0.881
 },
 {
 "text": "valproate",
 "hl": true,
 "phrase": 100,
 "section": "valproate",
-"s": 126.032,
-"e": 126.512,
-"conf": 0.965
+"s": 124.133,
+"e": 124.673,
+"conf": 0.914
 },
 {
 "text": "atau",
 "hl": false,
 "phrase": 101,
 "section": "valproate",
-"s": 126.612,
-"e": 126.792,
-"conf": 0.975
+"s": 124.793,
+"e": 125.013,
+"conf": 0.974
 },
 {
 "text": "Epilim.",
 "hl": false,
 "phrase": 101,
 "section": "valproate",
-"s": 126.872,
-"e": 127.252,
-"conf": 0.934
+"s": 125.113,
+"e": 125.493,
+"conf": 0.944
 },
 {
 "text": "Digunakan",
 "hl": false,
 "phrase": 102,
 "section": "valproate",
-"s": 127.472,
-"e": 127.932,
-"conf": 0.998
+"s": 125.733,
+"e": 126.174,
+"conf": 0.976
 },
 {
 "text": "untuk",
 "hl": false,
 "phrase": 102,
 "section": "valproate",
-"s": 128.012,
-"e": 128.232,
-"conf": 0.984
+"s": 126.254,
+"e": 126.434,
+"conf": 0.999
 },
 {
 "text": "epilepsi,",
 "hl": false,
 "phrase": 102,
 "section": "valproate",
-"s": 128.292,
-"e": 128.852,
-"conf": 0.934
+"s": 126.474,
+"e": 126.974,
+"conf": 0.946
 },
 {
 "text": "bipolar,",
 "hl": false,
 "phrase": 103,
 "section": "valproate",
-"s": 129.012,
-"e": 129.512,
-"conf": 0.701
+"s": 127.154,
+"e": 127.674,
+"conf": 0.834
 },
 {
 "text": "dan",
 "hl": false,
 "phrase": 103,
 "section": "valproate",
-"s": 129.632,
-"e": 129.752,
-"conf": 0.996
+"s": 127.834,
+"e": 127.934,
+"conf": 0.998
 },
 {
 "text": "mencegah",
 "hl": false,
 "phrase": 103,
 "section": "valproate",
-"s": 129.812,
-"e": 130.252,
-"conf": 0.997
+"s": 127.974,
+"e": 128.414,
+"conf": 0.998
 },
 {
 "text": "migrain.",
 "hl": false,
 "phrase": 103,
 "section": "valproate",
-"s": 130.312,
-"e": 130.732,
-"conf": 0.799
+"s": 128.474,
+"e": 128.874,
+"conf": 0.682
 },
 {
 "text": "Ia",
 "hl": false,
 "phrase": 104,
 "section": "valproate",
-"s": 130.952,
-"e": 131.052,
+"s": 129.114,
+"e": 129.234,
 "conf": 0.999
 },
 {
@@ -2958,8 +2958,8 @@
 "hl": false,
 "phrase": 104,
 "section": "valproate",
-"s": 131.132,
-"e": 131.372,
+"s": 129.294,
+"e": 129.474,
 "conf": 0.999
 },
 {
@@ -2967,89 +2967,89 @@
 "hl": false,
 "phrase": 104,
 "section": "valproate",
-"s": 131.412,
-"e": 131.792,
-"conf": 0.977
+"s": 129.494,
+"e": 129.834,
+"conf": 0.988
 },
 {
 "text": "selera",
 "hl": false,
 "phrase": 104,
 "section": "valproate",
-"s": 131.832,
-"e": 132.093,
-"conf": 0.992
+"s": 129.874,
+"e": 130.094,
+"conf": 0.917
 },
 {
 "text": "makan",
 "hl": false,
 "phrase": 104,
 "section": "valproate",
-"s": 132.153,
-"e": 132.433,
-"conf": 0.999
+"s": 130.154,
+"e": 130.514,
+"conf": 0.998
 },
 {
 "text": "dan",
 "hl": false,
 "phrase": 105,
 "section": "valproate",
-"s": 132.473,
-"e": 132.573,
-"conf": 0.98
+"s": 130.634,
+"e": 130.754,
+"conf": 0.998
 },
 {
 "text": "meningkatkan",
 "hl": false,
 "phrase": 105,
 "section": "valproate",
-"s": 132.613,
-"e": 133.133,
-"conf": 0.997
+"s": 130.814,
+"e": 131.494,
+"conf": 0.992
 },
 {
 "text": "paras",
 "hl": false,
 "phrase": 105,
 "section": "valproate",
-"s": 133.173,
-"e": 133.413,
-"conf": 0.997
+"s": 131.554,
+"e": 131.754,
+"conf": 0.989
 },
 {
 "text": "insulin,",
 "hl": false,
 "phrase": 105,
 "section": "valproate",
-"s": 133.473,
-"e": 133.833,
-"conf": 0.998
+"s": 131.814,
+"e": 132.254,
+"conf": 0.997
 },
 {
 "text": "jadi",
 "hl": false,
 "phrase": 106,
 "section": "valproate",
-"s": 133.913,
-"e": 134.093,
-"conf": 0.999
+"s": 132.414,
+"e": 132.594,
+"conf": 1.0
 },
 {
 "text": "lemak",
 "hl": false,
 "phrase": 106,
 "section": "valproate",
-"s": 134.173,
-"e": 134.453,
-"conf": 0.996
+"s": 132.634,
+"e": 132.974,
+"conf": 0.997
 },
 {
 "text": "lebih",
 "hl": false,
 "phrase": 106,
 "section": "valproate",
-"s": 134.553,
-"e": 134.813,
+"s": 133.074,
+"e": 133.354,
 "conf": 0.998
 },
 {
@@ -3057,26 +3057,26 @@
 "hl": false,
 "phrase": 106,
 "section": "valproate",
-"s": 134.853,
-"e": 135.093,
-"conf": 0.998
+"s": 133.414,
+"e": 133.774,
+"conf": 0.949
 },
 {
 "text": "disimpan.",
 "hl": false,
 "phrase": 106,
 "section": "valproate",
-"s": 135.133,
-"e": 135.533,
-"conf": 0.996
+"s": 133.814,
+"e": 134.234,
+"conf": 0.992
 },
 {
 "text": "Tapi",
 "hl": false,
 "phrase": 107,
 "section": "warning",
-"s": 135.593,
-"e": 135.793,
+"s": 134.574,
+"e": 134.754,
 "conf": 0.998
 },
 {
@@ -3084,17 +3084,17 @@
 "hl": false,
 "phrase": 107,
 "section": "warning",
-"s": 135.893,
-"e": 136.153,
-"conf": 0.997
+"s": 134.834,
+"e": 135.135,
+"conf": 0.921
 },
 {
 "text": "Bukan",
 "hl": true,
 "phrase": 108,
 "section": "warning",
-"s": 136.393,
-"e": 136.693,
+"s": 135.375,
+"e": 135.675,
 "conf": 0.998
 },
 {
@@ -3102,89 +3102,89 @@
 "hl": false,
 "phrase": 108,
 "section": "warning",
-"s": 136.773,
-"e": 137.053,
-"conf": 0.999
+"s": 135.735,
+"e": 135.955,
+"conf": 0.983
 },
 {
 "text": "orang",
 "hl": false,
 "phrase": 108,
 "section": "warning",
-"s": 137.153,
-"e": 137.373,
-"conf": 0.998
+"s": 136.015,
+"e": 136.295,
+"conf": 0.999
 },
 {
 "text": "yang",
 "hl": false,
 "phrase": 109,
 "section": "warning",
-"s": 137.413,
-"e": 137.553,
-"conf": 0.997
+"s": 136.335,
+"e": 136.435,
+"conf": 0.934
 },
 {
 "text": "makan",
 "hl": false,
 "phrase": 109,
 "section": "warning",
-"s": 137.573,
-"e": 137.833,
-"conf": 0.999
+"s": 136.455,
+"e": 136.635,
+"conf": 0.996
 },
 {
 "text": "ubat",
 "hl": false,
 "phrase": 109,
 "section": "warning",
-"s": 137.913,
-"e": 138.113,
-"conf": 0.972
+"s": 136.695,
+"e": 136.915,
+"conf": 0.996
 },
 {
 "text": "ni",
 "hl": false,
 "phrase": 109,
 "section": "warning",
-"s": 138.153,
-"e": 138.213,
-"conf": 0.995
+"s": 136.955,
+"e": 137.035,
+"conf": 0.947
 },
 {
 "text": "akan",
 "hl": false,
 "phrase": 110,
 "section": "warning",
-"s": 138.273,
-"e": 138.473,
-"conf": 0.996
+"s": 137.155,
+"e": 137.335,
+"conf": 0.998
 },
 {
 "text": "naik",
 "hl": false,
 "phrase": 110,
 "section": "warning",
-"s": 138.513,
-"e": 138.713,
-"conf": 0.984
+"s": 137.395,
+"e": 137.635,
+"conf": 0.991
 },
 {
 "text": "berat",
 "hl": false,
 "phrase": 110,
 "section": "warning",
-"s": 138.753,
-"e": 138.913,
-"conf": 0.954
+"s": 137.675,
+"e": 137.815,
+"conf": 0.767
 },
 {
 "text": "badan.",
 "hl": false,
 "phrase": 110,
 "section": "warning",
-"s": 138.933,
-"e": 139.193,
+"s": 137.855,
+"e": 138.155,
 "conf": 0.998
 },
 {
@@ -3192,53 +3192,53 @@
 "hl": false,
 "phrase": 111,
 "section": "warning",
-"s": 139.433,
-"e": 139.553,
-"conf": 0.998
+"s": 138.375,
+"e": 138.495,
+"conf": 0.999
 },
 {
 "text": "jangan",
 "hl": true,
 "phrase": 111,
 "section": "warning",
-"s": 139.613,
-"e": 139.973,
-"conf": 0.962
+"s": 138.615,
+"e": 138.995,
+"conf": 0.949
 },
 {
 "text": "sesekali",
 "hl": false,
 "phrase": 111,
 "section": "warning",
-"s": 140.073,
-"e": 140.533,
-"conf": 0.998
+"s": 139.055,
+"e": 139.475,
+"conf": 0.993
 },
 {
 "text": "berhenti",
 "hl": false,
 "phrase": 112,
 "section": "warning",
-"s": 140.593,
-"e": 140.873,
-"conf": 0.994
+"s": 139.575,
+"e": 140.115,
+"conf": 0.997
 },
 {
 "text": "ubat",
 "hl": false,
 "phrase": 112,
 "section": "warning",
-"s": 140.953,
-"e": 141.133,
-"conf": 0.999
+"s": 140.235,
+"e": 140.415,
+"conf": 0.998
 },
 {
 "text": "sendiri,",
 "hl": false,
 "phrase": 112,
 "section": "warning",
-"s": 141.173,
-"e": 141.473,
+"s": 140.455,
+"e": 140.735,
 "conf": 0.989
 },
 {
@@ -3246,224 +3246,224 @@
 "hl": false,
 "phrase": 113,
 "section": "warning",
-"s": 141.573,
-"e": 141.833,
-"conf": 0.992
+"s": 140.915,
+"e": 141.115,
+"conf": 0.996
 },
 {
 "text": "simptom",
 "hl": false,
 "phrase": 113,
 "section": "warning",
-"s": 141.953,
-"e": 142.293,
-"conf": 0.91
+"s": 141.175,
+"e": 141.555,
+"conf": 0.917
 },
 {
 "text": "boleh",
 "hl": false,
 "phrase": 113,
 "section": "warning",
-"s": 142.353,
-"e": 142.574,
-"conf": 0.995
+"s": 141.675,
+"e": 141.975,
+"conf": 0.996
 },
 {
 "text": "datang",
 "hl": false,
 "phrase": 114,
 "section": "warning",
-"s": 142.614,
-"e": 142.834,
-"conf": 0.96
+"s": 142.015,
+"e": 142.235,
+"conf": 0.981
 },
 {
 "text": "balik.",
 "hl": false,
 "phrase": 114,
 "section": "warning",
-"s": 142.854,
-"e": 143.094,
-"conf": 0.967
+"s": 142.255,
+"e": 142.495,
+"conf": 0.987
 },
 {
 "text": "Jadi",
 "hl": false,
 "phrase": 115,
 "section": "todo",
-"s": 143.414,
-"e": 143.594,
-"conf": 0.999
+"s": 142.815,
+"e": 142.995,
+"conf": 0.997
 },
 {
 "text": "apa",
 "hl": false,
 "phrase": 115,
 "section": "todo",
-"s": 143.694,
-"e": 143.874,
-"conf": 0.998
+"s": 143.115,
+"e": 143.315,
+"conf": 0.992
 },
 {
 "text": "yang",
 "hl": false,
 "phrase": 115,
 "section": "todo",
-"s": 143.934,
-"e": 144.054,
-"conf": 0.996
+"s": 143.375,
+"e": 143.475,
+"conf": 0.992
 },
 {
 "text": "kita",
 "hl": false,
 "phrase": 115,
 "section": "todo",
-"s": 144.054,
-"e": 144.214,
-"conf": 0.999
+"s": 143.495,
+"e": 143.615,
+"conf": 0.997
 },
 {
 "text": "boleh",
 "hl": false,
 "phrase": 115,
 "section": "todo",
-"s": 144.274,
-"e": 144.474,
-"conf": 0.999
+"s": 143.635,
+"e": 143.815,
+"conf": 0.997
 },
 {
 "text": "buat?",
 "hl": false,
 "phrase": 115,
 "section": "todo",
-"s": 144.494,
-"e": 144.674,
-"conf": 0.999
+"s": 143.835,
+"e": 144.015,
+"conf": 0.997
 },
 {
 "text": "Timbang",
 "hl": false,
 "phrase": 116,
 "section": "todo",
-"s": 144.894,
-"e": 145.194,
-"conf": 0.994
+"s": 144.255,
+"e": 144.596,
+"conf": 0.998
 },
 {
 "text": "berat",
 "hl": false,
 "phrase": 116,
 "section": "todo",
-"s": 145.214,
-"e": 145.414,
-"conf": 0.992
+"s": 144.616,
+"e": 144.776,
+"conf": 0.8
 },
 {
 "text": "badan",
 "hl": false,
 "phrase": 116,
 "section": "todo",
-"s": 145.454,
-"e": 145.694,
-"conf": 0.998
+"s": 144.816,
+"e": 145.156,
+"conf": 0.995
 },
 {
 "text": "dan",
 "hl": false,
 "phrase": 117,
 "section": "todo",
-"s": 145.734,
-"e": 145.874,
-"conf": 0.998
+"s": 145.236,
+"e": 145.356,
+"conf": 0.955
 },
 {
 "text": "ukur",
 "hl": false,
 "phrase": 117,
 "section": "todo",
-"s": 145.974,
-"e": 146.234,
-"conf": 0.994
+"s": 145.456,
+"e": 145.756,
+"conf": 0.672
 },
 {
 "text": "lilit",
 "hl": false,
 "phrase": 117,
 "section": "todo",
-"s": 146.294,
-"e": 146.514,
-"conf": 0.792
+"s": 145.796,
+"e": 145.996,
+"conf": 0.966
 },
 {
 "text": "pinggang.",
 "hl": false,
 "phrase": 117,
 "section": "todo",
-"s": 146.534,
-"e": 146.874,
-"conf": 0.977
+"s": 146.036,
+"e": 146.376,
+"conf": 0.936
 },
 {
 "text": "Buat",
 "hl": false,
 "phrase": 118,
 "section": "todo",
-"s": 147.114,
-"e": 147.294,
-"conf": 0.999
+"s": 146.616,
+"e": 146.776,
+"conf": 0.998
 },
 {
 "text": "pemeriksaan",
 "hl": false,
 "phrase": 118,
 "section": "todo",
-"s": 147.334,
-"e": 147.954,
-"conf": 0.91
+"s": 146.816,
+"e": 147.276,
+"conf": 0.924
 },
 {
 "text": "gula",
 "hl": false,
 "phrase": 119,
 "section": "todo",
-"s": 148.074,
-"e": 148.274,
-"conf": 0.995
+"s": 147.356,
+"e": 147.596,
+"conf": 0.997
 },
 {
 "text": "dan",
 "hl": false,
 "phrase": 119,
 "section": "todo",
-"s": 148.334,
-"e": 148.454,
-"conf": 0.983
+"s": 147.716,
+"e": 147.816,
+"conf": 0.995
 },
 {
 "text": "kolesterol",
 "hl": false,
 "phrase": 119,
 "section": "todo",
-"s": 148.494,
-"e": 148.954,
-"conf": 0.884
+"s": 147.856,
+"e": 148.376,
+"conf": 0.804
 },
 {
 "text": "secara",
 "hl": false,
 "phrase": 120,
 "section": "todo",
-"s": 149.074,
-"e": 149.434,
-"conf": 0.999
+"s": 148.436,
+"e": 148.796,
+"conf": 0.998
 },
 {
 "text": "berkala.",
 "hl": false,
 "phrase": 120,
 "section": "todo",
-"s": 149.474,
-"e": 149.834,
+"s": 148.856,
+"e": 149.176,
 "conf": 0.998
 },
 {
@@ -3471,44 +3471,44 @@
 "hl": false,
 "phrase": 121,
 "section": "todo",
-"s": 150.094,
-"e": 150.294,
-"conf": 0.989
+"s": 149.416,
+"e": 149.656,
+"conf": 0.971
 },
 {
 "text": "air",
 "hl": false,
 "phrase": 121,
 "section": "todo",
-"s": 150.354,
-"e": 150.494,
-"conf": 0.978
+"s": 149.736,
+"e": 149.856,
+"conf": 0.785
 },
 {
 "text": "kosong,",
 "hl": false,
 "phrase": 121,
 "section": "todo",
-"s": 150.534,
-"e": 150.914,
-"conf": 0.962
+"s": 149.876,
+"e": 150.276,
+"conf": 0.947
 },
 {
 "text": "jaga",
 "hl": false,
 "phrase": 122,
 "section": "todo",
-"s": 151.054,
-"e": 151.254,
-"conf": 0.992
+"s": 150.456,
+"e": 150.716,
+"conf": 0.991
 },
 {
 "text": "pemakanan,",
 "hl": false,
 "phrase": 122,
 "section": "todo",
-"s": 151.314,
-"e": 151.834,
+"s": 150.776,
+"e": 151.296,
 "conf": 0.994
 },
 {
@@ -3516,341 +3516,341 @@
 "hl": false,
 "phrase": 123,
 "section": "todo",
-"s": 151.894,
-"e": 152.014,
-"conf": 0.962
+"s": 151.476,
+"e": 151.596,
+"conf": 0.994
 },
 {
 "text": "kekal",
 "hl": false,
 "phrase": 123,
 "section": "todo",
-"s": 152.074,
-"e": 152.394,
-"conf": 0.998
+"s": 151.696,
+"e": 152.076,
+"conf": 0.994
 },
 {
 "text": "aktif.",
 "hl": false,
 "phrase": 123,
 "section": "todo",
-"s": 152.474,
-"e": 152.774,
-"conf": 0.943
+"s": 152.136,
+"e": 152.436,
+"conf": 0.937
 },
 {
 "text": "Kalau",
 "hl": false,
 "phrase": 124,
 "section": "todo",
-"s": 153.015,
-"e": 153.235,
-"conf": 0.993
+"s": 152.696,
+"e": 152.896,
+"conf": 0.994
 },
 {
 "text": "berat",
 "hl": false,
 "phrase": 124,
 "section": "todo",
-"s": 153.255,
-"e": 153.435,
-"conf": 0.998
+"s": 152.916,
+"e": 153.076,
+"conf": 0.8
 },
 {
 "text": "badan",
 "hl": false,
 "phrase": 124,
 "section": "todo",
-"s": 153.475,
-"e": 153.675,
-"conf": 0.995
+"s": 153.116,
+"e": 153.316,
+"conf": 0.982
 },
 {
 "text": "naik",
 "hl": false,
 "phrase": 124,
 "section": "todo",
-"s": 153.715,
-"e": 153.895,
-"conf": 0.941
+"s": 153.336,
+"e": 153.496,
+"conf": 0.949
 },
 {
 "text": "banyak,",
 "hl": false,
 "phrase": 124,
 "section": "todo",
-"s": 153.935,
-"e": 154.175,
-"conf": 0.977
+"s": 153.536,
+"e": 153.917,
+"conf": 0.983
 },
 {
 "text": "bincang",
 "hl": true,
 "phrase": 125,
 "section": "todo",
-"s": 154.235,
-"e": 154.595,
-"conf": 0.983
+"s": 154.077,
+"e": 154.477,
+"conf": 0.992
 },
 {
 "text": "dengan",
 "hl": false,
 "phrase": 125,
 "section": "todo",
-"s": 154.635,
-"e": 154.835,
-"conf": 0.966
+"s": 154.477,
+"e": 154.637,
+"conf": 0.976
 },
 {
 "text": "doktor.",
 "hl": false,
 "phrase": 125,
 "section": "todo",
-"s": 154.875,
-"e": 155.175,
-"conf": 0.755
+"s": 154.677,
+"e": 154.937,
+"conf": 0.744
 },
 {
 "text": "Kadang-kadang",
 "hl": false,
 "phrase": 126,
 "section": "todo",
-"s": 155.415,
-"e": 155.895,
-"conf": 0.956
+"s": 155.177,
+"e": 155.717,
+"conf": 0.906
 },
 {
 "text": "dos",
 "hl": false,
 "phrase": 126,
 "section": "todo",
-"s": 155.955,
-"e": 156.115,
-"conf": 0.977
+"s": 155.797,
+"e": 155.997,
+"conf": 0.933
 },
 {
 "text": "boleh",
 "hl": false,
 "phrase": 126,
 "section": "todo",
-"s": 156.155,
-"e": 156.355,
-"conf": 0.987
+"s": 156.057,
+"e": 156.237,
+"conf": 0.992
 },
 {
 "text": "diubah,",
 "hl": false,
 "phrase": 126,
 "section": "todo",
-"s": 156.395,
-"e": 156.815,
-"conf": 0.993
+"s": 156.257,
+"e": 156.657,
+"conf": 0.991
 },
 {
 "text": "atau",
 "hl": false,
 "phrase": 127,
 "section": "todo",
-"s": 156.975,
-"e": 157.215,
-"conf": 0.991
+"s": 156.837,
+"e": 157.137,
+"conf": 0.925
 },
 {
 "text": "ada",
 "hl": false,
 "phrase": 127,
 "section": "todo",
-"s": 157.295,
-"e": 157.455,
-"conf": 0.997
+"s": 157.237,
+"e": 157.377,
+"conf": 0.995
 },
 {
 "text": "pilihan",
 "hl": false,
 "phrase": 127,
 "section": "todo",
-"s": 157.515,
-"e": 157.875,
-"conf": 0.977
+"s": 157.417,
+"e": 157.697,
+"conf": 0.939
 },
 {
 "text": "ubat",
 "hl": false,
 "phrase": 127,
 "section": "todo",
-"s": 157.935,
-"e": 158.135,
-"conf": 0.996
+"s": 157.737,
+"e": 157.897,
+"conf": 0.995
 },
 {
 "text": "lain",
 "hl": false,
 "phrase": 127,
 "section": "todo",
-"s": 158.195,
-"e": 158.455,
-"conf": 0.998
+"s": 157.957,
+"e": 158.197,
+"conf": 0.994
 },
 {
 "text": "yang",
 "hl": false,
 "phrase": 128,
 "section": "todo",
-"s": 158.515,
-"e": 158.635,
-"conf": 0.949
+"s": 158.237,
+"e": 158.357,
+"conf": 0.954
 },
 {
 "text": "lebih",
 "hl": false,
 "phrase": 128,
 "section": "todo",
-"s": 158.675,
-"e": 158.895,
-"conf": 0.959
+"s": 158.377,
+"e": 158.617,
+"conf": 0.997
 },
 {
 "text": "sesuai.",
 "hl": false,
 "phrase": 128,
 "section": "todo",
-"s": 158.915,
-"e": 159.335,
-"conf": 0.997
+"s": 158.677,
+"e": 159.017,
+"conf": 0.996
 },
 {
 "text": "Kalau",
 "hl": false,
 "phrase": 129,
 "section": "cta",
-"s": 159.675,
-"e": 159.875,
-"conf": 0.998
+"s": 159.357,
+"e": 159.537,
+"conf": 0.982
 },
 {
 "text": "anda",
 "hl": false,
 "phrase": 129,
 "section": "cta",
-"s": 159.915,
-"e": 160.055,
-"conf": 0.996
+"s": 159.577,
+"e": 159.697,
+"conf": 0.992
 },
 {
 "text": "risau",
 "hl": false,
 "phrase": 129,
 "section": "cta",
-"s": 160.115,
-"e": 160.515,
-"conf": 0.986
+"s": 159.757,
+"e": 160.117,
+"conf": 0.989
 },
 {
 "text": "tentang",
 "hl": false,
 "phrase": 129,
 "section": "cta",
-"s": 160.595,
-"e": 161.075,
-"conf": 0.938
+"s": 160.157,
+"e": 160.417,
+"conf": 0.976
 },
 {
 "text": "kesan",
 "hl": false,
 "phrase": 130,
 "section": "cta",
-"s": 161.195,
-"e": 161.495,
-"conf": 0.998
+"s": 160.437,
+"e": 160.677,
+"conf": 0.958
 },
 {
 "text": "sampingan",
 "hl": false,
 "phrase": 130,
 "section": "cta",
-"s": 161.535,
-"e": 161.955,
-"conf": 0.962
+"s": 160.717,
+"e": 161.037,
+"conf": 0.984
 },
 {
 "text": "ubat",
 "hl": false,
 "phrase": 130,
 "section": "cta",
-"s": 162.015,
-"e": 162.195,
-"conf": 0.996
+"s": 161.117,
+"e": 161.337,
+"conf": 0.997
 },
 {
 "text": "yang",
 "hl": false,
 "phrase": 131,
 "section": "cta",
-"s": 162.255,
-"e": 162.355,
-"conf": 0.986
+"s": 161.377,
+"e": 161.477,
+"conf": 0.946
 },
 {
 "text": "anda",
 "hl": false,
 "phrase": 131,
 "section": "cta",
-"s": 162.375,
-"e": 162.515,
-"conf": 0.995
+"s": 161.497,
+"e": 161.637,
+"conf": 0.994
 },
 {
 "text": "makan,",
 "hl": false,
 "phrase": 131,
 "section": "cta",
-"s": 162.575,
-"e": 162.955,
-"conf": 0.992
+"s": 161.697,
+"e": 162.037,
+"conf": 0.995
 },
 {
 "text": "boleh",
 "hl": false,
 "phrase": 132,
 "section": "cta",
-"s": 163.115,
-"e": 163.315,
-"conf": 0.996
+"s": 162.197,
+"e": 162.397,
+"conf": 0.986
 },
 {
 "text": "datang",
 "hl": false,
 "phrase": 132,
 "section": "cta",
-"s": 163.335,
-"e": 163.636,
-"conf": 0.995
+"s": 162.437,
+"e": 162.757,
+"conf": 0.985
 },
 {
 "text": "buat",
 "hl": false,
 "phrase": 132,
 "section": "cta",
-"s": 163.676,
-"e": 163.796,
-"conf": 0.977
+"s": 162.797,
+"e": 162.937,
+"conf": 0.998
 },
 {
 "text": "konsultasi",
 "hl": false,
 "phrase": 132,
 "section": "cta",
-"s": 163.836,
-"e": 164.296,
-"conf": 0.946
+"s": 162.957,
+"e": 163.478,
+"conf": 0.997
 },
 {
 "text": "bersama",
 "hl": false,
 "phrase": 133,
 "section": "cta",
-"s": 164.356,
-"e": 164.636,
+"s": 163.538,
+"e": 163.798,
 "conf": 0.998
 },
 {
@@ -3858,35 +3858,35 @@
 "hl": false,
 "phrase": 133,
 "section": "cta",
-"s": 164.696,
-"e": 164.936,
-"conf": 0.998
+"s": 163.858,
+"e": 164.078,
+"conf": 0.997
 },
 {
 "text": "Dr",
 "hl": false,
 "phrase": 133,
 "section": "cta",
-"s": 165.096,
-"e": 165.356,
-"conf": 0.76
+"s": 164.218,
+"e": 164.458,
+"conf": 0.754
 },
 {
 "text": "Azren,",
 "hl": true,
 "phrase": 133,
 "section": "cta",
-"s": 165.416,
-"e": 165.736,
-"conf": 0.94
+"s": 164.498,
+"e": 164.838,
+"conf": 0.867
 },
 {
 "text": "di",
 "hl": false,
 "phrase": 134,
 "section": "cta",
-"s": 165.896,
-"e": 165.976,
+"s": 164.978,
+"e": 165.038,
 "conf": 0.994
 },
 {
@@ -3894,89 +3894,89 @@
 "hl": false,
 "phrase": 134,
 "section": "cta",
-"s": 166.096,
-"e": 166.436,
-"conf": 0.996
+"s": 165.078,
+"e": 165.338,
+"conf": 0.997
 },
 {
 "text": "saya",
 "hl": false,
 "phrase": 134,
 "section": "cta",
-"s": 166.496,
-"e": 166.716,
-"conf": 0.985
+"s": 165.398,
+"e": 165.618,
+"conf": 0.994
 },
 {
 "text": "di",
 "hl": false,
 "phrase": 134,
 "section": "cta",
-"s": 166.836,
-"e": 166.916,
-"conf": 0.99
+"s": 165.678,
+"e": 165.738,
+"conf": 0.992
 },
 {
 "text": "Nilai.",
 "hl": true,
 "phrase": 134,
 "section": "cta",
-"s": 166.976,
-"e": 167.316,
-"conf": 0.934
+"s": 165.778,
+"e": 166.058,
+"conf": 0.989
 },
 {
 "text": "Dan",
 "hl": false,
 "phrase": 135,
 "section": "book",
-"s": 167.636,
-"e": 167.796,
-"conf": 0.991
+"s": 166.398,
+"e": 166.578,
+"conf": 0.995
 },
 {
 "text": "kalau",
 "hl": false,
 "phrase": 135,
 "section": "book",
-"s": 167.916,
-"e": 168.116,
-"conf": 0.997
+"s": 166.658,
+"e": 166.838,
+"conf": 0.999
 },
 {
 "text": "anda",
 "hl": false,
 "phrase": 135,
 "section": "book",
-"s": 168.156,
-"e": 168.316,
-"conf": 0.967
+"s": 166.878,
+"e": 167.018,
+"conf": 0.928
 },
 {
 "text": "nak",
 "hl": false,
 "phrase": 135,
 "section": "book",
-"s": 168.356,
-"e": 168.456,
-"conf": 0.981
+"s": 167.018,
+"e": 167.138,
+"conf": 0.656
 },
 {
 "text": "faham",
 "hl": false,
 "phrase": 135,
 "section": "book",
-"s": 168.496,
-"e": 168.876,
-"conf": 0.991
+"s": 167.178,
+"e": 167.398,
+"conf": 0.995
 },
 {
 "text": "lebih",
 "hl": false,
 "phrase": 135,
 "section": "book",
-"s": 168.936,
-"e": 169.116,
+"s": 167.458,
+"e": 167.738,
 "conf": 0.997
 },
 {
@@ -3984,26 +3984,26 @@
 "hl": false,
 "phrase": 135,
 "section": "book",
-"s": 169.136,
-"e": 169.436,
-"conf": 0.844
+"s": 167.798,
+"e": 168.158,
+"conf": 0.975
 },
 {
 "text": "tentang",
 "hl": false,
 "phrase": 136,
 "section": "book",
-"s": 169.476,
-"e": 169.776,
-"conf": 0.932
+"s": 168.198,
+"e": 168.458,
+"conf": 0.971
 },
 {
 "text": "rawatan",
 "hl": false,
 "phrase": 136,
 "section": "book",
-"s": 169.816,
-"e": 170.216,
+"s": 168.498,
+"e": 168.798,
 "conf": 0.998
 },
 {
@@ -4011,134 +4011,134 @@
 "hl": false,
 "phrase": 136,
 "section": "book",
-"s": 170.276,
-"e": 170.656,
-"conf": 0.995
+"s": 168.818,
+"e": 169.178,
+"conf": 0.953
 },
 {
 "text": "mental,",
 "hl": false,
 "phrase": 136,
 "section": "book",
-"s": 170.696,
-"e": 171.016,
-"conf": 0.849
+"s": 169.198,
+"e": 169.538,
+"conf": 0.83
 },
 {
 "text": "dapatkan",
 "hl": false,
 "phrase": 137,
 "section": "book",
-"s": 171.056,
-"e": 171.456,
-"conf": 0.995
+"s": 169.718,
+"e": 170.138,
+"conf": 0.991
 },
 {
 "text": "buku",
 "hl": false,
 "phrase": 137,
 "section": "book",
-"s": 171.496,
-"e": 171.656,
-"conf": 0.995
+"s": 170.178,
+"e": 170.338,
+"conf": 0.996
 },
 {
 "text": "saya,",
 "hl": false,
 "phrase": 137,
 "section": "book",
-"s": 171.736,
-"e": 171.936,
-"conf": 0.976
+"s": 170.398,
+"e": 170.618,
+"conf": 0.987
 },
 {
 "text": "\"Dr,",
 "hl": false,
 "phrase": 138,
 "section": "book",
-"s": 172.036,
-"e": 172.336,
-"conf": 0.665
+"s": 170.758,
+"e": 171.098,
+"conf": 0.53
 },
 {
 "text": "Saya",
 "hl": false,
 "phrase": 138,
 "section": "book",
-"s": 172.436,
-"e": 172.576,
-"conf": 0.901
+"s": 171.278,
+"e": 171.458,
+"conf": 0.966
 },
 {
 "text": "Boleh",
 "hl": false,
 "phrase": 138,
 "section": "book",
-"s": 172.616,
-"e": 172.776,
-"conf": 0.984
+"s": 171.478,
+"e": 171.658,
+"conf": 0.972
 },
 {
 "text": "Sembuh",
 "hl": false,
 "phrase": 139,
 "section": "book",
-"s": 172.796,
-"e": 173.076,
-"conf": 0.946
+"s": 171.678,
+"e": 171.998,
+"conf": 0.963
 },
 {
 "text": "Ke?\"",
 "hl": false,
 "phrase": 139,
 "section": "book",
-"s": 173.116,
-"e": 173.216,
-"conf": 0.514
+"s": 172.058,
+"e": 172.118,
+"conf": 0.495
 },
 {
 "text": "Ada",
 "hl": false,
 "phrase": 140,
 "section": "outro",
-"s": 173.456,
-"e": 173.576,
-"conf": 0.976
+"s": 172.459,
+"e": 172.579,
+"conf": 0.978
 },
 {
 "text": "soalan?",
 "hl": false,
 "phrase": 140,
 "section": "outro",
-"s": 173.636,
-"e": 174.016,
-"conf": 0.877
+"s": 172.619,
+"e": 172.959,
+"conf": 0.983
 },
 {
 "text": "Tanya",
 "hl": false,
 "phrase": 140,
 "section": "outro",
-"s": 174.057,
-"e": 174.257,
-"conf": 0.916
+"s": 173.199,
+"e": 173.399,
+"conf": 0.941
 },
 {
 "text": "di",
 "hl": false,
 "phrase": 140,
 "section": "outro",
-"s": 174.297,
-"e": 174.357,
-"conf": 0.985
+"s": 173.459,
+"e": 173.499,
+"conf": 0.982
 },
 {
 "text": "komen.",
 "hl": false,
 "phrase": 140,
 "section": "outro",
-"s": 174.397,
-"e": 174.677,
+"s": 173.539,
+"e": 173.819,
 "conf": 0.982
 },
 {
@@ -4146,18 +4146,18 @@
 "hl": false,
 "phrase": 141,
 "section": "outro",
-"s": 174.737,
-"e": 174.897,
-"conf": 0.448
+"s": 174.059,
+"e": 174.219,
+"conf": 0.416
 },
 {
 "text": "care.",
 "hl": false,
 "phrase": 141,
 "section": "outro",
-"s": 174.937,
-"e": 175.157,
-"conf": 0.013
+"s": 174.219,
+"e": 174.479,
+"conf": 0.05
 }
 ]
 }
