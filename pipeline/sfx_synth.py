@@ -348,4 +348,7 @@ AMBIENCE = {  # clip -> (bed, level)
     "v17": (amb_room, 0.7), "v24": (amb_room, 0.7), "v05": (amb_street, 0.9), "v15": (amb_crowd, 1.0),
     "v11": (amb_train, 1.0), "v12": (amb_train, 0.7), "v13": (amb_machine, 0.8),
     "v09": (amb_drone, 0.7), "v21": (amb_drone, 0.8), "v22": (amb_drone, 0.6), "v25": (amb_drone, 0.6),
+    # weight-gain reel (n = new Seedance clips)
+    "n01": (amb_birds, 0.6), "n02": (amb_crickets, 0.8), "n03": (amb_drone, 0.8), "n04": (amb_room, 0.7),
+    "n05": (amb_room, 0.7), "n06": (amb_crowd, 0.7), "n07": (amb_birds, 0.6), "n08": (amb_birds, 0.7),
 }

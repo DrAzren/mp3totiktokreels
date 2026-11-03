@@ -104,6 +104,8 @@ SECTIONS = [
     (152.4, 159.5, ["F", "C", "Dm", "Bb"], {"pad": 1.1, "arp": 1, "keys": 0.8, "kick": 0.6, "sub": 0.7}),
     (159.5, 999, ["Fmaj7"], {"pad": 1.0, "keys": 0.7}),
 ]
+if os.environ.get("MUSIC_SECTIONS"):  # per-reel score map: JSON list of [start, end, [chords], {layers}]
+    SECTIONS = [tuple(x) for x in json.load(open(os.environ["MUSIC_SECTIONS"]))]
 
 
 def pad_voice(f, d, bright=1.0):

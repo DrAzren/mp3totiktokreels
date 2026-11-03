@@ -365,6 +365,7 @@ async function init() {
   await Promise.all(['Anton', 'DM Serif Display', 'Plus Jakarta Sans', 'Caveat', 'JetBrains Mono'].flatMap(f =>
     [400, 500, 600, 700, 800].map(w => document.fonts.load(`${w} 40px '${f}'`))));
   await document.fonts.ready;
+  if (window.PRELOAD) await window.PRELOAD();   // per-reel assets (images) needed before the first frame
   TL = buildTimeline();   // defined in timeline.js
   TL.shots.sort((a, b) => a.t0 - b.t0);
   TL.els.sort((a, b) => (a.z || 0) - (b.z || 0));

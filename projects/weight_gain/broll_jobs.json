@@ -1,0 +1,11 @@
+{
+ "new_seedance_2_0_mini": {
+  "n01": "13c41ff5-e1a1-4687-a63b-1331ba8a2040", "n02": "7e5a1fa8-e5e0-45ab-969c-29347eb37eab",
+  "n03": "a383fd87-e553-451a-afc2-6d9f9a6333bd", "n04": "f350a425-3b56-42b7-9c79-39270db0bbc1",
+  "n05": "a6595c7f-4c85-4d14-8580-4d04b1fcba31", "n06": "478bccd1-6f29-4329-9bc5-78a3f3d55978",
+  "n07": "195eaaa3-905a-4502-a207-accd0b5abd3a", "n08": "9dbe4b18-2385-4484-9159-8b556c651924"
+ },
+ "reused_from_depot_reel": ["v01","v02","v04","v05","v06","v07","v10","v11","v12","v13","v16","v17","v18","v19","v20","v21","v22","v23"],
+ "note": "n clips: Seedance 2.0 Mini, 720p 9:16, 5 s, text-to-video, 5 credits each (40 total). v clip IDs are in deliverables/broll_jobs.json.",
+ "voice": "ElevenLabs flow fbDpZAnkDVlW10NSQWtm, voice 'Dr Azren' (lN6exnzhuXDOyNQfsVSR), eleven_multilingual_v2, take A (DavQ2YAUzPrydIWCs50x)"
+}
