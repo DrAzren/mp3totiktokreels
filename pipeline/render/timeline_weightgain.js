@@ -336,7 +336,7 @@ function buildTimeline() {
 
   // ===== WHAT TO DO =====
   S({ clip: 'n01', t0: sec(115), t1: sec(117) + 0.3, kb: { s0: 1.04, s1: 1.12 }, tr: { type: 'whip', dur: 0.3 }, grade: 'warm' });
-  A(headline([{ text: 'APA BOLEH BUAT?', at: Wd(115, 1), y: 480, size: 120, color: C.white, mark: C.tealD }], sec(116) + 0.2));
+  A(headline([{ text: 'APA BOLEH BUAT?', at: Wd(115, 1), y: 560, size: 120, color: C.white, mark: C.tealD }], Wd(116, 0) - 0.3));
   S({ clip: 'n04', t0: sec(117) + 0.3, t1: sec(118), kb: { s0: 1.04, s1: 1.12 }, tr: { type: 'whip', dur: 0.3 }, grade: 'warm' });
   S({ clip: 'n05', in: 0.5, t0: sec(118), t1: sec(121), kb: { s0: 1.04, s1: 1.12 }, tr: { type: 'whip', dur: 0.3 }, grade: 'cool' });
   S({ clip: 'n08', t0: sec(121), t1: sec(123), kb: { s0: 1.04, s1: 1.14 }, tr: { type: 'fade', dur: 0.3 }, grade: 'warm' });
