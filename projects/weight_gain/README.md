@@ -10,11 +10,12 @@ Malay reel, 1080×1920, 2:58. Voice: Dr Azren's ElevenLabs voice clone (model el
 | `pipeline/cut_voice.py` | Align the TTS take, remove `~` lines, tighten pauses, speed ×1.06 |
 | `music_sections.json` | Score map for `pipeline/audio_mix.py` (`MUSIC_SECTIONS=...`) |
 | `../../pipeline/render/timeline_weightgain.js` | Shots, motion graphics, 3D book (load via `index_weightgain.html`) |
-| `broll_jobs.json` | Higgsfield job IDs (8 new Seedance 2.0 Mini clips + reused Depot clips) |
+| `broll_jobs.json` | Higgsfield job IDs: 33 shots, each a distinct Seedance 2.0 Mini clip (n01–n08 minus n05, m01–m26) |
+| `book3d_mockup.png` | GPT Image 2.5 photoreal mockup from the real cover; site copy is `book3d.jpg` (1080×1920 crop) |
 | `post_caption.md` | TikTok / Facebook / YouTube caption |
 | `Thumbnail_WeightGain_*.jpg`, `thumbnail/thumb.html` | Cover (uses `pipeline/thumbnail/` assets) |
 
-Build (scratch dir `$WORK` with `src/v4.wav`, `broll/frames/*`, `book.jpg` = book cover from Google Drive):
+Build (scratch dir `$WORK` with `src/v4.wav`, `broll/frames/*`, `book.jpg` = book cover from Google Drive, `book3d.jpg` = mockup):
 
 ```
 python3 pipeline/cut_voice.py $WORK/src/v4.wav captions_full.txt $WORK/build 1.06

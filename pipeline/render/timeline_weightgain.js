@@ -4,8 +4,9 @@
 'use strict';
 
 const CTA_LOCATION = 'Nilai';
-const BOOK = new Image();
-window.PRELOAD = () => new Promise(res => { BOOK.onload = res; BOOK.onerror = res; BOOK.src = 'book.jpg'; });
+const BOOK = new Image(), BOOK3D = new Image();
+const loadImg = (img, src) => new Promise(res => { img.onload = res; img.onerror = res; img.src = src; });
+window.PRELOAD = () => Promise.all([loadImg(BOOK, 'book.jpg'), loadImg(BOOK3D, 'book3d.jpg')]);
 
 const CLS = {
   ap: { label: 'ANTIPSIKOTIK', col: C.teal },
@@ -121,6 +122,30 @@ function receptorDiagram(at, hAt, sAt, t1) {
   } };
 }
 
+// AI-generated photoreal 3D mockup of the book (Higgsfield), with a slow camera push, parallax drift and a light sweep
+function bookStill(at, t1, o = {}) {
+  sfx('riser', at - 0.6, 0.6); sfx('whoosh', at, 0.8); sfx('shimmer', at + 0.5, 0.6); sfx('logo', at + 0.4, 0.7);
+  return { t0: at - 0.05, t1: t1 + 0.4, z: 2, draw(ctx, t) {
+    if (!BOOK3D.width) return;
+    const p = E.out(prog(t, at, 0.7)), out = E.in(prog(t, t1, 0.35)), u = E.inOut(prog(t, at, t1 - at));
+    const s = lerp(0.9, 0.78, E.out(prog(t, at, 1.4))) + u * 0.04, dx = Math.sin((t - at) * 0.6) * 10, dy = lerp(30, -10, u);
+    ctx.save(); ctx.globalAlpha = p * (1 - out);
+    if (!BOOK3D.feather) { // soft-edged copy so the mockup blends into the navy background
+      const c = mk(BOOK3D.width, BOOK3D.height), g = c.getContext('2d'); g.drawImage(BOOK3D, 0, 0);
+      g.globalCompositeOperation = 'destination-in'; const cw = c.width, chh = c.height;
+      const rg = g.createRadialGradient(cw / 2, chh * 0.4, cw * 0.3, cw / 2, chh * 0.45, chh * 0.62);
+      rg.addColorStop(0, 'rgba(0,0,0,1)'); rg.addColorStop(1, 'rgba(0,0,0,0)'); g.fillStyle = rg; g.fillRect(0, 0, cw, chh);
+      BOOK3D.feather = c; }
+    const iw = BOOK3D.width, ih = BOOK3D.height, k = Math.max(W / iw, H / ih) * s;
+    ctx.drawImage(BOOK3D.feather, W / 2 - iw * k / 2 + dx, 860 - ih * k / 2 + dy, iw * k, ih * k);
+    const sw = prog(t, at + 1.0, 1.4); if (sw > 0 && sw < 1) { ctx.globalCompositeOperation = 'screen';
+      const x = lerp(-300, W + 300, sw), g = ctx.createLinearGradient(x - 160, 0, x + 160, 0);
+      g.addColorStop(0, 'rgba(255,255,255,0)'); g.addColorStop(0.5, 'rgba(255,255,255,0.16)'); g.addColorStop(1, 'rgba(255,255,255,0)');
+      ctx.fillStyle = g; ctx.fillRect(0, 0, W, H); }
+    ctx.restore();
+  } };
+}
+
 // 3D book: box rendered with per-column perspective (cover = the real cover image)
 function book3d(at, t1, o = {}) {
   sfx('riser', at - 0.6, 0.6); sfx('whoosh', at, 0.8); sfx('shimmer', at + 0.5, 0.6); sfx('logo', at + 0.4, 0.7);
@@ -180,11 +205,11 @@ function buildTimeline() {
     { text: 'BUAT BERAT', at: -0.6, y: 680, size: 150, color: C.white, sfx: 'none' },
     { text: 'BADAN NAIK?', at: -0.6, y: 840, size: 150, color: C.yellow, sfx: 'none' },
   ], sec(3) - 0.1));
-  S({ clip: 'v06', t0: sec(3), t1: sec(5), kb: { s0: 1.04, s1: 1.12 }, tr: { type: 'whip', dur: 0.3 }, grade: 'warm' });
+  S({ clip: 'm01', t0: sec(3), t1: sec(5), kb: { s0: 1.04, s1: 1.12 }, tr: { type: 'whip', dur: 0.3 }, grade: 'warm' });
   A(chip('Soalan biasa di klinik', Wd(3, 1), sec(5), { y: 560, bg: C.paper, fg: C.navy, icon: 'comment' }));
   S({ bg: 'navy', t0: sec(5), t1: sec(6), tr: { type: 'flash', dur: 0.2 } });
   A(stamp('YA!', Wd(5, 1), sec(6) - 0.05, { y: 760, size: 200, color: C.teal }));
-  S({ clip: 'v02', t0: sec(6), t1: sec(9), kb: { s0: 1.05, s1: 1.15 }, tr: { type: 'zoom', dur: 0.3 }, grade: 'warm' });
+  S({ clip: 'm02', t0: sec(6), t1: sec(9), kb: { s0: 1.05, s1: 1.15 }, tr: { type: 'zoom', dur: 0.3 }, grade: 'warm' });
   A(chip('Ubat psikiatri', Wd(6, 1), sec(9), { y: 520, x: 420, bg: C.teal, icon: 'capsule', rot: -0.03 }));
   A(chip('Berat badan ↑', Wd(8, 2), sec(9), { y: 660, x: 640, bg: C.coral, fg: C.white, rot: 0.03 }));
   S({ bg: 'paper', t0: sec(9), t1: sec(15), tr: { type: 'tear', dur: 0.45 } });
@@ -205,12 +230,12 @@ function buildTimeline() {
   S({ bg: 'navy', t0: sec(22), t1: sec(24), tr: { type: 'whip', dur: 0.3 } });
   A(drugIntro(1, 'Clozapine', 'ap', P(22) + 0.05, sec(24) + 0.2));
   ch(1, P(22), sec(35));
-  S({ clip: 'v23', t0: sec(24), t1: sec(27), kb: { s0: 1.04, s1: 1.12 }, tr: { type: 'fade', dur: 0.3 }, grade: 'warm' });
+  S({ clip: 'm03', t0: sec(24), t1: sec(27), kb: { s0: 1.04, s1: 1.12 }, tr: { type: 'fade', dur: 0.3 }, grade: 'warm' });
   A(chipStack('INDIKASI', [{ text: 'Skizofrenia', at: Wd(24, 3), icon: 'brain' }, { text: 'Tak respon ubat lain', at: Wd(25, 2) }], sec(27) - 0.1));
-  S({ clip: 'v21', t0: sec(27), t1: sec(30), kb: { s0: 1.05, s1: 1.15 }, tr: { type: 'whip', dur: 0.3 }, grade: 'cool', dim: 0.25 });
+  S({ clip: 'm04', t0: sec(27), t1: sec(30), kb: { s0: 1.05, s1: 1.15 }, tr: { type: 'whip', dur: 0.3 }, grade: 'cool', dim: 0.25 });
   A(hand('sangat berkesan', Wd(27, 1), sec(28), { x: 540, y: 600, size: 96, color: C.teal }));
   A(riskGauge('TINGGI', 0.92, Wd(28, 3), sec(30) - 0.1, { y: 760 }));
-  S({ clip: 'n05', t0: sec(30), t1: sec(35), kb: { s0: 1.04, s1: 1.14 }, tr: { type: 'zoom', dur: 0.3 }, grade: 'cool', dim: 0.15 });
+  S({ clip: 'm05', t0: sec(30), t1: sec(35), kb: { s0: 1.04, s1: 1.14 }, tr: { type: 'zoom', dur: 0.3 }, grade: 'cool', dim: 0.15 });
   A(mechRow([{ text: 'Selera makan', at: P(30), icon: 'heart', res: '↑' },
              { text: 'Sensitiviti insulin', at: Wd(31, 3), icon: 'warn', res: '↓', resCol: C.tealD },
              { text: 'Gula & kolesterol', at: P(33), icon: 'tablet', res: '↑' }], sec(35) - 0.1, { title: 'KENAPA BERAT NAIK?', y: 470 }));
@@ -219,9 +244,9 @@ function buildTimeline() {
   S({ bg: 'navy', t0: sec(35), t1: sec(36) + 0.2, tr: { type: 'whip', dur: 0.3 } });
   A(drugIntro(2, 'Olanzapine', 'ap', P(35) + 0.1, sec(36) + 0.4));
   ch(2, P(35), sec(41));
-  S({ clip: 'v11', t0: sec(36) + 0.2, t1: sec(38), kb: { s0: 1.04, s1: 1.12 }, tr: { type: 'fade', dur: 0.3 }, grade: 'cool' });
+  S({ clip: 'm06', t0: sec(36) + 0.2, t1: sec(38), kb: { s0: 1.04, s1: 1.12 }, tr: { type: 'fade', dur: 0.3 }, grade: 'cool' });
   A(chipStack('INDIKASI', [{ text: 'Skizofrenia', at: Wd(36, 2), icon: 'brain' }, { text: 'Bipolar', at: Wd(37, 1) }], sec(38) - 0.1));
-  S({ clip: 'n03', in: 2.0, t0: sec(38), t1: sec(41), kb: { s0: 1.1, s1: 1.22 }, tr: { type: 'zoom', dur: 0.3 }, grade: 'cool', dim: 0.2 });
+  S({ clip: 'm07', t0: sec(38), t1: sec(41), kb: { s0: 1.1, s1: 1.22 }, tr: { type: 'zoom', dur: 0.3 }, grade: 'cool', dim: 0.2 });
   A(mechRow([{ text: 'Sekat histamin', sub: '& serotonin (kuat)', at: Wd(38, 2), icon: 'brain', res: '✕', resCol: C.red },
              { text: 'Rasa lapar', at: Wd(40, 2), icon: 'heart', res: '↑' }], sec(41) - 0.1, { title: 'KENAPA BERAT NAIK?', y: 560 }));
 
@@ -229,7 +254,7 @@ function buildTimeline() {
   S({ bg: 'navy', t0: sec(41), t1: sec(42) + 0.2, tr: { type: 'whip', dur: 0.3 } });
   A(drugIntro(3, 'Quetiapine', 'ap', P(41) + 0.1, sec(42) + 0.4));
   ch(3, P(41), sec(47));
-  S({ clip: 'v10', t0: sec(42) + 0.2, t1: sec(46), kb: { s0: 1.04, s1: 1.12 }, tr: { type: 'fade', dur: 0.3 }, grade: 'cool' });
+  S({ clip: 'm08', t0: sec(42) + 0.2, t1: sec(46), kb: { s0: 1.04, s1: 1.12 }, tr: { type: 'fade', dur: 0.3 }, grade: 'cool' });
   A(chipStack('INDIKASI', [{ text: 'Skizofrenia', at: Wd(42, 1), icon: 'brain' }, { text: 'Bipolar', at: Wd(42, 2) },
                            { text: 'Tambahan: kemurungan', at: Wd(44, 1) }], sec(46) - 0.1, { gap: 115 }));
   S({ clip: 'n07', t0: sec(46), t1: sec(47), kb: { s0: 1.04, s1: 1.12 }, tr: { type: 'whip', dur: 0.3 }, grade: 'warm' });
@@ -240,10 +265,10 @@ function buildTimeline() {
   S({ bg: 'navy', t0: sec(47), t1: sec(48) + 0.2, tr: { type: 'whip', dur: 0.3 } });
   A(drugIntro(4, 'Risperidone', 'ap', P(47) + 0.1, sec(48) + 0.4));
   ch(4, P(47), sec(55));
-  S({ clip: 'v04', t0: sec(48) + 0.2, t1: sec(52), kb: { s0: 1.04, s1: 1.12 }, tr: { type: 'fade', dur: 0.3 }, grade: 'warm' });
+  S({ clip: 'm09', t0: sec(48) + 0.2, t1: sec(52), kb: { s0: 1.04, s1: 1.12 }, tr: { type: 'fade', dur: 0.3 }, grade: 'warm' });
   A(chipStack('INDIKASI', [{ text: 'Skizofrenia', at: Wd(48, 2), icon: 'brain' }, { text: 'Bipolar', at: Wd(49, 0) },
                            { text: 'Autisme: mudah marah', at: Wd(50, 1) }, { text: '& agresif', at: Wd(50, 4) }], sec(52) - 0.1, { gap: 110, y: 420 }));
-  S({ clip: 'v18', t0: sec(52), t1: sec(55), kb: { s0: 1.04, s1: 1.12 }, tr: { type: 'fade', dur: 0.3 }, grade: 'warm' });
+  S({ clip: 'm10', t0: sec(52), t1: sec(55), kb: { s0: 1.04, s1: 1.12 }, tr: { type: 'fade', dur: 0.3 }, grade: 'warm' });
   A(riskGauge('SEDERHANA', 0.55, Wd(52, 0), sec(55) - 0.1, { y: 520 }));
   A(chip('Kanak-kanak & remaja: lebih mudah terkesan', Wd(53, 1), sec(55) - 0.1, { y: 760, bg: C.yellow, fg: C.navy, size: 34 }));
 
@@ -251,9 +276,9 @@ function buildTimeline() {
   S({ bg: 'navy', t0: sec(55), t1: sec(56) + 0.2, tr: { type: 'whip', dur: 0.3 } });
   A(drugIntro(5, 'Chlorpromazine', 'ap', P(55) + 0.1, sec(56) + 0.6, { sub: 'Generasi lama' }));
   ch(5, P(55), sec(62));
-  S({ clip: 'v16', t0: sec(56) + 0.2, t1: sec(59), kb: { s0: 1.04, s1: 1.12 }, tr: { type: 'fade', dur: 0.3 }, grade: 'cool' });
+  S({ clip: 'm11', t0: sec(56) + 0.2, t1: sec(59), kb: { s0: 1.04, s1: 1.12 }, tr: { type: 'fade', dur: 0.3 }, grade: 'cool' });
   A(chipStack('INDIKASI', [{ text: 'Psikosis', at: Wd(57, 1), icon: 'brain' }, { text: 'Gelisah yang teruk', at: Wd(58, 0) }], sec(59) - 0.1));
-  S({ clip: 'v12', t0: sec(59), t1: sec(62), kb: { s0: 1.04, s1: 1.12 }, tr: { type: 'fade', dur: 0.3 }, grade: 'warm' });
+  S({ clip: 'm12', t0: sec(59), t1: sec(62), kb: { s0: 1.04, s1: 1.12 }, tr: { type: 'fade', dur: 0.3 }, grade: 'warm' });
   A(mechRow([{ text: 'Sangat menenangkan', at: Wd(59, 2), icon: 'heart' },
              { text: 'Mengantuk', at: Wd(60, 1), icon: 'clock' },
              { text: 'Selera makan', at: Wd(61, 1), icon: 'tablet', res: '↑' }], sec(62) - 0.1, { y: 460, gap: 175 }));
@@ -262,7 +287,7 @@ function buildTimeline() {
   S({ bg: 'amber', t0: sec(62), t1: sec(63) + 0.2, tr: { type: 'whip', dur: 0.3 } });
   A(drugIntro(6, 'Mirtazapine', 'ad', P(62) + 0.1, sec(63) + 0.5));
   ch(6, P(62), sec(72));
-  S({ clip: 'v01', t0: sec(63) + 0.2, t1: sec(68), kb: { s0: 1.04, s1: 1.12 }, tr: { type: 'fade', dur: 0.3 }, grade: 'cool' });
+  S({ clip: 'm13', t0: sec(63) + 0.2, t1: sec(68), kb: { s0: 1.04, s1: 1.12 }, tr: { type: 'fade', dur: 0.3 }, grade: 'cool' });
   A(chipStack('SELALU DIPILIH UNTUK', [{ text: 'Kemurungan', at: Wd(65, 1), icon: 'heart' }, { text: 'Susah tidur', at: Wd(66, 1) },
                                        { text: 'Hilang selera makan', at: Wd(67, 1) }], sec(68) - 0.1, { gap: 115, headFg: C.amber }));
   S({ clip: 'n02', t0: sec(68), t1: sec(72), kb: { s0: 1.04, s1: 1.14 }, tr: { type: 'zoom', dur: 0.3 }, grade: 'cool' });
@@ -273,7 +298,7 @@ function buildTimeline() {
   S({ bg: 'amber', t0: sec(72), t1: sec(73) + 0.2, tr: { type: 'whip', dur: 0.3 } });
   A(drugIntro(7, 'Amitriptyline', 'ad', P(72) + 0.1, sec(73) + 0.6, { sub: 'Generasi lama' }));
   ch(7, P(72), sec(80));
-  S({ clip: 'v17', t0: sec(73) + 0.2, t1: sec(77), kb: { s0: 1.04, s1: 1.12 }, tr: { type: 'fade', dur: 0.3 }, grade: 'warm' });
+  S({ clip: 'm14', t0: sec(73) + 0.2, t1: sec(77), kb: { s0: 1.04, s1: 1.12 }, tr: { type: 'fade', dur: 0.3 }, grade: 'warm' });
   A(chipStack('KINI LEBIH BANYAK UNTUK', [{ text: 'Sakit saraf', at: Wd(75, 1), icon: 'warn' }, { text: 'Cegah migrain', at: Wd(76, 1), icon: 'brain' }],
     sec(77) - 0.1, { headFg: C.amber }));
   S({ bg: 'amber', t0: sec(77), t1: sec(80), tr: { type: 'push', dur: 0.35 } });
@@ -285,10 +310,10 @@ function buildTimeline() {
   S({ bg: 'amber', t0: sec(80), t1: sec(81) + 0.2, tr: { type: 'whip', dur: 0.3 } });
   A(drugIntro(8, 'Paroxetine', 'ad', P(80) + 0.1, sec(81) + 0.5, { sub: 'Kumpulan SSRI' }));
   ch(8, P(80), sec(89));
-  S({ clip: 'v11', in: 2.5, t0: sec(81) + 0.2, t1: sec(85), kb: { s0: 1.08, s1: 1.16 }, tr: { type: 'fade', dur: 0.3 }, grade: 'cool' });
+  S({ clip: 'm15', t0: sec(81) + 0.2, t1: sec(85), kb: { s0: 1.08, s1: 1.16 }, tr: { type: 'fade', dur: 0.3 }, grade: 'cool' });
   A(chipStack('INDIKASI', [{ text: 'Kemurungan', at: Wd(82, 1), icon: 'heart' }, { text: 'Keresahan (anxiety)', at: Wd(83, 2) },
                            { text: 'Panik', at: Wd(84, 1) }, { text: 'OCD', at: Wd(84, 3) }], sec(85) - 0.1, { gap: 108, y: 420, headFg: C.amber }));
-  S({ clip: 'n01', in: 2.2, t0: sec(85), t1: sec(89), kb: { s0: 1.06, s1: 1.16 }, tr: { type: 'zoom', dur: 0.3 }, grade: 'cool', dim: 0.15 });
+  S({ clip: 'm16', t0: sec(85), t1: sec(89), kb: { s0: 1.06, s1: 1.16 }, tr: { type: 'zoom', dur: 0.3 }, grade: 'cool', dim: 0.15 });
   A(headline([{ text: 'DALAM KUMPULAN SSRI:', at: Wd(85, 0), y: 470, size: 64, color: C.white, font: F.ui, weight: 800 },
               { text: 'PALING KERAP', at: Wd(86, 3), y: 600, size: 130, color: C.yellow },
               { text: 'DIKAITKAN', at: Wd(86, 4), y: 740, size: 110, color: C.white }], sec(89) - 0.1));
@@ -313,16 +338,16 @@ function buildTimeline() {
   S({ bg: 'navy', t0: sec(100), t1: sec(102), tr: { type: 'whip', dur: 0.3 } });
   A(drugIntro(10, 'Sodium valproate', 'ms', P(100) + 0.1, sec(102) - 0.1, { brand: 'Epilim', brandAt: Wd(101, 1) }));
   ch(10, P(100), sec(107));
-  S({ clip: 'v02', in: 1.0, t0: sec(102), t1: sec(104), kb: { s0: 1.06, s1: 1.14 }, tr: { type: 'fade', dur: 0.3 }, grade: 'warm' });
+  S({ clip: 'm17', t0: sec(102), t1: sec(104), kb: { s0: 1.06, s1: 1.14 }, tr: { type: 'fade', dur: 0.3 }, grade: 'warm' });
   A(chipStack('INDIKASI', [{ text: 'Epilepsi', at: Wd(102, 2), icon: 'brain' }, { text: 'Bipolar', at: Wd(103, 0) },
                            { text: 'Cegah migrain', at: Wd(103, 3) }], sec(104) - 0.1, { gap: 115, headFg: C.coral }));
-  S({ clip: 'n02', in: 1.5, t0: sec(104), t1: sec(107), kb: { s0: 1.1, s1: 1.18 }, tr: { type: 'zoom', dur: 0.3 }, grade: 'cool', dim: 0.3 });
+  S({ clip: 'm18', t0: sec(104), t1: sec(107), kb: { s0: 1.1, s1: 1.18 }, tr: { type: 'zoom', dur: 0.3 }, grade: 'cool', dim: 0.3 });
   A(mechRow([{ text: 'Selera makan', at: Wd(104, 3), icon: 'heart', res: '↑' },
              { text: 'Paras insulin', at: Wd(105, 2), icon: 'warn', res: '↑' },
              { text: 'Lemak mudah disimpan', at: Wd(106, 1), icon: 'tablet' }], sec(107) - 0.1, { title: 'KENAPA BERAT NAIK?', y: 470 }));
 
   // ===== WARNING =====
-  S({ clip: 'v21', t0: sec(107), t1: sec(111), kb: { s0: 1.05, s1: 1.15 }, tr: { type: 'flash', dur: 0.25 }, grade: 'cool', dim: 0.35 });
+  S({ clip: 'm19', t0: sec(107), t1: sec(111), kb: { s0: 1.05, s1: 1.15 }, tr: { type: 'flash', dur: 0.25 }, grade: 'cool', dim: 0.35 });
   A(hand('tapi ingat...', P(107), sec(108) + 0.3, { x: 540, y: 420, size: 90, color: C.yellow }));
   A(headline([{ text: 'BUKAN SEMUA', at: Wd(108, 0), y: 560, size: 140, color: C.white, mark: C.tealD },
               { text: 'ORANG', at: Wd(108, 2), y: 720, size: 140, color: C.white },
@@ -335,13 +360,13 @@ function buildTimeline() {
   caps.push([sec(107), sec(115), C.yellow]);
 
   // ===== WHAT TO DO =====
-  S({ clip: 'n01', t0: sec(115), t1: sec(117) + 0.3, kb: { s0: 1.04, s1: 1.12 }, tr: { type: 'whip', dur: 0.3 }, grade: 'warm' });
+  S({ clip: 'm20', t0: sec(115), t1: sec(117) + 0.3, kb: { s0: 1.04, s1: 1.12 }, tr: { type: 'whip', dur: 0.3 }, grade: 'warm' });
   A(headline([{ text: 'APA BOLEH BUAT?', at: Wd(115, 1), y: 560, size: 120, color: C.white, mark: C.tealD }], Wd(116, 0) - 0.3));
   S({ clip: 'n04', t0: sec(117) + 0.3, t1: sec(118), kb: { s0: 1.04, s1: 1.12 }, tr: { type: 'whip', dur: 0.3 }, grade: 'warm' });
-  S({ clip: 'n05', in: 0.5, t0: sec(118), t1: sec(121), kb: { s0: 1.04, s1: 1.12 }, tr: { type: 'whip', dur: 0.3 }, grade: 'cool' });
+  S({ clip: 'm21', t0: sec(118), t1: sec(121), kb: { s0: 1.04, s1: 1.12 }, tr: { type: 'whip', dur: 0.3 }, grade: 'cool' });
   S({ clip: 'n08', t0: sec(121), t1: sec(123), kb: { s0: 1.04, s1: 1.14 }, tr: { type: 'fade', dur: 0.3 }, grade: 'warm' });
-  S({ clip: 'v19', t0: sec(123), t1: sec(124), kb: { s0: 1.02, s1: 1.1 }, tr: { type: 'whip', dur: 0.3 }, grade: 'warm' });
-  S({ clip: 'v06', in: 1.0, t0: sec(124), t1: sec(129), kb: { s0: 1.04, s1: 1.14 }, tr: { type: 'fade', dur: 0.3 }, grade: 'warm' });
+  S({ clip: 'm22', t0: sec(123), t1: sec(124), kb: { s0: 1.02, s1: 1.1 }, tr: { type: 'whip', dur: 0.3 }, grade: 'warm' });
+  S({ clip: 'm23', t0: sec(124), t1: sec(129), kb: { s0: 1.04, s1: 1.14 }, tr: { type: 'fade', dur: 0.3 }, grade: 'warm' });
   const todo = [['Timbang berat badan', Wd(116, 0)], ['Ukur lilit pinggang', Wd(117, 1)], ['Periksa gula & kolesterol', Wd(119, 0)],
                 ['Pilih air kosong', Wd(121, 0)], ['Jaga pemakanan', Wd(122, 0)], ['Kekal aktif', Wd(123, 1)]];
   todo.forEach(([s, at], k) => A(chip(s, at, sec(124) - 0.1, { y: 380 + k * 112, x: 540 + (k % 2 ? 30 : -30), bg: k < 3 ? C.paper : C.teal, fg: C.navy, icon: 'check', size: 40 })));
@@ -350,8 +375,8 @@ function buildTimeline() {
     sec(129) - 0.1, { y: 560, gap: 130 }));
 
   // ===== CTA CLINIC =====
-  S({ clip: 'v05', t0: sec(129), t1: sec(132), kb: { s0: 1.0, s1: 1.1, y1: 30 }, tr: { type: 'zoom', dur: 0.35 }, grade: 'warm' });
-  S({ clip: 'v06', t0: sec(132), t1: sec(135), kb: { s0: 1.04, s1: 1.14 }, tr: { type: 'fade', dur: 0.35 }, grade: 'warm' });
+  S({ clip: 'm24', t0: sec(129), t1: sec(132), kb: { s0: 1.0, s1: 1.1, y1: 30 }, tr: { type: 'zoom', dur: 0.35 }, grade: 'warm' });
+  S({ clip: 'm25', t0: sec(132), t1: sec(135), kb: { s0: 1.04, s1: 1.14 }, tr: { type: 'fade', dur: 0.35 }, grade: 'warm' });
   A(card({ at: P(129) + 0.1, t1: sec(135) - 0.1, x: 90, y: 330, w: 900, h: 660, rot: 0.015, from: 'bottom', seed: 14, content(ctx, t, w, h) {
     ctx.fillStyle = C.navy; ctx.fillRect(0, 0, w, 14);
     txt(ctx, 'RISAU KESAN', 60, 100, { font: F.head, size: 84, color: C.navy, align: 'left' });
@@ -368,12 +393,12 @@ function buildTimeline() {
 
   // ===== BOOK (3D) =====
   S({ bg: 'navy', t0: sec(135), t1: sec(140), tr: { type: 'iris', dur: 0.45 } });
-  A(hand('baca lebih lanjut...', P(135) + 0.2, sec(137), { x: 540, y: 290, size: 80, color: C.teal }));
-  A(book3d(P(135) + 0.3, sec(140) - 0.05, { y: 760, h: 720 }));
-  A(chip('DAPATKAN BUKU SAYA', Wd(137, 0), sec(140) - 0.1, { y: 1180, bg: C.yellow, fg: C.navy, icon: 'heart', size: 44 }));
+  A(hand('baca lebih lanjut...', P(135) + 0.6, sec(137), { x: 540, y: 1190, size: 80, color: C.teal }));
+  A(bookStill(P(135) + 0.1, sec(140) - 0.05));
+  A(chip('DAPATKAN BUKU SAYA', Wd(137, 0), sec(140) - 0.1, { y: 1250, bg: C.yellow, fg: C.navy, icon: 'heart', size: 44 }));
 
   // ===== OUTRO =====
-  S({ clip: 'v20', t0: sec(140), t1: END + 0.6, kb: { s0: 1.05, s1: 1.15 }, tr: { type: 'fade', dur: 0.45 }, grade: 'warm' });
+  S({ clip: 'm26', t0: sec(140), t1: END + 0.6, kb: { s0: 1.05, s1: 1.15 }, tr: { type: 'fade', dur: 0.45 }, grade: 'warm' });
   A(sticker('comment', Wd(140, 2), END, { x: 790, y: 600, size: 170, disc: C.white, color: C.navy }));
   A(chip('Tanya di komen', Wd(140, 2), END, { y: 790, bg: C.teal }));
   A(hand('Take care!', Wd(141, 0), END, { x: 540, y: 980, size: 110 }));
