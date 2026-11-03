@@ -1,5 +1,22 @@
 # Caption TikTok / Reels: 10 Tanda ADHD Dewasa
 
+## Versi yang dijadualkan (Metricool, 3 Nov 2026, 5:00 petang MYT: TikTok, Facebook, YouTube)
+
+Selalu buat banyak kerja tapi satu pun tak siap? 🤔
+
+Susah fokus, selalu lupa, suka bertangguh… orang kata pemalas, padahal mungkin ADHD. 🧠 ADHD bukan masalah kanak-kanak je, orang dewasa pun boleh alami.
+
+Tonton sampai habis dan komen tanda mana yang paling kerap anda alami 👇
+
+Untuk tujuan pendidikan. Diagnosis perlu dinilai oleh doktor.
+
+#ADHD #ADHDdewasa #kesihatanmental #psikiatri #mentalhealthmalaysia #DrAzren #SpreadPositivity #fyp
+
+- Tajuk TikTok: 10 Tanda ADHD Orang Dewasa | Doktor Psikiatri Terangkan
+- Tajuk Facebook: 10 Tanda ADHD Dalam Kalangan Orang Dewasa
+- Tajuk YouTube: 10 Tanda ADHD Dalam Kalangan Orang Dewasa | Dr Azren (video biasa, bukan Shorts, kerana 4:01 melebihi had 3 minit Shorts; kategori Education)
+- Cover: Thumbnail_ADHD_9x16.jpg · Label kandungan AI: aktif (TikTok & YouTube)
+
 ## Caption utama (salin & tampal)
 
 Selalu buat banyak kerja, tapi satu pun tak siap? Orang kata pemalas… padahal mungkin ADHD. 🧠
